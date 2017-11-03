@@ -1,0 +1,19 @@
+<div class="fn-clear user_lb9901">
+<div class="mc">
+<div class="idx-focus" id="b_idx_focus">
+<div class="idx-foc-tmp">
+<ul rel="xtaberItems" class=" list-paddingleft-2">
+<li>
+<a href="#" class="idx-focus-img"><img src="/seller_themes/store_tpl_6/custom_images/conten_banner_1.jpg"/></a>
+</li>
+<li>
+<a href="#" class="idx-focus-img"><img src="/seller_themes/store_tpl_6/custom_images/conten_banner_1.jpg"/></a>
+</li>
+<li>
+<a href="#" class="idx-focus-img"><img src="/seller_themes/store_tpl_6/custom_images/conten_banner_1.jpg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

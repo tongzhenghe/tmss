@@ -1,0 +1,97 @@
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+	background-color: #000001;
+}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{ background:none;}
+.user_temp_one{ background:#000; }
+
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888}
+.all_cats_tcc li .s_b a:hover{background: #171717; color:#fff;}
+
+.jTwoLevel .square_box{background:#fff; margin-right:13px;}
+.jTwoLevel a{color:#fff; font-size:14px;}
+.jTwoLevel:hover{background-color: #171717;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {
+	background-color: #171717;
+	color: #fff;
+	text-decoration: none;
+}
+.ban_nav a,.flex-control-paging li a{
+	background:#999;
+}
+
+.fn-clear{ width:100%; height:auto; float:left; overflow:hidden; margin:15px 0 0 0; color:#000;}
+.layout-one-right.m790 .adv_bg img{
+	width:790px;
+}
+.layout-one-right.m790 ul{ 
+	width:800px;
+	overflow:hidden;
+	padding-left:3px;
+}
+.layout-one-right.m990 .adv_bg img{
+	width:990px;
+}
+.layout-one-right.m990 ul{
+	width:1100px;
+	overflow:hidden;
+}
+.layout-one-right.m990 .temp2 ul li,.layout-one-right.m990 .temp2 li .listfoot{ width:320px;}
+.layout-one-right.m990 .temp2 ul li .proImg,.layout-one-right.m990 .temp2 ul li .proImg img{width:320px;}
+.layout-one-right.m990 .temp2 ul li{ margin-right:15px;}
+.layout-one-right.m990 .temp3 ul li,.layout-one-right.m990 .temp3 li .listfoot{ width:240px;}
+.layout-one-right.m990 .temp3 ul li .proImg,.layout-one-right.m990 .temp3 ul li .proImg img{width:238px;}
+.layout-one-right.m990 .temp3 ul li{ margin-right:10px;}
+.layout-one-right.m990 .temp4 ul{ padding-left:2px;}
+
+.Title{width: 100%;height: 30px;border-bottom: 2px solid #bfbfbf;line-height: 30px;margin-bottom: 10px;}
+.TitleLeft{ float:left;}
+.Titleyw{font-size:30px; line-height:30px; float:left;}
+.Titlezw{ margin:0 0 0 5px; float:left;font-size: 20px;color: #666;}
+.more{line-height: normal;}
+.temp2 li .proImg{ width:383px; height:auto; overflow:hidden;}
+.temp2 li .proFst,.temp3 li .proFst{ position:absolute; z-index:9; bottom:0; background:#FFF; width:100%; opacity:0.8; }
+.temp2 li .proFst .proFst-text{ width:100%;}
+.temp2 li .proFst .proFst-text a{ font-size:16px;}
+.temp2 .cxjprice{ font-size:16px;}
+.temp2 li.last{ float:left;}
+.temp2 li .listfoot{ width:383px;height: 15px; background-position:right;}
+.temp2,.temp3,.temp4{ float:left; width:100%; height:auto; overflow:hidden;}
+.temp2 li{ float:left; margin-right:14.5px;  margin-bottom:10px;}
+.temp3 li{ float:left; margin-right:14.5px;  margin-bottom:10px;}
+.temp4 li{ float:left; margin-right:15px;}
+.temp2 li .item,.temp3 li .item,.temp4 li .item{ border:1px solid #ccc;position:relative; overflow:hidden;}
+
+.proFst .proFst-text,.proFst .proFst-price{ float:left; width:100%;}
+.proFst .proFst-text a{ display:block; overflow:hidden;line-height: 20px; padding:8px; color:#000; font-size:14px; text-decoration:none;border-bottom: #111 dashed 1px;}
+.proFst .proFst-text a:hover{ color:#B42121;}
+.proFst-price{ width:100%;}
+.cxjprice,.yjprice{ float:left;}
+.cxjprice{font-size: 14px;padding: 8px 10px 8px 5px}
+.yjprice{font-size: 12px;padding: 9px 3px 0 0;text-decoration: line-through; color:#666;}
+.shop{float: right;height: 20px;width: 65px;background-color: #B42121;color: #fff;line-height: 20px;margin-right: 5px; text-align:center; margin-top:8px;}
+.proFst-price .shop:hover{ text-decoration:none; color:#FFF;}
+
+.temp3 li .proImg{ width:250px; height:auto;overflow:hidden; text-align:center;}
+.temp3 li .listfoot{width: 250px;height: 15px; background-position:-55px 0;}
+.temp4 li .proImg{ width:183px; height:auto; overflow:hidden;}
+.temp4 li .proFst{ width:183px;}
+.temp4 li .proFst .proFst-text a{ font-size:12px;}
+.temp4 li .proFst .cxjprice{ font-size:12px;}
+.temp4 li .proFst .shop{ width:40px;}
+.temp4 li .listfoot{width: 183px;height: 15px; background-position:-100px 0;}
+
+.layout-one-right.m990 .Jproduct li{ border:1px solid #ddd; margin:10px 10px 10px 0; width:218px;}

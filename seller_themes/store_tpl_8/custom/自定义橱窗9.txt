@@ -1,0 +1,14 @@
+<div class="fn-clear userlbt">
+<div class="mc">
+<div class="x-cp-banner">
+<div id="slidesan" class="slideclass" style="width:990px; height:400px;">
+<div class="img" style="width:990px; height:400px;">
+<ul>
+<li><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/cp_banner_1.jpg" width="990" height="400" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/cp_banner_2.jpg" width="990" height="400" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

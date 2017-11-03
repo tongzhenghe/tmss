@@ -1,0 +1,35 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0">
+<!--{if $goods_list}-->
+  <ul>
+  <!-- {foreach from=$goods_list item=val} -->
+    <li class="single_item" id="more_element_1"> <a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}"><img src="{$val.goods_thumb}"></a>
+      <dl>
+        <dt>
+          <h4 class="title"><a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}">{$val.goods_name}</a></h4>
+        </dt>
+        <dd class="dd-price"><span class="pull-left"><strong>{$lang.sort_price}：<b class="ect-colory">{$val.shop_price}</b></strong><small class="ect-margin-lr"><del>{$val.market_price}</del></small></span><span class="pull-right"><i class="fa fa-eye-slash"></i> 取消关注</span> </dd>
+        <dd class="text-center"><a class="flow-del" href="javascript:addToCart({$goods.goods_id})">{$lang.add_to_cart}</a> <a onclick="addToCart_quick(6)" class="flow-del" href="javascript:;">{$lang.drop}</a></dd>
+      </dl>
+    </li>
+	<!-- {/foreach} -->
+  </ul>
+   <!--{else}-->
+      <p class="text-center ect-margin-tb ect-padding-tb">{$lang.no_data}</p>
+   <!--{/if}--> 
+</div>
+<ul class="pager ect-margin-lr ect-page">
+  <li class="pull-left"><a href="#">上一页</a></li>
+  <li class="form-select">
+ <i class="fa fa-sort-desc"></i>
+      <select name="sel_question">
+        <option value="friend_birthday">1/20</option>
+        <option value="old_address">2/20</option>
+        <option value="motto">2/20</option>
+        </select>
+  </li>
+  <li class="pull-right"><a href="#">下一页</a></li>
+</ul>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

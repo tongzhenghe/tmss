@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $goodsList} -->
+<div class="w guessLike" id="guessLike">
+	<div class="mt hd"><h2>猜你喜欢</h2><a class="indexAd_qh next" href="javascript:void(0)">换一批</a></div>
+    <div class="spacer"><i></i></div>
+    <div class="mc bd">
+    <!-- {foreach from=$goodsList item=goods name=foo} -->
+    	<!--{if $smarty.foreach.foo.iteration mod 6 eq 1 || $smarty.foreach.foo.iteration eq 1}-->
+        <ul>
+		<!--{/if}-->
+        	<li>
+            	<div class="pPic"><a href="{$goods.url}" title=""><img src="{$goods.thumb}" height="130" width="130"/></a></div>
+                <div class="pInfo">
+                	<div class="pName"><a href="" title="">{$goods.short_name}</a></div>
+                    <div class="pPrice">{$goods.shop_price}</div>
+                </div>
+            </li>
+     
+        <!--{if $smarty.foreach.foo.iteration mod 6 eq 0}-->
+        </ul>
+         <!--{/if}-->
+        <!-- {/foreach} -->
+       
+    </div>
+</div> 
+<!-- {/if} --> 

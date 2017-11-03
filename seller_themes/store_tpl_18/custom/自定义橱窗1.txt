@@ -1,0 +1,37 @@
+<div class="fn-clear m990">
+<div class="userDefinedArea"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_banner.jpg" /></a></div>
+</div>
+<div class="fn-clear">
+<div class="user_main_box">
+<div class="left">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_1.jpg" /></a>
+</div>
+<div class="right">
+<div class="src2"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_2.jpg" /></a></div>
+<div class="src3"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_3.jpg" /></a></div>
+<div class="src4"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_4.jpg" /></a></div>
+<div class="src5 user_bgcolor_1"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_5.png" /></a></div>
+<div class="src6"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/adv_src_6.jpg" /></a></div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="user_box">
+<div class="jbannerImg">
+<div class="jImgNodeArea">
+<ul><li><img src="/seller_themes/store_tpl_18/custom_images/banner_adv_1.jpg" /></li></ul>
+<ul><li><img src="/seller_themes/store_tpl_18/custom_images/banner_adv_2.jpg" /></li></ul>
+<ul><li><img src="/seller_themes/store_tpl_18/custom_images/banner_adv_3.jpg" /></li></ul>
+<ul><li><img src="/seller_themes/store_tpl_18/custom_images/banner_adv_4.jpg" /></li></ul>
+<ul><li><img src="/seller_themes/store_tpl_18/custom_images/banner_adv_5.jpg" /></li></ul>
+</div>
+</div>
+<ul class="jbannerTab">
+<li>风信子</li>
+<li>郁金香</li>
+<li>漳州水仙</li>
+<li>百合</li>
+<li>洋水仙</li>
+</ul>
+</div>
+</div>

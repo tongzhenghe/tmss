@@ -1,0 +1,16 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="ect-pro-list user-order UserOrderList" style="border-bottom:none;">
+    <ul id="J_ItemList">
+       <li class="single_item single_item02"></li>
+       <a href="javascript:;" style="text-align:center" class="get_more"></a>
+    </ul>
+</div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+{foreach from=$lang.merge_order_js item=item key=key}
+    var {$key} = "{$item}";
+{/foreach}
+get_asynclist('index.php?m=default&c=user&a=async_order_list&pay={$pay}' , '__TPL__/images/loader.gif');
+</script> 
+</body></html>

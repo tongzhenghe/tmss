@@ -1,0 +1,195 @@
+.user-bottom{border-bottom:1px solid #e3e3e3;}
+.user-bottom0{border-bottom:0 !important;}
+/*user基本信息*/
+.user-info{overflow:hidden; padding:1em; width:100%; background:url(../images/default.png); position:relative; box-sizing:border-box;}
+.user-info .user-img i{font-size:4em; padding:0.1em; background:#f1f1f1; border-radius:8px; color:#aaa;}
+.user-info dl{margin-left:0.6em; color:#fff;}
+.user-info dl dt h4{font-size:1.5em}
+.user-info span{color:#FFF; position:absolute; bottom:1em; right:0.9em;}
+.user-info span i.fa-envelope-o{position:relative;}
+.user-info span i.fa-envelope-o-sl:after{content:"\020"; width:0.5em; height:0.5em; display:block; position:absolute; right:-0.2em; top:-0.1em; border-radius:0.5em; background:#e87e04;}
+/*小导航8个*/
+.user-nav .ect-row-nav li i:before{font-size:3.2em;}
+.user-nav .ect-row-nav li i.glyphicon-credit-card{-webkit-transform: rotate(-10deg);-moz-transform: rotate(-10deg);-ms-transform: rotate(-10deg);-o-transform: rotate(-10deg);
+transform: rotate(-10deg);color:#5babe6;}
+.user-nav .ect-row-nav li i.fa-file-text{color:#F93;}
+.user-nav .ect-row-nav li i.glyphicon-map-marker{color:#f26c5f;}
+.user-nav .ect-row-nav li i.glyphicon-usd{color:#f9c73a}
+.user-nav .ect-row-nav li i.glyphicon-map-marker:before,.user-nav .ect-row-nav li i.glyphicon-usd:before{font-size:2.5em; display:block; margin-top:0.2em;}
+.user-nav .ect-row-nav li i.glyphicon-usd:before{margin-top:0.3em; font-size:2.3em;}
+.user-nav .ect-row-nav li i.fa-user{color:#f26c5f;}
+.user-nav .ect-row-nav li i.fa-shield{color:#f9c73a}
+.user-nav .ect-row-nav li i.fa-share-alt{color:#5babe6;}
+.user-nav .ect-row-nav li i.fa-share-alt:before{font-size:3em;}
+/*订单列表*/
+.user-order {border-top:none; padding:0.6em 0;}
+.user-order span{color:#222}
+.user-order li{position:relative;}
+.user-order li i.fa{ position:absolute; top:50%; margin-top:-1.2em; right:0.6em;}
+.user-order li i.fa:before{font-size:2.4em; color:#bbb;}
+.user-order ul li img{height:6em; height:6em;}
+.user-order ul li dl dt h4.title{height:auto;}
+.user-order ul li dl dd{margin-top:0.2em;}
+/*客户服务*/
+.user-service .ect-radio{overflow:hidden;}
+.user-service .ect-radio li{float:left; clear:inherit; display:block; padding-right:0.8em; padding-bottom:0;}
+.user-service p{margin-top:0.6em;}
+.user-service p:first-child{margin-top:0;}
+.user-service p input[type=text],.user-service p textarea{width:100%; padding:0.6em;}
+.user-service p textarea{height:14em;}
+
+/*订单详情*/
+.user-order-detail{background:#FFF; padding:0.6em; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3;}
+.user-order-detail:first-child{border-top:none;}
+.user-order-detail p{margin-bottom:0.3em; font-size:1.1em;}
+.user-order-detail .ect-pro-list{border-bottom:none;}
+.user-order-detail .ect-pro-list ul li:last-child{padding-bottom:0;}
+.user-order-detail .ect-pro-list span.num{margin-left:0.6em;}
+
+.order-detail-info{background:#FFF; padding:0 0.6em; font-size:1.1em; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3;}
+.order-detail-info ul li{padding:0.8em 0; border-bottom:1px solid #e3e3e3; overflow:hidden; font-weight:normal;}
+.order-detail-info ul li:last-child{border-bottom:none;}
+/*user登陆*/
+.user-hezuo p{margin-top:1em; text-align:center;}
+.user-hezuo a {margin-right:0.3em;}
+.user-hezuo a img{width:2.1em; height:auto;}
+/*user注册*/
+.user-register .nav-tabs{border-top:1px solid #e3e3e3; margin:0.6em .67em 0;display: -webkit-box;display: -moz-box;display: -ms-box;display: box; background:#fff;}
+.user-register .nav-tabs li{-webkit-box-flex: 1;-moz-box-flex: 1;-ms-box-flex: 1;box-flex: 1; border-right:1px solid #e3e3e3; text-align:center; font-size:1.2em;}
+.user-register .nav-tabs li:last-child{border-right:none}
+.user-register .nav-tabs li.active a{color:#5babe6}
+.user-register .nav-tabs li a{border:0; border-bottom:1px solid #e3e3e3;}
+.user-register .nav-tabs li a:hover{background:none; border:0;}
+.user-register .flow-consignee i.glyphicon-eye-open{right:0; top:0.5em; z-index:11; font-size:1.2em; color:#666; position:absolute;}
+.input-text.code .PhoneSub{ position:absolute; top:0; right:0; border-radius:3em; padding:0 1em; height:100%; background:#f02387 !important;}
+/*user资金管理*/
+.user-account-detail{overflow:hidden;}
+.user-account-detail ul li{border-bottom:1px solid #e3e3e3; overflow:hidden; padding:0.6em;}
+.user-account-detail ul li p{clear:both; overflow:hidden; font-size:1.1em;}
+.user-account-detail ul li p.title{font-size:1.4em;}
+.user-account-detail ul li p.content{position:relative; margin-top:0.1em;}
+.user-account-detail ul li p.content span.remark{right:4em; left:0; position:absolute; height:1.6em; overflow:clip;  text-overflow:ellipsis;}
+.user-account-detail ul li p.content span.type{ display:block;}
+.user-account-detail .count{padding:0.6em; width:100%; text-align:right; font-size:1.2em;}
+/*user我的分享*/
+table.u-table {
+margin-bottom: 0.8em;
+}
+table.u-table:last-child{margin-bottom:0;}
+table.u-table tr.first-tr td {
+height: 3.5em;
+font-weight: bold;
+background: #f2f2f2;
+}
+table.u-table td{
+border:1px solid #e3e3e3;
+padding: 0.5em 0.2em;
+height: 3em;
+width: 7em;
+background: #fff;
+}
+table.u-table:first-child td{border-top:none;}
+table.u-table:last-child td{border-bottom:none;}
+/*订单追踪*/
+.user-order-tracking ul li{padding:0.6em 0;  padding-left:2em; border-bottom:1px dotted #e3e3e3; position:relative;}
+.user-order-tracking ul li i{font-size:1.2em; position:absolute; margin-left:-1.5em; margin-top:0.4em;} 
+.user-order-tracking ul li p{font-size:1.2em; font-weight:bold;}
+.user-order-tracking ul li p{margin:0.2em 0;}
+.user-order-tracking p.tracking-time{font-size:1em; color:#bbb; font-weight:normal; }
+.user-order-tracking p.tracking-title{font-size:1.4em; margin-top:0.6em; font-weight:bold ;padding-left:1.5em;}
+.user-order-tracking p.tracking-title span{font-weight:normal; }
+
+/* 新会员中心样式 S */
+.user-info{ background:url(../images/default.jpg) center center; background-size:120%; position: relative;}
+.touxiang{ width: auto;}
+.user-info dl{ margin:0; position: absolute; left: 6.5em; top: 1em;}
+.user-info dl dt h4{ font-size:1.07em; text-align:left; line-height:1.57em;}
+.user-info dl dd{ display:block; margin:.42em auto; height:auto; overflow:hidden;}
+.user-info dl dd .valid_mark,.user-info dl dd .tointegration{ float:left; white-space: nowrap; padding-right: 1.5em;}
+.user-tab .tab-content .tab-pane{ display:none; position:relative; height:auto; overflow:hidden;}
+.user-tab .tab-content .active{ display:block;}
+.userNav{ padding:0 0 0 1.71em; font-size:1.17em; background:#fff; margin:0 0 0.71em;}
+.userNav ul li a{ display:block; border-bottom:#e0e0e0 1px solid; height:auto; overflow:hidden; padding:0.85em 0; color:#000;}
+.userNav ul li:last-child a{ border-bottom:0;}
+.userNav ul li em.userIcon{ width:1.43em; height:1.29em; margin:0.07em .86em 0 0; background:url(../images/user_icon.png) no-repeat; background-size:4.9em; float:left;}
+.userNav ul li em.userIcon01{ background-position:0 0;}
+.userNav ul li em.userIcon02{ background-position:0 -3.55em;}
+.userNav ul li em.userIcon03{ background-position:-3.55em 0;}
+.userNav ul li em.userIcon04{ background-position:-3.45em -1.85em;}
+.userNav ul li em.userIcon05{ background-position:.14em -13.9em;}
+.userNav ul li em.userIcon06{ background-position:-3.57em -13.9em;}
+.userNav ul li em.userIcon07{ background-position:-3.45em -8.8em;}
+.userNav ul li em.userIcon08{ background-position:.07em -6.95em;}
+.userNav ul li em.userIcon09{}
+.userNav ul li em.userIcon10{}
+.userNav ul li span{ width:.57em; height:1em; background:url(../images/png.png) -7.25em -5.5em no-repeat; background-size:17em; margin:.28em 1.08em 0 0.57em; float:right;}
+.user-tab ul li.active{ background:#fff;}
+.userdiv a.ect-colorf{ display:block; line-height:2.8em; font-size:1.25em; text-align:center; color:#565656 !important; background-color:#fff;}
+.user-tab .tab-content .ect-pro-list ul li{ width:48%; border:1px solid #e5e5e5; clear: none; padding:0; margin:0 1% 0.8em; position:relative;}
+.user-tab .tab-content .ect-pro-list img{ width:100%; height:auto;}
+.user-tab .tab-content .ect-pro-list dl{ margin:0;}
+.user-tab .tab-content .ect-pro-list dl dt{ margin-top:0.4em;}
+.user-tab .tab-content .ect-pro-list dl dt h4{ padding:0 0.4em;}
+.user-tab .tab-content .ect-pro-list dl dt h4 a{ word-wrap:break-word;}
+.user-tab .tab-content .ect-pro-list dl dd{ line-height:2em;}
+.user-tab .tab-content .ect-pro-list a.del{ position:absolute; right: 0.4em; bottom: 0.25em;}
+.user-tab .tab-content .userHistory .ect-padding-lr{ padding-right:0.56em;}
+.user-tab .tab-content .userHistory a.del{ position:static;}
+
+.user-order ul li.single_item02 img{ width:100%; height:auto;}
+.user-order ul li.single_item02 dl dt{ margin-top:0.4em; padding:0 0.4em;}
+.user-order ul li.single_item02 dl dd{ padding:0 0.4em; margin-top:0.5em;}
+.user-order ul li.single_item02 i.fa{ display:none;}
+
+.userOrderDetail ul{ padding:0; border-top:1px solid #e5e5e5;}
+.userOrderDetail ul li{ width:100%; border:0; border-bottom:1px solid #e5e5e5; padding:0; margin:0; float:none;}
+.userOrderDetail ul li:last-child{ border-bottom:1px solid #e5e5e5;}
+.userOrderDetail ul li a{ padding:0.5em 0; height:auto; overflow:hidden;}
+.userOrderDetail ul li a .pic{ width:7em; height:7em; float:left; margin-right:0.5em; overflow:hidden;}
+.userOrderDetail ul li a .pic img{ width:auto; height:100%; margin-left:-37%;}
+.userOrderDetail ul li dl dd.dd-price{ margin-top:.6em; font-size:1em;}
+.userOrderDetail ul li dl dd.dd-price i{ font-style:normal; color:#f03791; font-weight:700;}
+.userOrderDetail ul li dl dd.dd-price em{ font-style:normal; color:#aaa; margin:0 0.5em;}
+.ect-padding-lr.mlr{ padding:0 0.6em; background:#fff; border:0;}
+.ect-padding-lr.mlr .btn-info,.addressListBox .btn-info{ background:#f03791; border-radius:2em;}
+.ect-padding-lr.mlr .btn-info:hover{ background:#f03791;}
+
+.addressListBox{ margin:0 .6em; border-radius:.33em;}
+.addressListBox .flow-consignee{ margin:0;}
+
+.FundsDetail{}
+.FundsDetail ul li p.title{ font-size:1.17em;}
+.FundsDetail ul li p.title .pull-left{ font-size:1em;}
+.FundsDetail ul li p.content{}
+.FundsDetail ul li p.content .pull-right{ float:none !important;}
+
+.userContent{}
+.user-tab .tab-content .userContent ul li{ width:100%; height:auto; overflow:hidden; margin:0; padding:.5em 0; border:0; border-bottom:1px solid #e5e5e5;}
+.user-tab .tab-content .userContent ul li dl{ padding:0;}
+.user-tab .tab-content .userContent ul li dl dt{ margin:0;}
+.user-tab .tab-content .userContent ul li dl dt h4{ padding:0;}
+.user-tab .tab-content .userContent ul li dl dt h4 a{ display:block; height:2.4em; overflow:hidden;}
+.user-tab .tab-content .userContent a.del{ bottom:.7em;}
+/* 新会员中心样式 E */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

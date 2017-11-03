@@ -1,0 +1,71 @@
+<div class="fn-clear user_slsct">
+<div class="mc">
+<div style="background:url(/seller_themes/store_tpl_12/custom_images/biaoti_bg.gif) no-repeat center center;">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_12/custom_images/biaoti_more_5.jpg" /></a>
+</div>
+<div class="user-spgz">
+<div class="items">
+<div class="item">
+<a href="#" class="pic3" target="_blank">
+<img src="/seller_themes/store_tpl_12/custom_images/baokuan_1.jpg"  width="318" height="318"/>
+<span style="background:url(/seller_themes/store_tpl_12/custom_images/tishi_bg.png) no-repeat 0 -57px;"></span>
+</a>
+<div class="tanchu">
+<span class="biaoti">顺铃 欧式吊灯具仿云石全铜吊灯客厅铜灯餐厅灯卧室灯书房灯复古简约大气艺术别墅灯SL3101 3头订做</span>
+<span class="other">
+<span class="gz" style="background:url(/seller_themes/store_tpl_12/custom_images/gz.png) no-repeat scroll left top transparent;"></span>
+<a href="#" class="gwc" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gwc.png) no-repeat scroll left top transparent;"></a>
+<a href="#" class="gm" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gm.png) no-repeat scroll left top transparent;"></a>
+</span>
+</div>
+<a href="#" class="price" target="_blank">RMB:<span class="jdNum">1120.00</span></a>
+</div>
+<div class="item">
+<a href="#" class="pic3" target="_blank">
+<img src="/seller_themes/store_tpl_12/custom_images/baokuan_2.jpg"  width="318" height="318"/>
+<span style="background:url(/seller_themes/store_tpl_12/custom_images/tishi_bg.png) no-repeat 0 -57px;"></span>
+</a>
+<div class="tanchu">
+<span class="biaoti">顺铃 欧式吊灯具仿云石全铜吊灯客厅铜灯餐厅灯卧室灯书房灯复古简约大气艺术别墅灯SL3101 3头订做</span>
+<span class="other">
+<span class="gz" style="background:url(/seller_themes/store_tpl_12/custom_images/gz.png) no-repeat scroll left top transparent;"></span>
+<a href="#" class="gwc" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gwc.png) no-repeat scroll left top transparent;"></a>
+<a href="#" class="gm" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gm.png) no-repeat scroll left top transparent;"></a>
+</span>
+</div>
+<a href="#" class="price" target="_blank">RMB:<span class="jdNum">1120.00</span></a>
+</div>
+<div class="item">
+<a href="#" class="pic3" target="_blank">
+<img src="/seller_themes/store_tpl_12/custom_images/baokuan_3.jpg"  width="318" height="318"/>
+<span style="background:url(/seller_themes/store_tpl_12/custom_images/tishi_bg.png) no-repeat 0 -57px;"></span>
+</a>
+<div class="tanchu">
+<span class="biaoti">顺铃 欧式吊灯具仿云石全铜吊灯客厅铜灯餐厅灯卧室灯书房灯复古简约大气艺术别墅灯SL3101 3头订做</span>
+<span class="other">
+<span class="gz" style="background:url(/seller_themes/store_tpl_12/custom_images/gz.png) no-repeat scroll left top transparent;"></span>
+<a href="#" class="gwc" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gwc.png) no-repeat scroll left top transparent;"></a>
+<a href="#" class="gm" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gm.png) no-repeat scroll left top transparent;"></a>
+</span>
+</div>
+<a href="#" class="price" target="_blank">RMB:<span class="jdNum">1120.00</span></a>
+</div>
+<div class="item">
+<a href="#" class="pic3" target="_blank">
+<img src="/seller_themes/store_tpl_12/custom_images/baokuan_4.jpg"  width="318" height="318"/>
+<span style="background:url(/seller_themes/store_tpl_12/custom_images/tishi_bg.png) no-repeat 0 -57px;"></span>
+</a>
+<div class="tanchu">
+<span class="biaoti">顺铃 欧式吊灯具仿云石全铜吊灯客厅铜灯餐厅灯卧室灯书房灯复古简约大气艺术别墅灯SL3101 3头订做</span>
+<span class="other">
+<span class="gz" style="background:url(/seller_themes/store_tpl_12/custom_images/gz.png) no-repeat scroll left top transparent;"></span>
+<a href="#" class="gwc" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gwc.png) no-repeat scroll left top transparent;"></a>
+<a href="#" class="gm" target="_blank" style="background:url(/seller_themes/store_tpl_12/custom_images/gm.png) no-repeat scroll left top transparent;"></a>
+</span>
+</div>
+<a href="#" class="price" target="_blank">RMB:<span class="jdNum">1120.00</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,54 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript" src="__PUBLIC__/js/region.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/shopping_flow.js"></script>
+<script type="text/javascript">
+  region.isAdmin = false;
+  {foreach from=$lang.flow_js item=item key=key}
+  var {$key} = "{$item}";
+  {/foreach}
+
+  {literal}
+  onload = function() {
+	if (!document.all)
+	{
+	  document.forms['theForm'].reset();
+	}
+  }
+  {/literal}
+</script>
+<div class="con">
+	<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$title}</span>
+    </header>
+	
+    <div class="flow-consignee ect-bg-colorf">
+        <!-- 如果有收货地址，循环显示用户的收获地址 -->
+        <!-- {foreach from=$consignee_list item=consignee key=sn} -->
+        <form action="{:url('flow/consignee')}" method="post" name="theForm" id="theForm" onSubmit="return checkConsignee(this)">
+            <!-- #BeginLibraryItem "/Library/consignee.lbi" --><!-- #EndLibraryItem -->
+        </form>
+        <!-- {/foreach} -->
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script>
+$(function(){
+	var a=$("#selDistricts_0");
+	if( a.css("display")=="none" ){
+		a.parents("li").hide();
+	}else{
+		a.parents("li").show();
+	}
+	$(".Address li select").change(function(){
+		if( a.css("display")=="none" ){
+			a.parents("li").hide();
+			a.parents("li").prev().css({borderBottom:0})
+		}else{
+			a.parents("li").show();
+			a.parents("li").prev().css({borderBottom:"1px solid #e3e3e3"})
+		}
+	});
+});
+</script>

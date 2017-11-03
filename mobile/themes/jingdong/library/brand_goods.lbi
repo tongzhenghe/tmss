@@ -1,0 +1,84 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--循环分类下商品-->
+<div class="item_show_box2 box1 region" style="overflow:hidden">
+	<div class="ProListTit">{$goods_brand.name|escape:html}</div>
+    <div id="picScrol_{$goods_cat.id}" class="picScroll picScrol2">
+    	<div class="hd">
+            <ul></ul>
+        </div>
+        <!--{if $brand_goods}-->
+        <div class="bd IndexProList">
+        	<!--{foreach from=$brand_goods item=newgoods name=newgoods}-->
+        	<!--{if $smarty.foreach.newgoods.index % 3 eq 0}-->
+            <ul>
+            	<!--{/if}-->
+            	<!--{if $smarty.foreach.newgoods.index % 3 eq 0}-->
+            	<li>
+                	<div class="ProList ProListTop">
+                    	<dl>
+                        	<dt class="f_r"><a href="{$newgoods.url}"><img src="{$site_url}{$newgoods.thumb}"></a></dt>
+                            <dd class="IndexProName"><a href="{$newgoods.url}">{$newgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$newgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$newgoods.shop_price}</dd>
+                            <!--{/if}-->
+                        </dl>
+                    </div>
+					<!--{/if}-->
+					<!--{if $smarty.foreach.newgoods.index % 3 eq 1}-->
+             		<div class="ProList">
+                    	<dl>
+                        	<dt class="f_l"><a href="{$newgoods.url}"><img src="{$site_url}{$newgoods.thumb}"></a></dt>
+                            <dd class="IndexProName"><a href="{$newgoods.url}">{$newgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$newgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$newgoods.shop_price}</dd>
+                            <!--{/if}-->
+                        </dl>
+                    </div>
+                    <!--{/if}-->
+					<!--{if $smarty.foreach.newgoods.index % 3 eq 1}-->
+                </li>
+                <!--{/if}-->
+                 <!--{if $smarty.foreach.newgoods.index % 3 eq 2}-->
+                <li>
+                	<div class="ProList ProListRight">
+                    	<dl>
+                            <dd class="IndexProName"><a href="{$newgoods.url}">{$newgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$newgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$newgoods.shop_price}</dd>
+                            <!--{/if}-->
+                            <dt><a href="{$newgoods.url}"><img src="{$site_url}{$newgoods.thumb}"></a></dt>
+                        </dl>
+                    </div>
+                </li>
+                <!--{/if}-->
+            <!--{if $smarty.foreach.newgoods.index % 3 eq 2}-->
+            </ul>
+            <!--{/if}-->
+            <!--{/foreach}-->
+        </div>
+        <!--{else}-->
+        <div class="bd IndexProList">
+        <span>这个分类下还没有商品~</span>
+        </div>
+        <!--{/if}-->
+    </div>
+
+</div>
+ 
+<!--循环分类下商品end-->
+
+<script type="text/javascript">
+TouchSlide({
+    slideCell:"#picScrol_{$goods_cat.id}",
+    titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+    autoPage:true, //自动分页
+    pnLoop:"false", // 前后按钮不循环
+    //switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+});
+</script>

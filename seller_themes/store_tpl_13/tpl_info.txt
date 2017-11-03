@@ -1,0 +1,10 @@
+﻿------tpl_info------------
+tpl name：商家店铺模板NO.13
+tpl url：../seller_themes/store_tpl_13/screenshot.png
+description：中国风茶具店铺模板1
+version：v1.0
+author：模板堂
+author url：http://www.ecmoban.com/
+tpl_path：st_one
+background:#760d12; 导航栏背景颜色
+------tpl_info------------

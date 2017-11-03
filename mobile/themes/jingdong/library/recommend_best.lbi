@@ -1,0 +1,66 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $best_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+<div class="item_show_box2 box1 region" style="overflow:hidden">
+	<div class="ProListTit">{$lang.best_goods}</div>
+    <div id="picScrol3" class="picScroll">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd IndexProList">
+        	<!--{foreach from=$best_goods item=bestgoods name=bestgoods}-->
+        	<!--{if $smarty.foreach.bestgoods.index % 3 eq 0}-->
+        	<ul>
+            <!--{/if}-->
+            	<!--{if $smarty.foreach.bestgoods.index % 3 eq 0}-->
+            	<li>
+                	<div class="ProList ProListTop">
+                    	<dl>
+                        	<dt class="f_r"><a href="{$bestgoods.url}"><img src="{$site_url}{$bestgoods.thumb}"></a></dt>
+                            <dd class="IndexProName"><a href="{$bestgoods.url}">{$bestgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$bestgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$bestgoods.shop_price}</dd>
+                            <!--{/if}-->
+                        </dl>
+                    </div>
+             <!--{/if}-->
+             <!--{if $smarty.foreach.bestgoods.index % 3 eq 1}-->
+                    <div class="ProList">
+                    	<dl>
+                        	<dt class="f_l"><a href="{$bestgoods.url}"><img src="{$site_url}{$bestgoods.thumb}"></a></dt>
+                            <dd class="IndexProName"><a href="{$bestgoods.url}">{$bestgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$bestgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$bestgoods.shop_price}</dd>
+                            <!--{/if}-->
+                        </dl>
+                    </div>
+                </li>
+                 <!--{/if}-->
+                 <!--{if $smarty.foreach.bestgoods.index % 3 eq 2}-->
+                <li>
+                	<div class="ProList ProListRight">
+                    	<dl>
+                            <dd class="IndexProName"><a href="{$bestgoods.url}">{$bestgoods.short_name}</a></dd>
+                            <!-- {if $goods.promote_price neq ""} --> 
+                            <dd class="IndexProPrice">{$bestgoods.promote_price}</dd>
+                            <!-- {else}-->
+                            <dd class="IndexProPrice">{$bestgoods.shop_price}</dd>
+                            <!--{/if}-->
+                            <dt><a href="{$bestgoods.url}"><img src="{$site_url}{$bestgoods.thumb}"></a></dt>
+                        </dl>
+                    </div>
+                </li>
+                <!--{/if}-->
+            <!--{if $smarty.foreach.bestgoods.index % 3 eq 2}-->    
+            </ul>
+            <!--{/if}-->
+           <!--{/foreach}-->
+        </div> 
+    </div>
+</div>
+<!-- {/if} -->
+<!-- {/if} -->

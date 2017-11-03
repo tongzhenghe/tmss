@@ -1,0 +1,16 @@
+﻿<style>.store_dh{ background:url(/seller_themes/store_tpl_12/custom_images/header_bg.gif) repeat-x;}
+.user_dz{margin-bottom:0; width:990px; height:120px;}
+.user_dz .dz {height: 120px;position: relative;overflow: hidden;}
+.user_dz .dz .seller_logo{ background:url(/seller_themes/store_tpl_12/custom_images/logo.jpg) no-repeat; width:990px; height:120px;} 
+.user_dz .dz .ycgn{position: absolute;right: 0px;bottom: 0px;width:180px; height:120px; }
+.user_dz .dz .ycgn a{ display:block;width:180px; height:120px;}</style>
+<div class="user_dz">
+<div class="dz">
+<div class="seller_logo">
+<a href="#" target="_blank" style="height:120px;width:600px;display:block; float:left;"></a>
+</div>
+<div class="ycgn">
+<a href="#"></a>
+</div>
+</div>
+</div>

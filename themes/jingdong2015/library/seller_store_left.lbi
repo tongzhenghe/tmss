@@ -1,0 +1,80 @@
+<script type="text/javascript">
+$(document).ready(function() {
+		$(".flei i").toggle(function(){
+			$(this).parent().next("dl").hide();
+			$(this).html('+');
+		},function(){
+			$(this).parent().next("dl").show();
+			$(this).html('-');
+		});
+	});
+</script>
+<div class="mod">
+    <div class="search_price">
+        <div class="mChazhao">
+            <div class="mChazhao_title">店内搜索</div>
+            <form name="" action="seller_goods.php" method="get">
+            <div class="search_nr">
+                <p class="se_gjz">
+                    <label>关键字:</label>
+                    <span><input type="text" name="keyword"/></span>
+                    
+                </p>
+                <p class="se_price_qj">
+                    <label>价&nbsp;&nbsp;&nbsp;&nbsp;格:</label>
+                    <span>
+                    <input type="text" placeholder="￥" name="price_min"/> 到
+                    <input type="text" placeholder="￥" name="price_max"/></span>
+                </p>
+                <p class="se_btn">
+                    <label></label>
+                    <input type="hidden" value="{$store.id}" name="sid" />
+                    <input type="hidden" value="{$category}" name="cid"/>
+                    <input type="submit" value="搜索" style="width:126px; margin-left:42px;" />
+                </p>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="mod">
+    {foreach from=$store_cate item=category}
+    <div class="mChazhao">
+        <div class="mChazhao_title flei">{if $category.is_text}<i>-</i><a href="{$category.url}">{$category.name}</a>{else}<a href="{$category.url}"><img src="{$category.cat_img}" alt="{$category.name}"/></a>{/if}</div>
+        <dl>
+        {foreach from=$category.child_cat item=child}
+        {if $child.is_text}
+            <dt style="background:url('themes/<? echo $GLOBALS['_CFG']['template'] ?>/store_css/store_images/xla.png') no-repeat scroll 18px -24px rgba(0, 0, 0, 0); padding:5px 10px 5px 45px;"><a href="{$child.url}">{$child.name}</a></dt>
+        {else}
+            <dt style="padding:5px 10px 5px 28px;"><a href="{$child.url}"><img src="{$child.cat_img}" alt="{$child.name}"/></a></dt>
+        {/if}
+        {/foreach}
+        </dl>
+    </div>
+    {/foreach}
+</div>
+<div class="mod store_rank">
+	<div class="mChazhao_title">热销排行榜</div>
+	<ul class="tabcon">
+     {foreach from=$top_goods item=goods}
+			<li class="fore">
+                <div class="p-img"><a href="{$goods.url}" target="_blank"><img src='{$goods.goods_thumb}' width="50" height="50"/></a></div>
+                <div class="p-detail">
+                	<p class="p-name"><a href="{$goods.url}" target="_blank">{$goods.goods_name}</a></p>
+                    <p class="price">{$goods.price}</p>
+                    <p class="sale">已出售<span class="sale-count">{$goods.goods_number}</span>件</p>
+                </div>
+			</li>
+      {/foreach} 
+		</ul>
+        <div class="control-group"><a href="seller_goods.php?sid={$store.id}" target="_blank">查看更多产品</a></div>
+</div>
+<script>
+	$(".store_rank .p-img").mouseover(function(){
+		$(this).prev().show();
+	});
+	$(".store_rank .p-img").mouseout(function(){
+		$(this).prev().hide();
+	});
+
+</script>

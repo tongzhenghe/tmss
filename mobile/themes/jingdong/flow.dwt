@@ -1,0 +1,38 @@
+﻿<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!-- {if $step eq "cart"} -->
+<!-- #BeginLibraryItem "/flow_cart.dwt" --><!-- #EndLibraryItem -->
+<!-- {/if} -->
+
+<!-- {if $step eq "label_favourable"} 购物车中的优惠活动 -->
+<!-- #BeginLibraryItem "/flow_label_favourable.dwt" --><!-- #EndLibraryItem -->
+<!-- {/if} --> 
+
+<!-- {if $step eq "consignee"} --> 
+<!-- #BeginLibraryItem "/flow_consignee.dwt" --><!-- #EndLibraryItem -->
+<!-- {/if} --> 
+
+<!-- {if $step eq "checkout"} -->
+<!-- #BeginLibraryItem "/flow_checkout.dwt" --><!-- #EndLibraryItem -->
+<!-- {/if} --> 
+
+<!-- {if $step eq "done"} --> 
+<!-- #BeginLibraryItem "/flow_done.dwt" --><!-- #EndLibraryItem -->
+<!-- {/if} --> 
+
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript" src="__PUBLIC__/js/shopping_flow.js"></script>
+</body>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+var compare_no_goods = "{$lang.compare_no_goods}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+</html>

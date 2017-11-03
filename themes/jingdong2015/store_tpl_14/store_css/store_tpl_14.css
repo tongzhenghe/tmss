@@ -1,0 +1,199 @@
+/*导航栏*/
+.nav{ height:30px; background:none;}
+.all_cats_tcc{ top:30px;}
+.layout-right a{ line-height:30px;}
+.ban_nav a,.fullSlide .hd ul li{ background: #000;}
+.ban_nav .on, .fullSlide .hd ul .on { background: #F71919;}
+a:hover{ text-decoration:none;}
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{	background: none;}
+.user_temp_one{ background:#9f3644; }
+.jTwoLevel a{color:#fff; font-size:14px;}
+.all_cats_tcc li .square_box,.all_cats_tcc li:hover .square_box{background:#fff;}
+.jTwoLevel:hover{background-color: #7d0f14;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {
+	background-color:#7d0f14;
+	color: #fff;
+	text-decoration: none;
+}
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888}
+.all_cats_tcc li .s_b a:hover{background: #7d0f14; color:#fff;}
+
+/*内容*/
+.zhuanqu_adv_one{ height:472px; overflow:hidden; width:990px; margin:0 auto;}
+.zhuanqu_adv_one a{ display:block;height:472px;}
+
+.user_otaci_tejia{ width:990px; height:auto; overflow:hidden; padding-top:10px; }
+.user_otaci_tejia .otaci_left{ float:left;}
+.user_otaci_tejia .otaci_right{ float:right; border-bottom:1px solid #ccc7c1;}
+.user_otaci_tejia .otaci_right ul{ overflow:hidden;}
+.user_otaci_tejia .otaci_right li{ float:left; margin-bottom:5px; margin-right:7px;}
+.user_otaci_tejia .otaci_details{ overflow:hidden; padding-top:20px;}
+.user_otaci_tejia .otaci_details .otaci_name{ float:left;}
+.user_otaci_tejia .otaci_details .otaci_name a{ font-size:16px; color:#000;}
+.user_otaci_tejia .otaci_details .price{ color:#a22e41; font-size:16px; font-weight:700; float:right;}
+.user_otaci_tejia .otaci_details .price em{ font-style:normal; font-size:20px;font-weight:500; }
+
+.jGoodsRecommend .mc {
+	background: #fcf8f8;
+	overflow: hidden;
+}
+.jGoodsRecommend .mc ul {
+	width: 100%;
+}
+.jGoodsRecommend li {
+	float: left;
+	width: 240px;
+	padding: 10px 0;
+	margin: 0 3px;
+	overflow: hidden;
+	display: inline;
+	background: #fff url(../images/xiexian.gif) right center no-repeat;
+}
+.jGoodsRecommend .jItem {
+	height: auto;
+}
+.jGoodsRecommend .jPic {
+	text-align: center;
+	_height: 100%;
+}
+.jGoodsRecommend .jPic a {
+	display: block;
+	height: 160px;
+}
+.jGoodsRecommend .jGoodsInfo {
+	width: 190px;
+	margin: 0 auto;
+	padding: 6px 0 0;
+	text-align: center;
+}
+.jGoodsRecommend .jDesc {
+	height: 32px;
+	line-height: 16px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.jGoodsRecommend .jDesc a {
+	color: #633a03;
+	text-decoration: none;
+	display: block;
+}
+.jGoodsRecommend .jPrice {
+	overflow: hidden;
+	color: #000000;
+	padding-top: 5px;
+	height: 20px;
+}
+.jGoodsRecommend .jdPrice .jdNum {
+	font-size: 22px;
+	background: url(../images/rmb.png) left center no-repeat;
+	padding-left: 45px;
+}
+
+.user_damtao{ width:990px; height:auto; overflow:hidden;}
+.user_damtao .damtao_more{ width:990px; height:90px; display:block;}
+.user_damtao ul{ overflow:hidden; border-bottom:1px solid #ccc7c1; margin-top:5px;}
+.user_damtao li{ float:left;}
+.info{ overflow:hidden; padding-bottom:2px;}
+.info .name{ float:left; padding-left:20px;}
+.info .name a{ font-size:16px; color:#000;}
+.info .price{ color: #a22e41; font-size: 16px;font-weight: 700;float: right;}
+.info .price em { font-style: normal;font-size: 20px;font-weight: 500;}
+
+.chapan{ overflow:hidden;margin-bottom: 10px;}
+.bordertop{ border-top:1px solid #ccc7c1;}
+.borderbottom{ border-bottom:1px solid #ccc7c1;}
+.borderleft{border-left:1px solid #ccc7c1;}
+.chapan li{ float:left;}
+.chapan .info .name{ padding:0;}
+.chapan .info .price{ padding-right:20px;}
+.chapan_left{ float:left;}
+.chapan_right{ float:right; margin-top: 15px; width:500px; border-bottom:1px solid #ccc7c1; margin-left:15px;}
+.chapan_right li{ float:left; margin-right:10px;}
+.chapan_right .info{ margin-top:10px;}
+
+.lingpei{ overflow:hidden; padding-top: 10px;}
+.lingpei .lingpei_left{ float:left;}
+.lingpei li{ float:left; padding-right:10px; padding-bottom:3px;}
+.lingpei .lingpei_right{ float:right;}
+.lingpei .info .name{ padding:0;}
+.lingpei .info .price{ padding-right:20px;}
+.lingpei_adv{ float:left; margin-right:15px;}
+.lingpei_cp{ width:412px; height:auto; float:left; margin-right: 20px;}
+.lingpei_cp .info{ margin-top:10px; margin-bottom:5px;}
+.lingpei_cp .info .price{ padding-right:100px;}
+
+.lingpei2.lingpei_right{ margin-top:10px; width: 314px;}
+.lingpei2.lingpei_right .yccp{ padding:0 0 0 3px; position:relative; width:310px; float:left;}
+.lingpei2.lingpei_right .info{float:left; overflow:hidden;}
+.lingpei2.lingpei_right .info .name{ width:20px; text-align:center;}
+.lingpei2.lingpei_right .info a{ font-size:12px; color:#333; line-height:14px; display:block;}
+.lingpei2.lingpei_right .info a span{ display:block; width:16px; height:5px;}
+.lingpei2.lingpei_right .lingpei_right_cp{ float:right;}
+.lingpei2.lingpei_right .smh_top{ background:url(../images/smh_top.jpg) 2px 0 no-repeat; margin-bottom:2px;}
+.lingpei2.lingpei_right .smh_bottom{ background:url(../images/smh_bottom.jpg) 2px 0 no-repeat;}
+.lingpei2.lingpei_right .info .price{ padding:0; float:none; position:absolute; bottom:0;}
+
+/*右侧悬浮*/
+.sidePanel .user_xf {
+	width: 800px;
+	height: auto;
+	font-size: 13px;
+	font-family: "microsoft yahei";
+	color: white;
+	text-align: left;
+	z-index: 5;
+	margin: 0px;
+	padding: 0px;
+	display:none;
+}
+.sidePanel .user_xf ul li {
+	display: block;
+	width: 80px;
+	height: 30px;
+	border-bottom: 1px solid #2b2b2b;
+	overflow: hidden;
+	text-align: center;
+}
+.user_xf ul li a {
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height:30px;
+	background-color: black;
+	text-decoration: none;
+	color: #D6D6D6;
+}
+.user_xf ul li a:hover {
+	background-color: #993333;
+}
+
+/*橱窗柜和产品列表样式*/
+.temp .Jproduct .jExtra .star{
+	display:none;
+}
+.temp .Jproduct .jExtra a{
+	color:#888;
+}
+.temp .Jproduct .jExtra a em {
+	color: #666;
+	font-weight: bold;
+}
+#plist.plist-n7a .extra{
+	width:100%;
+}

@@ -1,0 +1,67 @@
+<div class="fn-clear">
+<div class="user-3big">
+<div class="module_title">
+<div class="module_title_words" style="background: url(/seller_themes/store_tpl_13/custom_images/biaoti_bg.png);">
+<a href="#" target="_blank" class="user-color">新品上市</a>
+</div>
+<div class="user-box user-boxhover">
+<ul class=" list-paddingleft-2">
+<li>
+<div class="user-li">
+<div class="user-image">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/product_new_1.jpg"/></a>
+</div>	
+<div class="user-xinxi">
+<p class="user-des user-boxborder">
+功夫茶具套装 宜兴紫砂 黑檀实木茶盘整套四合一 陶瓷汝窑
+</p>
+<div class="user-share">
+<a href="#" target="_blank" class="user-cart user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -60px 0px no-repeat;"></a><a href="#" target="_blank" class="user-buy user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) 0px 0px no-repeat;"></a><span class="user-gz user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -130px 0px no-repeat;"></span>
+</div>
+</div>
+</div>
+<div class="user-info user-color">
+<span class="user-rmb">￥<strong><span class="jdNum">1688.00</span></strong></span><span class="user-ping">参考价:<strong><span class="price">1688.00</span></strong></span>
+</div>
+</li>
+<li>
+<div class="user-li">
+<div class="user-image">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/product_new_1.jpg"/></a>
+</div>	
+<div class="user-xinxi">
+<p class="user-des user-boxborder">
+功夫茶具套装 宜兴紫砂 黑檀实木茶盘整套四合一 陶瓷汝窑
+</p>
+<div class="user-share">
+<a href="#" target="_blank" class="user-cart user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -60px 0px no-repeat;"></a><a href="#" target="_blank" class="user-buy user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) 0px 0px no-repeat;"></a><span class="user-gz user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -130px 0px no-repeat;"></span>
+</div>
+</div>
+</div>
+<div class="user-info user-color">
+<span class="user-rmb">￥<strong><span class="jdNum">1688.00</span></strong></span><span class="user-ping">参考价:<strong><span class="price">1688.00</span></strong></span>
+</div>
+</li>
+<li>
+<div class="user-li">
+<div class="user-image">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/product_new_1.jpg"/></a>
+</div>	
+<div class="user-xinxi">
+<p class="user-des user-boxborder">
+功夫茶具套装 宜兴紫砂 黑檀实木茶盘整套四合一 陶瓷汝窑
+</p>
+<div class="user-share">
+<a href="#" target="_blank" class="user-cart user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -60px 0px no-repeat;"></a><a href="#" target="_blank" class="user-buy user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) 0px 0px no-repeat;"></a><span class="user-gz user-sharea" style="background:#f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -130px 0px no-repeat;"></span>
+</div>
+</div>
+</div>
+<div class="user-info user-color">
+<span class="user-rmb">￥<strong><span class="jdNum">1688.00</span></strong></span><span class="user-ping">参考价:<strong><span class="price">1688.00</span></strong></span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

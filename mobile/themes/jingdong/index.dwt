@@ -1,0 +1,86 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!--播放器广告s-->
+<div id="focus" class="focus region">
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+  <div class="bd">
+      {insert name='ads' id=1 num=3}
+  </div>
+</div>
+<!--播放器广告e--> 
+<!--Logo s-->
+<div class="Logo"><img src="__TPL__/images/logo.png" /></div>
+<!--Logo e--> 
+
+<!--content s-->
+<div id=content class="wrap"> 
+  <!--搜索区域-->
+  <header class="region">
+    <div class="content">
+      <div id="fake-search">
+        <div class="fakeInput">
+          <form action="{:url('category/index')}" method="post" id="searchForm" name="searchForm">
+            <div class="SearchBox">
+              <div class="SearchInput ml10">
+                <input class="text" type="search" name="keywords" id="keywordBox" />
+              </div>
+              <button class="SearchBut" type="submit" value="{$lang.search}" onclick="return check('keywordBox')"><span>search</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--快速连接s-->
+  <div class="region row row_category">
+    <ul class="flex flex-f-row">
+      <!--{foreach from=$navigator item=nav name=nav_middle_list}--> 
+      <!--{if $smarty.foreach.nav_middle_list.iteration <6}-->
+      <li class="flex_in route{$smarty.foreach.nav_middle_list.iteration} route"> <a href="{$nav.url}"{if $nav.opennew eq 1} target="_blank"{/if} title="{$nav.name}" title="{$nav.name}" class="menu{$smarty.foreach.nav_middle_list.iteration} on"> <span class="menu{$smarty.foreach.nav_middle_list.iteration}-icon"><span></span></span><span class="cate-name">{$nav.name}</span></a> </li>
+      <!--{/if}-->
+      <!-- {/foreach} -->
+    </ul>
+  </div>
+  <!--快速连接e--> 
+  
+  <!--中部导航s-->
+  <div class="keyword"> 
+    <!-- {foreach name=cat_rec from=$cat_rec item=cat} --> 
+    <a href="{$cat.url}" class="btn-text on">{$cat.cat_name}</a> 
+    <!-- {/foreach} --> 
+  </div>
+  <!--中部导航e-->
+  <div class="region" style="overflow:hidden">
+    <div class="ad2-big-img">
+    {insert name='ads' id=2 num=1}
+    </div>
+  </div>   
+ </div>
+<!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
+<!-- #EndLibraryItem -->
+ 
+<!-- #BeginLibraryItem "/library/recommend_new.lbi" -->
+<!-- #EndLibraryItem -->
+
+<!-- #BeginLibraryItem "/library/recommend_hot.lbi" -->
+<!-- #EndLibraryItem -->
+<!--content e--> 
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<!--搜索弹出框-->
+<div id="main-search" class="main-search">
+  <div class="hd"> <span class="ico_08 close"> 关闭 </span> </div>
+  <div class="bd">
+    <div class="search_box">
+      <form action="{:url('category/index')}" method="post" id="searchForm" name="searchForm">
+        <div class="content">
+          <input class="text" type="search" name="keywords" id="keywordBox" />
+          <button class="ico_07" type="submit" value="{$lang.search}" onclick="return check('keywordBox')"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="w">
+  <div id="footer-2013"> 
+    <!-- {if $navigator_list.bottom} -->
+    <div class="links"> 
+      <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} --> 
+      <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a> 
+      <!-- {if !$smarty.foreach.nav_bottom_list.last} --> | <!-- {/if} --> 
+      <!-- {/foreach} --> 
+    </div>
+    <!-- {/if} -->
+    
+    <div class="copyright"> 
+     {$copyright}<br />
+     <!-- {if $shop_address} --> 
+     {$shop_address} <br /> 
+     <!-- {/if} --> 
+      <!-- {if $shop_postcode} --> 
+     {$shop_postcode}<br /> 
+          <!-- {/if} --> 
+      <!-- 客服电话{if $service_phone} --> 
+      Tel: {$service_phone}<br /> 
+      <!-- 结束客服电话{/if} --> 
+      <!-- 邮件{if $service_email} --> 
+      E-mail: {$service_email}<br />
+      <!-- 结束邮件{/if} --> 
+      <!-- QQ 号码 {foreach from=$qq item=im} --> 
+      <!-- {if $im} --> 
+      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:{$im}:4" height="16" border="0" alt="QQ" /> {$im}</a> 
+      <!-- {/if} --> 
+      <!-- {/foreach} 结束QQ号码 --> 
+      <!-- 淘宝旺旺 {foreach from=$ww item=im} --> 
+      <!-- {if $im} --> 
+      <a href="http://amos1.taobao.com/msg.ww?v=2&uid={$im|escape:u8_url}&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid={$im|escape:u8_url}&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />{$im}</a> 
+      <!-- {/if} --> 
+      <!--{/foreach} 结束淘宝旺旺 --> 
+      <!-- Yahoo Messenger {foreach from=$ym item=im} --> 
+      <!-- {if $im} --> 
+      <a href="http://edit.yahoo.com/config/send_webmesg?.target={$im}n&.src=pg" target="_blank"><img src="../images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> {$im}</a> 
+      <!-- {/if} --> 
+      <!-- {/foreach} 结束Yahoo Messenger --> 
+      <!-- MSN Messenger {foreach from=$msn item=im} --> 
+      <!-- {if $im} --> 
+      <img src="../images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact={$im}">{$im}</a> 
+      <!-- {/if} --> 
+      <!-- {/foreach} 结束MSN Messenger --> 
+      <!-- Skype {foreach from=$skype item=im} --> 
+      <!-- {if $im} --> 
+      <img src="http://mystatus.skype.com/smallclassic/{$im|escape:url}" alt="Skype" /><a href="skype:{$im|escape:url}?call">{$im}</a> 
+      <!-- {/if} --> 
+      <!-- {/foreach} --><br />
+      
+      <!-- ICP 证书{if $icp_number} --> 
+      {$lang.icp_number}:<a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a> 
+      <!-- 结束ICP 证书{/if} --> 
+      
+    </div>
+
+    
+    <div class="authentication">
+     <a href="javascript:void(0);" target="_blank"><img width="103" height="32" alt="经营性网站备案中心" src="images/108_40_zZOKnl.gif"></a> 
+     <a href="javascript:void(0);" target="_blank"> <img width="103" height="32" alt="可信网站" src="images/rBEHaFCFC5QIAAAAAAASVQX9RAYAACb2wHUV1kAABJt760.gif"></a> 
+     <a href="javascript:void(0);" target="_blank"><img width="103" height="32" alt="朝阳网络警察" src="images/rBEIDE_nzcIIAAAAAAB30mYXo5QAACrhACj22IAAHfq378.png"></a> 
+     <a href="javascript:void(0);" target="_blank"><img width="103" height="32" src="images/112_40_WvArIl.png"></a></div>    
+  </div>
+</div>
+
+
+<div class="w backpanel hide" id="backpanel0708" style="display: none; ">
+	<div class="backpanel-inner">
+        <div class=" bp-item bp-item-survey"><a href="message.php" class="survey" target="_blank">反馈</a><s></s></div>
+        <div class=" bp-item bp-item-backtop" data-top="0"><a href="#none" class="backtop" target="_self">顶部</a><s></s></div>
+    </div>
+</div>
+
+<div id="cart_show" class="m">
+	<div class="cart_show_wrap">
+			<div class="success">
+                <div class="success-b">
+                    <h3>商品已成功加入购物车！</h3>
+                 
+                </div>
+                	<div class="clr"></div>
+            <div id="initCart_next_go"><a class="btn-pay " href="./flow.php" id="GotoShoppingCart">去结算</a><a class="btn-continue " href="javascript:void(0)" onclick="easyDialog.close();">继续购物</a>
+            	<div class="clr"></div>
+            </div></div>
+			</div>
+		</div>
+<script>
+$(function(){
+	$(window).scroll(function(){
+		if ($(window).scrollTop() > 300){
+			$(".backpanel").fadeIn(500);
+		}
+		else
+		{
+			$(".backpanel").fadeOut(500);
+		}
+		
+	});
+	
+	$(".backtop").click(function(){
+		$('body,html').animate({scrollTop:0},500);
+		return false;
+	});
+
+})
+
+</script>

@@ -1,0 +1,79 @@
+<!-- $Id: brand_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+{include file="pageheader.htm"}
+<div class="main-div">
+<form method="post" action="seller_shop_slide.php" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+<table cellspacing="1" cellpadding="3" width="100%">
+  
+  <tr>
+    <td class="label"><a href="javascript:showNotice('warn_brandlogo');" title="{$lang.form_notice}">
+        <img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>广告图片</td>
+    <td><p style="margin:0px 0px 5px;">{if $slide.img_url neq ""}<img src="{$slide.img_url}" width="100" height="60"/>{/if}</p>
+    <input type="file" name="img_url" id="logo" size="45"><span class="notice-span" {if $help_open}style="display:block; margin:5px 0;" {else} style="display:none" {/if} id="warn_brandlogo">
+     (建议图片尺寸1900x500)
+    </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.sort_order}</td>
+    <td><input type="text" name="img_order" maxlength="40" size="15" value="{$slide.img_order}" /></td>
+  </tr>
+  <tr>
+    <td class="label">广告链接</td>
+    <td><input type="text" name="img_link" size="50" value="{$slide.img_link}" />{$lang.require_field}
+    <br/>链接地址格式如:http://ecmoban.com
+    </td>
+  </tr>
+  <tr>
+    <td class="label">是否显示</td>
+    <td><input type="radio" name="is_show" value="1" {if $slide.is_show eq 1}checked="checked"{/if} /> {$lang.yes}
+        <input type="radio" name="is_show" value="0" {if $slide.is_show eq 0}checked="checked"{/if} /> {$lang.no}
+        <br/>(决定是否在导航上显示)
+    </td>
+  </tr>
+  <tr>
+    <td class="label">图片变换方式</td>
+    <td><input type="radio" name="slide_type" value="shade" {if $slide.slide_type eq 'shade'}checked="checked"{/if} /> 渐变
+        <input type="radio" name="slide_type" value="roll" {if $slide.slide_type eq 'roll'}checked="checked"{/if} /> 滚动
+        <br/>(多张图片设置的效果不一样时,将以排在首张的图片效果变化)
+    </td>
+  </tr>
+  <tr>
+    <td class="label">图片说明</td>
+    <td><textarea name="img_desc" style="max-width: 366px; max-height: 85px;min-width: 366px; min-height: 85px;" >{$slide.img_desc}</textarea>
+   </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><br />
+      <input type="submit" class="button" value="{$lang.button_submit}" />
+      <input type="reset" class="button" value="{$lang.button_reset}" />
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$slide.id}" />
+      <input type="hidden" name="old_img" value="{$slide.img_url}">
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['navname'].focus();
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+//    validator.required("img_url",'必须上传图片');
+//    return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

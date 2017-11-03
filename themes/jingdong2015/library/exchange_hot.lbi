@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $hot_goods}-->
+<div id="hotsale">
+  <div class="mt">
+    <h2>热卖推荐</h2>
+  </div>
+  <div class="mc list-h"> 
+    
+    <!--{foreach from=$hot_goods item=goods}-->
+    <dl>
+      <dt><a href="{$goods.url}" target="_blank"><img height="100" width="100" alt="{$goods.name|escape:html}" src="{$goods.thumb}"></a></dt>
+      <dd>
+        <div class="p-name"><a href="{$goods.url}" target="_blank">{$goods.short_style_name}<font color="#ff6600"></font></a><font color="#ff6600"><a target="blank" href="{$goods.url}">{$goods.short_style_name}</a></font></div>
+        <div class="p-price">{$lang.exchange_integral}：<strong>{$goods.exchange_integral}</strong></div>
+        <div class="btns"><a href="{$goods.url}" target="_blank">立即抢购</a></div>
+      </dd>
+    </dl>
+    <!--{/foreach}--> 
+    
+  </div>
+</div>
+<!-- {/if} --> 

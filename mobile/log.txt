@@ -1,0 +1,307 @@
+﻿执行日期：20141105151846
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuPk_6F6TCWFS8i24oE1koHM',
+  'CreateTime' => '1415171919',
+  'MsgType' => 'text',
+  'Content' => '111',
+  'MsgId' => '6078117110523461352',
+)
+执行日期：20141105151846
+f0lIQ0QChnEm7xHBJ8TcLFXGIbG5upD8V0VZmF5mVlK2Dl4iZxiNgDVRstghUUi3d7ASrRu6u4LsI3WfHoDYgXzg5ifa2BHRbV5f7XhxsMA
+执行日期：20141105152358
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuPk_6F6TCWFS8i24oE1koHM',
+  'CreateTime' => '1415172231',
+  'MsgType' => 'text',
+  'Content' => '222',
+  'MsgId' => '6078118450553257813',
+)
+执行日期：20141105152359
+2X5cbGv8T_Po2TbWwG5Vpp0UpJqWSkGsnTfSBGm4gMrWQLs5HH1HecifSlOaRKtjI-gTMkqXNIBU5DFoP9ABmxcJ3fnXaw265DIGbhI0N6M
+执行日期：20141105152652
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuPk_6F6TCWFS8i24oE1koHM',
+  'CreateTime' => '1415172405',
+  'MsgType' => 'text',
+  'Content' => '噢噢噢',
+  'MsgId' => '6078119197877567397',
+)
+执行日期：20141105152652
+skVT1LokEsT1xEeLyw5Ah9KaCVVjUt9f8LuUvwfhzF1Su7l7aeVA9Q-TpqasMBtHD4oA7_G9JGcjFiS6TFwp0FXcY-J7czQJMxr-JSwQBQY
+执行日期：20141105152943
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuPk_6F6TCWFS8i24oE1koHM',
+  'CreateTime' => '1415172576',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'ko#kefu',
+)
+执行日期：20141105153007
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuPk_6F6TCWFS8i24oE1koHM',
+  'CreateTime' => '1415172600',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'news',
+)
+执行日期：20141105164420
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415177052',
+  'MsgType' => 'text',
+  'Content' => '你好',
+  'MsgId' => '6078139156590593210',
+)
+执行日期：20141105165412
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuBWK0cfGSIhEDlWGg8b2X60',
+  'CreateTime' => '1415177638',
+  'MsgType' => 'text',
+  'Content' => '1\'',
+  'MsgId' => '6078141673441428798',
+)
+执行日期：20141105170246
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuKtAtIfSsk3hKL7o_jIHkPc',
+  'CreateTime' => '1415178156',
+  'MsgType' => 'event',
+  'Event' => 'subscribe',
+  'EventKey' => 
+  SimpleXMLElement::__set_state(array(
+  )),
+)
+执行日期：20141105170306
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuKtAtIfSsk3hKL7o_jIHkPc',
+  'CreateTime' => '1415178176',
+  'MsgType' => 'voice',
+  'MediaId' => 'EpZUaulnAqTS9wgbeGW5fJdCcSdR_K_h9leWvLmtxVSDhllbSG-847oTZ8-RcBbp',
+  'Format' => 'amr',
+  'MsgId' => '6078143984133834198',
+  'Recognition' => 
+  SimpleXMLElement::__set_state(array(
+  )),
+)
+执行日期：20141105170756
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178463',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'kefu',
+)
+执行日期：20141105170803
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178476',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599541',
+  'Longitude' => '109.966446',
+  'Precision' => '1470.000000',
+)
+执行日期：20141105170809
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuBWK0cfGSIhEDlWGg8b2X60',
+  'CreateTime' => '1415178481',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'kefu',
+)
+执行日期：20141105170821
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178488',
+  'MsgType' => 'text',
+  'Content' => '你好',
+  'MsgId' => '6078145324163630627',
+)
+执行日期：20141105170853
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuCU3WT2oqUWR6BO6eXtLqJY',
+  'CreateTime' => '1415178526',
+  'MsgType' => 'event',
+  'Event' => 'subscribe',
+  'EventKey' => 
+  SimpleXMLElement::__set_state(array(
+  )),
+)
+执行日期：20141105170906
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuCU3WT2oqUWR6BO6eXtLqJY',
+  'CreateTime' => '1415178539',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'news',
+)
+执行日期：20141105170912
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuCU3WT2oqUWR6BO6eXtLqJY',
+  'CreateTime' => '1415178545',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'kefu',
+)
+执行日期：20141105171203
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuBWK0cfGSIhEDlWGg8b2X60',
+  'CreateTime' => '1415178710',
+  'MsgType' => 'text',
+  'Content' => '  ',
+  'MsgId' => '6078146277646370449',
+)
+执行日期：20141105171406
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178839',
+  'MsgType' => 'event',
+  'Event' => 'VIEW',
+  'EventKey' => 'http://mlg.nm.cn/mobile',
+)
+执行日期：20141105171407
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178836',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599541',
+  'Longitude' => '109.966446',
+  'Precision' => '1470.000000',
+)
+执行日期：20141105171452
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415178879',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599541',
+  'Longitude' => '109.966446',
+  'Precision' => '1470.000000',
+)
+执行日期：20141106103306
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuBWK0cfGSIhEDlWGg8b2X60',
+  'CreateTime' => '1415241178',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'kefu',
+)
+执行日期：20141106103426
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuBWK0cfGSIhEDlWGg8b2X60',
+  'CreateTime' => '1415241255',
+  'MsgType' => 'text',
+  'Content' => '/:--b/:--b',
+  'MsgId' => '6078414906375908877',
+)
+执行日期：20141106111032
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415243417',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599541',
+  'Longitude' => '109.966446',
+  'Precision' => '1470.000000',
+)
+执行日期：20141106111218
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415243527',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599030',
+  'Longitude' => '109.965431',
+  'Precision' => '1080.000000',
+)
+执行日期：20141106121006
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415246992',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599030',
+  'Longitude' => '109.965431',
+  'Precision' => '1080.000000',
+)
+执行日期：20141106130425
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuJXMmqR4TSLKLCMULsD8v0g',
+  'CreateTime' => '1415250257',
+  'MsgType' => 'event',
+  'Event' => 'LOCATION',
+  'Latitude' => '40.599045',
+  'Longitude' => '109.965309',
+  'Precision' => '110.000000',
+)
+执行日期：20141106135948
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuJXMmqR4TSLKLCMULsD8v0g',
+  'CreateTime' => '1415253574',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'news',
+)
+执行日期：20141106135958
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415253587',
+  'MsgType' => 'text',
+  'Content' => '快乐',
+  'MsgId' => '6078467871912608149',
+)
+执行日期：20141106140003
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuJXMmqR4TSLKLCMULsD8v0g',
+  'CreateTime' => '1415253592',
+  'MsgType' => 'event',
+  'Event' => 'VIEW',
+  'EventKey' => 'http://mlg.nm.cn/mobile',
+)
+执行日期：20141106140935
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415254168',
+  'MsgType' => 'event',
+  'Event' => 'CLICK',
+  'EventKey' => 'jfcx',
+)
+执行日期：20141106141252
+array (
+  'ToUserName' => 'gh_df8aa388f5de',
+  'FromUserName' => 'ooWKMuO9VPKKVL2EOQyqbfohoo-o',
+  'CreateTime' => '1415254361',
+  'MsgType' => 'event',
+  'Event' => 'VIEW',
+  'EventKey' => 'http://mlg.nm.cn/mobile',
+)

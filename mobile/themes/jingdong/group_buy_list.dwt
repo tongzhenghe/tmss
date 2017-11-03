@@ -1,0 +1,18 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page" style="right: 0px; left: 0px; display: block;">
+  <header id="header">
+    <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+    <h1> {$lang.gb_goods_name}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></div>
+  </header>
+  <div class="GroupBuyList" id="J_ItemList" style="opacity:1;">
+    <div class="product flex_in single_item GoodsListBox"></div>
+    <a href="javascript:;" class="get_more"></a> 
+   </div>
+  <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> </div>
+</div>
+<script type="text/javascript">
+get_asynclist("{:url('groupbuy/asynclist', array('page'=>$this->_var['page'], 'sort'=>$this->_var['sort'], 'order'=>$this->_var['order']))}" , '__TPL__/images/loader.gif');
+</script>
+</body></html>

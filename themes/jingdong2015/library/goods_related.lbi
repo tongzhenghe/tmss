@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $related_goods} -->
+ <div class="onlyPageX">
+            <h3>相关商品</h3>
+            <ul>
+             <!--{foreach from=$related_goods item=releated_goods_data}-->
+              <li><a class="track" href="{$releated_goods_data.url}" target="_blank"><img alt="{$releated_goods_data.goods_name}" style="display: inline; " src="{$releated_goods_data.goods_thumb}" width="130" height="130"></a>
+                <p><a class="track" href="{$releated_goods_data.url}" target="_blank">{$releated_goods_data.short_name}</a></p>
+                        
+                <span>市场价{$releated_goods_data.market_price}<em><!-- {if $releated_goods_data.promote_price neq 0} -->{$lang.promote_price}{$releated_goods_data.formated_promote_price}        <!-- {else} -->
+        {$lang.shop_price}{$releated_goods_data.shop_price}
+        <!-- {/if} --></em></span></li>  
+                 <!--{/foreach}-->
+            </ul>
+            <span class="blank15"></span></div>
+          <span class="blank20"></span>
+
+<!-- {/if} -->

@@ -1,0 +1,22 @@
+<div class="footer">
+	<ul>
+    	<li><a href="{:url('index/index')}">首页</a></li>
+        <li><a href="{:url('user/index')}">个人中心</a></li>
+        <li><a href="{:url('flow/cart')}">购物车</a></li>
+        <li><a href="{:url('groupbuy/index')}">团购</a></li>
+    </ul>
+    <p>{$copyright}</p>
+    <div align="center"><a href="http://www.ectouch.cn" target="_blank"><img src="__TPL__/images/copyright.png" ></a></div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script> 
+<script src="__TPL__/js/TouchSlide.1.1.js"></script> 
+<script src="__TPL__/js/ectouch.js"></script> 
+<script src="__TPL__/js/simple-inheritance.min.js"></script> 
+<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script> 
+<script src="__TPL__/js/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script> 

@@ -1,0 +1,134 @@
+<div class="fn-clert">
+<div class="mc">
+<div class="x-box">
+<ul class=" list-paddingleft-2">
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/product-1.jpg"/></a>
+</div>
+<div class="x-title">
+舒爽暖肤被 全新工艺 七孔纤维被
+</div>
+<div class="x-info">
+<div class="x-pri">
+￥：<span class="jdNum" style=" font-size:20px;">159</span>
+</div>
+<div class="x-gm">
+<a href="#" target="_blank">加入购物车</a>
+</div>
+</div>
+<div class="x-tip">
+<div>
+<a class="gz" href="#"></a><a class="gwc" href="#"></a><a class="gm" href="#"></a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>

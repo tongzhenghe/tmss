@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/tianmao/store_css/street.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="street_tianmao">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> 
+<div id="content">
+	<div class="mian">
+        <div class="street_title">
+            <strong>店铺搜索</strong>
+            <b></b>
+        </div>
+        <div class="street_wrap">
+        {foreach from=$store_list item=store}
+            <div class="street_item">
+            	<a href="seller_store.php?sid={$store.id}" target="_blank">
+                	<img src="{$store.street_spjpg}" width="220" hidden="220" />
+                    <p class="street_logo"><img src="{$store.street_logo}" width="90" height="45" /></p>
+                    <h4 class="str_title">{$store.shop_name}</h4>
+                    <p class="str_desc">{$store.shop_title}</p>
+                    <b class="ui_banner">
+                    	<i></i>
+                        <span>进入</span>
+                    </b>
+                    <p class="box_num"><em></em></p>
+                </a>
+            </div>
+            {/foreach}
+        </div>
+        <div class="street_page">
+        	<div class="str_page">
+            	<div class="str_page_num">
+                	<!-- {if $pager.page_prev} -->
+                	<a class="str_prev" href="{$pager.page_prev}">&lt;</a>
+                    {else}
+                    <b class="str_prev">&lt;</b>
+                    <!-- {/if} -->
+                    <!-- {if $pager.page_count neq 1} --> 
+                    <!--{foreach from=$pager.page_number key=key item=item}--> 
+                    <!-- {if $pager.page eq $key} -->
+                    <b class="str_page_cur">{$key}</b>
+                    <!-- {else} --> 
+                    <a href="{$item}">{$key}</a> 
+                    <!-- {/if} --> 
+                    <!--{/foreach}--> 
+                    <!-- {/if} -->
+                    <!-- {if $pager.page_next} -->
+                    <a href="{$pager.page_next}" class="str_next">&gt;</a>
+                    {else}
+                    <b class="str_prev">&gt;</b>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

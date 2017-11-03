@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $bought_goods} -->
+<div>
+  <div id="buy-buy" class="m m2 related-buy" style="display: block; ">
+    <div class="mt">
+      <h2>购买了该商品的用户还购买了</h2>
+    </div>
+    <div class="mc">
+      <ul>
+        <!--{foreach from=$bought_goods item=bought_goods_data name=bought_goods}-->
+        <li class="fore{$smarty.foreach.bought_goods.iteration}">
+          <div class="p-img"> <a target="_blank" title="{$bought_goods_data.goods_name}" href="{$bought_goods_data.url}"><img height="100" width="100" alt="{$bought_goods_data.goods_name}" src="{$bought_goods_data.goods_thumb}" class="loading-style2"></a> </div>
+          <div class="p-name"> <a target="_blank" title="{$bought_goods_data.goods_name}" href="{$bought_goods_data.url}">{$bought_goods_data.short_name}</a> </div>
+          <div class="p-price"> <strong class="J-p-718196"><!-- {if $bought_goods_data.promote_price neq 0} --> 
+            {$bought_goods_data.formated_promote_price} 
+            <!-- {else} --> 
+            {$bought_goods_data.shop_price} 
+            <!-- {/if} --></strong> </div>
+        </li>
+        <!-- {/foreach} -->
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- {/if} -->

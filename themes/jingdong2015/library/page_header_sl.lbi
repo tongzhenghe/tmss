@@ -1,0 +1,191 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,jd_common.js,easydialog.min.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js'}
+<div id="shortcut-2013" class="PageHeader">
+	<div class="w">
+    	<ul class="fl lh">
+        	<li class="fore1 ld"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏汤姆</a></li>
+        </ul>
+        <ul class="fr lh">
+        	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+            <!--{if $navigator_list.top}-->
+            <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <li class="fore2 ld"><div class="dt"><s></s> <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank"{/if}>{$nav.name}</a></div></li>
+            <!-- {/foreach} -->
+            <!--{/if}-->
+            <li class="fore3 ld menu" id="app-jd">
+            	<div class="dt"><s></s><i></i><span class="outline"></span><span class="blank"></span><a href="#" target="_blank">手机汤姆</a><b></b></div>
+                <div class="dd lh">
+                    <div class="qr-info"></div>
+                    <div class="qr-item qr-jd-app">
+                    	<div class="qr-img"><img id="app-qrcode-img" src="images/538557daNd249a428.png" class="err-product" width="76" height="76" alt="手机汤姆" src="images/blank.gif"></div>
+                    	<div class="qr-ext"><strong>汤姆客户端</strong><a href="#" target="_blank" class="btn-app-apple"></a><a href="#" target="_blank" class="btn-app-android"></a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="fore4 ld menu myJd" id="biz-service">
+            	<div class="dt"><s></s> <span class="outline"></span> <span class="blank"></span> 客户服务 <b></b></div>
+                <div class="dd">
+                	<div><a href="#" target="_blank">帮助中心</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">售后服务</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="#" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+ <div id="o-header-2013" class="PageHeader">
+	<div id="top-banner" class="w" style="height: 70px; margin:0 auto 0px; position: relative; ">
+    	<div class="banner_w">{insert name='ads_pro' cat_name='' type='顶部横幅广告（宽）'}</div>
+        <div class="banner_s">{insert name='ads_pro' cat_name='' type='顶部横幅广告（窄）'}</div>
+        <div style="position:absolute;top:0px;right:0px;width:25px;height:25px;background:#fff;filter:alpha(opacity=0);opacity:0;cursor:pointer" onclick="document.getElementById('top-banner').style.display='none'"></div>
+    </div>
+    <div class="w" id="header-2013">
+    	<div id="logo-2013" class="ld"><a href="./index.php" hidefocus="true" ><b></b><img src="images/logo.gif" width="295" height="52" alt="汤姆"></a></div>
+        <!--logo end-->
+        <div id="search-2013">
+        	<div class="i-search ld">
+            	<ul id="shelper" class="hide"></ul>
+                <div class="form">
+                	<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
+                    	<input type="text" class="text" accesskey="s" id="key" autocomplete="off" name="keywords" id="keyword" value="{$search_keywords|escape}">
+                        <input type="submit" value="搜索" class="button">
+                    </form>
+                </div>
+            </div>
+            <!-- {if $searchkeywords} -->
+            <div id="hotwords">
+            	<strong>热门搜索：</strong>
+                <!-- {foreach from=$searchkeywords item=val name=foo} -->
+                <!-- {if $smarty.foreach.foo.first} -->
+                <a href="search.php?keywords={$val|escape:url}" target="_blank" style="color:#ff0000">{$val}</a>
+                <!-- {else} -->
+                <a href="search.php?keywords={$val|escape:url}" target="_blank">{$val}</a>
+                <!-- {/if} -->
+                <!-- {/foreach} -->
+            </div>
+            <!-- {/if}-->
+        </div>
+        <!--search end-->
+        <div id="my360buy-2013">
+        	<dl>
+            	<dt class="ld"><s></s><a href="user.php">我的汤姆</a><b></b></dt>
+                <dd>
+                	<div class="prompt"> <span class="fl"><strong></strong></span> <span class="fr"><a href="user.php">去我的汤姆首页&nbsp;&gt;</a></span> </div>
+                    <div id="jduc-orderlist">
+                    	<div class="orderlist">
+                        	<div class="smt">
+                            	<h4>最新订单状态：</h4>
+                                <div class="extra"><a href="user.php?act=order_list" target="_blank">查看所有订单&nbsp;&gt;</a></div>
+                            </div>
+                            <div class="smc"><ul></ul></div>
+                        </div>
+                    </div>
+                    <div class="uclist">
+                    	<ul class="fore1 fl">
+                        	<li><a target="_blank" href="user.php?act=address_list">收货地址&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=booking_list">缺货登记&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=profile">用户信息&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=collection_list">我的收藏&nbsp;&gt;</a></li>
+                        </ul>
+                        <ul class="fore2 fl">
+                            <li><a target="_blank" href="user.php?act=message_list">我的留言&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=comment_list">我的评论&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=bonus">我的红包&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=bonus">资金管理&nbsp;&gt;</a></li>
+                        </ul>
+                    </div>
+                    <div class="viewlist" id="history_div">
+                    	<div class="smt"><h4>最近浏览的商品：</h4></div>
+                        <div class="smc" id="jduc-viewlist">
+                        	<ul class="lh hide" style="display: block;" id="history_list">{insert name='history2'}</ul>
+                        </div>
+                    </div>
+					<script type="text/javascript">
+                        if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1){
+                            document.getElementById('history_div').style.display='none';
+                        }else{
+                            document.getElementById('history_div').style.display='block';
+                        };
+                        function clear_history(){
+                            Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+                        };
+                        function clear_history_Response(res){
+                            document.getElementById('history_list').innerHTML = '<center>{$lang.no_history}</center>';
+                        };
+                    </script>
+                </dd>
+            </dl>
+        </div>
+        <!--my360buy end-->
+        <div id="ECS_CARTINFO" class="settleup-2013">{insert name='cart_info'}</div>
+        <!--settleup end-->
+    </div>
+    <div class="w">
+    	<div id="nav-2013">
+        	<div id="categorys-2013" class="categorys-2014 {if $script_name neq 'index'}no_index{/if} hover">
+            	<div class="mt ld"><h2><a href="javascript:;">全部商品分类<b></b></a></h2></div>
+                <div id="_JD_ALLSORT" class="mc">
+                	<!--{foreach from=$categories item=cat name=foo}-->
+                    <div class="item fore{$smarty.foreach.foo.iteration}"><span><h3><a href="{$cat.url}">{$cat.name|escape:html}</a></h3><s></s></span>
+                    	<div class="i-mc" style="top: 3px; ">
+                        	<div onclick="$(this).parent().parent().removeClass('hover')" class="close">×</div>
+                            <div class="subitem">
+                            	<!--{foreach from=$cat.cat_id item=child name=foo2}-->
+                                <dl class="fore{$smarty.foreach.foo2.iteration}">
+                                	<dt><a href="{$child.url}">{$child.name|escape:html}</a></dt>
+                                    <dd> <!--{foreach from=$child.cat_id item=childer}--> <em><a href="{$childer.url}">{$childer.name|escape:html}</a></em><!--{/foreach}--> </dd>
+                                </dl>
+                                <!--{/foreach}-->
+                            </div>
+                            <div class="cat-right-con fr" id="JD_sort_a">
+                            	<dl class="categorys-promotions">
+                                	<dd>
+                                    	<ul>
+                                        	<li> {insert name='ads_pro' cat_name=$cat.name type='左侧导航广告1'} </li>
+                                            <li> {insert name='ads_pro' cat_name=$cat.name type='左侧导航广告2'} </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="categorys-brands">
+                                	<dt>推荐品牌</dt>
+                                    <dd>
+                                        <ul>
+                                            <!--{foreach from=$cat.brands item=brands name=brands_no}-->
+                                            <!-- {if $smarty.foreach.brands_no.iteration < 19} -->
+                                            <li><a href="{$brands.url}" target="_blank">{$brands.brand_name}</a></li>
+                                            <!-- {/if} -->
+                                            <!--{/foreach}-->
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <!--{/foreach}-->
+                </div>
+                <script>
+				$(function(){
+					var leftHeight=$("#_JD_ALLSORT").outerHeight()-3;
+					$("#_JD_ALLSORT .item").each(function(){
+						var h=$(this).find(".i-mc").outerHeight();
+						if( h < leftHeight){
+							$(this).find(".i-mc").height(leftHeight);
+						};
+					});
+					$("#categorys-2013").removeClass("hover");
+				});
+				</script>
+            </div>
+            <ul id="navitems-2013">
+            	<li class="fore1 {if $navigator_list.config.index eq 1}curr{/if}"><a href="./index.php">{$lang.home}</a></li>
+                <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav name=foo} -->
+                <li class="fore{$smarty.foreach.foo.iteration} {if $nav.active eq 1}curr{/if}"><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a></li>
+                <!-- {/foreach} -->
+            </ul>
+        </div>
+    </div>
+</div>

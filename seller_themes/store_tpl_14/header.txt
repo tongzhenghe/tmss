@@ -1,0 +1,4 @@
+﻿<style>.seller_logo{ width:990px; margin:0 auto;}.store_dh{background: url(/seller_themes/store_tpl_14/custom_images/header_bg.jpg) repeat;}</style>
+<div class="seller_logo">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/logo.jpg"/></a>
+</div>

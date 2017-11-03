@@ -1,0 +1,373 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+function addFav(){
+    var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
+    try{
+        if (document.all) { //IE类浏览器
+            try {
+                window.external.toString(); //360浏览器不支持window.external，无法收藏
+                window.alert("国内开发的360浏览器等不支持主动加入收藏。\n抱歉，您所使用的浏览器无法完成此操作。\n加入收藏夹失败，请使用Ctrl+D进行添加。");
+            }
+            catch (e){
+                try{
+                    window.external.addFavorite(window.location, document.title);
+                }
+                catch (e){
+                    window.external.addToFavoritesBar(window.location, document.title);  //IE8
+                }
+            }
+        }
+        else if (window.sidebar) { //firfox等浏览器
+            window.sidebar.addPanel(document.title, window.location, "");
+        }
+        else {
+            alert('抱歉，您所使用的浏览器无法完成此操作。\n加入收藏夹失败，请使用Ctrl+D进行添加。');
+        }
+    }
+    catch (e){
+        window.alert("因为IE浏览器存在bug，添加收藏失败！\n解决办法：在注册表中查找\n HKEY_CLASSES_ROOT\\TypeLib\\{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}\\1.1\\0\\win32 \n将 C:\\WINDOWS\\system32\\shdocvw.dll 改为 C:\\WINDOWS\\system32\\ieframe.dll ");
+    }
+}
+  
+</script>
+
+<?php
+function get_brands1($cat = 0, $app = 'brand')
+{
+    $children = ($cat > 0) ? ' AND ' . get_children($cat) : '';
+
+    $sql = "SELECT b.brand_id, b.brand_name, b.brand_logo, b.brand_desc, COUNT(*) AS goods_num, IF(b.brand_logo > '', '1', '0') AS tag ".
+            "FROM " . $GLOBALS['ecs']->table('brand') . "AS b, ".
+                $GLOBALS['ecs']->table('goods') . " AS g ".
+            "WHERE g.brand_id = b.brand_id $children AND is_show = 1 " .
+            " AND g.is_on_sale = 1 AND g.is_alone_sale = 1 AND g.is_delete = 0 ".
+            "GROUP BY b.brand_id HAVING goods_num > 0 ORDER BY tag DESC, b.sort_order ASC";
+    $row = $GLOBALS['db']->getAll($sql);
+
+    foreach ($row AS $key => $val)
+    {
+        $row[$key]['url'] = build_uri($app, array('cid' => $cat, 'bid' => $val['brand_id']), $val['brand_name']);
+        $row[$key]['brand_desc'] = htmlspecialchars($val['brand_desc'],ENT_QUOTES);
+    }
+
+    return $row;
+}
+//
+function get_promotion_info1($goods_id = '')
+{
+    $snatch = array();
+    $group = array();
+    $auction = array();
+    $package = array();
+    $favourable = array();
+
+    $gmtime = gmtime();
+    $sql = 'SELECT act_id, act_name, act_type, start_time, end_time FROM ' . $GLOBALS['ecs']->table('goods_activity') . " WHERE is_finished=0 AND start_time <= '$gmtime' AND end_time >= '$gmtime'";
+    if(!empty($goods_id))
+    {
+        $sql .= " AND goods_id = '$goods_id'";
+    }
+    $res = $GLOBALS['db']->getAll($sql);
+    foreach ($res as $data)
+    {
+        switch ($data['act_type'])
+        {
+            case GAT_SNATCH: //夺宝奇兵
+                $snatch[$data['act_id']]['act_name'] = $data['act_name'];
+                $snatch[$data['act_id']]['url'] = build_uri('snatch', array('sid' => $data['act_id']));
+                $snatch[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $snatch[$data['act_id']]['sort'] = $data['start_time'];
+                $snatch[$data['act_id']]['type'] = 'snatch';
+                break;
+
+            case GAT_GROUP_BUY: //团购
+                $group[$data['act_id']]['act_name'] = $data['act_name'];
+                $group[$data['act_id']]['url'] = build_uri('group_buy', array('gbid' => $data['act_id']));
+                $group[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $group[$data['act_id']]['sort'] = $data['start_time'];
+                $group[$data['act_id']]['type'] = 'group_buy';
+                break;
+
+            case GAT_AUCTION: //拍卖
+                $auction[$data['act_id']]['act_name'] = $data['act_name'];
+                $auction[$data['act_id']]['url'] = build_uri('auction', array('auid' => $data['act_id']));
+                $auction[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $auction[$data['act_id']]['sort'] = $data['start_time'];
+                $auction[$data['act_id']]['type'] = 'auction';
+                break;
+
+            case GAT_PACKAGE: //礼包
+                $package[$data['act_id']]['act_name'] = $data['act_name'];
+                $package[$data['act_id']]['url'] = 'package.php#' . $data['act_id'];
+                $package[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $package[$data['act_id']]['sort'] = $data['start_time'];
+                $package[$data['act_id']]['type'] = 'package';
+                break;
+        }
+    }
+
+    $user_rank = ',' . $_SESSION['user_rank'] . ',';
+    $favourable = array();
+    $sql = 'SELECT act_id, act_range, act_range_ext, act_name, start_time, end_time FROM ' . $GLOBALS['ecs']->table('favourable_activity') . " WHERE start_time <= '$gmtime' AND end_time >= '$gmtime'";
+    if(!empty($goods_id))
+    {
+        $sql .= " AND CONCAT(',', user_rank, ',') LIKE '%" . $user_rank . "%'";
+    }
+    $res = $GLOBALS['db']->getAll($sql);
+
+    if(empty($goods_id))
+    {
+        foreach ($res as $rows)
+        {
+            $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
+            $favourable[$rows['act_id']]['url'] = 'activity.php';
+            $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+            $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
+            $favourable[$rows['act_id']]['type'] = 'favourable';
+        }
+    }
+    else
+    {
+        $sql = "SELECT cat_id, brand_id FROM " . $GLOBALS['ecs']->table('goods') .
+           "WHERE goods_id = '$goods_id'";
+        $row = $GLOBALS['db']->getRow($sql);
+        $category_id = $row['cat_id'];
+        $brand_id = $row['brand_id'];
+
+        foreach ($res as $rows)
+        {
+            if ($rows['act_range'] == FAR_ALL)
+            {
+                $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
+                $favourable[$rows['act_id']]['url'] = 'activity.php';
+                $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
+                $favourable[$rows['act_id']]['type'] = 'favourable';
+            }
+            elseif ($rows['act_range'] == FAR_CATEGORY)
+            {
+                /* 找出分类id的子分类id */
+                $id_list = array();
+                $raw_id_list = explode(',', $rows['act_range_ext']);
+                foreach ($raw_id_list as $id)
+                {
+                    $id_list = array_merge($id_list, array_keys(cat_list($id, 0, false)));
+                }
+                $ids = join(',', array_unique($id_list));
+
+                if (strpos(',' . $ids . ',', ',' . $category_id . ',') !== false)
+                {
+                    $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
+                    $favourable[$rows['act_id']]['url'] = 'activity.php';
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
+                    $favourable[$rows['act_id']]['type'] = 'favourable';
+                }
+            }
+            elseif ($rows['act_range'] == FAR_BRAND)
+            {
+                if (strpos(',' . $rows['act_range_ext'] . ',', ',' . $brand_id . ',') !== false)
+                {
+                    $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
+                    $favourable[$rows['act_id']]['url'] = 'activity.php';
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
+                    $favourable[$rows['act_id']]['type'] = 'favourable';
+                }
+            }
+            elseif ($rows['act_range'] == FAR_GOODS)
+            {
+                if (strpos(',' . $rows['act_range_ext'] . ',', ',' . $goods_id . ',') !== false)
+                {
+                    $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
+                    $favourable[$rows['act_id']]['url'] = 'activity.php';
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
+                    $favourable[$rows['act_id']]['type'] = 'favourable';
+                }
+            }
+        }
+    }
+
+    $sort_time = array();
+    $arr = array_merge($snatch, $group, $auction, $package, $favourable);
+    foreach($arr as $key => $value)
+    {
+        $sort_time[] = $value['sort'];
+    }
+    array_multisort($sort_time, SORT_NUMERIC, SORT_DESC, $arr);
+
+    return $arr;
+}
+$this->assign('promotion_info1', get_promotion_info1());
+?>
+<style type="text/css">
+<!--
+.hover#categorys-2013 .mt B{BACKGROUND-IMAGE:url(images/20130330A.png);BACKGROUND-REPEAT:no-repeat}
+#categorys-2013 .mt{BACKGROUND:#f40}
+#categorys-2013 .mt A{LINE-HEIGHT:40px;PADDING-LEFT:20px;DISPLAY:block;HEIGHT:40px;COLOR:#fff}
+#categorys-2013 .mt B{WIDTH:20px;BACKGROUND-POSITION:-65px 0px;HEIGHT:20px;TOP:10px;RIGHT:10px}
+#categorys-2013 .mc{BORDER-BOTTOM:#f40 2px solid;POSITION:absolute;BORDER-LEFT:#f40 2px solid;PADDING-BOTTOM:3px;PADDING-LEFT:0px;WIDTH:203px;PADDING-RIGHT:3px;DISPLAY:none;BACKGROUND:#fafafa;HEIGHT:402px;OVERFLOW:visible;BORDER-TOP:#e4393c 0px solid;TOP:40px;BORDER-RIGHT:#f40 2px solid;PADDING-TOP:3px;LEFT:0px}
+#categorys-2013 .hover SPAN{Z-INDEX:13;WIDTH:160px}
+#categorys-2013 .hover H3{BORDER-BOTTOM:#ddd 1px solid;BORDER-LEFT:#ddd 0px solid;BACKGROUND-COLOR:#fff;OVERFLOW:hidden;BORDER-TOP:#ddd 1px solid;BORDER-RIGHT:#ddd 0px solid;-moz-box-shadow:0 0 8px #DDD;-webkit-box-shadow:0 0 8px #DDD;box-shadow:0 0 8px #DDD}
+#categorys-2013 .hover S{WIDTH:7px;BACKGROUND:#fff;HEIGHT:38px;OVERFLOW:hidden;TOP:-4px;LEFT:199px}
+#categorys-2013 .hover.fore1 S{TOP:1px}
+#categorys-2013 .hover .i-mc{Z-INDEX:12;DISPLAY:block}
+.hover#categorys-2013 .mt B{BACKGROUND-POSITION:-65px -23px}
+.hover#categorys-2013 .mc{DISPLAY:block}
+-->
+</style>
+
+
+
+
+
+ 
+<?php
+ include_once('themes/' . $GLOBALS['_CFG']['template'].'/init.php');
+?>
+{insert_scripts files='jquery-1.6.2.min.js,jquery.json.js'}
+{insert_scripts files='transport.js,utils.js'}
+
+ <SCRIPT type=text/javascript>
+$(function(){
+	$("#navitems-2013").find("li").eq(2).addClass("active");
+});
+window.pageConfig={
+	compatible:true,
+	navId:"home"
+};
+</SCRIPT>
+<SCRIPT type=text/javascript src="themes/<? echo $GLOBALS['_CFG']['template'] ?>/js/base-2011.js"></SCRIPT>  
+<script src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/js.js"></script>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<SCRIPT type=text/javascript>
+(function(){if(pageConfig.navId){var object=document.getElementById("nav-"+pageConfig.navId);if(object)object.className+=" curr";}})();
+</SCRIPT>
+
+
+<DIV id=shortcut-2013>
+<DIV class=w>
+<UL class="fl lh">
+<LI class="fore1 ld">
+<B></B>
+<A href="javascript:addFav()" rel=nofollow>收藏本站</A> 
+<span>|</span>
+
+</LI></UL>
+<UL class="fr lh">
+
+   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+   
+   
+
+  
+	<!--{if $navigator_list.top}-->
+	<!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+	<LI class="ld"><S></S>
+	<a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+	</LI>
+	<!-- {/foreach} -->
+	<!-- {/if} -->
+     
+  <LI id=biz-service class="fore4 ld menu" 
+  clstag="homepage|keycount|home2013|01e" data-widget="dropdown"><S></S><SPAN 
+  class=outline></SPAN>
+  <SPAN class=blank1></SPAN>客户服务<B></B>
+  <DIV class=dd>
+  <DIV><A href="#" target=_blank>常见问题</A></DIV>
+  <DIV><A href="#" rel=nofollow target=_blank>售后服务</A></DIV>
+  <DIV><A href="#" rel=nofollow target=_blank>在线客服</A></DIV>
+  <DIV><A href="#" rel=nofollow target=_blank>投诉中心</A></DIV>
+  <DIV><A href="#" target=_blank>客服邮箱</A>
+  </DIV>
+  </DIV>
+  </LI>
+  
+	</UL>
+	<SPAN class=clr></SPAN>
+  </DIV>
+</DIV>
+
+ 
+<DIV id=o-header-2013 style="border-bottom:none;">
+<DIV id=header-2013 class=w>
+<DIV class=logo class=ld style="width:330px;"> <a href="../index.php" name="top"><B></B><IMG 
+src="../images/logo.gif"  ></A></DIV><!--logo end-->
+<DIV id=search-2013>
+<DIV class="i-search ld">
+<UL id=shelper class=hide></UL>
+ 
+   <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+           alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+	<form  class=form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  >
+		<INPUT value="输入商品或货号"  onclick="javascript:this.value=''"    class=text type=text autocomplete="off" name="keywords">
+		<input class=button  name="imageField" type="submit" value="搜索"   />
+	</form>
+   
+
+
+
+</DIV>
+{if $searchkeywords}
+<div id="hotwords">
+ <strong>热门搜索：</strong>
+{foreach from=$searchkeywords item=val}
+<a href="search.php?keywords={$val|escape:url}">{$val}</a>{/foreach}</div>
+{/if}
+
+ 
+ </DIV><!--search end-->
+<DIV id=my360buy-2013>
+<DL>
+  <DT class=ld><S></S><A href="user.php">我的账户</A><B></B></DT>
+  <dd>
+  <div class="prompt">			
+  <span class="fl">您好，欢迎光临本站</span>			
+  <span class="fr"><A href="user.php">进入会员中心</A></span>
+  </div>
+  <div class="uclist">
+  <ul class="fore1 fl">	
+  <li><a href="user.php?act=order_list">我的订单</a></li>					
+  <li><a href="user.php?act=message_list">我的留言</a></li>					
+  <li><a href="user.php?act=collection_list">我的收藏</a></li>					
+  <li><a href="user.php?act=affiliate">我的推荐</a></li>				
+  </ul>				
+  <ul class="fore2 fl">					
+  <li><a href="user.php?act=profile">用户信息</a></li>					
+  <li><a href="user.php?act=address_list">收货地址</a></li>					
+  <li><a href="user.php?act=account_deposit">余额充值</a></li>					
+  <li><a target="_blank" href="user.php?act=account_raply">余额提现</a></li>				
+  </ul>			
+  </div></dd>
+  
+  </DL></DIV><!--my360buy end-->
+  <div id="ECS_CARTINFO">
+ {insert name='cart_info'} 
+ 
+ </div>
+
+
+</DIV><!--header end-->
+
+</DIV>
+
+ 

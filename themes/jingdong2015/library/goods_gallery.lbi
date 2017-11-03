@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="bigImg" id="vertical">
+	<div id="preview">
+    	<div id="spec-n1" class="jqzoom"> <a href="{$pictures.0.img_url}" class="MagicZoomPlus" id="Zoomer" rel="hint-text: ; selectors-effect: false; selectors-class: img-hover; zoom-distance: 10;zoom-width: 400; zoom-height: 400;" onclick="window.open('gallery.php?id={$goods.goods_id}'); return false;"><img id="midimg" src="{$goods.goods_img}" title="{$goods.goods_name|escape:html}" width="350" height="350"></a> </div>
+        <div id="spec-list" > <a href="javascript:;" class="spec-control prev" id="spec-forward"></a> <a href="javascript:;" class="spec-control next" id="spec-backward"></a>
+        	<div class="spec-items">
+            	<ul class="lh">
+                	<!-- {if $pictures}--> 
+                    <!-- {foreach from=$pictures item=picture}-->
+                    <li><a href="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}" rel="zoom-id: Zoomer" rev="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}"> <img alt="{$goods.goods_name}" src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" width="50" height="50" /></a> </li>
+                    <!--{/foreach}--> 
+                    <!-- {/if}-->
+                </ul>
+            </div>
+        </div>
+        <div id="short-share">
+            <!-- {if $cfg.show_goodssn} 显示商品货号-->
+        	<div class="fl"><span>{$lang.goods_sn}：</span><span>{$goods.goods_sn}</span></div>
+            <!-- {/if} --> 
+            <a href="#none" onclick="javascript:collect({$goods.goods_id})" class="chooseBtnColl fr" >关注商品<b></b></a>
+            <div class="clb"></div>
+        </div>
+    </div>
+</div>

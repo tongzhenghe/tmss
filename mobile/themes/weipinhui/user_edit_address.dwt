@@ -1,0 +1,129 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="flow-consignee ect-bg-colorf">
+<form action="{:url('user/edit_address')}" method="post" name="theForm" onsubmit="return checkConsignee(this)">
+	<section>
+    	<div class="ect-bg-colorf flow-consignee Address">
+        	<ul>
+            	<li><div class="input-text"><b class="pull-left">{$lang.consignee_name}：</b><span><input name="consignee" type="text" class="inputBg" id="consignee_{$sn}" value="{$consignee.consignee|escape}"></span></div></li>
+                <li><div class="input-text"><b class="pull-left">{$lang.mobile}：</b><span><input placeholder="{$lang.mobile}{$lang.require_field}" name="mobile" type="text" class="inputBg_touch" value="{$consignee.mobile|escape}" /></span></div></li>
+                <li>
+                    <div class="input-text">
+                        <b class="pull-left">{$lang.country}：</b>
+                        <div class="form-select">
+                            <i class="fa fa-sort"></i>
+                            <span>
+                                <select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
+                                    <option value="0">{$lang.please_select}{$name_of_region[0]}</option>
+                                    <!-- {foreach from=$country_list item=country} -->
+                                    <option value="{$country.region_id}"{if $country.region_id eq '1'} selected{/if}>{$country.region_name}</option>
+                                    <!-- {/foreach} -->
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-text">
+                        <b class="pull-left">{$lang.province}：</b>
+                        <div class="form-select">
+                            <i class="fa fa-sort"></i>
+                            <span>
+                            	<select name="province" id="selProvinces" onchange="region.changed(this, 2, 'selCities')">
+                                    <option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+                                    <!-- {foreach from=$province_list item=province} -->
+                                    <option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+                                    <!-- {/foreach} -->
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-text">
+                        <b class="pull-left">{$lang.city}：</b>
+                        <div class="form-select">
+                            <i class="fa fa-sort"></i>
+                            <span>
+                            	<select name="city" id="selCities" onchange="region.changed(this, 3, 'selDistricts')">
+                                    <option value="0">{$lang.please_select}{$name_of_region[2]}</option>
+                                    <!-- {foreach from=$city_list item=city} -->
+                                    <option value="{$city.region_id}" {if $consignee.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
+                                    <!-- {/foreach} -->
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="input-text">
+                        <b class="pull-left">{$lang.area}：</b>
+                        <div class="form-select">
+                            <i class="fa fa-sort"></i>
+                            <span>
+                            	<select name="district" id="selDistricts" {if !$district_list}style="display:none"{/if}>
+                                    <option value="0">{$lang.please_select}{$name_of_region[3]}</option>
+                                    <!-- {foreach from=$district_list item=district} -->
+                                    <option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+                                    <!-- {/foreach} -->
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+        	</ul>
+        </div>
+    </section>
+    <section>
+    	<div class="ect-bg-colorf flow-consignee Address">
+        	<ul>
+                <li>
+                	<div class="input-text" style="height:auto;">
+                        <b class="pull-left">{$lang.detailed_address}：</b>
+                        <textarea name="address" placeholder="{$lang.detailed_address}{$lang.require_field}" type="text" >{$consignee.address|escape}</textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+  <div class="two-btn ect-padding-tb ect-padding-lr ect-margin-tb text-center">
+  	<a class="btn btn-info ect-colorf" href="{:url('user/del_address_list', array('id'=>$this->_var['consignee']['address_id']))}" >{$lang.drop}</a>
+    <button type="submit" name="submit"  class="btn btn-info ect-bg-colory">{$lang.confirm_edit}</button>
+    <input name="address_id" type="hidden" value="{$consignee.address_id}" />
+  </div>
+</form>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript" src="__PUBLIC__/js/region.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/shopping_flow.js"></script> 
+<script type="text/javascript">
+	region.isAdmin = false;
+	{foreach from=$lang.flow_js item=item key=key}
+	var {$key} = "{$item}";
+	{/foreach}
+	{literal}
+	onload = function() {
+	      if (!document.all)
+	      {
+	        document.forms['theForm'].reset();
+	      }
+	}
+	{/literal}
+$(function(){
+	var a=$("#selDistricts");
+	if( a.css("display")=="none" ){
+		a.parents("li").hide();
+	}else{
+		a.parents("li").show();
+	}
+	$(".Address li select").change(function(){
+		if( a.css("display")=="none" ){
+			a.parents("li").hide();
+			a.parents("li").prev().css({borderBottom:0})
+		}else{
+			a.parents("li").show();
+			a.parents("li").prev().css({borderBottom:"1px solid #e3e3e3"})
+		}
+	});
+});
+</script>
+</body></html>

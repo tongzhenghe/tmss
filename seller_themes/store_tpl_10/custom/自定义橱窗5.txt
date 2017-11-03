@@ -1,0 +1,24 @@
+<div class="fn-clear">
+<div class="mc">
+<div class="user_dbl">
+<div class="hddk">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_10/custom_images/bit.gif" /></a>
+</div>
+</div>
+</div>
+</div>
+<div class="border_bg">
+<div class="fn-clear user-lunbo970-531349">
+<div class="mc">
+<div id="slides" class="slideshow" rel="auto-play" style="height:490px; width:970px;">
+<div class="img" style="height:490px; width:970px;">
+<ul>
+<li><a href="#"><img src="/seller_themes/store_tpl_10/custom_images/lb_content_b_1.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_10/custom_images/lb_content_b_1.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_10/custom_images/lb_content_b_1.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

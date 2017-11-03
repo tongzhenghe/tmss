@@ -1,0 +1,31 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con">
+	<header class="Header clearfix">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$title}</span>
+        <a href="./" class="Home"><span></span></a>
+    </header>
+    <div class="panel panel-default ect-category-all ect-border-radius0">
+        <ul>
+            <!--{foreach from=$category item=cat name=no}-->
+            <li>
+                <div class="media panel-body">
+                    <div class="pull-left ect-category-right"><h3>{$cat.name|escape:html}</h3></div>
+                </div>
+                <div class="ect-category-child">
+                    <!--{foreach from=$cat.cat_id item=child name=no1}-->
+                    <!--{if $child.cat_id}-->
+                    <span><a href="{:url('category/all',array('id'=>$this->_var['child']['id']))}"><img class="pull-left" src="{$child.cat_image}"><p>{$child.name|escape:html}</p></a></span>
+                    <!--{else}-->
+                    <span><a href="{$child.url}"><img class="pull-left" src="{$child.cat_image}"><p>{$child.name|escape:html}</p></a></span>
+                    <!--{/if}-->
+                    <!--{/foreach}--> 
+                </div>
+            </li>
+            <!--{/foreach}-->
+        </ul> 
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

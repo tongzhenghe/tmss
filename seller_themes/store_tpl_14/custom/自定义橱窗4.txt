@@ -1,0 +1,5 @@
+<div style=" height:440px;">
+<div class="fn-clear" style="background:url(/seller_themes/store_tpl_14/custom_images/adv_banner_2.jpg ) center center no-repeat;width:100%;position:absolute;left:0;overflow: hidden;">
+<a href="#" target="_blank" style=" display:block; height:440px;"></a>
+</div>
+</div>

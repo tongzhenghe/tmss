@@ -1,0 +1,15 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con" style="background:#fff;">
+    <div style="height:7.6em;"></div>
+    <header class="Header clearfix fixed">
+        <a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">活动列表</span>
+    </header>
+    <!-- #BeginLibraryItem "/library/goods_list_act.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+get_asynclist("{:url('activity/asynclist_list')}&id={$id}&category={$category}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$page}&sort={$sort}&order={$order}" , '__TPL__/images/loader.gif');
+</script>
+</body>
+</html>

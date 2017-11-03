@@ -1,0 +1,41 @@
+<script type="text/javascript" src="__PUBLIC__/js/region.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/shopping_flow.js"></script>
+<script type="text/javascript">
+          region.isAdmin = false;
+          {foreach from=$lang.flow_js item=item key=key}
+          var {$key} = "{$item}";
+          {/foreach}
+
+          {literal}
+          onload = function() {
+            if (!document.all)
+            {
+              document.forms['theForm'].reset();
+            }
+          }
+          {/literal}
+        </script>
+<div id="page">
+  <header id="header">
+    <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span></span></a></div>
+    <h1>{$lang.consignee_address}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box">
+      <div class="new-jd-tab">
+        <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+  </header>
+</div>
+<div class="wrap" style="border-bottom:0;"> 
+  <!-- 如果有收货地址，循环显示用户的收获地址 --> 
+  <!-- {foreach from=$consignee_list item=consignee key=sn} -->
+  <section class="order_box padd1 radius10" style="padding-top:0;padding-bottom:0;">
+    <div class="table_box2 table_box">
+      <form style="padding:8px;" action="{:url('flow/consignee')}" method="post" name="theForm" id="theForm" onSubmit="return checkConsignee(this)">
+        <!-- #BeginLibraryItem "/Library/consignee.lbi" --><!-- #EndLibraryItem -->
+      </form>
+    </div>
+  </section>
+  <div class="blank3"></div>
+  <!-- {/foreach} --> 
+  
+</div>

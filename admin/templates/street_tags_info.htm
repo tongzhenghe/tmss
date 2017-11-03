@@ -1,0 +1,45 @@
+{include file="pageheader.htm"}
+
+<div class="main-div">
+<form action="street_tags_manege.php" method="post" name="theForm" onsubmit="return validate()">
+<table width="100%">
+  <tr>
+    <td class="label">标签名称: </td>
+    <td><input type="text" name="tag_name" value="{$street_tags.tag_name}" maxlength="20" />{$lang.require_field}</td>
+  </tr>
+  <tr >
+    <td class="label">排序: </td>
+    <td><input type="text" name="tags_order" value="{$street_tags.tags_order}" maxlength="3" size="5"/></td>
+  </tr>
+  <tr>
+    <td></td>    
+    <td align="left">
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$street_tags.id}" />
+      <input type="hidden" name="old_cate_name" value="{$street_tags.tag_name}" />
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+      <input type="reset" value="{$lang.button_reset}" class="button" />
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['cate_name'].focus();
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+  validator = new Validator("theForm");
+  validator.required('tag_name','标签必填');
+  return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

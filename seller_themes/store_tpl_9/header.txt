@@ -1,0 +1,6 @@
+﻿<style>
+.ban-bd {margin: 0 auto overflow: hidden;position: relative;width: 990px;z-index: 0;height: 120px;}
+.ban-bd .banner-bg {left: 2px;position: absolute;top: 0;width: 950px;z-index: 0;height: 120px;}
+.ban-bd .banner-bg a {display: inline-block;height: 100%;width: 100%;}
+</style>
+<div class="ban-bd"><div class="banner-bg"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_9/custom_images/logo.jpg"/></a></div></div>

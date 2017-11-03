@@ -1,0 +1,131 @@
+<div class="fn-clear user-yhq">
+<div class="mc">
+<div class="yhq xs4">
+<div class="bb">
+<span class="jbg"></span>
+<div class="jbox"><a href="#"><img src="/seller_themes/store_tpl_11/custom_images/ckxq.png" /></a></div>
+<div class="item">
+<a href="#" class="zm"><img src="/seller_themes/store_tpl_11/custom_images/zqu_1.jpg" /></a>
+<div class="bg"></div>  
+<ul>
+<li class="n1"><a href="#" target="_blank">吸顶灯专区</a></li>
+<li class="n2"><a href="#" target="_blank">Ceiling lamp Regional</a></li>
+</ul>
+</div>
+</div>
+<div class="bb">
+<span class="jbg"></span>
+<div class="jbox"><a href="#"><img src="/seller_themes/store_tpl_11/custom_images/ckxq.png" /></a></div>
+<div class="item">
+<a href="#" class="zm"><img src="/seller_themes/store_tpl_11/custom_images/zqu_2.jpg" /></a>
+<div class="bg"></div>  
+<ul>
+<li class="n1"><a href="#" target="_blank">吊灯专区</a></li>
+<li class="n2"><a href="#" target="_blank">A chandelier Regional</a></li>
+</ul>
+</div>
+</div>
+<div class="bb">
+<span class="jbg"></span>
+<div class="jbox"><a href="#"><img src="/seller_themes/store_tpl_11/custom_images/ckxq.png" /></a></div>
+<div class="item">
+<a href="#" class="zm"><img src="/seller_themes/store_tpl_11/custom_images/zqu_3.jpg" /></a>
+<div class="bg"></div>  
+<ul>
+<li class="n1"><a href="#" target="_blank">厨房灯专区</a></li>
+<li class="n2"><a href="#" target="_blank">The kitchen light Regional</a></li>
+</ul>
+</div>
+</div>
+<div class="bb">
+<span class="jbg"></span>
+<div class="jbox"><a href="#"><img src="/seller_themes/store_tpl_11/custom_images/ckxq.png" /></a></div>
+<div class="item">
+<a href="#" class="zm"><img src="/seller_themes/store_tpl_11/custom_images/zqu_4.jpg" /></a>
+<div class="bg"></div>  
+<ul>
+<li class="n1"><a href="#" target="_blank">儿童灯专区</a></li>
+<li class="n2"><a href="#" target="_blank">The children's lamps Regional</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_11/custom_images/adv_1.jpg" /></a>
+</div>
+</div>
+<div class="fn-clear user_god_np">
+<div class="mc">
+<div class="user_itemsadv_color">
+<div class="item">
+<a class="s_pic" target="_blank" href="#"><img src="/seller_themes/store_tpl_11/custom_images/promotion_1.jpg" /></a>
+<div class="jCountdown">
+<div class="youmi-module" data="2015-1-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<div class="s_title">现代简约LED吸顶灯客厅灯大气卧室灯餐厅灯创意个性灯具灯饰 黑色小3头 LED 36W</div>
+<div class="s_price">
+RMB<span class="jdNum">999.00</span><span class="yuan">（<span class="jsNum">3220.00</span>）</span>
+</div>
+<a href="#" target="_blank" class="s_buy user_fox_bg_color">立即购买</a>
+<div class="s_ping">有<span>51</span>人点赞 | 已有<span>45</span>评论</div>
+</div>
+<div class="item">
+<a class="s_pic" target="_blank" href="#"><img src="/seller_themes/store_tpl_11/custom_images/promotion_2.jpg" /></a>
+<div class="jCountdown">
+<div class="youmi-module" data="2015-1-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<div class="s_title">现代简约LED吸顶灯客厅灯大气卧室灯餐厅灯创意个性灯具灯饰 黑色小3头 LED 36W</div>
+<div class="s_price">
+RMB<span class="jdNum">999.00</span><span class="yuan">（<span class="jsNum">3220.00</span>）</span>
+</div>
+<a href="#" target="_blank" class="s_buy user_fox_bg_color">立即购买</a>
+<div class="s_ping">有<span>51</span>人点赞 | 已有<span>45</span>评论</div>
+</div>
+<div class="item">
+<a class="s_pic" target="_blank" href="#"><img src="/seller_themes/store_tpl_11/custom_images/promotion_3.jpg" /></a>
+<div class="jCountdown">
+<div class="youmi-module" data="2015-1-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<div class="s_title">现代简约LED吸顶灯客厅灯大气卧室灯餐厅灯创意个性灯具灯饰 黑色小3头 LED 36W</div>
+<div class="s_price">
+RMB<span class="jdNum">999.00</span><span class="yuan">（<span class="jsNum">3220.00</span>）</span>
+</div>
+<a href="#" target="_blank" class="s_buy user_fox_bg_color">立即购买</a>
+<div class="s_ping">有<span>51</span>人点赞 | 已有<span>45</span>评论</div>
+</div>
+</div>
+</div>
+</div>

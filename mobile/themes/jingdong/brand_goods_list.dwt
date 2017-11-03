@@ -1,0 +1,42 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page" style="right: 0px; left: 0px; display: block;">
+  <header id="header">
+    <div class="header_l header_return"><a href="javascript:history.go(-1);"><span></span></a></div>
+    <div id="search_box2">
+      <div class="search_box" id="searchBox">{$lang.no_keywords}</div>
+    </div>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></div>
+    <div class="search_box search_2" >
+      <div class="search_2Box">
+        <form method="post" action="{if $id}{:url('category/index', array('id'=>$this->_var['id'] ))}{else}{:url('category/index')}{/if}" name="searchForm" id="searchForm_id">
+          <a href="#" class="new-a-cancel">{$lang.is_cancel}</a>
+          <div class="search_2BoxCon">
+            <input placeholder="{$lang.no_keywords}" name="keywords" type="text" id="keywordBox" style="color:#c3c2c2;" />
+            <a href="javascript:void(0);" target="_self" class="new-s-close new-s-close-v1"></a>
+            <button class="new-s-srch" type="submit" onclick="return check('keywordBox')"><span></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- #BeginLibraryItem "/library/goods_list_brand.lbi" --><!-- #EndLibraryItem --> </div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+get_asynclist("{:url('brand/list_asynclist', array('id'=>$this->_var['id'],'brand'=>$this->_var['brand_id'],'price_min'=>$this->_var['price_min'],'price_max'=>$this->_var['price_max'],'filter_attr'=>$this->_var['filter_attr'],'page'=>$this->_var['page'],'sort'=>$this->_var['sort'],'order'=>$this->_var['order'],'keywords'=>$this->_var['keywords']))}" , '__TPL__/images/loader.gif');
+$(function(){
+	$("#searchBox").click(function(){
+		$(".search_2").css("display","block");
+		$("#keywordBox").focus();
+	});
+	
+	$(".new-s-close").click(function(){
+		$("#keywordBox").attr("placeholder","").val("").focus();
+	});
+	
+	$(".new-a-cancel").click(function(){
+		$(".search_2").css("display","none");
+	});
+});
+</script>
+</body></html>

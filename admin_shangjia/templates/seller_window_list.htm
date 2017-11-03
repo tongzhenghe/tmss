@@ -1,0 +1,61 @@
+<!-- $Id: brand_list.htm 15898 2009-05-04 07:25:41Z liuhui $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="post" action="" name="listForm">
+
+<div class="list-div" id="listDiv">
+{/if}
+
+  <table cellpadding="3" cellspacing="1">
+    <tr>
+      <th>橱窗名称</th>
+      <th>橱窗类型</th>
+      <th>橱窗色调</th>
+      <th>{$lang.sort_order}</th>
+      <th>显示</th>
+      <th>{$lang.handler}</th>
+    </tr>
+    {foreach from=$win_list item=window}
+    <tr>
+      <td align="center"><span onclick="javascript:listTable.edit(this, 'edit_win_name', {$window.id})">{$window.win_name|escape:html}</span>
+      </td>
+      <td align="center">{$window.win_type_name}</td>
+      <td align="center"><div style="width:50px; height:30px; background-color:{$window.win_color};"></div></td>
+      <td align="center"><span onclick="javascript:listTable.edit(this, 'edit_sort_order', {$window.id})">{$window.win_order}</span></td>
+      <td align="center"><img src="images/{if $window.is_show}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_show', {$window.id})" /></td>
+      <td align="center">
+        <a href="seller_window.php?act=edit&id={$window.id}" title="{$lang.edit}">{$lang.edit}</a> |
+        {if $window.win_type}
+        <a href="seller_window.php?act=add_win_goods&id={$window.id}" title="{$lang.edit}">添加商品</a> |
+        {/if}
+        <a href="javascript:;" onclick="listTable.remove({$window.id}, '{$lang.drop_confirm}')" >{$lang.remove}</a> 
+      </td>
+    </tr>
+    {foreachelse}
+    <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>
+    {/foreach}
+
+  </table>
+
+{if $full_page}
+
+</div>
+</form>
+
+<script type="text/javascript" language="javascript">
+  <!--
+
+  {literal}
+  onload = function()
+  {
+      // 开始检查订单
+      startCheckOrder();
+  }
+  {/literal}
+  //-->
+</script>
+{include file="pagefooter.htm"}
+{/if}

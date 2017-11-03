@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="filter" style="position:static; top:0px;">
+  <form method="GET" class="sort" name="listform">
+    <ul class="filter-inner">
+      <li class="{if $sort == 'goods_id' && $order == 'DESC'}filter-cur{/if}"> <a href="{:url('exchange/index',array('id'=>$this->_var['id'],'display'=>$this->_var['display'],'brand'=>$this->_var['brand_id'],'price_min'=>$this->_var['price_min'],'price_max'=>$this->_var['price_max'],'filter_attr'=>$this->_var['filter_attr'], 'sort'=>'goods_id', 'order'=> 'DESC'))}">{$lang.sort_default}</a></li>
+      <li class="{if $sort =='exchange_integral' && $order == 'DESC'}filter-cur {elseif $sort =='exchange_integral' && $order == 'ASC'}filter-cur {/if}"> <a href="{:url('exchange/index',array('id'=>$this->_var['id'],'display'=>$this->_var['display'],'brand'=>$this->_var['brand_id'],'price_min'=>$this->_var['price_min'],'price_max'=>$this->_var['price_max'],'filter_attr'=>$this->_var['filter_attr'], 'sort'=>'exchange_integral', 'order'=> ($this->_var['sort']=='exchange_integral' && $this->_var['order']=='ASC')?'DESC':'ASC'))}"><span class="new-bar"></span>{$lang.exchange_integral}</a> </li>
+      <li class="{if $sort =='sales_volume' && $order == 'DESC'}filter-cur {elseif $sort =='sales_volume' && $order == 'ASC'}filter-cur {/if}"> <a href="{:url('exchange/index',array('id'=>$this->_var['id'],'display'=>$this->_var['display'],'brand'=>$this->_var['brand_id'],'price_min'=>$this->_var['price_min'],'price_max'=>$this->_var['price_max'],'filter_attr'=>$this->_var['filter_attr'], 'sort'=>'sales_volume', 'order'=> ($this->_var['sort']=='sales_volume' && $this->_var['order']=='ASC')?'DESC':'ASC'))}"><span class="new-bar"></span>{$lang.exchange_num}</a></li> 
+      <li class="{if $sort =='click_count' && $order == 'DESC'}filter-cur {elseif $sort =='click_count' && $order == 'ASC'}filter-cur {/if}"> <a href="{:url('exchange/index',array('id'=>$this->_var['id'],'display'=>$this->_var['display'],'brand'=>$this->_var['brand_id'],'price_min'=>$this->_var['price_min'],'price_max'=>$this->_var['price_max'],'filter_attr'=>$this->_var['filter_attr'], 'sort'=>'click_count', 'order'=> ($this->_var['sort']=='click_count' && $this->_var['order']=='ASC')?'DESC':'ASC'))}"><span class="new-bar"></span>{$lang.sort_popularity}</a></li> 
+    </ul>
+    <input type="hidden" name="category" value="{$category}" />
+    <input type="hidden" name="display" value="{$pager.display}" id="display" />
+    <input type="hidden" name="brand" value="{$brand_id}" />
+    <input type="hidden" name="price_min" value="{$price_min}" />
+    <input type="hidden" name="price_max" value="{$price_max}" />
+    <input type="hidden" name="filter_attr" value="{$filter_attr}" />
+    <input type="hidden" name="page" value="{$pager.page}" />
+    <input type="hidden" name="sort" value="{$sort}" />
+    <input type="hidden" name="order" value="{$order}" />
+  </form>
+</div>
+<div class="GoodsList srp album flex-f-row" id="J_ItemList" style="opacity:1;"> 
+    <div class="product flex_in single_item GoodsListBox">
+      <div class="pro-inner"></div>
+    </div>
+    <a href="javascript:;" class="get_more"></a>
+</div>

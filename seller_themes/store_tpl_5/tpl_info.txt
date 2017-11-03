@@ -1,0 +1,9 @@
+﻿------tpl_info------------
+tpl name：商家店铺模板NO.5
+tpl url：../seller_themes/store_tpl_5/screenshot.png
+description：母婴护理产品模板
+version：v1.0
+author：模板堂
+author url：http://www.ecmoban.com/
+tpl_path：st_one
+------tpl_info------------

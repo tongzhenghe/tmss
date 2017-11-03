@@ -1,0 +1,109 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="w catGoodsBox catGoodsSlide">
+	<div class="mt">
+    	<h2><i></i><span></span><font>{$goods_cat.name}</font></h2>
+        <div class="hd_box">
+        	<ul>
+            	<li><a href="javascript:;">热门<i></i></a></li>
+            	<!--{foreach from=$goods_cat.goods_level2 item=goods_level2 name=foo}-->
+                <!--{if $smarty.foreach.foo.iteration < 9}-->
+            	<li><a href="javascript:;">{$goods_level2.name}<i></i></a></li>
+                <!--{/if}-->
+                <!--{/foreach}-->
+            </ul>
+        </div>
+    </div>
+    <div class="mc">
+    	<div class="side">
+        	<div class="banner">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品左广告'}<i></i></div>
+            <div class="themes Category">
+            	<ul>
+                    <!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->
+                    <!--{if $smarty.foreach.foo.iteration < 7}-->
+                    <li class="fore{$smarty.foreach.foo.iteration}"><a href="{$cat.url}"><i></i><span>{$cat.name}</span></a></li>
+                    <!--{/if}-->
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <div class="words">
+            	<ul>
+                	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->
+                	<!--{if $smarty.foreach.foo.iteration %2 ==1}-->
+                	<li>
+                    <!--{/if}-->
+                    	<!--{foreach from=$cat.children item=cat_c name=foo2}-->
+                        <!--{if $smarty.foreach.foo2.iteration < 5}-->
+                        <span><a href="{$cat_c.url}" target="_blank" title="{$cat_c.name}">{$cat_c.name}</a></span>
+                        <!--{/if}-->
+                        <!--{/foreach}-->
+                    <!--{if $smarty.foreach.foo.iteration % 2 == 0 || $smarty.foreach.foo.last}-->
+                    </li>
+                    <!--{/if}-->
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+        </div>
+        <div class="bd_box">
+        	<div class="bdBox bdBox01">
+            	<div class="mainInner">
+                	<ul class="mainBody">
+                    	<li class="fore1">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧小广告1'}</li>
+                        <li class="fore2">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧小广告3'}</li>
+                        <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右广告1'}</li>
+                        <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右广告2'}</li>
+                        <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右广告3'}</li>
+                    </ul>
+                    <ul class="mainExtra">
+                    	<li class="fore1">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧小广告2'}</li>
+                        <li class="fore2">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧小广告4'}</li>
+                        <li class="fore3">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右广告4'}</li>
+                    </ul>
+                </div>
+                <div class="bdSlider">
+                	<div class="hd_Slider">
+                    	<ul>
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bd_Slider">
+                    	<ul>
+                        	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧幻灯片广告1'}</li>
+                            <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧幻灯片广告2'}</li>
+                            <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧幻灯片广告3'}</li>
+                            <li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下商品右侧幻灯片广告4'}</li>
+                        </ul>
+                    </div>
+                    <a class="bdSliderQh prev_bd" href="javascript:void(0)"><</a>
+                    <a class="bdSliderQh next_bd" href="javascript:void(0)">></a>
+                </div>
+            </div>
+        	<!--{foreach from=$goods_cat.goods_level2 item=goods_level2 name=foo}-->
+            <!--{if $smarty.foreach.foo.iteration < 9}-->
+        	<div class="bdBox bdBoxPro">
+            	<ul>
+                	<!-- {foreach from=$goods_level2.goods item=goods name=foo2} -->
+                	<li>
+                    	<div class="pImg"><a href="{$goods.url}" target="_blank" title="{$goods.goods_name}"><img width="100" height="100" alt="{$goods.goods_name}" src="{$goods.goods_thumb}"></a></div>
+                        <div class="pName"><a href="{$goods.url}" target="_blank" title="{$goods.goods_name}">{$goods.short_name}</a></div>
+                        <div class="pPrice">{if $goods.promote_price > 0}{$goods.promote_price}{else}{$goods.shop_price}{/if}</div>
+                    </li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <!--{/if}-->
+            <!--{/foreach}-->
+        </div>
+    </div>
+    <div class="cat_brands">
+    	<ul>
+        	<!-- {foreach from=$goods_cat.brands item=brands name=foo} -->
+            <!--{if $smarty.foreach.foo.iteration < 11}-->
+        	<li class="fore{$smarty.foreach.foo.iteration}"><a target="_blank" href="{$brands.url}">{if $brands.logo neq "data/brandlogo/"}<img height="40" width="100" src="{$brands.logo}">{else}{$brands.brand_name}{/if}</a></li>
+            <!--{/if}-->
+            <!-- {/foreach} -->
+        </ul>
+    </div>
+</div>

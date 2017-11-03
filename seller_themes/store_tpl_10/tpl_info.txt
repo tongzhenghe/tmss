@@ -1,0 +1,10 @@
+﻿------tpl_info------------
+tpl name：商家店铺模板NO.10
+tpl url：../seller_themes/store_tpl_10/screenshot.png
+description：高端灯具店铺模板1
+version：v1.0
+author：模板堂
+author url：http://www.ecmoban.com/
+tpl_path：st_one
+background:#424242; 导航栏背景颜色
+------tpl_info------------

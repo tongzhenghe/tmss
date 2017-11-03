@@ -1,0 +1,18 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header" >
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1> 文章详情 </h1>
+  <div class="header_r"> <a class="ect-icon ect-icon-cate pull-right" href="{:url('article/index')}"></a></div>
+</header>
+
+<section class="wrap">
+  <div class="art_content radius10">
+    <h2><span>{$article.title}</span> {$article.add_time}</h2>
+    <div>
+      <p> {$article.content} </p>
+    </div>
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

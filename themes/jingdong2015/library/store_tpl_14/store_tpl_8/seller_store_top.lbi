@@ -1,0 +1,44 @@
+<div class="main" style="{if $store_bg.is_custom}{if $store_bg.show_img}background:url({$store_bg.bgimg}) 50% 0 {$store_bg.bgrepeat} fixed;{elseif $store_bg.bgcolor} background-color:{$store_bg.bgcolor}{/if}{else}background: url(themes/<? echo $GLOBALS['_CFG']['template'] ?>/store_tpl_8/store_css/store_images/body_bg.jpg) 50% 0% no-repeat fixed;{/if}">
+    <div class="col_main" style="background:#fff;">
+        <div class="store_dh">
+            {$header_content}
+        </div>
+        <div class="nav" style="background-color:{if $store.shop_color}{$store.shop_color}{else}#000000{/if};">
+            <div class="layout">
+                <div class="layout-left higt">
+                    <div class="s-color2 userpsx_dh">
+                        <div class="s-l s-type2">
+                            <h3><a href="#">所有分类</a><i></i></h3>
+                            <div class="s-main">
+                                <div class="s-box">
+                                {foreach from=$store_cate item=category}
+                                    <div class="one">
+                                        {if $category.is_text}
+                                        <a href="#" target="_blank" class="yiji">{$category.name}</a>
+                                        {else}
+                                        <a href="javascript:return false;"><img src="{$category.cat_img}" alt="{$category.name}"/></a>
+                                        {/if}
+                                        <ul>
+                                        {foreach from=$category.child_cat item=child}
+                                        {if $child.is_text}
+                                            <li><a href="{$child.url}" target="_blank">{$child.name}</a></li>
+                                        {else}
+                                            <li><a href="{$child.url}" target="_blank"><img src="{$child.cat_img}" alt="{$child.name}"/></a></li>
+                                        {/if}
+                                        {/foreach}
+                                        </ul>
+                                    </div>
+                                 {/foreach}    
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-right m790">
+                {foreach from=$store_nav item=nav}
+                    <a href="{$nav.nav_link}">{if $nav.is_text}{$nav.nav_name}{else}<img src="{$nav.nav_img}" />{/if}</a>
+                {/foreach}
+                </div>
+            </div>
+        </div>
+    </div>

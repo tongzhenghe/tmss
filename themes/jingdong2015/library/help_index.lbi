@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if $helps}-->
+<div class="w">
+    <div id="service2015">
+        <!-- {foreach from=$helps item=help_cat name=foo} -->
+        <!-- {if $smarty.foreach.foo.iteration < 6} -->
+        <dl class="fore{$smarty.foreach.foo.iteration}">
+            <dt>{$help_cat.cat_name}</dt>
+            <dd>
+                <!-- {foreach from=$help_cat.article item=item} -->
+                <p><a href="{$item.url}" target="_blank" title="{$item.title|escape:html}">{$item.short_title}</a></p>
+                <!-- {/foreach} -->
+            </dd>
+        </dl>
+        <!-- {/if}  -->
+        <!-- {/foreach} -->
+        <dl class="coverage">
+        	<dt>汤姆叔叔自营覆盖成都</dt>
+            <dd>
+            	<div class="text">汤姆叔叔已向全市提供自营配送服务，支持货到付款、微信支付和售后服务。</div>
+
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--{/if}--> 
+

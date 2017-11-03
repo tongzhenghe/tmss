@@ -1,0 +1,20 @@
+<div class="fn-clear" style=" height:100px;">
+<div class="mc" style="width: 100%; position:absolute; left:0;">
+<div class="userDefinedArea" style=" background:url(/seller_themes/store_tpl_16/custom_images/biaoti_2.jpg) -168.5px 0px; height:100px;"></div>
+</div>
+</div>
+<div class="fn-clear w990" style=" margin:0 auto 10px;">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_16/custom_images/tj_product.jpg" usemap="#tj_Map" border="0" />
+<map name="tj_Map" id="tj_Map">
+<area shape="rect" coords="4,3,487,289" href="#" />
+<area shape="rect" coords="501,7,984,286" href="#" />
+<area shape="rect" coords="9,301,327,594" href="#" />
+<area shape="rect" coords="337,304,650,588" href="#" />
+<area shape="rect" coords="665,308,930,588" href="#" />
+<area shape="rect" coords="11,606,479,883" href="#" />
+<area shape="rect" coords="506,610,982,883" href="#" />
+</map>
+</a>
+</div>
+</div>

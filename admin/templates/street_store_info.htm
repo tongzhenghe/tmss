@@ -1,0 +1,57 @@
+{include file="pageheader.htm"}
+
+<div class="main-div">
+<form action="store_manege.php" method="post" name="theForm" onsubmit="return validate()">
+<table width="100%">
+  <tr>
+    <td class="label">店铺名称: </td>
+    <td><a href="../seller_store.php?sid={$store.id}" target="_blank">{$store.shop_name|escape:html}</a></td>
+  </tr>
+  <tr>
+    <td class="label">店铺街小图标: </td>
+    <td><img src="{$store.street_logo}" width="90" /></td>
+  </tr>
+  <tr>
+    <td class="label">店铺街商品图: </td>
+    <td><img src="{$store.street_spjpg}" width="220" /></td>
+  </tr>
+  <tr>
+    <td class="label">店铺分类: </td>
+    <td>
+    <select name="street_cate" >
+    <option value="0">选择分类</option>
+    {foreach from=$store_category item=cate}
+    <option value="{$cate.id}" {if $cate.id == $store.street_cate } selected="true" {/if}>{$cate.cate_name}</option>
+    {/foreach}
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">店铺标签: </td>
+    <td>
+    <select name="street_tags" >
+    {foreach from=$street_tags item=tags}
+    <option value="{$tags.id}" {if $tags.id == $store.street_tags } selected="true" {/if}>{$tags.tag_name}</option>
+    {/foreach}
+    </select>
+    </td>
+  </tr>
+  <tr >
+    <td class="label">店铺街排序: </td>
+    <td><input type="text" name="street_order" value="{$store.street_order}" maxlength="3" size="5"/>
+    <br/>(数值越大排列越靠前)
+    </td>
+  </tr>
+  <tr>
+    <td></td>    
+    <td align="left">
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$store.id}" />
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+      <input type="reset" value="{$lang.button_reset}" class="button" />
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{include file="pagefooter.htm"}

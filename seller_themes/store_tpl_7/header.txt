@@ -1,0 +1,5 @@
+﻿<style>.store_dh{ background: #fff200; margin-bottom:0;}
+.user-shopsigns{ width:990px; margin:0 atuo 10px;}</style>
+<div class="user-shopsigns">
+<a href="#" class="s_logo  s_logo_l" target="_blank"><img src="/seller_themes/store_tpl_7/custom_images/11245.png"/></a>
+</div>

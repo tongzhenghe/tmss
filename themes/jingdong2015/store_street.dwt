@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>店铺街</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/jingdong2015/store_css/street.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="street_tianmao">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> 
+<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+
+<script type="text/javascript">
+/* UEFA Players Slider */
+$(document).ready(function(){
+	var movetime=300;	
+	var maxw=370;
+	var avgw=127;
+	var index;
+	var t=false; //延时执行
+	var _this;
+	//标记当前
+	function cur(ele){		
+		ele=$(ele)? $(ele):ele;
+		ele.addClass("st_col_cur").siblings().removeClass("st_col_cur");	
+	};
+	$(".st_bands div:eq(0)").addClass("st_col_cur").animate({"width":maxw+"px"});
+	$(".st_bands").find("div").mouseover(function(){									  
+		_this=$(this);		
+		index=$( ".st_bands .st_col" ).index( $(this)[0] );
+		var act=function (){
+			_this.siblings("div").removeClass("st_col_cur");
+			_this.animate({"width":maxw+"px"},{duration:movetime,easing:"easeOutQuart",complete:function(){cur(_this)}}).siblings("div").animate({"width":avgw+"px"},{duration:movetime})
+		}
+		t=setTimeout(act,200);			
+		return false;			
+	}).mouseout(function(){
+		if(t){
+			clearTimeout(t);
+		}
+	});
+
+})
+</script>
+<div id="content">
+	<div class="mian">
+        <div class="street_title">
+            <strong>店铺专题</strong>
+            <b></b>
+        </div>
+        <div class="street_nav">
+        	<a href="store_street.php" class="selected"><span>全部</span></a>
+            {foreach from=$store_cate item=cate}
+            <a href="store_street.php?cat={$cate.id}"><span>{$cate.cate_name}</span><i></i></a>
+            {/foreach}
+        </div>
+        <div class="street_wrap">
+        {foreach from=$street_stores item=store}
+            <div class="street_item">
+            	<a href="seller_store.php?sid={$store.id}" target="_blank">
+                	<img src="{$store.street_spjpg}" width="220" hidden="220" />
+                    <p class="street_logo"><img src="{$store.street_logo}" width="90" height="45" /></p>
+                    <h4 class="str_title">{$store.shop_name}</h4>
+                    <p class="str_desc">{$store.shop_title}</p>
+                    <b class="ui_banner">
+                    	<i></i>
+                        <span>进入</span>
+                    </b>
+                    <b class="str_tag">
+                    	<span>{$store.tag_name}</span>
+                        <b class="new"></b>
+                    </b>
+                    <p class="box_num"><em></em></p>
+                </a>
+            </div>
+            {/foreach}
+        </div>
+        <div class="street_page">
+        	<div class="str_page">
+            	<div class="str_page_num">
+                	<!-- {if $pager.page_prev} -->
+                	<a class="str_prev" href="{$pager.page_prev}">&lt;</a>
+                    {else}
+                    <b class="str_prev">&lt;</b>
+                    <!-- {/if} -->
+                    <!-- {if $pager.page_count neq 1} --> 
+                    <!--{foreach from=$pager.page_number key=key item=item}--> 
+                    <!-- {if $pager.page eq $key} -->
+                    <b class="str_page_cur">{$key}</b>
+                    <!-- {else} --> 
+                    <a href="{$item}">{$key}</a> 
+                    <!-- {/if} --> 
+                    <!--{/foreach}--> 
+                    <!-- {/if} -->
+                    <!-- {if $pager.page_next} -->
+                    <a href="{$pager.page_next}" class="str_next">&gt;</a>
+                    {else}
+                    <b class="str_prev">&gt;</b>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="st_bands">
+    	{foreach from=$recom_cate_store item=cate name=cats}
+    	<div class="st_col st_ys{$smarty.foreach.cats.iteration} {if $smarty.foreach.cats.iteration==1}st_col_cur{/if}">
+        	<h3 class="st_title">{$cate.cate_name}</h3>
+            {foreach from=$cate.stores item=store name=st}
+            {if $smarty.foreach.st.iteration % 4==1}
+            <p class="st_list">
+            	<a href="seller_store.php?sid={$store.id}" target="_blank">
+                	<img src="{$store.street_logo}" width="90" height="45px" alt="{$store.shop_name}" />
+                    <b class="st_bands_btn">
+                    	<i></i>
+                        <span>进入店铺</span>
+                        <b></b>
+                    </b>
+                </a>
+            {elseif $smarty.foreach.st.iteration % 4==0}
+                <a href="seller_store.php?sid={$store.id}" target="_blank">
+                	<img src="{$store.street_logo}" width="90" height="45px" alt="{$store.shop_name}" />
+                    <b class="st_bands_btn">
+                    	<i></i>
+                        <span>进入店铺</span>
+                        <b></b>
+                    </b>
+                </a>
+            </p>
+            {else}
+             	<a href="seller_store.php?sid={$store.id}" target="_blank">
+                	<img src="{$store.street_logo}" width="90" height="45px" alt="{$store.shop_name}" />
+                    <b class="st_bands_btn">
+                    	<i></i>
+                        <span>进入店铺</span>
+                        <b></b>
+                    </b>
+                </a>
+            {/if}
+           {/foreach}
+        </div>
+		{/foreach}
+    </div>
+</div>
+</body>
+</html>

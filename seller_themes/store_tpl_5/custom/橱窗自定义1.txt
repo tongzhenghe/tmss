@@ -1,0 +1,21 @@
+<div class="fn-clear user_duotu-489318">
+<div class="mc">
+<div class="module">
+<a href="#" target="_blank">
+<img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_1.jpg"/>
+<span><img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_1.jpg"/></span>
+</a>
+<a href="#" target="_blank">
+<img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_2.jpg"/>
+<span><img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_2.jpg"/></span>
+</a>
+<a href="#" target="_blank">
+<img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_3.jpg"/>
+<span><img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_3.jpg"/></span>
+</a>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_4.jpg"/>
+<span><img src="/seller_themes/store_tpl_5/custom_images/banner_zhuanqu_4.jpg"/></span>
+</a>
+</div>
+</div>
+</div>

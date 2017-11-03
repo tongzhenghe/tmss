@@ -1,0 +1,250 @@
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+	background-color: #af0000;
+}
+.main .no-margin{ margin:0;}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{ background:none;}
+.user_temp_one{ background:#F20000; }
+
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888;}
+.all_cats_tcc li .s_b a:hover{background: #af0000; color:#fff;}
+
+.jTwoLevel a{color:#fff; font-size:14px;}
+.square_box{background:#fff; margin-right:13px;}
+.jTwoLevel:hover{background: #af0000;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {
+	background:#b80c0c;
+	color: #fff;
+	text-decoration: none;
+}
+.fn-clear-auto {
+	margin: 0 auto 10px;
+}
+.userDefinedArea a {
+	float: left;
+}
+
+/*幻灯片组件*/
+.flex-control-nav li{ margin:0;}
+.flex-control-paging li a,.ban_nav a{
+	width: 30px;
+	height: 6px;
+	overflow: hidden;
+	background-color: #000;
+	margin-left: 3px;
+	border-radius:0;
+}
+.flex-control-paging li a.flex-active,.ban_nav .on{
+	background-color:#FF6C00;
+}
+
+/*自定义产品列表*/
+.user-de05 ul {
+	height: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+	width: 990px;
+}
+.user-de05 .s-goodsinfo {
+	overflow: hidden;
+	padding: 5px 10px;
+	width: auto;
+}
+.user-de05 li {
+	float: left;
+	height: 100%;
+	margin-bottom: 8px;
+	margin-left: 7px;
+	overflow: hidden;
+	width: 321px;
+}
+.user_08 .s-goods-box:hover {
+	border-color: #000;
+	transition: all 0.5s ease 0s;
+}
+.user-de05 .s-goodsimg, .user-de05 .s-goodsimg a, .user-de05 .s-goodsimg img {
+	display: block;
+	height: 311px;
+	overflow: hidden;
+	width: 311px;
+}
+.user-de05 .s-price, .user-de05 .s-name, .user-de05 .s-goodsbtn {
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 2px 0;
+	width: 100%;
+}
+.user-de05 .s-price, .user-de05 .s-name, .user-de05 .s-goodsbtn {
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 2px 0;
+	width: 100%;
+}
+.user-de05 .s-name a {
+	color: #666666;
+	font: 12px/1.5 tahoma,arial;
+}
+.user-de05 .s-price strong {
+	font-size: 14px;
+}
+.user-de05 .s-name a:hover {
+	color: #6fb2c3;
+	text-decoration: underline;
+}
+.user-de05 .s-price .del {
+	margin-left: 20px;
+}
+
+/*首页小广告轮播滚动*/
+.user-jBanner-510149 .j-module{ height:400px;}
+.slider {
+	position: absolute;
+	margin: 0 auto;
+	width: 990px;
+	height: 400px;
+}
+.slider .img {
+	position: absolute;
+	overflow: hidden;
+}
+.slider .img ul {
+	position: absolute;
+	width: 19999px;
+	display: block;
+}
+.slider .img li {
+	float: left;
+	display: inherit;
+}
+.slider .btns b {
+	height: 13px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	margin: 0 auto;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	opacity: 0.8;
+	right:20px;
+	bottom:20px;
+}
+.slider .btns b i {
+	display: block;
+	width: 14px;
+	height: 10px;
+	overflow: hidden;
+	background-color: black;
+	float: left;
+	cursor: pointer;
+	background: #FF7F66;
+	border: 1px solid #ffffff;
+	margin:0 5px;
+}
+.slider .btns b i.on{
+	width: 30px;
+	height: 10px;
+	line-height: 10px;
+	margin: 0 0px;
+	background: #6fb2c3;
+	color: #fff;
+	border: 1px solid #FFFFFF;
+}
+
+/*产品分类页面样式*/
+.search_nr .se_btn input[type="submit"]{
+	background: none repeat scroll 0 0 #184f30;
+	width:63px;
+	color:#fff;
+}
+.search_nr .se_btn input:hover {
+	opacity: 1;
+}
+.shop-filter .jTab{
+	overflow: hidden;
+	border-bottom: solid 1px #cecece;
+	_height: 100%;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding:0;
+}
+.shop-filter .jTab a,.shop-filter .jTab .jCurrent,.shop-filter .jTab a.current{
+	border-radius:0;
+}
+.shop-filter .jTab a:hover,.shop-filter .jTab .jCurrent,.shop-filter .jTab a.current{
+	color: #fff;
+	border: solid 1px #184f30;
+	border-bottom: 0;
+	background: #184f30;
+}
+.temp .Jproduct ul{
+	padding:10px 0 10px 1px;
+}
+#plist ul{
+	width: 100%;
+	padding: 10px 0;
+	overflow: hidden;
+}
+#plist li{
+	width:23%;
+	margin: 0 1%;
+	overflow: hidden;
+	display: inline;
+	padding:10px 0 0 0;
+	border:0;
+}
+#plist li.jCurrent {
+	border: 0;
+	box-shadow:none;
+}
+#plist.plist-n7a .p-img{ 
+	height:160px;
+	padding:0;
+}
+#plist.plist-n7a .jGoodInfo{
+	padding: 5px;
+	text-align: center;
+	overflow:hidden;
+}
+#plist.plist-n7a .p-name {
+	height: 32px;
+	line-height: 1.4;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+#plist .p-price{
+	overflow: hidden;
+	margin-bottom: 5px;
+	height: 18px;
+}
+#plist .p-price strong ,#plist .extra,#plist .extra a{
+	float: none;
+}
+#plist .extra a:link, #plist .extra a:visited {
+	color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+

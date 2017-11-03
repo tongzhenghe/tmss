@@ -1,0 +1,212 @@
+<div class="fn-clear user_s15007863">
+<div class="user_box user_bgcolor">
+<div class="jtitle user_font_1">
+初秋巨献 团购优惠
+</div>
+<div class="stitle user_font_3">
+爆款单品 &nbsp;限量秒杀之一
+</div>
+</div>
+</div>
+<div class="fn-clear user_s15007864">
+<div class="itembox user_bgcolor_3">
+<ul class=" list-paddingleft-2">
+<li>
+<div class="jItem">
+<div class="item user_bgcolor_3">
+<div class="jPic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/540e84aeN4eb71556.jpg" width="280"/></a>
+</div>
+<div class="jDesc">
+<div class="jTitle">
+<a href="#" class="user_a_2">Ddayup 2014秋款时尚针织蕾丝修身连衣裙 LG8885 紫红色 M</a>
+</div>
+<div class="jdPrice user_font_price user_bgcolor">
+<div class="tuan">
+<div class="tp">
+团购价
+</div>
+<div class="t user_font_3">
+￥
+</div>
+</div>
+<div class="jPrice user_font_3">
+<span class="jdNum">129.00</span>
+</div>
+</div>
+<div class="jInfo user_border_1">
+<div class="jsPrice user_font">
+参考价<br/>￥<span class="jsNum">387.00</span>
+</div>
+<div class="discount  user_font_1 user_border_left">
+折扣<br/>3折
+</div>
+<div class="save user_font_1 user_border_left">
+节省<br/>￥258
+</div>
+</div>
+<div class="bm user_bgcolor_6 user_border_1">
+<div class="jtime">
+活动时间：11月19日9:30-20日9:30
+</div>
+<div class="quick">
+数量有限 欲购从速
+</div>
+</div>
+<div class="jbuybtn">
+<a href="#" class="user_a_3"></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="item user_bgcolor_3">
+<div class="jPic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/540e8349N0e7d9093.jpg" width="280"/></a>
+</div>
+<div class="jDesc">
+<div class="jTitle">
+<a href="#" class="user_a_2">Ddayup 2014秋款时尚针织蕾丝修身连衣裙 LG8885 紫红色 M</a>
+</div>
+<div class="jdPrice user_font_price user_bgcolor">
+<div class="tuan">
+<div class="tp">
+团购价
+</div>
+<div class="t user_font_3">
+￥
+</div>
+</div>
+<div class="jPrice user_font_3">
+<span class="jdNum">129.00</span>
+</div>
+</div>
+<div class="jInfo user_border_1">
+<div class="jsPrice user_font">
+参考价<br/>￥<span class="jsNum">387.00</span>
+</div>
+<div class="discount  user_font_1 user_border_left">
+折扣<br/>3折
+</div>
+<div class="save user_font_1 user_border_left">
+节省<br/>￥258
+</div>
+</div>
+<div class="bm user_bgcolor_6 user_border_1">
+<div class="jtime">
+活动时间：11月19日9:30-20日9:30
+</div>
+<div class="quick">
+数量有限 欲购从速
+</div>
+</div>
+<div class="jbuybtn">
+<a href="#" class="user_a_3"></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="item user_bgcolor_3">
+<div class="jPic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/54080305N3bf9e747.jpg" width="280"/></a>
+</div>
+<div class="jDesc">
+<div class="jTitle">
+<a href="#" class="user_a_2">Ddayup 2014秋款时尚针织蕾丝修身连衣裙 LG8885 紫红色 M</a>
+</div>
+<div class="jdPrice user_font_price user_bgcolor">
+<div class="tuan">
+<div class="tp">
+团购价
+</div>
+<div class="t user_font_3">
+￥
+</div>
+</div>
+<div class="jPrice user_font_3">
+<span class="jdNum">129.00</span>
+</div>
+</div>
+<div class="jInfo user_border_1">
+<div class="jsPrice user_font">
+参考价<br/>￥<span class="jsNum">387.00</span>
+</div>
+<div class="discount  user_font_1 user_border_left">
+折扣<br/>3折
+</div>
+<div class="save user_font_1 user_border_left">
+节省<br/>￥258
+</div>
+</div>
+<div class="bm user_bgcolor_6 user_border_1">
+<div class="jtime">
+活动时间：11月19日9:30-20日9:30
+</div>
+<div class="quick">
+数量有限 欲购从速
+</div>
+</div>
+<div class="jbuybtn">
+<a href="#" class="user_a_3"></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="item user_bgcolor_3">
+<div class="jPic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/5406749bN4561dfc8.jpg" width="280"/></a>
+</div>
+<div class="jDesc">
+<div class="jTitle">
+<a href="#" class="user_a_2">Ddayup 2014秋款时尚针织蕾丝修身连衣裙 LG8885 紫红色 M</a>
+</div>
+<div class="jdPrice user_font_price user_bgcolor">
+<div class="tuan">
+<div class="tp">
+团购价
+</div>
+<div class="t user_font_3">
+￥
+</div>
+</div>
+<div class="jPrice user_font_3">
+<span class="jdNum">129.00</span>
+</div>
+</div>
+<div class="jInfo user_border_1">
+<div class="jsPrice user_font">
+参考价<br/>￥<span class="jsNum">387.00</span>
+</div>
+<div class="discount  user_font_1 user_border_left">
+折扣<br/>3折
+</div>
+<div class="save user_font_1 user_border_left">
+节省<br/>￥258
+</div>
+</div>
+<div class="bm user_bgcolor_6 user_border_1">
+<div class="jtime">
+活动时间：11月19日9:30-20日9:30
+</div>
+<div class="quick">
+数量有限 欲购从速
+</div>
+</div>
+<div class="jbuybtn">
+<a href="#" class="user_a_3"></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>

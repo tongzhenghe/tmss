@@ -1,0 +1,15 @@
+<div class="fn-clear user_zt">
+<div class="mc">
+<div class="d_zt">
+<div class="guanggao1">
+<a href="#" class="pic"><img src="/seller_themes/store_tpl_6/custom_images/guanggao_1.jpg"/></a>
+</div>
+<div class="guanggao2">
+<a href="#" class="pic1"><img src="/seller_themes/store_tpl_6/custom_images/guanggao_2.jpg"/></a>
+</div>
+<div class="guanggao3">
+<a href="#" class="pic2"><img src="/seller_themes/store_tpl_6/custom_images/guanggao_3.jpg"/></a><a href="#" class="pic3"><img src="/seller_themes/store_tpl_6/custom_images/guanggao_4.jpg"/></a>
+</div>
+</div>
+</div>
+</div>	

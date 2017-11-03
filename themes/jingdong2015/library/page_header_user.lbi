@@ -1,0 +1,170 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,jd_common_flow.js,easydialog.min.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js'}
+<div id="shortcut-2013" class="pageHeaderFlow">
+	<div class="w">
+    	<ul class="fl lh">
+        	<li class="fore1 ld" clstag="homepage|keycount|home2013|01a"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏汤姆</a></li>
+        </ul>
+        <ul class="fr lh">
+        	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+            <!--{if $navigator_list.top}-->
+            <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <li class="fore2 ld"><div class="dt"><s></s> <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank"{/if}>{$nav.name}</a></div></li>
+            <!-- {/foreach} -->
+            <!--{/if}-->
+            <li class="fore3 ld menu" id="app-jd">
+            	<div class="dt"><s></s><i></i><span class="outline"></span><span class="blank"></span><a href="#" target="_blank">手机汤姆</a><b></b></div>
+                <div class="dd lh">
+                    <div class="qr-info"></div>
+                    <div class="qr-item qr-jd-app">
+                    	<div class="qr-img"><img id="app-qrcode-img" src="images/538557daNd249a428.png" class="err-product" width="76" height="76" alt="手机汤姆" src="images/blank.gif"></div>
+                    	<div class="qr-ext"><strong>汤姆客户端</strong><a href="#" target="_blank" class="btn-app-apple"></a><a href="#" target="_blank" class="btn-app-android"></a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="fore4 ld menu myJd" id="biz-service">
+            	<div class="dt"><s></s> <span class="outline"></span> <span class="blank"></span> 客户服务 <b></b></div>
+                <div class="dd">
+                	<div><a href="#" target="_blank">帮助中心</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">售后服务</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="#" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="o-header-2013" class="PageHeader userPageHeader">
+	<div class="w" id="header-2013">
+    	<div id="logo-2013" class="ld"><a href="./index.php" hidefocus="true" ><b></b><img src="images/logo.gif" width="270" height="48" alt="汤姆"></a></div>
+        <!--logo end-->
+        <div id="search-2013">
+        	<div class="i-search ld">
+            	<ul id="shelper" class="hide"></ul>
+                <div class="form">
+                	<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
+                    	<input type="text" class="text" accesskey="s" id="key" autocomplete="off" name="keywords" id="keyword" value="{$search_keywords|escape}">
+                        <input type="submit" value="搜索" class="button">
+                    </form>
+                </div>
+            </div>
+            {if $searchkeywords}
+            <div id="hotwords">
+            	<strong>热门搜索：</strong> {foreach from=$searchkeywords item=val name=foo}
+                {if $smarty.foreach.foo.first} <a href="search.php?keywords={$val|escape:url}" target="_blank" style="color:#ff0000">{$val}</a> {else} <a href="search.php?keywords={$val|escape:url}" target="_blank">{$val}</a> {/if}
+                {/foreach}
+            </div>
+            {/if}
+        </div>
+
+        <div id="ECS_CARTINFO" class="settleup-2013">{insert name='cart_info'}</div>
+        <div id="my360buy-2013">
+        	<dl>
+            	<dt class="ld"><s></s><a href="user.php">我的汤姆</a><b></b></dt>
+                <dd>
+                	<div class="prompt"> <span class="fl"><strong></strong></span> <span class="fr"><a href="user.php">去我的汤姆首页&nbsp;&gt;</a></span> </div>
+                    <div id="jduc-orderlist">
+                    	<div class="orderlist">
+                        	<div class="smt">
+                            	<h4>最新订单状态：</h4>
+                                <div class="extra"><a href="user.php?act=order_list" target="_blank">查看所有订单&nbsp;&gt;</a></div>
+                            </div>
+                            <div class="smc"><ul></ul></div>
+                        </div>
+                    </div>
+                    <div class="uclist">
+                    	<ul class="fore1 fl">
+                        	<li><a target="_blank" href="user.php?act=address_list">收货地址&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=booking_list">缺货登记&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=profile">用户信息&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=collection_list">我的收藏&nbsp;&gt;</a></li>
+                        </ul>
+                        <ul class="fore2 fl">
+                        	<li><a target="_blank" href="user.php?act=message_list">我的留言&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=comment_list">我的评论&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=bonus">我的红包&nbsp;&gt;</a></li>
+                            <li><a target="_blank" href="user.php?act=bonus">资金管理&nbsp;&gt;</a></li>
+                        </ul>
+                    </div>
+                	<div class="viewlist">
+                    	<div class="smt"><h4>最近浏览的商品：</h4></div>
+                        <div class="smc" id="jduc-viewlist">
+                        	<ul class="lh hide" style="display: block; ">
+                            	<li><a href="http://item.jd.com/352668.html" target="_blank" title="奥克斯（AUX）KFR-35GW/SQB+3 正1.5匹 挂式家用冷暖空调（白色）"><img src="http://img13.360buyimg.com/n5/g12/M00/0C/11/rBEQYFNfTsoIAAAAAADiNw9ThggAAFRigOY1jEAAOJP891.jpg" width="50" height="50" alt="奥克斯（AUX）KFR-35GW/SQB+3 正1.5匹 挂式家用冷暖空调（白色）"></a></li>
+                                <li><a href="http://item.jd.com/963105.html" target="_blank" title="美的（Midea) JSQ22-12HWB 12升 燃气热水器"><img src="http://img10.360buyimg.com/n5/jfs/t166/189/596831519/141411/1b6cdc08/53915c9fNd4bf770b.jpg" width="50" height="50" alt="美的（Midea) JSQ22-12HWB 12升 燃气热水器"></a></li>
+                                <li><a href="http://item.jd.com/1170865636.html" target="_blank" title="TCL KFRd-25GW/CU33蓝玫 纯铜管设计正1匹钛金静音冷暖空调"><img src="http://img11.360buyimg.com/n5/jfs/t151/110/464419108/124863/d5bbe5ef/538de2efNfc12d1c9.jpg" width="50" height="50" alt="TCL KFRd-25GW/CU33蓝玫 纯铜管设计正1匹钛金静音冷暖空调"></a></li>
+                                <li><a href="http://item.jd.com/560885.html" target="_blank" title="博世(Bosch)GSB600RE set  13毫米冲击钻套装"><img src="http://img10.360buyimg.com/n5/g16/M00/00/12/rBEbRlNqBM8IAAAAAAfjPk1mjT4AAAHGANxQaUAB-NW760.jpg" width="50" height="50" alt="博世(Bosch)GSB600RE set  13毫米冲击钻套装"></a></li>
+                                <li><a href="http://item.jd.com/560885.html" target="_blank" title="博世(Bosch)GSB600RE set  13毫米冲击钻套装"><img src="http://img10.360buyimg.com/n5/g16/M00/00/12/rBEbRlNqBM8IAAAAAAfjPk1mjT4AAAHGANxQaUAB-NW760.jpg" width="50" height="50" alt="博世(Bosch)GSB600RE set  13毫米冲击钻套装"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+  </div>
+  <div class="w">
+    <div id="nav-2013">
+      <div id="categorys-2013" class="categorys-2014 {if $script_name neq 'index'}no_index{/if}">
+        <div class="mt ld">
+          <h2><a href="javascript:;">全部商品分类<b></b></a></h2>
+        </div>
+        <div id="_JD_ALLSORT" class="mc">
+             <!--{foreach from=$categories item=cat name=foo}-->
+          <div class="item fore{$smarty.foreach.foo.iteration}"> <span>
+            <h3><a href="{$cat.url}">{$cat.name|escape:html}</a></h3>
+            <s></s></span>
+            <div class="i-mc" style="top: 3px; ">
+              <div onclick="$(this).parent().parent().removeClass('hover')" class="close">×</div>
+              <div class="subitem">
+              
+                <!--{foreach from=$cat.cat_id item=child name=foo2}-->
+                <dl class="fore{$smarty.foreach.foo2.iteration}">
+                  <dt><a href="{$child.url}">{$child.name|escape:html}</a></dt>
+                  <dd> <!--{foreach from=$child.cat_id item=childer}--> <em><a href="{$childer.url}">{$childer.name|escape:html}</a></em><!--{/foreach}--> </dd>
+                </dl>
+                
+                  <!--{/foreach}--> 
+    
+              </div>
+              <div class="cat-right-con fr" id="JD_sort_a">
+                <dl class="categorys-promotions">
+                  <dd>
+                    <ul>
+                      <li> {insert name='ads_pro' cat_name=$cat.name type='左侧导航广告1'} </li>
+                      <li> {insert name='ads_pro' cat_name=$cat.name type='左侧导航广告2'} </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="categorys-brands">
+                  <dt>推荐品牌</dt>
+                  <dd>
+                    <ul>
+                      <!--{foreach from=$cat.brands item=brands}-->
+                      <li><a href="{$brands.url}" target="_blank">{$brands.brand_name}</a></li>
+ 					 <!--{/foreach}-->
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+			 <!--{/foreach}-->
+          
+        </div>
+      </div>
+      <ul id="navitems-2013">
+      
+            <li class="fore1 {if $navigator_list.config.index eq 1}curr{/if}"><a href="./index.php">{$lang.home}</a></li>
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav name=foo} -->
+  <li class="fore{$smarty.foreach.foo.iteration} {if $nav.active eq 1}curr{/if}"><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a></li>
+
+ <!-- {/foreach} -->
+ 
+      
+     
+      </ul>
+    </div>
+  </div>
+</div>

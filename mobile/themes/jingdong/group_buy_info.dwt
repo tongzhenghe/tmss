@@ -1,0 +1,205 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page" style="right: 0px; left: 0px; display: block;">
+  <header id="header">
+    <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+    <h1>{$lang.groupbuy_goods_info}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+  </header>
+  
+  <!--商品图 s--->
+  <section class="goods_slider">
+    <div id="focus" class="slideBox">
+      <div class="hd">
+        <ul>
+        </ul>
+      </div>
+      <div class="bd">
+        <ul id="Gallery" style=" width:100%;">
+          <li><a href="javascript:showPic()"><img alt="{$gb_goods.goods_name}" src="{$gb_goods.goods_img}"/></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="detail-price"> <a class="btn-sc" id="collect_box" href="javascript:collect({$goods.goods_id})" style="display: inline;"><span></span></a> </div>
+  </section>
+  <!--商品图 end---> 
+  
+  <!--商品参数-->
+  <section class="goodsInfo" style="padding:0">
+    <div class="Secton10">
+      <div class="Info"> <a><span class="Text">{$lang.goods_brief}</span></a> 
+        <!-- {if $cfg.show_goodssn && 0} --> 
+        {$lang.goods_sn}{$gb_goods.goods_sn}<br>
+        <!-- {/if} --> 
+        <!-- {if $cfg.goods.brand_name && $show_brand && 0} --> 
+        {$lang.goods_brand} {$gb_goods.brand_name}<br>
+        <!--{/if}--> 
+        <!-- {if $cfg.show_goodsweight && 0} --> 
+        {$lang.goods_weight} {$gb_goods.goods_weight}<br>
+        <!-- {/if} --> 
+      </div>
+      <p class="detail-title">{$gb_goods.goods_name|escape:html}</p>
+      <!--团购说明 begin-->
+      <p class="text2" style="padding-bottom:5px;">{$group_buy.group_buy_desc}</p>
+      <!---团购说明--> 
+    </div>
+    <div class="bg-h15"></div>
+    <div class="Secton10 Secton10-v1">
+      <ul>
+        <li class="detail-title" style="padding:0;">{$lang.amount}：<font id="ECS_GOODS_AMOUNT" class="price">{$group_buy.formated_cur_price}</font></li>
+        <!-- {if $group_buy.deposit > 0} 保证金额-->
+        <li class="detail-title" style="padding:0;">{$lang.gb_deposit}{$group_buy.formated_deposit}</li>
+        <!--{/if}--> 
+        <!--{if $group_buy.restrict_amount > 0} 限购数量-->
+        <li class="detail-title" style="padding:0;"> {$lang.gb_restrict_amount} {$group_buy.restrict_amount} </li>
+        <!--{/if}--> 
+        <!--{if $group_buy.gift_integral > 0} 送积分-->
+        <li class="detail-title" style="padding:0;"> {$lang.gb_gift_integral} {$group_buy.gift_integral} </li>
+        <!--{/if}--> 
+        <!-- {if $group_buy.status eq 0} 未开始 -->
+        <li class="detail-title" style="padding:0;"> {$lang.gbs_pre_start}</li>
+        <!-- {elseif $group_buy.status eq 1} 进行中 -->
+        <li class="detail-title" style="padding:0;"><font class="f4">{$lang.gbs_under_way}<br />
+          <span id="leftTime" class="price">{$lang.please_waiting}</span></font></li>
+        <li class="detail-title" style="padding:0;">{$lang.gb_cur_price} <b class="price">{$group_buy.formated_cur_price}</b></li>
+        <li class="detail-title" style="padding:0;">{$lang.gb_valid_goods} {$group_buy.valid_goods}</li>
+        <!-- {elseif $group_buy.status eq 2} 已结束 -->
+        <li class="detail-title" style="padding:0;">{$lang.gbs_finished} {$lang.gb_cur_price} {$group_buy.formated_cur_price} {$lang.gb_valid_goods} {$group_buy.valid_goods}</li>
+        <!-- {elseif $group_buy.status eq 3} 团购成功 -->
+        <li class="detail-title" style="padding:0;">{$lang.gbs_succeed}
+          {$lang.gb_final_price} {$group_buy.formated_trans_price}<br />
+          {$lang.gb_final_amount} {$group_buy.trans_amount}</li>
+        <!-- {elseif $group_buy.status eq 4} 团购失败 -->
+        <li>{$lang.gbs_fail}</li>
+        <!-- {/if} -->
+      </ul>
+    </div>
+    <div class="bg-h15"></div>
+    <div class="Secton10 Secton10-v1" style="padding:0;">
+      <table  width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#dddddd">
+        <tr>
+          <th bgcolor="#FFFFFF" style="line-height:30px; width:90px; border-right:1px solid #eee;">{$lang.gb_ladder_amount}</th>
+          <th bgcolor="#FFFFFF">{$lang.gb_ladder_price}</th>
+        </tr>
+        <!-- {foreach from=$group_buy.price_ladder item=item} -->
+        <tr>
+          <td bgcolor="#FFFFFF" align="center" style="padding:5px; border-right:1px solid #eee; border-top:1px solid #eee;">{$item.amount}</td>
+          <td bgcolor="#FFFFFF" align="center" style=" border-top:1px solid #eee;;">{$item.formated_price}</td>
+        </tr>
+        <!-- {/foreach} -->
+      </table>
+    </div>
+    <div class="bg-h15"></div>
+  </section>
+  <!--商品参数 E--> 
+  <!--商品参数 B-->
+  <div class="Secton10 Secton10-v1" style="padding:0;">
+    <section class="goodsBuy radius5">
+      <input id="goodsBuy-open" type="checkbox">
+      <label class="info Info" for="goodsBuy-open">
+      <div class="ProProperty">{$lang.please_select}：<span><!-- {foreach name=spec from=$specification item=spec key=spec_key} --><!-- {if $smarty.foreach.spec.iteration>1}-->/<!-- {/if} -->{$spec.name}<!-- {/foreach} --></span><i class="icon-arr"></i></div>
+      <div class="selected"> </div>
+      </label>
+      <form action="{:url("groupbuy/buy")}" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+        <div class="fields">
+          <ul class="ul2">
+            <!-- {* 开始循环所有可选属性 *} --> 
+            <!-- {foreach from=$specification item=spec key=spec_key} -->
+            <li>
+              <h2>{$spec.name}：</h2>
+              <div class="items"> 
+                <!-- {if $cfg.goodsattr_style eq 1} 规格显示方式：单选按钮 --> 
+                <!-- {foreach from=$spec.values item=value key=key} -->
+                <input type="radio" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" {if $key eq 0}checked{/if} onclick="changePrice()" />
+                <label for="spec_value_{$value.id}">{$value.label}</label>
+                <!-- {/foreach} -->
+                <input type="hidden" name="spec_list" value="{$key}" />
+                <!-- {else} 规格显示方式：下拉列表 -->
+                <select name="spec_{$spec_key}" style="border:1px solid #ccc;">
+                  <!-- {foreach from=$spec.values item=value key=key} -->
+                  <option label="{$value.label}" value="{$value.id}">{$value.label} </option>
+                  <!-- {/foreach} -->
+                </select>
+                <!-- {/if} 规格显示方式 --> 
+              </div>
+            </li>
+            <!-- {/foreach} --> 
+            <!-- {* 结束循环可选属性 *} -->
+          </ul>
+          <!-- {if $smarty.session.user_id > 0} 如果登录了，显示购买数量 -->
+          <ul class="quantity">
+            <h2>{$lang.number_to}：</h2>
+            <div class="items"> <span class="ui-number radius5">
+              <button type="button" class="decrease" onclick="changenum(-1)">-</button>
+              <input class="num" name="number" id="goods_number" autocomplete="off" value="1" min="1" max="{$goods.goods_number}" type="number" />
+              <button type="button" class="increase" onclick="changenum(1)">+</button>
+              </span> </div>
+          </ul>
+          <!-- {/if} --> 
+        </div>
+        <div class="option" style="padding:0;"> 
+          <!-- {if $smarty.session.user_id > 0} 如果登录了，显示购买按钮 -->
+          <button type="submit" class="btn buy radius5" >{$lang.button_buy}</button>
+          <!-- {else} 如果没有登录，显示提示信息 --> 
+          {$lang.gb_notice_login} 
+          <!-- {/if} 判断登录结束 -->
+          <input type="hidden" name="group_buy_id" value="{$group_buy.group_buy_id}" />
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="option"> </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript" src="__TPL__/js/lefttime.js"></script>
+<script type="text/javascript">
+//介绍 评价 咨询切换
+var tab_now = 1;
+function tab(id){
+	document.getElementById('tabs' + tab_now).className = document.getElementById('tabs' + tab_now).className.replace('current', '');
+	document.getElementById('tabs' + id).className = document.getElementById('tabs' + id).className.replace('', 'current');
+
+	tab_now = id;
+	if (id == 1) {
+		document.getElementById('tab1').className = '';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = 'hidden';
+	}else if (id == 2) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = '';
+		document.getElementById('tab3').className = 'hidden';
+	}else if (id == 3) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = '';
+	}
+}
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var now_time = {$now_time};
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+function showDiv(){
+	document.getElementById('popDiv').style.display = 'block';
+	document.getElementById('hidDiv').style.display = 'block';
+	document.getElementById('cartNum').innerHTML = document.getElementById('goods_number').value;
+	document.getElementById('cartPrice').innerHTML = document.getElementById('ECS_GOODS_AMOUNT').innerHTML;
+}
+function closeDiv(){
+	document.getElementById('popDiv').style.display = 'none';
+	document.getElementById('hidDiv').style.display = 'none';
+}
+<!-- {/literal} -->
+</script>
+</body></html>

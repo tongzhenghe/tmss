@@ -1,0 +1,135 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="user-info">
+	<div class="user-img pull-left touxiang" ><img src="{$info.headimgurl}" style="width:5em;height:5em"></div>
+    <dl class="pull-left">
+    	<dt><h4>{if $info.nickname} {$info.nickname} {else} {$info.username} {/if}</h4></dt>
+        <dd>
+        	<p class="valid_mark">{$info.integral}</p>
+            <p class="tointegration">{$rank_name}</p>
+        </dd>
+    </dl>
+    <span class="pull-right" ><a href="{:url('user/msg_list')}" class="ect-colorf">{$sys_notice}&nbsp;<i class="fa fa-envelope-o {if $new_msg}fa-envelope-o-sl{/if}"></i></a></span>
+</div>
+<section class="container-fluid userNav">
+	<ul>
+    	<li><a href="{:url('user/not_pay_order_list')}"><em class="userIcon userIcon01"></em>{$lang.not_pay_list}<span></span></a></li>
+        <li><a href="{:url('user/order_list')}"><em class="userIcon userIcon02"></em>{$lang.order_list_lnk}<span></span></a></li>
+        <li><a href="{:url('user/address_list')}"><em class="userIcon userIcon03"></em>{$lang.label_address}<span></span></a></li>
+        <li><a href="{:url('user/account_detail')}"><em class="userIcon userIcon04"></em>{$lang.label_user_surplus}<span></span></a></li>
+        <li><a href="{:url('user/profile')}"><em class="userIcon userIcon05"></em>{$lang.profile}<span></span></a></li>
+        <li><a href="{:url('user/edit_password')}"><em class="userIcon userIcon06"></em>{$lang.edit_password}<span></span></a></li>
+        <li><a href="{:url('user/service')}"><em class="userIcon userIcon07"></em>{$lang.user_service}<span></span></a></li>
+        <li><a href="{:url('user/share')}"><em class="userIcon userIcon08"></em>{$lang.label_share}<span></span></a></li>
+        <li><a href="{:url('user/tag_list')}"><em class="userIcon userIcon08"></em>{$lang.label_tag}<span></span></a></li>
+        <li><a href="{:url('user/bonus')}"><em class="userIcon userIcon08"></em>{$lang.label_bonus}<span></span></a></li>
+        <li><a href="{:url('user/booking_list')}"><em class="userIcon userIcon08"></em>{$lang.label_booking}<span></span></a></li>>
+    </ul>
+</section>
+
+<section class="user-tab ect-margin-tb ect-margin-bottom0">
+	<!-- Nav tabs -->
+    <ul class="nav nav-tabs text-center">
+    	<li class="col-xs-4 active"><a href="#one" role="tab" data-toggle="tab">{$lang.label_collection}</a></li>
+        <li class="col-xs-4"><a href="#two" role="tab" data-toggle="tab">{$lang.label_comment}</a></li>
+        <li class="col-xs-4"><a href="#three" role="tab" data-toggle="tab">{$lang.user_history}</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content" id="gwc-tab-xq-bd"><!-- 添加id，js用到 -->
+    	<div class="tab-pane active ect-pro-list" id="one"> 
+            <!--{if $goods_list}-->
+            <div class="blank10"></div>
+            <ul>
+            	<!-- {foreach from=$goods_list item=val} -->
+                <li>
+                	<a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}"><img src="{$val.goods_thumb}"></a>
+                    <dl>
+                    	<dt><h4 class="title"><a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}">{$val.goods_name}</a></h4></dt>
+                        <dd class="dd-price"><span class="pull-left"><strong><b class="ect-colory">{$val.shop_price}</b></strong><small class="ect-margin-lr"><del>{$val.market_price}</del></small></span></dd>
+                    </dl>
+                    <a href="{:url('user/delete_collection', array('rec_id'=>$this->_var['val']['rec_id']))}" class="pull-right del"><i class="glyphicon glyphicon-trash"></i></a>
+                </li>
+                <!-- {/foreach} -->
+            </ul>
+            <!--{else}-->
+            <p class="text-center ect-margin-tb ect-padding-tb">{$lang.no_data}</p>
+            <!--{/if}-->
+        </div>
+        <div class="tab-pane ect-pro-list pinglun-list userContent" id="two">
+        	<!--{if $comment_list}-->
+            <div class="blank10"></div> 
+            <ul>
+            	<!-- {foreach from=$comment_list item=val} -->
+                <li>
+                	<dl>
+                    	<dt><h4 class="title"><a href="{:url('goods/index', array('id'=>$this->_var[val]['id_value']))}">{if $val.comment_type eq 0}{$lang.goods_comment}{else}{$lang.article_comment}{/if}：{$val.cmt_name}</a></h4></dt>
+                        <dd>{$val.content}</dd>
+                        <!-- {if $val.reply_content} -->
+                        <dd>{$lang.reply_comment}：{$val.reply_content}</dd>
+                        <!-- {/if} -->
+                        <dd class="date ect-color999">{$val.formated_add_time}</dd>
+                        <dd><a href="{:url('user/delete_comment',array('id'=>$this->_var[val][comment_id]))}" class="pull-right del"><i class="glyphicon glyphicon-trash"></i></a></dd>
+                    </dl>
+                </li>
+                <!-- {/foreach} -->
+            </ul>
+            <!--{else}-->
+            <p class="text-center ect-margin-tb ect-padding-tb">{$lang.no_data}</p>
+            <!--{/if}--> 
+        </div>
+        <div class="tab-pane ect-pro-list userHistory" id="three"> 
+            <!--{if $history}--> 
+            <div class="blank10"></div>
+            <ul>
+            	<!-- {foreach from=$history item=val} -->
+                <li>
+                	<a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}"><img src="{$val.goods_thumb}"></a>
+                	<dl>
+                    	<dt><h4 class="title"><a href="{:url('goods/index', array('id'=>$this->_var[val]['goods_id']))}">{$val.goods_name}</a></h4></dt>
+                        <dd class="dd-price"><span class="pull-left"><strong><b class="ect-colory">{$val.shop_price}</b></strong><small class="ect-margin-lr"><del>{$val.market_price}</del></small></span></dd>
+                    </dl>
+                </li>
+            	<!-- {/foreach} -->
+            </ul>
+            <span class="pull-right ect-padding-lr ect-margin-tb ect-margin-bottom0"><a href="{:url('user/clear_history')}" class="history_clear del"><i class="glyphicon glyphicon-trash"></i> {$lang.clear_history}</a></span>
+            <div class="blank10"></div>
+            <!--{else}-->
+            <p class="text-center  ect-margin-tb ect-padding-tb">{$lang.not_history}<a href="{:url('category/index')}" class="ect-color ect-margin-lr" style="font-size:1.3em;">{$lang.enter}</a>{$lang.scan_goods}</p>
+            <!--{/if}--> 
+        </div>
+    </div>
+</section>
+<div class="blank10"></div>
+<div class="userdiv"><a href="{:url('user/logout')}" class="ect-colorf">{$lang.label_logout}</a></div>
+
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+    $(function(){
+        $(".del").click(function(){
+            if(!confirm('您确定要删除吗？')){
+                return false;
+            }
+            var obj = $(this);
+            var url = obj.attr("href");
+            $.get(url, '', function(data){
+                if(1 == data.status){
+                    if(obj.hasClass("history_clear")){
+                        obj.closest(".ect-pro-list").html("<p class='text-center  ect-margin-tb ect-padding-tb'>暂无浏览记录，点击<a href={:url('category/index')} class='ect-color ect-margin-lr' style='font-size:1.3em;'>进入</a>浏览商品</p>");
+                        obj.parent().siblings("ul").remove();
+                    } 
+                    else{
+                        if(obj.closest("li").siblings("li").length == 0){
+                            obj.closest("ul").html("<p class='text-center  ect-margin-tb ect-padding-tb'>{$lang.no_data}</p>");
+                        }
+                        obj.closest("li").remove();
+                    }
+                }
+                else{
+                    alert("删除失败");
+                }
+            },'json');
+            return false;
+   		});
+    })
+</script> 
+</body>
+</html>

@@ -1,0 +1,156 @@
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+	background-color: #2b5700;
+}
+.main .no-margin{ margin:0;}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{ background:none;}
+.user_temp_one{ background:#407002; }
+
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888;}
+.all_cats_tcc li .s_b a:hover{background: #407002; color:#fff;}
+
+.jTwoLevel a{color:#fff; font-size:14px;}
+.square_box{background:#fff; margin-right:13px;}
+.jTwoLevel:hover{background: #2b5700;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {
+	background: #2b5700;
+	color: #fff;
+	text-decoration: none;
+}
+.user_bgcolor{ background-color: #2b5700;}
+.template4 .nav .layout-right a:hover{ background:#2b5700; color:#fff;}
+.ft-plear{ width:990px; height:auto; margin-bottom:30px; overflow:hidden;}
+.ft-plear .T4title{ width:100%; height:30px; border-bottom:2px solid #bfbfbf; line-height:30px;}
+.ft-plear .T4title h1{ float:left;font-size:20px; color:#666; margin-left:5px;}
+.ft-plear .T4title a.btn-more{ float:right;border: 1px solid #bfbfbf;display: inline-block;width: 66px;height: 22px;line-height: 22px;text-align: center;color: #666;margin: 0 0 0 6px;vertical-align: middle;}
+.ft-plear .T4title a:hover{ background:#e3393c; color:#fff; text-decoration:none; border:0;}
+.cp_list{ width:990px; height:auto; float:left; overflow:hidden;}
+.cp_list .cp_pic{ float:left;}
+.cp_item{ float:left; height:auto; width:739px;}
+.cp_item ul{ width:742px; overflow:hidden;}
+.cp_item li{ float:left; width:245px; border-right:1px solid #ddd; margin-right:1px;}
+.jBuy{ padding:0 20px; float:left;}
+.jBuy .user_a_cat{ float:left; width:200px; color:#F00; line-height:20px;}
+.jBuy .jTitle{ float:left; line-height:20px;} 
+.jBuy .jTitle a:hover{ color:#000001; text-decoration:none;}
+.jBuy .jBtnbox{ float:left; height:27px; line-height:27px; width:200px;}
+.jBuy .jBtnbox .yuanjia{text-decoration: line-through; font-size:14px; color:#888888;}
+.jBuy .jBtnbox .xianjia{ font-weight:bold; font-size:18px; color:#F00;}
+.jBuy .jBtnbox .jBuybtn{ float: right;display: block;height: 20px;width: 60px;margin-top: 4px;line-height: 20px;text-align: center; background-color: #F00;}
+.jBuy .jBtnbox .jBuybtn a{ color:#fff; text-decoration:none;}
+
+/*商品柜样式*/
+.temp .Jproduct li:hover{
+	border:solid 1px #ddd;
+}
+.temp .Jitem .jExtra{
+	padding:0;
+}
+.temp .Jitem .jExtra .star{ display:none;}
+.temp .Jitem .jExtra a{
+	color:#888888;
+}
+.temp .Jitem .jExtra a em{
+	color: #666;
+	font-weight: bold;
+}
+.temp .Jitem .jPrice{
+	margin:0;
+}
+.temp .Jitem .btns {
+	margin-top: 5px;
+	zoom: 1;
+	float: left;
+}
+.temp .Jitem .btns a {
+	float: left;
+	height: 19px;
+	padding: 0 9px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin: 0 8px 0 0;
+	background: #F7F7F7;
+	line-height: 18px;
+	line-height: 19px\9;	
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background: -moz-linear-gradient(top,#f7f7f7,#f2f2f2);
+	background: -webkit-gradient(linear,0 0,0 100%,from(#f7f7f7),to(#f2f2f2));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#f2f2f2");
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#f2f2f2")";
+}
+.temp .Jitem .btns a.btn-compare {
+	padding: 0;
+}
+.temp .Jitem .btns a.btn-compare input {
+	float: left;
+	margin: 3px 5px;
+	cursor: pointer;
+}
+.temp .Jitem .btns a.btn-compare label {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+/*产品分类页面样式*/
+.layout-one-right .jTab a:hover, .layout-one-right .jTab .current{
+	background:#2b5700;
+	border-color:#2b5700;
+	color:#fff;
+}
+.layout-one-right .jTab{
+	padding-left:0;
+}
+#plist li{
+	float: left;
+	width: 23%;
+	padding: 10px 0 0 0;
+	margin: 0 1%;
+	overflow: hidden;
+	display: inline;
+	border:0;
+}
+#plist.plist-n7a .p-img{
+	height:auto;
+	padding:0;
+	border:0;
+}
+#plist .jGoodsInfo {
+	padding: 5px;
+	text-align: center;
+}
+#plist .p-price strong,#plist .extra,#plist .extra a{
+	float:none;
+}
+#plist .extra a:link, #plist .extra a:visited{ 
+	color:#666;
+}
+#plist .btns a{
+	padding:0 3px;
+	margin:0 5px 0 0;
+}
+#plist .p-price strong{
+	color:#2b5700;
+}
+
+
+
+
+
+
+
+

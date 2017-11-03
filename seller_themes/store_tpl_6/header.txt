@@ -1,0 +1,12 @@
+﻿<div class="dz">
+<div class="seller_logo">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/logo.png" height="50"/></a>
+</div>
+<div class="searchArea">
+<div class="jSearchArea">
+<div class="jSearchInput">
+<input type="text" class="inputMiddle"/><button type="button" class="searchbtn">搜索</button>
+</div>
+</div>
+</div>
+</div>

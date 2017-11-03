@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<div class="m m3" id="reading">
+<div class="mt">
+<h2>最新资讯</h2>
+
+</div>
+<div class="mc">
+<ul>
+<!--{foreach from=$new_articles item=article}-->
+  <li><a href="{$article.url}" target="_blank" title="{$article.title|escape:html}"><b>·</b>{$article.short_title|truncate:25:"...":true}</a></li>
+  <!--{/foreach}-->
+  
+</ul>
+</div>
+</div>

@@ -1,0 +1,54 @@
+<div class="fn-clear userlistone">
+<div class="mc">
+<div class="s-color2 userlistone_dir">
+<div class="user-bt1">
+<h1>每周新款</h1>
+<span><a href="#">查看更多+</a></span>
+</div>
+<div class="x-box4">
+<ul>
+<li>
+<div class="x-pic"><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_list_1.jpg" /></a></div>
+<div class="x-title"><a href="#">2014新款女装宽松数码印花蜘蛛侠情侣卫衣 WY-40828 均码</a></div>
+<div class="x-pri">
+<span class="x-p1">PRICE <span class="jdNum">暂无定价</span></span>
+<span class="x-p2">已有<a href="#"> 0 </a>评</span>
+</div>
+<div class="x-buy"><a href="#">立即购买</a></div>
+<div class="x-ico1"><img src="/seller_themes/store_tpl_8/custom_images/new.png" /></div>
+</li>
+<li>
+<div class="x-pic"><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_list_2.jpg" /></a></div>
+<div class="x-title"><a href="#">2014新款女装宽松数码印花蜘蛛侠情侣卫衣 WY-40828 均码</a></div>
+<div class="x-pri">
+<span class="x-p1">PRICE <span class="jdNum">暂无定价</span></span>
+<span class="x-p2">已有<a href="#"> 0 </a>评</span>
+</div>
+<div class="x-buy"><a href="#">立即购买</a></div>
+<div class="x-ico1"><img src="/seller_themes/store_tpl_8/custom_images/new.png" /></div>
+</li>
+<li>
+<div class="x-pic"><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_list_3.jpg" /></a></div>
+<div class="x-title"><a href="#">2014新款女装宽松数码印花蜘蛛侠情侣卫衣 WY-40828 均码</a></div>
+<div class="x-pri">
+<span class="x-p1">PRICE <span class="jdNum">暂无定价</span></span>
+<span class="x-p2">已有<a href="#"> 0 </a>评</span>
+</div>
+<div class="x-buy"><a href="#">立即购买</a></div>
+<div class="x-ico1"><img src="/seller_themes/store_tpl_8/custom_images/new.png" /></div>
+</li>
+<li>
+<div class="x-pic"><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_list_4.jpg" /></a></div>
+<div class="x-title"><a href="#">2014新款女装宽松数码印花蜘蛛侠情侣卫衣 WY-40828 均码</a></div>
+<div class="x-pri">
+<span class="x-p1">PRICE <span class="jdNum">暂无定价</span></span>
+<span class="x-p2">已有<a href="#"> 0 </a>评</span>
+</div>
+<div class="x-buy"><a href="#">立即购买</a></div>
+<div class="x-ico1"><img src="/seller_themes/store_tpl_8/custom_images/new.png" /></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

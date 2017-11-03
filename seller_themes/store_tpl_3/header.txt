@@ -1,0 +1,4 @@
+﻿<style>.seller_logo{ width:990px; margin:0 auto;}</style>
+<div class="seller_logo">
+<a href="index.html" target="_blank"><img src="/seller_themes/store_tpl_3/custom_images/logo.png"/></a>
+</div>

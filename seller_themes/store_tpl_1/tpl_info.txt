@@ -1,0 +1,9 @@
+﻿------tpl_info------------
+tpl name：商家店铺模板NO.1
+tpl url：../seller_themes/store_tpl_1/screenshot.png
+description：左右分栏服装店铺
+version：v1.0
+author：模板堂
+author url：http://www.ecmoban.com/
+tpl_path：st_one
+------tpl_info------------

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
+</head>
+<body>
+<div class="groupGoodsHeader"><!-- #BeginLibraryItem "/library/page_header_group.lbi" --><!-- #EndLibraryItem --></div>
+
+<Div class="content-wrap clearfix">
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+	<div class="w">
+    	<div class="detail-wrap w">
+        	<div class="e-content m">
+            	<div class="mc">
+                	<img class="big-img" alt="{$gb_goods.goods_name|escape:html}" width="440" height="440" src="{$gb_goods.goods_img}">
+                    <div class="info-main">
+                        <h3 title="{$gb_goods.goods_name|escape:html}">{$gb_goods.goods_name|escape:html}</h3>
+                        <div class="clearfix">
+                            <div class="info-price">
+                                <dl>
+                                    <dt>{$group_buy.price_ladder.0.formated_price}</dt>
+                                    <dd><span class="discount">{$group_buy.zhekou}折</span></dd>
+                                    <dd><del>{$gb_goods.shop_price}</del></dd>
+                                </dl>
+                            </div>
+                            <div class="info-detail">
+                                <p>购买人数：<strong class="text">{$group_buy.valid_goods}人已团</strong></p>
+                                <!-- {if $group_buy.status eq 0} 未开始 -->
+                                <p class="item">{$lang.gbs_pre_start}</p>
+                                <!-- {elseif $group_buy.status eq 1} 进行中 -->
+                                <p class="item"> 剩余时间：<strong class="text"><span id="leftTime">{$lang.please_waiting}</span></strong></p>
+                                <!-- {elseif $group_buy.status eq 2} 已结束 -->
+                                <p class="item">{$lang.gbs_finished} {$lang.gb_cur_price} {$group_buy.formated_cur_price} {$lang.gb_valid_goods} {$group_buy.valid_goods}</p>
+                                <!-- {elseif $group_buy.status eq 3} 团购成功 -->
+                                <p class="item">{$lang.gbs_succeed}
+                                    {$lang.gb_final_price} {$group_buy.formated_trans_price}<br />
+                                    {$lang.gb_final_amount} {$group_buy.trans_amount}</p>
+                                <!-- {elseif $group_buy.status eq 4} 团购失败 -->
+                                <p class="item">{$lang.gbs_fail}</p>
+                                <!-- {/if} --> 
+                            </div>
+                        </div>
+                        <form action="group_buy.php?act=buy" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
+                            <div class="boxCenterList">
+                                <table width="100%" border="0" cellpadding="2" cellspacing="1" bgcolor="#dddddd">
+                                    <!-- {foreach from=$specification item=spec key=spec_key} 循环规格开始 -->
+                                    <tr>
+                                        <td width="22%" bgcolor="#FFFFFF" align="center">{$spec.name}</td>
+                                        <td width="78%" bgcolor="#FFFFFF">
+                                            <!-- {if $cfg.goodsattr_style eq 1} 规格显示方式：单选按钮 -->
+                                            <!-- {foreach from=$spec.values item=value key=key} -->
+                                            <label for="spec_value_{$value.id}"><input type="radio" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" {if $key eq 0}checked{/if} />  {$value.label} </label>
+                                            <!-- {/foreach} -->
+                                            <!-- {else} 规格显示方式：下拉列表 -->
+                                            <select name="spec_{$spec_key}" style="border:1px solid #ccc;">
+                                                <!-- {foreach from=$spec.values item=value key=key} -->
+                                                <option label="{$value.label}" value="{$value.id}">{$value.label} </option>
+                                                <!-- {/foreach} -->
+                                            </select>
+                                            <!-- {/if} 规格显示方式 -->
+                                        </td>
+                                    </tr>
+                                    <!-- {/foreach} 循环规格结束 --> 
+                                    <!-- {if $smarty.session.user_id > 0} 如果登录了，显示购买按钮 -->
+                                    <tr>
+                                        <td bgcolor="#FFFFFF" align="center">{$lang.number}</td>
+                                        <td bgcolor="#FFFFFF">&nbsp;<input name="number" type="text" class="inputBg" id="number" value="1" size="4" style="text-align:center;"/><input type="hidden" name="group_buy_id" value="{$group_buy.group_buy_id}" /></td>
+                                    </tr>
+                                    <!-- {else} 如果没有登录，显示提示信息 -->
+                                    <tr>
+                                        <td colspan="2" align="center" bgcolor="#FFFFFF"><font class="f_red">{$lang.gb_notice_login}</font></td>
+                                    </tr>
+                                    <!-- {/if} 判断登录结束 -->
+                                </table>
+                       		</div>
+                            <div class="btn-wrap"><a class="tuan" href="javascript:void(0);" onclick="$('#ECS_FORMBUY').submit();">立即抢购</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <Div class="detail-con clearfix">
+                <div class="right-extra">
+                	<div class="r">
+                    	<div class="rm" id="hott">
+                        	<div class="rmt"><h2>同类团购推荐</h2></div>
+                            <div class="rmc">
+                            	<ul>
+                                	<!-- {foreach from=$gb_list item=group_buy name=foo} 循环团购活动开始 -->
+                                	<li>
+                                    	<a href="{$group_buy.url}" title="{$group_buy.goods_name|escape:html}" target="_blank">
+                                        	<img src="{$group_buy.goods_img}" alt="{$group_buy.goods_name|escape:html}" width="130" height="130" />
+                                            <h4>{$group_buy.goods_name|escape:html}</h4>
+                                            <p class="p-price">{$group_buy.price_ladder.0.formated_price}<span>元</span></p>
+                                            <p class="p-count">426人已购买</p>
+                                        </a>
+                                    </li>
+                                    <!--{/foreach}-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"><!-- TemplateBeginEditable name="团购详细右侧广告位" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --></div>
+                </div>
+            	<div class="inter-eva">
+                	<Div class="tab mt20">
+                    	<div class="mt entity">
+                        	<ul class="tit clearfix" id="group_title">
+                            	<li class="curr"><a href="#group_title"><span>商品介绍</span></a></li>
+                                <li><a href="#group_title"><span>规格参数</span></a></li>
+                                <li><a href="#group_title"><span>包装清单</span></a></li>
+                            </ul>
+                        </div>
+                        <div id="product-detail-1" class="mc">
+                            <div class="detailtab-con groupGoodsText" id="product-detail">
+                                <div class="mc tabcon" id="detail-0">
+                                    <div class="content_tpl"> {$gb_goods.goods_desc} </div>
+                                </div>
+                                <div class="mc tabcon hide" id="detail-1">
+                                    <div class="content_tpl">
+                                        <table cellpadding="0" cellspacing="1" width="100%" border="0" class="Ptable">
+                                            <tbody>
+                                                <!-- {foreach from=$properties item=property_group key=key} -->
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2">{$key|escape}</th>
+                                                </tr>
+                                                <tr></tr>
+                                                <!-- {foreach from=$property_group item=property} -->
+                                                <tr>
+                                                    <td class="tdTitle">{$property.name|escape:html}</td>
+                                                    <td>{$property.value}</td>
+                                                </tr>
+                                                <!-- {/foreach}--> 
+                                                <!-- {/foreach}-->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="mc tabcon hide" id="detail-2">{$gb_goods.packing_list}</div>
+                            </div>
+                        </div>
+                    </Div>
+                </div>
+            </Div>
+            <div class="w groupGoodsBottomAd">
+				<div class="blank20"></div>
+				<!-- TemplateBeginEditable name="团购详细底部广告位" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+				<div class="blank20"></div>
+            </div>
+        </div>
+    </div>
+</Div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var now_time = {$now_time};
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>

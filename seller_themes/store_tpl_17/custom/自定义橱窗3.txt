@@ -1,0 +1,92 @@
+<div class="fn-clear user-4">
+<div class="mc">
+<div class="user-title1">
+<span class="f_l">限时热卖</span>
+<a href="#" target="_blank" class="f_r">MORE</a>
+</div>
+<div class="user-box">
+<ul>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+<li>
+<div class="user-image"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/cnxh_product_1.jpg" width="222" height="222" /></a></div>
+<div class="user-info">
+<p class="user-des">出口韩国黄桃罐头 新鲜水果整箱批发 425g/罐  满12罐江浙沪皖包邮美食零食</p>
+<p class="user-price">
+<span class="user-cx">促销价</span>
+<span class="user-rmb">￥<span class="jdNum">5.00</span></span>
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>

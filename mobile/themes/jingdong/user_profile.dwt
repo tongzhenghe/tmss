@@ -1,0 +1,76 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+	  {foreach from=$lang.profile_js item=item key=key}
+		var {$key} = "{$item}";
+	  {/foreach}
+</script>
+<header id="header">
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1> {$lang.profile} </h1>
+</header>
+<section class="wrap" style="border:0;">
+  <div class="InfoBox">
+    <form name="formEdit" action="{:url('user/profile')}" method="post" onSubmit="return userEdit()">
+      <section class="order_box padd1 radius10" style="padding-top:0;padding-bottom:0;">
+        <div class="table_box table_box2">
+          <dl>
+            <dd class="dd1">{$lang.no_emaill}</dd>
+            <input name="email" type="text" placeholder="{$lang.no_emaill}"  value="{$profile.email}" class="dd2" />
+          </dl>
+          {foreach from=$extend_info_list item=field} 
+          <!-- {if $field.id eq 6} -->
+          <dl>
+            <dd class="dd1">{$lang.passwd_question}</dd>
+            <select name='sel_question' class="dd2" style="-webkit-appearance:none">
+              <option value='0'>{$lang.sel_question}</option>
+              
+                
+                  {html_options options=$passwd_questions selected=$profile.passwd_question}
+                
+                
+            
+            </select>
+          </dl>
+          <dl>
+            <dd class="dd1">{$lang.passwd_answer}</dd>
+            <input placeholder="{$lang.passwd_answer}" name="passwd_answer" type="text" class="dd2" value="{$profile.passwd_answer}" />
+          </dl>
+          <!-- {else} -->
+          <dl>
+            <dd class="dd1">{$field.reg_field_name}</dd>
+            <input placeholder="{$field.reg_field_name}"  name="extend_field{$field.id}" type="text"  class="dd2" value="{$field.content}"/>
+          </dl>
+          <!-- {/if} --> 
+          {/foreach} </div>
+      </section>
+      <div class="blank3"></div>
+      <input name="act" type="hidden" value="act_edit_profile" />
+      <input name="submit" type="submit" value="{$lang.confirm_edit}" class="c-btn4"   />
+    </form>
+  </div>
+  <div class="blank3"></div>
+  <div class="InfoBox">
+    <form name="formPassword" action="{:url('user/edit_password')}" method="post" onSubmit="return editPassword()" >
+      <section class="order_box padd1 radius10" style="padding-top:0;padding-bottom:0;">
+        <div class="table_box table_box2">
+          <dl>
+            <dd class="dd1">{$lang.old_password}</dd>
+            <input  placeholder="{$lang.old_password}" name="old_password" type="password"  class="dd2" />
+          </dl>
+          <dl>
+            <dd class="dd1">{$lang.new_password}</dd>
+            <input placeholder="{$lang.new_password}" name="new_password" type="password" class="dd2" />
+          </dl>
+          <dl>
+            <dd class="dd1">{$lang.confirm_password}</dd>
+            <input placeholder="{$lang.confirm_password}" name="comfirm_password" type="password" class="dd2" />
+          </dl>
+        </div>
+      </section>
+      <div class="blank3"></div>
+      <input name="submit" type="submit" class="c-btn4" value="{$lang.confirm_edit}" />
+    </form>
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body></html>

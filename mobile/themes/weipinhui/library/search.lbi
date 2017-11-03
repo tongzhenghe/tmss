@@ -1,0 +1,23 @@
+<div class="search" style="display:none;">
+  <div class="ect-bg search_top">
+    <header class="ect-header ect-margin-tb ect-margin-lr text-center"><span>{$lang.search}</span><a href="javascript:;" class="search_guan"><i class="icon-close pull-right"></i></a></header>
+  </div>
+  <div class="ect-padding-lr search_con">
+     <form action="{:url('category/index')}<!-- {if $id} -->&id={$id}<!-- {/if} -->"  method="post" id="searchForm" name="searchForm">
+      <div class="input-search"> <span>
+        <input name="keywords" type="search" placeholder="{$lang.no_keywords}" id="keywordBox">
+        </span>
+        <button type="submit" value="{$lang.search}" onclick="return check('keywordBox')"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </form>
+    <!-- {if $hot_search_keywords} -->
+    <div class="hot-search">
+      <h4 class="title" style="display:none;"><b>{$lang.hot_search}：</b></h4>
+      <p></p>
+      <!-- {foreach from=$hot_search_keywords item=ky} --> 
+      <a href="{:url('category/index', array('keywords'=>$this->_var[ky]))}<!-- {if $id} -->&id={$id}<!-- {/if} -->">{$ky}</a> 
+      <!-- {/foreach} --> 
+    </div>
+    <!-- {/if} --> 
+  </div>
+</div>

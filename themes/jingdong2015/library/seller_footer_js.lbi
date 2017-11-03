@@ -1,0 +1,91 @@
+<script type="application/javascript">
+function addFavorite_store() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+        alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+    }
+    else if (ua.indexOf("msie 8") > -1) {
+        window.external.AddToFavoritesBar(url, title); //IE8
+    }
+    else if (document.all) {
+	  try{
+	   window.external.addFavorite(url, title);
+	  }catch(e){
+	   alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+	  }
+    }
+    else if (window.sidebar) {
+		try{
+			window.sidebar.addPanel(title, url, "");
+		}catch(e){
+			alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');	
+		} 
+    }
+    else {
+  		alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+    }
+}
+//分享
+$(".iconShare").mouseenter(function(){
+	$(this).addClass("jCurrent");
+});
+$(".iconShare").mouseleave(function(){
+	$(this).removeClass("jCurrent");
+});
+//二维码
+$(".qrcode-close").click(function(){
+	$(this).parent().css("display","none");
+});
+//返回顶部
+$(".iconTop").click(function(){
+	$('body,html').animate({scrollTop:0},500);
+	return false;
+});
+var g_config = g_config || {};
+	g_config.extra_page = true;
+	(function(j){
+		var _c_flag = false, _e_flag = false,
+			_con = $('.jPageExtra'), _share_c = _con.find('.jShareArea'),
+			HREF = encodeURIComponent(window.location.href),
+			TITLE = '{$store.shop_title}',
+			CONTENT = encodeURIComponent('true' == 'true'?'一个很给力的活动【' + TITLE + '】邀你一起来参与。':'发现一个很给力的店铺【' + TITLE + '】邀你一起来参与。'),
+			
+			MAP = {
+				sinaminiblog : 'http://v.t.sina.com.cn/share/share.php?appkey=583395093&title=' + CONTENT + '&url=' + HREF + '&source=bshare&retcode=0&pic=',
+				qqmb : 'http://v.t.qq.com/share/share.php?title=' + CONTENT + '&site=' + HREF + '&pic=&url='+ HREF + '&appkey=dcba10cb2d574a48a16f24c9b6af610c',
+				renren : 'http://widget.renren.com/dialog/share?resourceUrl=' + HREF + '&title=' + '&images=&description=' + CONTENT,
+				qzone : 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + HREF + '&title=' + '&pics=&summary=' + CONTENT,
+				kaixin001 : 'http://www.kaixin001.com/rest/records.php?url='+HREF +'&content=' + CONTENT+'&pic=&aid=100013770&style=111',
+				douban : 'http://www.douban.com/recommend/?url=' + HREF  + '&title=' + CONTENT + '&v=1',
+				neteasemb : 'http://t.163.com/article/user/checkLogin.do?source=' + encodeURIComponent('jd.com') + '&info=' + CONTENT + ' ' + HREF + '&images=',
+				meilishuo : 'http://www.meilishuo.com/meilishuo_share?siteurl=' + HREF + '&content=' + CONTENT,
+				mogujie : 'http://www.mogujie.com/mshare?url=' + HREF + '&content=' + CONTENT + '&from=mogujie&pic=',
+				qqxiaoyou : 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url=' + HREF + '&pics=&title=' + '&summary=' + CONTENT,
+				facebook : 'http://www.facebook.com/share.php?src=360buy&u=' + HREF,
+				twitter : 'http://twitter.com/intent/tweet?text=' + CONTENT + ' ' + HREF,
+				googleplus : 'https://plus.google.com/share?url=' + HREF + '&hl=zh-CN',
+				pinterest : 'https://pinterest.com/login/?next=/pin/create/bookmarklet/?media=&url='+ HREF + '&alt=&title=' + CONTENT + '&is_video=false'
+				
+			};
+			
+		if(jQuery.browser.msie&&jQuery.browser.version.match(/6\.0/)){
+		_con.css({
+			position : 'absolute'
+		});
+		var _w = $(window).height() - _con.height() - 10;
+		$(window).scroll(function(){
+			_con.css('top',_w + $(this).scrollTop() + 'px');
+		});
+	}
+		_share_c.find('li').click(function(){
+				var key=$(this).attr('id'),
+				url = MAP[key],
+				top = $(window).height() > 400?($(window).height() - 400)/2 : 50,
+				left = $(window).width() > 600?($(window).width() - 600)/2 : 50;
+				window.open(url,'', 'height=400, width=600,left='+left+',top=' + top+'toolbar=no,menubar=no,scrollbars=yes');
+		});
+
+	})(jQuery);
+</script>

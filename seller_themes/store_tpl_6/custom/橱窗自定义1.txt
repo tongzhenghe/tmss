@@ -1,0 +1,9 @@
+<div class="fn-clear user_yhq">
+<div class="mc">
+<div class="yhq" style="width: 990px;background: url(/seller_themes/store_tpl_6/custom_images/ykq.jpg) no-repeat;height: 120px;">
+<div class="yhq_1">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/youhuiquan_1.png"/></a><a href="#"><img src="/seller_themes/store_tpl_6/custom_images/youhuiquan_2.png"/></a><a href="#"><img src="/seller_themes/store_tpl_6/custom_images/youhuiquan_3.png"/></a>
+</div>
+</div>
+</div>
+</div>

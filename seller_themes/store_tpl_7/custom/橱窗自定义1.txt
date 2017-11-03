@@ -1,0 +1,9 @@
+<div class="fn-clear w990 fn-clear-auto">
+<div class="mc">
+<div class="j-module">
+<div class="userDefinedArea">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_7/custom_images/zhekou_1.jpg"/></a><a href="#" target="_blank"><img src="/seller_themes/store_tpl_7/custom_images/zhekou_2.jpg"/></a><a href="#" target="_blank"><img src="/seller_themes/store_tpl_7/custom_images/zhekou_3.jpg"/></a><a href="#" target="_blank"><img src="/seller_themes/store_tpl_7/custom_images/zhekou_4.jpg"/></a>
+</div>
+</div>
+</div>
+</div>

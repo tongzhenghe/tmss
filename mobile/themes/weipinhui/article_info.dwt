@@ -1,0 +1,18 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con">
+	<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$lang.shophelp}</span>
+        <a href="./" class="Home"><span></span></a>
+    </header>
+  <div class="article-info">
+    <h3>{$article.title}</h3>
+    </div>
+    <div class="article-info-con ArticleCat">
+    	{$article.content}
+    </div>
+    <span class="blank10"></span>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+</body></html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,jquery-1.9.1.min.js,jquery-migrate-1.1.0.js,utils.js,compare.js'}
+<link href="themes/jingdong2015/store_css/css.css" rel="stylesheet" type="text/css" >
+<link href="themes/jingdong2015/store_tpl_12/store_css/store_tpl_12.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header_sl.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/store_header.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/store_tpl_10/seller_store_top.lbi" --><!-- #EndLibraryItem -->
+   <div class="wraper">
+   		<div class="layout-one m990">
+        	<div class="layout-one-left m190">
+        	<!-- #BeginLibraryItem "/library/seller_store_left.lbi" --><!-- #EndLibraryItem -->
+            </div>
+            <div class="layout-one-right m790" style="background:#fff;">
+            {if $filter_attr_list || $price_grade.1}
+            	<div class="shop_product_search">
+                	<div class="search_top">
+                    	<div class="S_Tilte">
+                        	<a href="#">所有产品</a>
+                            <i class="right-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="search_botttom" style="display:block;">
+                    	<!--{if $price_grade.1}-->
+                    	<div class="S_med" overfour="false">
+                        	<div class="S_left">价格：</div>
+                            <ul>
+                            <!--{foreach from=$price_grade item=grade}--> 
+                    		<!-- {if $grade.selected} -->
+                            	<li><a href="javascript:void(0);" class="curr">{$grade.price_range}</a></li>
+                            {else}
+                                <li><a href="{$grade.url}">{$grade.price_range}</a></li>
+                             <!-- {/if} --> 
+                    		<!--{/foreach}-->
+                            </ul>
+                        </div>
+                        {/if}
+                        <!--{foreach from=$filter_attr_list item=filter_attr}-->
+                        <div class="S_med" overfour="false">
+                        	<div class="S_left">{$filter_attr.filter_attr_name|escape:html}：</div>
+                            <ul>
+                            	<!--{foreach from=$filter_attr.attr_list item=attr}--> 
+                                <!-- {if $attr.selected} -->
+                                <li><a href="javascript:void(0);" class="curr">{$attr.attr_value}</a></li>
+                                <!-- {else} -->
+                                <li><a href="{$attr.url}">{$attr.attr_value}</a></li>
+                                <!-- {/if} --> 
+                                <!--{/foreach}-->
+                            </ul>
+                        </div>
+                         <!--{/foreach}--> 
+                        <div class="handle"  id="handle" onclick="handle(this);" >
+                            <div class="more">
+                                <i class="more-icon part"></i>
+                                <span class="more-text">更多</span>
+                            </div>
+                        </div>
+                         <div class="lessProp" id="lessProp" onclick="lessProp(this);" style="display:none;">
+                            <div class="more">
+                                <i class="more-icon"></i>
+                                <span class="more-text">收起</span>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="shuoqi" id="shuoqi" onclick="shuoqi(this);"></i>
+                    <i class="zhankai" id="zhankai" onclick="zhankai(this);" style="display:none;"></i>
+                </div>
+                {/if}
+                <div class="shop-filter">
+                	<div class="jTab">
+                        <a href="{$script_name}.php?cid={$category}&sid={$store_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=sales_volume&order=<!-- {if $pager.sort == 'sales_volume' && $pager.order == 'DESC'} -->ASC<!-- {else} -->DESC<!-- {/if} -->#goods_list" <!-- {if $pager.sort == 'sales_volume'} -->class="current"<!-- {/if} -->>销量</a>
+                        <a href="{$script_name}.php?cid={$category}&sid={$store_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=shop_price&order=<!-- {if $pager.sort == 'shop_price' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list" <!-- {if $pager.sort == 'shop_price'} -->class="current"<!-- {/if} -->>价格</a>
+                        <a href="{$script_name}.php?cid={$category}&sid={$store_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=comments_number&order=<!-- {if $pager.sort == 'comments_number' && $pager.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->#goods_list" <!-- {if $pager.sort == 'comments_number'} -->class="current"<!-- {/if} -->>好评度</a>
+                        <a href="{$script_name}.php?cid={$category}&sid={$store_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=goods_id&order=<!-- {if $pager.sort == 'goods_id' && $pager.order == 'DESC'} -->ASC<!-- {else} -->DESC<!-- {/if} -->#goods_list" <!-- {if $pager.sort == 'goods_id'} -->class="current"<!-- {/if} -->>上架时间</a>
+                    </div>          
+                </div>
+                <div id="plist" class="plist-n7a">
+                	<ul>
+                    <!--{foreach from=$goods_list item=goods}-->
+        			<!-- {if $goods.goods_id} -->
+                    	<li>
+                        	<div class="lh_wrap">
+                            	<div class="p-img"><a target="_blank" href="{$goods.url}"><img alt="{$goods.goods_name}" src="{$goods.goods_thumb}" title="{$goods.goods_name}" width="160" height="160" /></a></div>
+                                <div class="jGoodInfo">
+                                	<div class="p-name"><a target="_blank" href="{$goods.url}" title="{$goods.goods_name}">{$goods.goods_name}</a></div>
+                                    <div class="p-price"><strong><!--{if $goods.promote_price neq "" } -->{$goods.promote_price} <!--{else}-->{$goods.shop_price}<!--{/if}--></strong><span id="p200"></span></div>
+                                    <div class="extra"><a href="#">已售出{$goods.sale_number}件</a></div>
+                                    <div class="btns">
+                                        <a href="javascript:addToCart1({$goods.goods_id})" class="btn-buy">购买</a>
+                                        <a href="javascript:collect({$goods.goods_id});" class="btn-coll">关注</a>
+                                        <a class="btn-compare">
+                                            <input id="{$goods.goods_id}" onClick="Compare.add(this, {$goods.goods_id},'{$goods.goods_name|escape:"html"}','{$goods.type}', '{$goods.goods_thumb}', '{$goods.shop_price}', '{$goods.market_price}')" type="checkbox"  />
+                                            <label for="{$goods.goods_id}">对比</label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                     <!--{/if}-->
+        			<!--{/foreach}-->
+                    </ul>
+                </div>
+                <div class="jPage">
+                    <em>共{$pager.record_count}个商品</em>  
+                    <!-- {if $pager.page_prev} --><a href="{$pager.page_prev}" class="prev">上一页<b></b></a><!--{else}--><span class="prev-disabled">上一页</span><!-- {/if} -->
+                    <span class="text">
+                    <!--{foreach from=$pager.page_number key=key item=item}-->
+                    <!-- {if $pager.page eq $key} -->
+                        <i>{$key}</i>
+                    <!-- {/if} -->
+                    <!--{/foreach}-->/{$pager.page_count}</span>
+                    <!-- {if $pager.page_next} --><a href="{$pager.page_next}" class="next">下一页<b></b></a><!--{else}--><span class="next-disabled">下一页</span><!-- {/if} -->
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+<!-- @authro guan start	添加对比文件 start -->
+	 
+<!-- #BeginLibraryItem "/library/duibi.lbi" --><!-- #EndLibraryItem -->
+<!-- @authro guan start	添加对比文件 end -->
+<script>
+function handle(t){
+	$(t).hide();
+	$('#lessProp').show();
+	$('[overfour=true]').show();
+	$('.prop-attrs[overfour=true] .f-list').each(function(){
+		if( $(this).find('li:last').position().top > 0 ){
+			$(this).parent().parent().find('[option=more]').show();
+		}	
+	});
+}
+function lessProp(t){
+    $(t).hide();
+    $('#handle').show();
+    $('[overfour=true]').hide();
+}
+function shuoqi(t){
+	$(t).hide();
+	$('#zhankai').show();
+	$('.search_botttom').hide();
+}
+</script>
+<!-- @author js start -->
+
+<script type="Text/Javascript" language="JavaScript">
+<!--
+{literal}
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+{/literal}
+//-->
+</script> 
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+{foreach from=$lang.compare_js item=item key=key}
+{if $key neq 'button_compare'}
+var {$key} = "{$item}";
+{else}
+var button_compare = '';
+{/if}
+{/foreach}
+var compare_no_goods = "{$lang.compare_no_goods}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+
+
+
+function hideCompare()
+{
+	var slideTxtBox = document.getElementById('slideTxtBox');
+	var showCompare = document.getElementById('showCompare');
+	if(slideTxtBox.style.display == "")
+	{
+		slideTxtBox.style.display = "none";
+		showCompare.style.display = "";
+	}
+	else
+	{
+		slideTxtBox.style.display = "";
+		showCompare.style.display = "none";
+	}
+}
+
+
+function show_duibi()
+{
+	var img = document.getElementById('duibi_img');
+	img.src = "themes/jingdong2015/images/duibilan_1.gif";
+}
+
+function hide_duibi()
+{
+	var img = document.getElementById('duibi_img');
+	img.src = "themes/jingdong2015/images/duibilan_2.gif";
+}
+
+function show_fanhui()
+{
+	var img = document.getElementById('fanhui_img');
+	img.src = "themes/jingdong2015/images/fanhuidingbu_2.gif";
+}
+
+function hide_fanhui()
+{
+	var img = document.getElementById('fanhui_img');
+	img.src = "themes/jingdong2015/images/fanhuidingbu_1.gif";
+}
+</script>
+
+<!-- @author js end -->
+</body>
+</html>

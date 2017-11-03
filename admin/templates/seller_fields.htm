@@ -1,0 +1,39 @@
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="post" action="" name="listForm">
+<!-- start reg_fiedls list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellspacing='1' id="list-table">
+  <tr>
+    <th>注册项名称</th>
+    <th>类型</th>
+    <th>排序</th>
+    <th>是否显示</th>
+    <th>是否必填</th>
+    <th>宽度</th>
+    <th>高度</th>
+    <th>操作</th>
+  </tr>
+  {foreach from=$reg_fields item=field}
+  <tr>
+    <td class="first-cell" ><span onclick="listTable.edit(this,'edit_name', {$field.id})">{$field.reg_field_name}</span></td>
+    <td class="first-cell" >{$field.type}</td>
+    <td align="center"><span onclick="listTable.edit(this,'edit_order', {$field.id})">{$field.dis_order}</span></td>
+    <td align="center"><img src="images/{if $field.display}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_dis', {$field.id})" /></td>
+    <td align="center"><img src="images/{if $field.is_need}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_need', {$field.id})" /></td>
+    <td align="center"><span onclick="listTable.edit(this,'edit_width', {$field.id})">{$field.width}</span></td>
+    <td align="center"><span onclick="listTable.edit(this,'edit_height', {$field.id})">{$field.height}</span></td>
+    <td align="right"><a href="?act=edit&id={$field.id}">{$lang.edit}</a>{if $field.type eq 0} | <a href="javascript:;" onclick="listTable.remove({$field.id}, '删除此项将删除所有商家的该项信息')" title="{$lang.remove}">{$lang.remove}</a>{/if}</td>
+  </tr>
+  {/foreach}
+  </table>
+
+{if $full_page}
+</div>
+<!-- end reg_fiedls list -->
+{include file="pagefooter.htm"}
+{/if}

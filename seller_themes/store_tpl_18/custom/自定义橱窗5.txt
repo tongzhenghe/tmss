@@ -1,0 +1,345 @@
+<div class="fn-clear" style="height:390px;">
+<div class="userDefinedArea" style="width:100%; position:absolute; left:0; background:url(/seller_themes/store_tpl_18/custom_images/adv_banner_qp_3.jpg) -168.5px 0px; height:390px;"><a href="#" target="_blank" style="display:block;"></a></div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_main">
+<div class="user_main_box">
+<div class="cont user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/biaoti_bg.png); background-repeat:no-repeat;">
+<span class="user_font_1">园艺花盆</span>
+<a href="#" target="_blank" class="user_a_3">查看更多&gt;&gt;</a>
+</div>
+<div class="user_bgcolor_3 itembox">
+<ul>
+<li>
+<div class="jItem user_border_1">
+<div class="jPic">
+<div class="jCountdown user_font_3 user_bgcolor_1">
+<div class="youmi-module" data="2015-11-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/chuxiao_2.jpg" width="392" height="392" /></a>
+</div>
+<div class="jGoodsInfo user_bgcolor_3">
+<div class="jbuy user_bgcolor_7">
+<div class="jTitle"><a href="#" target="_blank">津沽园艺绿植盆栽 发财树撞色田园风盆栽 办公室桌面植物 室内花卉绿植 净化空气吸甲醛 1套</a></div>
+<div class="jPrice user_font_price">￥<span class="jdNum">38.00</span></div>
+</div>
+<div class="buybtn">
+<span class="user_bgcolor_but2 user_font_3 arrival">NEW ARRIVAL</span>
+<span class="jbuybtn user_bgcolor_but"><a href="#" target="_blank">立即抢购</a></span>
+</div>
+<div class="share">
+<div class="fx">分享到:</div>
+<a style="margin-left:43px;" target="_blank" class="sina"><img src="http://img11.360buyimg.com/cms/jfs/t772/280/77496154/1515/719ed6c5/54856198N0d98568c.png" class=""></a>
+<a target="_blank" class="qq"><img src="http://img11.360buyimg.com/cms/jfs/t532/138/748555517/1522/324a9882/54856198Ndf532b1c.png" class=""></a>
+<a target="_blank" class="sohu" ><img src="http://img11.360buyimg.com/cms/jfs/t703/243/85090232/1415/75ebe2c6/54856198N81c4358c.png" class=""></a>
+<a target="_blank" class="dou"><img src="http://img11.360buyimg.com/cms/jfs/t775/283/79486821/1224/f6b52f79/54856198N37bffe4d.png" class=""></a>
+<a target="_blank" class="qzone" ><img src="http://img11.360buyimg.com/cms/jfs/t523/226/729342761/1558/1487c6fe/54856198Nfc7d40a0.png" class=""></a>
+<a target="_blank" class="renren"><img src="http://img11.360buyimg.com/cms/jfs/t676/269/498279463/1428/9fb128e0/54856198N7e47040e.png" class=""></a>
+<a target="_blank" class="weixin"><img src="http://img11.360buyimg.com/cms/jfs/t694/99/748490929/1311/c98cd340/54856198Nc551c893.png" class=""></a>
+<a target="_blank" class="more"><img src="http://img11.360buyimg.com/cms/jfs/t682/219/744181569/1063/edeb2ae7/54856198N714b5526.png" class=""></a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem user_border_1">
+<div class="jPic">
+<div class="jCountdown user_font_3 user_bgcolor_1">
+<div class="youmi-module" data="2015-11-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/chuxiao_3.jpg" width="392" height="392" /></a>
+</div>
+<div class="jGoodsInfo user_bgcolor_3">
+<div class="jbuy user_bgcolor_7">
+<div class="jTitle"><a href="#" target="_blank">津沽园艺绿植盆栽 发财树撞色田园风盆栽 办公室桌面植物 室内花卉绿植 净化空气吸甲醛 1套</a></div>
+<div class="jPrice user_font_price">￥<span class="jdNum">38.00</span></div>
+</div>
+<div class="buybtn">
+<span class="user_bgcolor_but2 user_font_3 arrival">NEW ARRIVAL</span>
+<span class="jbuybtn user_bgcolor_but"><a href="#" target="_blank">立即抢购</a></span>
+</div>
+<div class="share">
+<div class="fx">分享到:</div>
+<a style="margin-left:43px;" target="_blank" class="sina"><img src="http://img11.360buyimg.com/cms/jfs/t772/280/77496154/1515/719ed6c5/54856198N0d98568c.png" class=""></a>
+<a target="_blank" class="qq"><img src="http://img11.360buyimg.com/cms/jfs/t532/138/748555517/1522/324a9882/54856198Ndf532b1c.png" class=""></a>
+<a target="_blank" class="sohu" ><img src="http://img11.360buyimg.com/cms/jfs/t703/243/85090232/1415/75ebe2c6/54856198N81c4358c.png" class=""></a>
+<a target="_blank" class="dou"><img src="http://img11.360buyimg.com/cms/jfs/t775/283/79486821/1224/f6b52f79/54856198N37bffe4d.png" class=""></a>
+<a target="_blank" class="qzone" ><img src="http://img11.360buyimg.com/cms/jfs/t523/226/729342761/1558/1487c6fe/54856198Nfc7d40a0.png" class=""></a>
+<a target="_blank" class="renren"><img src="http://img11.360buyimg.com/cms/jfs/t676/269/498279463/1428/9fb128e0/54856198N7e47040e.png" class=""></a>
+<a target="_blank" class="weixin"><img src="http://img11.360buyimg.com/cms/jfs/t694/99/748490929/1311/c98cd340/54856198Nc551c893.png" class=""></a>
+<a target="_blank" class="more"><img src="http://img11.360buyimg.com/cms/jfs/t682/219/744181569/1063/edeb2ae7/54856198N714b5526.png" class=""></a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem user_border_1">
+<div class="jPic">
+<div class="jCountdown user_font_3 user_bgcolor_1">
+<div class="youmi-module" data="2015-11-15 11:30:00">
+<span class="jtitle user_font_3">促销剩余：</span>
+<span class="days user_font_3"></span>
+<span>天</span>
+<span class="hours user_font_3"></span>
+<span>时</span>
+<span class="minutes user_font_3"></span>
+<span>分</span>
+<span class="seconds user_font_3"></span>
+<span>秒</span>
+</div>
+</div>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/chuxiao_4.jpg" width="392" height="392" /></a>
+</div>
+<div class="jGoodsInfo user_bgcolor_3">
+<div class="jbuy user_bgcolor_7">
+<div class="jTitle"><a href="#" target="_blank">津沽园艺绿植盆栽 发财树撞色田园风盆栽 办公室桌面植物 室内花卉绿植 净化空气吸甲醛 1套</a></div>
+<div class="jPrice user_font_price">￥<span class="jdNum">38.00</span></div>
+</div>
+<div class="buybtn">
+<span class="user_bgcolor_but2 user_font_3 arrival">NEW ARRIVAL</span>
+<span class="jbuybtn user_bgcolor_but"><a href="#" target="_blank">立即抢购</a></span>
+</div>
+<div class="share">
+<div class="fx">分享到:</div>
+<a style="margin-left:43px;" target="_blank" class="sina"><img src="http://img11.360buyimg.com/cms/jfs/t772/280/77496154/1515/719ed6c5/54856198N0d98568c.png" class=""></a>
+<a target="_blank" class="qq"><img src="http://img11.360buyimg.com/cms/jfs/t532/138/748555517/1522/324a9882/54856198Ndf532b1c.png" class=""></a>
+<a target="_blank" class="sohu" ><img src="http://img11.360buyimg.com/cms/jfs/t703/243/85090232/1415/75ebe2c6/54856198N81c4358c.png" class=""></a>
+<a target="_blank" class="dou"><img src="http://img11.360buyimg.com/cms/jfs/t775/283/79486821/1224/f6b52f79/54856198N37bffe4d.png" class=""></a>
+<a target="_blank" class="qzone" ><img src="http://img11.360buyimg.com/cms/jfs/t523/226/729342761/1558/1487c6fe/54856198Nfc7d40a0.png" class=""></a>
+<a target="_blank" class="renren"><img src="http://img11.360buyimg.com/cms/jfs/t676/269/498279463/1428/9fb128e0/54856198N7e47040e.png" class=""></a>
+<a target="_blank" class="weixin"><img src="http://img11.360buyimg.com/cms/jfs/t694/99/748490929/1311/c98cd340/54856198Nc551c893.png" class=""></a>
+<a target="_blank" class="more"><img src="http://img11.360buyimg.com/cms/jfs/t682/219/744181569/1063/edeb2ae7/54856198N714b5526.png" class=""></a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_main">
+<div class="user_main_box">
+<div class="cont user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/biaoti_bg.png); background-repeat:no-repeat; margin-bottom:10px;">
+<span class="user_font_1">园艺工具</span>
+<a href="#" target="_blank" class="user_a_3">查看更多&gt;&gt;</a>
+</div>
+<div class="j-module">
+<ul class="tabs">
+<li>
+<div class="box">
+<div class="pic user_border_dashed_right"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_4.jpg" width="120" height="120" /></a></div>
+<div class="desc">
+<div class="jTitle user_border_color_1">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 多肉植物 绿植盆栽 玉露 实生两年苗2棵 送蛭石泥炭土生根粉各1包 不含盆</a>
+</div>
+<div class="jbuy">
+<span class="jPrice user_font_price">
+<a class="user_bgcolor_but2 user_a_3">抢购价</a>￥
+<span class="jdNum">40.00</span>
+</span>
+<a href="#" target="_blank" class="jbuybtn user_a_3 user_bgcolor_but">抢购</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="box">
+<div class="pic user_border_dashed_right"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_5.jpg" width="120" height="120" /></a></div>
+<div class="desc">
+<div class="jTitle user_border_color_1">
+<a href="#" target="_blank" class="user_a_1">多肉植物 景天 观音莲 桌面盆栽（4棵装）防辐射 送蛭石泥炭土生根粉各一包 均不含盆</a>
+</div>
+<div class="jbuy">
+<span class="jPrice user_font_price">
+<a class="user_bgcolor_but2 user_a_3">抢购价</a>￥
+<span class="jdNum">39.00</span>
+</span>
+<a href="#" target="_blank" class="jbuybtn user_a_3 user_bgcolor_but">抢购</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="box">
+<div class="pic user_border_dashed_right"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_6.jpg" width="120" height="120" /></a></div>
+<div class="desc">
+<div class="jTitle user_border_color_1">
+<a href="#" target="_blank" class="user_a_1">多肉植物组合套装 珍珠吊兰 黑王子 筒叶花月 （3棵装）每种1棵 桌面小盆栽</a>
+</div>
+<div class="jbuy">
+<span class="jPrice user_font_price">
+<a class="user_bgcolor_but2 user_a_3">抢购价</a>￥
+<span class="jdNum">39.00</span>
+</span>
+<a href="#" target="_blank" class="jbuybtn user_a_3 user_bgcolor_but">抢购</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="items">
+<div class="items_hezi">
+<ul>
+<li>
+<div class="jPic user_border_color_2">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_datu_4.jpg" width="392" height="392" /></a>
+</div>
+<div class="jDesc user_bgcolor_7">
+<div class="lable">
+<span class="user_font_1">多肉植物</span>
+<span class="user_font_1">NO.1</span>
+</div>
+<div class="zhuangshi">
+<img src="/seller_themes/store_tpl_18/custom_images/yingwen.png" />
+</div>
+<div class="Price user_bgcolor_1 user_font_3" style="background-image:url(/seller_themes/store_tpl_18/custom_images/djqg_bg.png);">
+<span class="jprice user_font_3">￥<span class="jdNum">40.00</span></span>
+<a href="#" target="_blank" class="buybtn user_a_2">点击抢购</a>
+</div>
+<div class="jtitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 多肉植物 绿植盆栽 玉露 实生两年苗2棵 送蛭石泥炭土生根粉各1包 不含盆</a>
+</div>
+<div class="jBuy">
+<div class="jfavo user_bgcolor_but_hover">
+<a href="#" target="_blank" class="btn-coll"></a>
+</div>
+<div class="jcart user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+<div class="detail user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+</div>
+<div class="enjoy">
+<span class="user_font_2">分享到：</span>
+
+</div>
+<div class="biaozhi">
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t571/205/759588092/2594/a3d26c71/54856198N57c31245.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t556/64/738525368/2851/40d2d36e/54856198Nd0e45a60.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t601/273/771527874/2842/7b8d5918/54856198Nb7104e4a.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t565/55/755273391/2778/e0bdebf8/54856198N46d3e3aa.png" class=""></span>
+</div>
+</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="jPic user_border_color_2">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_datu_5.jpg" width="392" height="392" /></a>
+</div>
+<div class="jDesc user_bgcolor_7">
+<div class="lable">
+<span class="user_font_1">多肉植物</span>
+<span class="user_font_1">NO.2</span>
+</div>
+<div class="zhuangshi">
+<img src="/seller_themes/store_tpl_18/custom_images/yingwen.png" />
+</div>
+<div class="Price user_bgcolor_1 user_font_3" style="background-image:url(/seller_themes/store_tpl_18/custom_images/djqg_bg.png);">
+<span class="jprice user_font_3">￥<span class="jdNum">40.00</span></span>
+<a href="#" target="_blank" class="buybtn user_a_2">点击抢购</a>
+</div>
+<div class="jtitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 多肉植物 绿植盆栽 玉露 实生两年苗2棵 送蛭石泥炭土生根粉各1包 不含盆</a>
+</div>
+<div class="jBuy">
+<div class="jfavo user_bgcolor_but_hover">
+<a href="#" target="_blank" class="btn-coll"></a>
+</div>
+<div class="jcart user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+<div class="detail user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+</div>
+<div class="enjoy">
+<span class="user_font_2">分享到：</span>
+
+</div>
+<div class="biaozhi">
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t571/205/759588092/2594/a3d26c71/54856198N57c31245.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t556/64/738525368/2851/40d2d36e/54856198Nd0e45a60.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t601/273/771527874/2842/7b8d5918/54856198Nb7104e4a.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t565/55/755273391/2778/e0bdebf8/54856198N46d3e3aa.png" class=""></span>
+</div>
+</div>
+</li>
+</ul>
+<ul>
+<li>
+<div class="jPic user_border_color_2">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/gundong_product_datu_6.jpg" width="392" height="392" /></a>
+</div>
+<div class="jDesc user_bgcolor_7">
+<div class="lable">
+<span class="user_font_1">多肉植物</span>
+<span class="user_font_1">NO.3</span>
+</div>
+<div class="zhuangshi">
+<img src="/seller_themes/store_tpl_18/custom_images/yingwen.png" />
+</div>
+<div class="Price user_bgcolor_1 user_font_3" style="background-image:url(/seller_themes/store_tpl_18/custom_images/djqg_bg.png);">
+<span class="jprice user_font_3">￥<span class="jdNum">40.00</span></span>
+<a href="#" target="_blank" class="buybtn user_a_2">点击抢购</a>
+</div>
+<div class="jtitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 多肉植物 绿植盆栽 玉露 实生两年苗2棵 送蛭石泥炭土生根粉各1包 不含盆</a>
+</div>
+<div class="jBuy">
+<div class="jfavo user_bgcolor_but_hover">
+<a href="#" target="_blank" class="btn-coll"></a>
+</div>
+<div class="jcart user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+<div class="detail user_bgcolor_but_hover">
+<a href="#" target="_blank"></a>
+</div>
+</div>
+<div class="enjoy">
+<span class="user_font_2">分享到：</span>
+
+</div>
+<div class="biaozhi">
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t571/205/759588092/2594/a3d26c71/54856198N57c31245.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t556/64/738525368/2851/40d2d36e/54856198Nd0e45a60.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t601/273/771527874/2842/7b8d5918/54856198Nb7104e4a.png" class=""></span>
+<span class="user_bgcolor_but"><img src="http://img11.360buyimg.com/cms/jfs/t565/55/755273391/2778/e0bdebf8/54856198N46d3e3aa.png" class=""></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

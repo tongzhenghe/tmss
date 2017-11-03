@@ -1,0 +1,14 @@
+<div class="fn-clear user_pinpai-489326">
+<div class="mc">
+<div class="j-module user_leining_color">
+<div id="slides_pinpai" class="slider" style="width:990px;height:90px;">
+<div class="s_content img" style="width:990px;height:90px;">
+<ul class=" list-paddingleft-2">
+<li><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_1.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_2.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_3.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_4.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_5.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_6.jpg"/></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_1.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_2.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_3.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_4.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_5.jpg"/></a><a href="#"><img src="/seller_themes/store_tpl_5/custom_images/pinpai_6.jpg"/></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

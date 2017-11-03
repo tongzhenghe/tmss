@@ -1,0 +1,53 @@
+{include file="pageheader.htm"}
+
+<div class="main-div">
+<form action="store_category.php" method="post" name="theForm" onsubmit="return validate()">
+<table width="100%">
+  <tr>
+    <td class="label">分类名称: </td>
+    <td><input type="text" name="cate_name" value="{$store_cate.cate_name}" maxlength="20" />{$lang.require_field}</td>
+  </tr>
+  <tr >
+    <td class="label">排序: </td>
+    <td><input type="text" name="cate_order" value="{$store_cate.cate_order}" maxlength="3" size="5"/></td>
+  </tr>
+  <tr > 
+    <td class="label">是否显示: </td>
+    <td><input type="radio" name="is_show" value="1" {if $store_cate.is_show eq 1}checked='checked'{/if}/>是&nbsp;&nbsp;&nbsp;<input type="radio" name="is_show" value="0" {if $store_cate.is_show eq 0}checked='checked'{/if}/>否</td>
+  </tr>
+  <tr >
+    <td class="label">是否推荐: </td>
+    <td><input type="radio" name="is_recom" value="1" {if $store_cate.is_recom eq 1}checked='checked'{/if}/>是&nbsp;&nbsp;&nbsp;<input type="radio" name="is_recom" value="0" {if $store_cate.is_recom eq 0}checked='checked'{/if}/>否</td>
+  </tr>
+  <tr>
+    <td></td>    
+    <td align="left">
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$store_cate.id}" />
+      <input type="hidden" name="old_cate_name" value="{$store_cate.cate_name}" />
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+      <input type="reset" value="{$lang.button_reset}" class="button" />
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['cate_name'].focus();
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+  validator = new Validator("theForm");
+  validator.required('cate_name','类名称必填');
+  return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

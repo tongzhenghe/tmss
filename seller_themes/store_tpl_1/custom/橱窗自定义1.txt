@@ -1,0 +1,46 @@
+<div class="adv_bg"><img src="/seller_themes/store_tpl_1/custom_images/funcs_3.jpg" /></div>
+<div class="fn-clear">
+<div class="Title">
+<div class="TitleLeft">
+<span class="Titleyw">HOT</span>
+<span class="Titlezw">热销</span>
+</div>
+<div class="more"><a href="#">MORE</a></div>
+</div>
+<div class="temp2 tempHot">
+<ul>
+<li>
+<div class="item">
+<div class="proImg"><a href="#"><img src="/seller_themes/store_tpl_1/custom_images/hot_1.jpg" /></a></div>
+<div class="proFst">
+<div class="proFst-text">
+<a href="#">商店名称 2014夏季最新款中国风连衣裙 白色</a>
+</div>
+<div class="proFst-price">
+<div class="cxjprice">促销价：<strong>150</strong>元</div>
+<div class="yjprice"><span>380</span>元</div>
+<a class="shop" href="#">立即抢购</a>
+</div>
+</div>
+</div>
+<div class="listfoot"></div>
+</li>
+<li>
+<div class="item">
+<div class="proImg"><a href="#"><img src="/seller_themes/store_tpl_1/custom_images/hot_1.jpg" /></a></div>
+<div class="proFst">
+<div class="proFst-text">
+<a href="#">商店名称 2014夏季最新款中国风连衣裙 白色</a>
+</div>
+<div class="proFst-price">
+<div class="cxjprice">促销价：<strong>150</strong>元</div>
+<div class="yjprice"><span>380</span>元</div>
+<a class="shop" href="#">立即抢购</a>
+</div>
+</div>
+</div>
+<div class="listfoot"></div>
+</li>
+</ul>
+</div>
+</div>

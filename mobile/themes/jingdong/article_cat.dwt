@@ -1,0 +1,48 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+  <h1> {$lang.article_cat} </h1>
+  <div class="header_r header_search"> <a class="ico_03"  onClick="showSearch()"> {$lang.search} </a> </div>
+  <div id="search_box" class="Search_Box">
+    <div class="search_box">
+      <form action="{$search_url}" name="searchForm" id="searchForm_id" method="post">
+        <input placeholder="{$lang.no_keywords}" name="keywords" type="text" id="keywordBox" value="{$search_value}" />
+        <input name="id" type="hidden" value="{$cat_id}" />
+        <button class="ico_07" type="submit" onclick="return check('keywordBox')"> </button>
+      </form>
+    </div>
+    <a class="ico_08" onClick="closeSearch()"></a></div>
+</header>
+<div class="blank3"></div>
+<section class="wrap" style="border-bottom:0;">
+  <div class="list_box InfoBox article_cat" style="padding-top:0;padding-bottom:0;"> 
+    <!-- {if $article_categories} --> 
+    <!--{foreach from=$article_categories item=cat}--> 
+    <a href="{:url('article/art_list',array('id'=>$this->_var['cat']['id']))}" class="clearfix"> <span>{$cat.name|escape:html}</span><i></i> </a> 
+    <!--{/foreach}--> 
+    <!--{else}--> 
+    <!-- {foreach from=$artciles_list item=article name="artciles_list"} --> 
+    <a href="{$article.url}" class="clearfix"> <span>{$article.short_title}</span><i></i> </a> 
+    <!-- {/foreach} --> 
+    <!-- {/if} --> 
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+/*头部搜索点击关闭或者弹出搜索框*/  
+function showSearch( ){
+	document.getElementById("search_box").style.display="block";
+}
+function closeSearch(){
+	document.getElementById("search_box").style.display="none";
+}
+/* 搜索验证 */
+function check(Id){
+	var strings = document.getElementById(Id).value;
+	if(strings.replace(/(^\s*)|(\s*$)/g, "").length == 0){
+		return false;
+	}
+	return true;
+}
+</script>
+</body></html>

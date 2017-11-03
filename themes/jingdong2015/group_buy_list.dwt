@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header_group.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/user_here.lbi" --><!-- #EndLibraryItem -->
+<div class="groupBanner">
+	<div class="banner-pic JQbanner">
+    	<div class="bd">
+        	<ul>
+            	<li style="background:#d2eedf;"><div class="uiInner">{insert name='ads' id=25 num=1}</div></li>
+                <li style="background:#ffd302;"><div class="uiInner">{insert name='ads' id=26 num=1}</div></li>
+                <li style="background:#2188f1;"><div class="uiInner">{insert name='ads' id=27 num=1}</div></li>
+                <li style="background:#a42d57;"><div class="uiInner">{insert name='ads' id=28 num=1}</div></li>
+                <li style="background:#091547;"><div class="uiInner">{insert name='ads' id=29 num=1}</div></li>
+            </ul>
+        </div>
+        <div class="hd">
+        	<ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
+        </div>
+    </div>
+</div>
+<div class="groupBannerOther">
+	<div class="w">
+    	<div class="adList">
+        	<ul>{insert name='ads' id=30 num=3}</ul>
+        </div>
+        <div class="bannerRight"><!-- TemplateBeginEditable name="团购列表幻灯片右侧广告位" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --></div>
+    </div>
+</div>
+
+<div class="w" id="firstAnchor">
+	<div class="mt">
+    	<h2><span>单</span>品团</h2>
+    </div>
+    <div class="mc">
+    	<ul>
+        	<!-- {if $gb_list} 如果有团购活动 --> 
+            <!-- {foreach from=$gb_list item=group_buy name=no} 循环团购活动开始 -->
+        	<li class="{if $smarty.foreach.no.iteration < 4 }cury{/if}{if $smarty.foreach.no.index mod 3 eq 2} curr{/if}">
+            	<span class="ico_split"></span>
+                <div class="pic-inner">
+                	<a href="{$group_buy.url}" title="{$group_buy.goods_name|escape:html}">
+                    	<div class="pic-img"><img src="{$group_buy.goods_img}" alt="{$group_buy.goods_name|escape:html}" /></div>
+                        <div class="pic-title">{$group_buy.goods_name|escape:html}</div>
+                        <div class="pic-details">
+                        	<div class="left">{$group_buy.price_ladder.0.formated_price}<del>{$group_buy.shop_price}</del></div>
+                            <div class="right">已抢 {$group_buy.cur_amount} 件</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <!--{/foreach}-->
+            <!-- {else} --> 
+            <span style="margin:2px 10px; font-size:14px; line-height:36px;">{$lang.group_goods_empty}</span> 
+            <!-- {/if} -->
+        </ul>
+    </div>
+</div>
+<div class="groupBottomAd w">
+	<div class="blank10"></div>
+    <!-- TemplateBeginEditable name="团购列表底部广告位" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+	<div class="blank10"></div>
+</div>
+<!-- #BeginLibraryItem "/library/help.lbi" --> <!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+<script>
+	jQuery(".JQbanner").slide({mainCell:".bd ul",effect:"fold",interTime:5000,autoPlay:true});
+	$(".adList li:first").addClass("hover");
+	$(".adList li").mouseover(function(){
+		$(this).addClass("hover").siblings().removeClass("hover")
+	})
+	//
+	$(window).resize(function(){
+		var bodyW=$(window).width();
+		if(bodyW>=990){
+			$('.banner-pic .bd ul,.banner-pic .bd li').css({width:bodyW})
+		}
+	})
+</script>
+</body>
+</html>

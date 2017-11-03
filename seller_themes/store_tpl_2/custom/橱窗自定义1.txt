@@ -1,0 +1,43 @@
+<div class="fn-clear user_s15007861">
+<div class="user_items user_bgcolor_3">
+<div class="item">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/guanggao1.jpg"/></a>
+<div class="jBox user_bgcolor">
+<div class="sTitle user_font_3">
+RECOMMAND
+</div>
+<div class="jCountdown user_font user_bgcolor">
+<div class="youmi-module" data="2014-10-25 12:00:00">
+<div class="jtitle user_font_3">
+抢购剩余时间：
+</div>
+<div class="bm">
+<span class="days user_font_3"></span>天<span class="hours user_font_3"></span>时<span class="minutes user_font_3"></span>分<span class="seconds user_font_3"></span>秒
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/guanggao2.jpg"/></a>
+</div>
+<div class="item" style="margin-right:0;">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/guanggao3.jpg"/></a>
+<div class="jBox user_bgcolor">
+<div class="sTitle user_font_3">
+RECOMMAND
+</div>
+<div class="jCountdown user_font user_bgcolor">
+<div class="youmi-module" data="2015-01-05 00:00:00">
+<div class="jtitle user_font_3">
+抢购剩余时间：
+</div>
+<div class="bm">
+<span class="days user_font_3"></span>天<span class="hours user_font_3"></span>时<span class="minutes user_font_3"></span>分<span class="seconds user_font_3"></span>秒
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

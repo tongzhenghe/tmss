@@ -1,0 +1,12 @@
+{insert_scripts files=”../js/utils.js”}
+<div id="turn-page">
+    总计 <span id="totalRecords">{$record_count}</span>
+    个记录分为 <span id="totalPages">{$page_count}</span>
+    页当前第 <span id="pageCurrent">{$filter.page}</span>页
+        <span id="page-link">
+          {literal}<a href="javascript:listTable.gotoPageFirst()">{/literal}首页</a>
+          {literal}<a href="javascript:listTable.gotoPagePrev()">{/literal}上一页</a>
+          {literal}<a href="javascript:listTable.gotoPageNext()">{/literal}下一页</a>
+          {literal}<a href="javascript:listTable.gotoPageLast()">{/literal}尾页</a>
+        </span>
+</div>

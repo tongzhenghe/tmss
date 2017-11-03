@@ -1,0 +1,10 @@
+<div class="ft-plear">
+<img src="/seller_themes/store_tpl_3/custom_images/zlhaiwei.jpg" usemap="#kslj" border="0"/><map name="kslj" id="kslj"><area shape="rect" coords="4,6,240,98" href="#"/>
+<area shape="rect" coords="253,3,488,101" href="#"/>
+<area shape="rect" coords="503,3,742,101" href="#"/>
+<area shape="rect" coords="753,5,987,100" href="#"/>
+<area shape="rect" coords="6,108,240,205" href="#"/>
+<area shape="rect" coords="251,109,489,203" href="#"/>
+<area shape="rect" coords="503,112,741,201" href="#"/>
+<area shape="rect" coords="755,109,989,201" href="#"/></map>
+</div>

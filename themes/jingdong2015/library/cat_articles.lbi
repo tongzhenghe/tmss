@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $script_name eq 'index'} -->
+<div class="mt">
+	<h2>{$articles_cat.name|escape:html}</h2>
+    <div class="extra"><a href="{$articles_cat.url}" target="_blank">更多&nbsp;&gt;</a></div>
+</div>
+<div class="mc">
+	<ul>
+    	<!--{foreach from=$articles item=article_item}-->
+        <li {if $smarty.foreach.foo.iteration mod 2 eq 1}class="odd"{/if}><a href="{$article_item.url}" target="_blank" title="{$article_item.title|escape:html}">{$article_item.short_title}</a></li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+<!-- {elseif $script_name eq 'category'}-->
+<div id="market">
+	<div class="mt">{$articles_cat.name|escape:html}</div>
+    <div class="mc">
+    	<ul>
+        	<!--{foreach from=$articles item=article_item}-->
+            <li>·<a href="{$article_item.url}" target="_blank">{$article_item.short_title}</a></li>
+            <!--{/foreach}-->
+        </ul>
+    </div>
+</div>
+<!-- {else} -->
+<div class="mt">
+	<h2>{$articles_cat.name|escape:html}</h2>
+</div>
+<div class="mc">
+	<ul>
+    	<!--{foreach from=$articles item=article_item}-->
+        <li>·<a target="_blank" href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a></li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+<!-- {/if} -->

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$store.shop_keyword}" />
+<meta name="Description" content="{$store.shop_keyword}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$store.shop_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="../store_tpl_1/favicon.ico" />
+<link rel="icon" href="../store_tpl_1/animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,jquery-1.9.1.min.js,jquery-migrate-1.1.0.js'}
+<link href="themes/jingdong2015/store_css/css.css" rel="stylesheet" type="text/css" >
+<link href="themes/jingdong2015/store_tpl_1/store_css/store_tpl_1.css" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="themes/jingdong2015/js/superslide.2.1.js"></script>
+<script type="text/javascript" src="themes/jingdong2015/js/jquery.SuperSlide.js"></script>
+</head>
+<script language="javascript">
+function changeImg(obImg,sNewURL)
+{
+   if(sNewURL!="") obImg.src=sNewURL;
+}
+</script>
+<body>
+<!-- #BeginLibraryItem "/library/page_header_sl1.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/store_header1.lbi" --><!-- #EndLibraryItem -->
+<div class="main">
+    <div class="col_main">
+        <div class="store_dh">
+            {$header_content}
+        </div>
+        <div class="nav" style="background-color:{if $store.shop_color}{$store.shop_color}{else}#000{/if};">
+            <div class="layout">
+                <div class="layout-left m190 higt">
+                    <div class="all_cats_box">
+                        <div class="all_cats "><a href="seller_goods.php?sid={$store.id}" target="_blank"><span>全部商品分类</span></a></div>
+                        <div class="all_cats_tcc">
+                            <ul>
+                                {foreach from=$store_cate item=category}
+                                <li>
+                                    <div class="jOneLevelarea user_temp_one">
+                                        <div class="jTwoLevel">
+                                            <span class="square_box"></span>
+                                            {if $category.is_text}
+                                            <a href="{$category.url}">{$category.name}</a>
+                                            {else}
+                                            <a href="{$category.url}"><img src="{$category.cat_img}" alt="{$category.name}"/></a>
+                                            {/if}
+                                        </div>
+                                        <div class="s_b">
+                                            {foreach from=$category.child_cat item=child}
+                                            {if $child.is_text}
+                                            <a href="{$child.url}" target="_blank">{$child.name}</a>
+                                            {else}
+                                            <a href="{$child.url}" target="_blank"><img src="{$child.cat_img}" alt="{$child.name}"/></a>
+                                            {/if}
+                                            {/foreach}
+                                        </div>
+                                    </div>
+                                </li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-right m790">
+                {foreach from=$store_nav item=nav}
+                    <a href="{$nav.nav_link}" {if $nav.is_blank} target="_blank"{/if}>{if $nav.is_text}{$nav.nav_name}{else}<img src="{$nav.nav_img}" />{/if}</a>
+                {/foreach}
+                </div>
+                <div class="jSearchArea">
+                <form name="" action="seller_goods.php" method="get">
+                    <input type="text" class="inputMiddle user_font" name="keyword"/>
+                    <input type="hidden" value="{$store.id}" name="sid" />
+                    <button class="jbtn user_bgcolor" type="submit"></button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hdp">
+    {if $store_slide.0.slide_type=='shade'}
+        <div class="nr">
+            <div class="hdp-slide" data-slide='{"action":"click","height":"500","time":"8000"}'>
+                <ul>
+                    {foreach from=$store_slide item=slide}
+                        <li><a href="{$slide.img_link}" target="_blank"><img src="{$slide.img_url}" /></a></li>
+                    {/foreach}    
+                </ul>
+            </div>
+         </div>
+         <script type="text/javascript" src="themes/jingdong2015/js/lrtk.js"></script>
+         <script>$('.hdp-slide').slide();</script>
+     {else}
+        <div class="nr">
+            <div class="flexslider">
+                <ul class="slides">
+                {foreach from=$store_slide item=slide}
+                  <li><a href="{$slide.img_link}" target="_blank" style="background:url({$slide.img_url}) center 0 no-repeat; height:500px;display:block"></a></li>
+                {/foreach}
+                </ul>
+            </div>
+            <script type="text/javascript">
+            $(function(){
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    direction:"vertical",
+                    easing:"swing"
+                });
+            });
+            </script>
+        </div>
+     {/if}
+    </div>
+    <div class="wraper">
+        <div class="layout-one m990">
+        {if $store.shop_style}
+            <div class="layout-one-left m190">
+                <div class="mod">
+                    <div class="jSearchArea">
+                        <h1>店铺名称</h1>
+                        {if $store.shop_logo}
+                        <div class="logo_dp"><img src="{$store.shop_logo}" width="130" /></div>
+                        {/if}
+                        <div class="dp_adt">商家用户：<span>{$store.shop_name}</span></div>
+                        <div class="dp_adt">所在位置：<span>{$store.address}</span></div>
+                        <div class="dp_adt">详细地址：<span>{$store.shop_address}</span></div>
+                        <div class="dp_adt">旺旺客服：<span><a target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid={$store.kf_ww}&siteid=cntaobao&status=1&charset=utf-8"><img border="0" src="http://amos.alicdn.com/realonline.aw?v=2&uid={$store.kf_ww}&site=cntaobao&s=1&charset=utf-8" alt="点击这里给我发消息" /></a></span></div>
+                        <div class="dp_adt">企鹅客服：<span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$store.kf_qq}&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$store.kf_qq}:51" alt="点击这里给我发消息" /></a></span></div>
+                    </div>
+                </div>
+                <div class="mod">
+                    <div class="search_price">
+                        <div class="mChazhao">
+                            <div class="mChazhao_title">店铺公告</div>
+                            <div class="search_nr">
+                                {$store.notice}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #BeginLibraryItem "/library/seller_store_left.lbi" --><!-- #EndLibraryItem -->                   
+            </div>
+          {/if}
+            <div class="layout-one-right {if $store.shop_style}m790{else}m990{/if}" >
+                {foreach from=$store_windows item=wind}
+                {if $wind.is_show}
+                {if $wind.win_type==0}
+                <div class="adv">{$wind.win_custom}</div>
+                {else}
+                <div class="temp">
+                    <div class="tempTitle" style="background-color:{$wind.win_color};">
+                        <div class="tempTitleLeft">
+                            <span class="tempTitlezw">{$wind.win_name}</span>
+                        </div>
+                    </div>
+                    <div class="Jproduct">
+                        <ul>
+                        {foreach from=$wind.goods_list item=goods_list key=k}
+                            <li>
+                                <div class="Jitem">
+                                    <div class="jPic"><a href="/goods.php?id={$goods_list.goods_id}" target="_blank"><img src="{$goods_list.goods_thumb}" onmouseover="changeImg(this,'{$goods_list.goods_thumb}');" onmouseout="changeImg(this,'{$goods_list.goods_thumb}');" /></a></div>
+                                    <div class="jGoodsInfo">
+                                        <div class="jDesc">
+                                            <a href="/goods.php?id={$goods_list.goods_id}" target="_blank">{$goods_list.goods_name}</a>
+                                        </div>
+                                        <div class="jPrice">
+                                            {if $goods_list.is_promote}
+                                            <div class="cxjprice">促销价：<strong>{$goods_list.promote_price}</strong>元</div>
+                                            <div class="yjprice"><span>{$goods_list.shop_price}</span>元</div>
+                                            <a class="shop" href="javascript:addToCart1({$goods_list.goods_id});">立即抢购</a>
+                                            {else}
+                                            <div class="jdPrice"><span class="jRmb">￥</span><span class="jdNum">{$goods_list.shop_price}</span>元</div>
+                                            {/if}
+                                        </div>
+                                        <div class="jExtra">
+                                            <span class="star"><span class="star-white"><span class="star-yellow h5"></span></span></span>
+                                            <a href="#" target="_blank">已有<em>0</em>人评论</a>
+                                        </div>
+                                    </div>
+                                    <div class="jTian">
+                                        <span class="favo"><input value="加关注" class="btn-coll2" type="button" /></span>
+                                        <span class="cart"><a href="#"></a></span>
+                                        <span class="buy"><a href="#"></a></span>
+                                    </div>
+                                </div>
+                            </li>
+                        {/foreach}
+                        </ul>
+                    </div>
+                </div>
+                {/if}
+                {/if}
+            {/foreach}
+            </div>
+        </div>
+    </div>
+    {if $store_two_code && $store.two_code}
+        <div class="stick-qrcode">
+        	<a href="javascript:;" class="index-erweima">
+            	<span class="stick-qrcode__pos stick-qrcode-deal"><img src="{$code_img_url}" title="{$store.shop_name}" width="85" height="85" /></span>
+                <span class="starrow">手机扫一扫，劲爆优惠触手可得！</span>
+                <span class="qrcode-close"></span>
+            </a>
+        </div>
+        {/if}
+</div>
+<div class="jPageExtra">
+    <div class="jExtraArea">
+        <a href="#nogo" class="iconShare">
+        <div class="jShareArea">
+            <ul>
+                <li class="sinaminiblog"><span class="iconWeibo"></span><em class="jText">新浪微博</em></li>
+                <li class="qqmb"><span class="iconQQ"></span><em class="jText">新浪微博</em></li>
+                <li class="neteasemb"><span class="icon163"></span><em class="jText">腾讯微博</em></li>
+                <li class="renren"><span class="iconRenren"></span><em class="jText">人人网</em></li>
+                <li class="qzone"><span class="iconQzone"></span><em class="jText">QQ空间</em></li>
+                <li class="mogujie"><span class="iconMogujie"></span><em class="jText">蘑菇街</em></li>
+                <li class="kaixin001"><span class="iconKaixin"></span><em class="jText">开心网</em></li>
+                <li class="douban"><span class="iconDouban"></span><em class="jText">豆瓣</em></li>
+                <li class="facebook"><span class="iconFacebook"></span><em class="jText">Facebook</em></li>
+                <li class="twitter"><span class="iconTwitter"></span><em class="jText">Twitter</em></li>
+            </ul>
+        </div>
+        <i>♦</i></a>
+        <a href="#nogo" class="iconCollect"><span class="emm">收藏网页</span><i>♦</i></a>
+        <span class="iconTop"><span class="emm">返回顶部</span><i>♦</i></span>
+    </div>
+</div>
+<script>
+//返回顶部,分享,二维码扫描
+var stickyTop = $('.wraper').offset().top-100;
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	if (scrollTop > stickyTop) {
+		$('.stick-qrcode').css({ 'display': 'block'});
+		$('.iconTop').css({ 'display': 'block'});			
+	}else{
+		$('.stick-qrcode').css({ 'display': 'none'});
+		$('.iconTop').css({ 'display': 'none'});	
+	}
+});
+//分享
+$(".iconShare").mouseenter(function(){
+	$(this).addClass("jCurrent");
+});
+$(".iconShare").mouseleave(function(){
+	$(this).removeClass("jCurrent");
+});
+//二维码
+$(".qrcode-close").click(function(){
+	$(this).parent().css("display","none");
+});
+//返回顶部
+$(".iconTop").click(function(){
+	$('body,html').animate({scrollTop:0},500);
+	return false;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="post" action="" name="listForm">
+<!-- start reg_fiedls list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellspacing='1' id="list-table">
+  <tr>
+    <th>标签</th>
+    <th>排序</th>
+    <th>操作</th>
+  </tr>
+  {foreach from=$street_tags item=tags}
+  <tr>
+    <td class="first-cell" ><span onclick="listTable.edit(this,'edit_name', {$tags.id})">{$tags.tag_name}</span></td>
+    <td align="center"><span onclick="listTable.edit(this,'edit_order', {$tags.id})">{$tags.tags_order}</span></td>
+    <td align="center"><a href="?act=edit&id={$tags.id}">{$lang.edit}</a> | <a href="javascript:;" onclick="listTable.remove({$tags.id}, '确定删除该标签？')" title="{$lang.remove}">{$lang.remove}</a></td>
+  </tr>
+  {/foreach}
+  </table>
+
+{if $full_page}
+</div>
+<!-- end reg_fiedls list -->
+{include file="pagefooter.htm"}
+{/if}

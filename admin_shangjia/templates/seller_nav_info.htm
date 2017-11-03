@@ -1,0 +1,87 @@
+<!-- $Id: brand_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+{include file="pageheader.htm"}
+<div class="main-div">
+<form method="post" action="seller_nav.php" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+<table cellspacing="1" cellpadding="3" width="100%">
+  <tr>
+    <td class="label">导航名称</td>
+    <td><input type="text" name="navname" maxlength="60" value="{$nav.nav_name}" />{$lang.require_field}</td>
+  </tr>
+  <tr>
+    <td class="label">导航链接</td>
+    <td><input type="text" name="navlink"  size="40" value="{$nav.nav_link}" />
+    <span style="display:block" class="notice-span">
+     (注意格式:'category.php?id=1')
+    </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="label"><a href="javascript:showNotice('warn_brandlogo');" title="{$lang.form_notice}">
+        <img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>导航图标</td>
+    <td><input type="file" name="navimg" id="logo" size="45">{if $nav.nav_img neq ""}<img src="{$nav.nav_img}" width="100" height="40"/>{/if}
+    <br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="warn_brandlogo">
+     导航图标可代替文字显示在导航上
+    </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.sort_order}</td>
+    <td><input type="text" name="navorder" maxlength="40" size="15" value="{$nav.nav_order}" /></td>
+  </tr>
+  <tr>
+    <td class="label">是否显示</td>
+    <td><input type="radio" name="isshow" value="1" {if $nav.is_show eq 1}checked="checked"{/if} /> {$lang.yes}
+        <input type="radio" name="isshow" value="0" {if $nav.is_show eq 0}checked="checked"{/if} /> {$lang.no}
+        (决定是否在导航上显示)
+    </td>
+  </tr>
+  <tr>
+    <td class="label">是否新窗口打开</td>
+    <td><input type="radio" name="isblank" value="1" {if $nav.is_blank eq 1}checked="checked"{/if} /> {$lang.yes}
+        <input type="radio" name="isblank" value="0" {if $nav.is_blank eq 0}checked="checked"{/if} /> {$lang.no}
+        (决定是否在新窗口打开链接)
+   </td>
+  </tr>
+  <tr>
+    <td class="label">只显示文字</td>
+    <td>
+    <input type="radio" name="istext" value="1" {if $nav.is_text eq 1}checked="checked"{/if} /> {$lang.yes}
+        <input type="radio" name="istext" value="0" {if $nav.is_text eq 0}checked="checked"{/if} /> {$lang.no}
+        (决定导航是以文字显示还是图片显示，选择否将以图片显示)
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><br />
+      <input type="submit" class="button" value="{$lang.button_submit}" />
+      <input type="reset" class="button" value="{$lang.button_reset}" />
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$nav.id}" />
+      <input type="hidden" name="old_navimg" value="{$nav.nav_img}">
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['navname'].focus();
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+    validator.required("navname",'导航名称不能为空');
+    return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

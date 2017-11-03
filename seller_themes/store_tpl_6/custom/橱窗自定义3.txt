@@ -1,0 +1,23 @@
+<div class="fn-clear user_bk">
+<div class="mc">
+<div class="bk_left">
+<div class="bk_p1">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/p1.jpg"/></a>
+</div>
+<div class="bk_p2">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/p2.jpg"/></a>
+</div>
+<div class="bk_p3">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/p3.jpg"/></a>
+</div>
+</div>
+<div class="bk_right">
+<div class="bk_p4">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/p4.jpg"/></a>
+</div>
+<div class="bk_p5">
+<a href="#"><img src="/seller_themes/store_tpl_6/custom_images/p5.jpg"/></a>
+</div>
+</div>
+</div>
+</div>

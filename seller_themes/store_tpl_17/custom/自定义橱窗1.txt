@@ -1,0 +1,349 @@
+<div class="layout-one w990">
+<div class="fn-clear userdefined">
+<div class="mc">
+<div class="user_list1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/adv_list_1.jpg" /></a>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/adv_list_2.jpg" /></a>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/adv_list_3.jpg" /></a>
+</div>
+</div>
+</div>
+<div class="fn-clear jSearch">
+<div class="mc">
+<div class="searchArea">
+<div class="jSearchArea">
+<input type="text" id="newKeyword" name="newKeyword" class="inputMiddle" />
+<button type="button">搜索</button>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear userdefined">
+<div class="mc">
+<div class="userDefinedArea">
+<div class="user-kf">
+<div class="kftit">
+<span class="eng">SERVICE</span>
+<span class="china">在线客服</span>
+</div>
+<div class="kf">
+<div class="kfa">
+<span class="kt-title">售前咨询</span>
+<span class="info"><span class="kefu_name">客服一号:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a><span class="kefu_name">&nbsp; &nbsp; 客服二号:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a><span class="kefu_name">&nbsp; &nbsp; 客服三号:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a></span>
+</div>
+<div class="kfb">
+<span class="kt-title">售后咨询</span>
+<span class="info"><span class="kefu_name">物流查询:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a><span class="kefu_name">&nbsp; &nbsp; 投诉维权:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a><span class="kefu_name">&nbsp; &nbsp; 退 换 货:&nbsp;</span><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/kefu.gif" /></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear userdefined">
+<div class="mc">
+<div class="userDefinedArea">
+<img src="/seller_themes/store_tpl_17/custom_images/leibie.jpg" usemap="#leibieMap" border="0" />
+<map name="leibieMap" id="leibieMap">
+<area shape="rect" coords="16,14,152,161" href="#" />
+<area shape="rect" coords="155,17,279,161" href="#" />
+<area shape="rect" coords="283,18,419,163" href="#" />
+<area shape="rect" coords="423,18,555,162" href="#" />
+<area shape="rect" coords="559,18,687,164" href="#" />
+<area shape="rect" coords="693,18,822,158" href="#" />
+<area shape="rect" coords="829,20,954,157" href="#" />
+</map>
+</div>
+</div>
+</div>
+<div class="fn-clear jBanner">
+<div class="mc">
+<div id="slides" class="slideshow" rel="auto-play" style="height:350px; width:990px;">
+<div class="img" style="height:350px; width:990px;">
+<ul>
+<li><a href="#"><img src="/seller_themes/store_tpl_17/custom_images/lb_content_b_1.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_17/custom_images/lb_content_b_1.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_17/custom_images/lb_content_b_1.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="biaoti_title">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/biaoti_1.jpg" /></a>
+</div>
+<div class="user_adv_list">
+<ul>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_1.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_2.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_3.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_4.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_5.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_6.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_7.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_17/custom_images/guanggao_8.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_zdzbao">
+<div class="zdzbao_title border_bottom">
+<h3>镇店之宝<span class="yw">TOWN SHOP TREASURE</span></h3>
+<a href="#" target="_blank">更多新鲜产品</a>
+</div>
+<div class="zdzbao_items">
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_1.jpg" /></div>
+<div class="item_info">
+<span class="desc">汇尔康425克/罐 全国包邮</span>
+<span class="title">出口韩国黄桃罐头</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>10<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_2.jpg" /></div>
+<div class="item_info">
+<span class="desc">江浙沪包邮</span>
+<span class="title">正宗秘制山楂糕</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>6<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_3.jpg" /></div>
+<div class="item_info">
+<span class="desc">百年土特产 江浙沪皖包邮</span>
+<span class="title">秘制蜜三刀</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>20<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_4.jpg" /></div>
+<div class="item_info">
+<span class="desc">21省包邮 全国独家销售</span>
+<span class="title">纯天然新鲜牛蒡根</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>68<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_5.jpg" /></div>
+<div class="item_info">
+<span class="desc">700克/罐 百年老树 包邮</span>
+<span class="title">稀有白果颗粒饱满</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>29<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/zdzb_product_6.jpg" /></div>
+<div class="item_info">
+<span class="desc">旺德福牛蒡酱 21省包邮</span>
+<span class="title">全网销量第一</span>
+<div class="jPrice">
+<span class="jNum">尝鲜价</span>
+<span class="price"><em>￥</em>45<span>.00</span></span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_zdzbao">
+<div class="zdzbao_title">
+<h3>特色美食<span class="yw">CHARACTERISTICS OF FOOD</span></h3>
+<a href="#" target="_blank">更多新鲜产品</a>
+</div>
+<div class="tese_items">
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_1.jpg" /></div>
+<div class="item_desc">
+<span class="title">金丝牛蒡茶 纯手工制作</span>
+<span class="price"><em>￥</em>8<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_2.jpg" /></div>
+<div class="item_desc">
+<span class="title">小康 牛肉酱</span>
+<span class="price"><em>￥</em>7<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_3.jpg" /></div>
+<div class="item_desc">
+<span class="title">维维嚼一嚼 大豆营养代餐棒</span>
+<span class="price"><em>￥</em>21<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_4.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级牛蒡茶 台湾口味</span>
+<span class="price"><em>￥</em>8<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_5.jpg" /></div>
+<div class="item_desc">
+<span class="title">进口意大利面 面条意粉</span>
+<span class="price"><em>￥</em>9<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_6.jpg" /></div>
+<div class="item_desc">
+<span class="title">银杏果白果仁 五香味</span>
+<span class="price"><em>￥</em>45<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_7.jpg" /></div>
+<div class="item_desc">
+<span class="title">原味汇尔康大麦茶</span>
+<span class="price"><em>￥</em>20<span>.00</span></span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/tsms_product_8.jpg" /></div>
+<div class="item_desc">
+<span class="title">旺达糙米茶 活性发芽糙米茶</span>
+<span class="price"><em>￥</em>30<span>.00</span></span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_zdzbao">
+<div class="zdzbao_title">
+<h3>汇尔康精选<span class="yw">HUIERKANG'S CHOLCE</span></h3>
+<a href="#" target="_blank">更多推荐产品</a>
+</div>
+<div class="huierk_items">
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_1.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_2.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_3.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img border_right"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_4.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_1.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_2.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_3.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="#" target="_blank">
+<div class="item_img border_right"><img src="/seller_themes/store_tpl_17/custom_images/huierk_product_4.jpg" /></div>
+<div class="item_desc">
+<span class="title">特级古银杏 原生态农场出品</span>
+<span class="description">千年古银杏树 顺丰包邮</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

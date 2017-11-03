@@ -1,0 +1,21 @@
+﻿<style>
+.banner_left{ width:300px; height:118px; float:left; margin-right:22px;}
+.banner_con{ width:350px; height:118px; float:left; text-align:center;}
+.banner_right{ width:300px; height:118px; float:left; margin-left:22px;}
+.texted{ position:absolute; bottom:0; width:200px; background:url(/seller_themes/store_tpl_1/custom_images/gunbolaba.gif) 0 2px no-repeat; padding-left:20px;}
+.texted span{ font-size:12px; font-family: "Microsoft YaHei";}
+.banner_right img{ position:absolute; bottom:0; right:0;}
+</style>
+<div style=" width:1000px; margin:0 auto;position: relative;overflow: hidden;">
+<div class="banner_left">
+<div class="texted">
+超值回馈，满199减10，满299减20！<span style="color:red;">活动时间：限时七天！</span>
+</div>
+</div>
+<div class="banner_con">
+<a href="#"><img title="logo.jpg" src="/seller_themes/store_tpl_1/custom_images/14092821732790.jpg"/></a>
+</div>
+<div class="banner_right">
+<a href="#"><img title="sc.jpg" src="/seller_themes/store_tpl_1/custom_images/14092821916931.jpg"/></a>
+</div>
+</div>

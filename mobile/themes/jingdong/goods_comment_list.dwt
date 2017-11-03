@@ -1,0 +1,16 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1>{$lang.goods_comment}</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"></a></div>
+  <div id="search_box">
+    <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem -->
+  </div>
+</header>
+<div class="s-detail" id="ECS_COMMENT">
+      <!-- #BeginLibraryItem "/library/comments_list.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

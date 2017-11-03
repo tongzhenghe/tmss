@@ -1,0 +1,25 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+   <!-- {if $booking_list} -->
+<div class="flow-consignee-list ect-bg-colorf addressListBox">
+<section class="flow-consignee" style="margin:5px;">
+	<ul>
+		<!-- {foreach from=$booking_list item=item} -->
+		<li>
+		  <dl>
+			<dt>
+			  <h4 class="title"><a href="{$item.url}">{$item.goods_name} <span>[订购数量：{$item.goods_number}]</span></a></h4>
+			</dt>
+			<dd class="date ect-color999">{$item.booking_time}</dd>
+			<dd>{$item.dispose_note}</dd>
+			<dd><a href="javascript:if(confirm('{$lang.confirm_remove_account}')){window.location.href='{:url('user/del_booking', array('rec_id'=>$this->_var['item']['rec_id']))}'};" class="pull-right del"><i class="glyphicon glyphicon-trash"></i></a></dd>
+		  </dl>
+		</li>
+		<!-- {/foreach} -->
+  </ul>
+  </section>
+</div>
+<!-- {if $pager.page_count > 1} -->
+<!-- #BeginLibraryItem "/library/page.lbi" --><!-- #EndLibraryItem --> 
+ <!-- {/if} -->
+  <!-- {/if} -->
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->

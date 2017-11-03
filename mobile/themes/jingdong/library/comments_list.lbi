@@ -1,0 +1,318 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="new-gd-introduce">
+  <div class="f_l w56 new-mg-r12"> <span class="new-span-block"> <span class="new-txt36" id="_assessScale">{$comment_info.good}</span><span class="new-txt-sign">%</span> </span> <span class="new-span-block new-mg-t5">好评度</span> </div>
+  <div class="new-gd-txt3"> <span class="new-span-block"> <span>好评</span> <span class="new-txtb8">（{$comment_info.good}%）</span> <span class="new-gd-bar new-mg-l12"><span style="width: {$comment_info.good}%;"></span></span> </span> <span class="new-span-block"> <span>中评</span> <span class="new-txtb8">（{$comment_info.medium}%）</span> <span class="new-gd-bar new-mg-l12"><span style="width: {$comment_info.medium}%;"></span></span> </span> <span class="new-span-block"> <span>差评</span> <span class="new-txtb8">（{$comment_info.poor}%）</span> <span class="new-gd-bar new-mg-l12"><span style="width: {$comment_info.poor}%;"></span></span> </span> </div>
+  <div class="new-estimate new-tbl-type mt15">
+    <div id="tabs1" onClick="tab(1)" class="new-tbl-cell {if $w eq 1 }on{/if}"><span>好评</span><span id="mediumNum">{$comment_info.good_count}</span></div>
+    <div id="tabs2" onClick="tab(2)" class="new-tbl-cell {if $w eq 2 }on{/if}"><span>中评</span><span id="mediumNum">{$comment_info.medium_count}</span></div>
+    <div id="tabs3" onClick="tab(3)" class="new-tbl-cell {if $w eq 3 }on{/if}"><span>差评</span><span id="mediumNum">{$comment_info.poor_count}</span></div>
+  </div>
+</div>
+<div class="CommentList">
+  <div id="tab1" class="{if $w neq 1}hidden{/if}">
+    <ul class="list">
+      <!-- {if $comment_good} --> 
+      <!-- {foreach from=$comment_good item=comment} -->
+      <li>
+        <div class="mt10" style="line-height:20px;">{$comment.content}</div>
+        <!-- {if $comment.re_content} -->
+        <p style="color:#f00;">{$lang.admin_username}{$comment.re_content}</p>
+        <!-- {/if} -->
+        <div class="tit mt5">
+          <p class="f_l"><img src="__TPL__/images/stars{$comment.rank}.png" class="star" alt="{$comment.comment_rank}" /></p>
+          <span><!-- {if $comment.username} -->{$comment.username|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --></span>{$comment.add_time}</div>
+      </li>
+      <!-- {/foreach} --> 
+      <!-- {/if} -->
+    </ul>
+    <!--翻页 start-->
+    <div id="pagebar"  class="f_r">
+      <form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
+        <!-- {if $pager_good.styleid eq 0 } -->
+        <div id="pager" style="padding:10px 0"> <span> <a href="{$pager_good.page_prev}">{$lang.page_prev}</a> </span> 
+          <!--{foreach from=$pager_good.page_number key=key item=item}--> 
+          <!-- {if $pager_good.page eq $key} --> 
+          <span class="page_now">{$key}</span> 
+          <!-- {else} --> 
+          <a href="{$item}">[{$key}]</a> 
+          <!-- {/if} --> 
+          <!--{/foreach}--> 
+          <span><a href="{$pager_good.page_next}">{$lang.page_next}</a> </span> </div>
+        <!--{else}--> 
+        
+        <!-- {/if} -->
+      </form>
+      <script type="Text/Javascript" language="JavaScript">
+        <!--
+        {literal}
+        function selectPage(sel)
+        {
+          sel.form.submit();
+        }
+        {/literal}
+        //-->
+        </script> 
+    </div>
+    <!--翻页 END--> 
+  </div>
+  <div id="tab2" class="{if $w neq 2}hidden{/if}">
+    <ul class="list">
+      <!-- {if $comment_medium} --> 
+      <!-- {foreach from=$comment_medium item=comment} -->
+      <li>
+        <div class="mt10" style="line-height:20px;">{$comment.content}</div>
+        <!-- {if $comment.re_content} -->
+        <p style="color:#f00;">{$lang.admin_username}{$comment.re_content}</p>
+        <!-- {/if} -->
+        <div class="tit mt5">
+          <p class="f_l"><img src="images/stars{$comment.rank}.png" class="star" alt="{$comment.comment_rank}" /></p>
+          <span><!-- {if $comment.username} -->{$comment.username|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --></span>{$comment.add_time}</div>
+      </li>
+      <!-- {/foreach} --> 
+      <!-- {/if} -->
+    </ul>
+    <!--翻页 start-->
+    <div id="pagebar" class="f_r">
+      <form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
+        <!-- {if $pager_medium.styleid eq 0 } -->
+        <div id="pager" style="padding:10px 0"> <span> <a href="{$pager_medium.page_prev}">{$lang.page_prev}</a> </span> 
+          <!--{foreach from=$pager_medium.page_number key=key item=item}--> 
+          <!-- {if $pager_medium.page eq $key} --> 
+          <span class="page_now">{$key}</span> 
+          <!-- {else} --> 
+          <a href="{$item}">[{$key}]</a> 
+          <!-- {/if} --> 
+          <!--{/foreach}--> 
+          <span><a href="{$pager_medium.page_next}">{$lang.page_next}</a> </span> </div>
+        <!--{else}--> 
+        
+        <!-- {/if} -->
+      </form>
+      <script type="Text/Javascript" language="JavaScript">
+        <!--
+        {literal}
+        function selectPage(sel)
+        {
+          sel.form.submit();
+        }
+        {/literal}
+        //-->
+        </script> 
+    </div>
+    <!--翻页 END--> 
+  </div>
+  <div id="tab3" class="{if $w neq 3}hidden{/if}">
+    <ul class="list">
+      <!-- {if $comment_poor} --> 
+      <!-- {foreach from=$comment_poor item=comment} -->
+      <li>
+        <div class="mt10" style="line-height:20px;">{$comment.content}</div>
+        <!-- {if $comment.re_content} -->
+        <p style="color:#f00;">{$lang.admin_username}{$comment.re_content}</p>
+        <!-- {/if} -->
+        <div class="tit mt5">
+          <p class="f_l"><img src="images/stars{$comment.rank}.png" class="star" alt="{$comment.comment_rank}" /></p>
+          <span><!-- {if $comment.username} -->{$comment.username|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --></span>{$comment.add_time}</div>
+      </li>
+      <!-- {/foreach} --> 
+      <!-- {/if} -->
+    </ul>
+    <!--翻页 start-->
+    <div id="pagebar" class="f_r">
+      <form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
+        <!-- {if $pager_poor.styleid eq 0 } -->
+        <div id="pager" style="padding:10px 0"> <span> <a href="{$pager_poor.page_prev}">{$lang.page_prev}</a> </span> 
+          <!--{foreach from=$pager_poor.page_number key=key item=item}--> 
+          <!-- {if $pager_poor.page eq $key} --> 
+          <span class="page_now">{$key}</span> 
+          <!-- {else} --> 
+          <a href="{$item}">[{$key}]</a> 
+          <!-- {/if} --> 
+          <!--{/foreach}--> 
+          <span><a href="{$pager_poor.page_next}">{$lang.page_next}</a> </span> </div>
+        <!--{else}--> 
+        
+        <!-- {/if} -->
+      </form>
+      <script type="Text/Javascript" language="JavaScript">
+        <!--
+        {literal}
+        function selectPage(sel)
+        {
+          sel.form.submit();
+        }
+        {/literal}
+        //-->
+        </script> 
+    </div>
+    <!--翻页 END--> 
+  </div>
+</div>
+<!--评论表单 start-->
+  <div class="commentsList radius5">
+    <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+      <table width="100%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="" >
+        <tr>
+          <td> {$lang.username}：<!--{if $smarty.session.user_name}-->{$smarty.session.user_name}<!--{else}-->{$lang.anonymous}<!--{/if}--></td>
+        </tr>
+        <tr>
+          <td><input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5" />
+            非常好
+            <input name="comment_rank" type="radio" value="4" id="comment_rank4" />
+            很好
+            <input name="comment_rank" type="radio" value="3" id="comment_rank3" />
+            一般
+            <input name="comment_rank" type="radio" value="2" id="comment_rank2" />
+            不行
+            <input name="comment_rank" type="radio" value="1" id="comment_rank1" />
+            很差 </td>
+        </tr>
+        
+          <td><input placeholder="E-mail"  type="text" name="email" id="email"  maxlength="100" value="{$smarty.session.email|escape}" class="inputBg2"/></td>
+        </tr>
+        <tr>
+          <td><textarea placeholder="{$lang.comment_content}" name="content" class="inputBg2" style="height:4rem"  ></textarea>
+            <input type="hidden" name="cmt_type" value="{$comment_type}" />
+            <input type="hidden" name="id" value="{$id}" /></td>
+        </tr>
+        <!-- 判断是否启用验证码{if $enabled_captcha} -->
+        <tr>
+          <td><input placeholder="{$lang.comment_captcha}" type="text" name="captcha" class="inputBg2" style="width:50px; margin-right:5px; vertical-align:middle"/>
+            <img src="{:url('public/captcha', array('rand'=>$this->_var['rand']))}" alt="captcha" onClick="this.src='{:url('public/captcha',array('rand'=>$this->_var['rand']))}" class="captcha" style="vertical-align:middle" /></td>
+        </tr>
+        <!-- {/if} -->
+        <tr>
+          <td><input type="submit" name="submit" value="提交评论" class="c-btn3" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <!--评论表单 end-->
+</div>
+</div>
+<div class="blank5"></div>
+<!--用户评论 END--> 
+<script type="text/javascript">
+//好评 中评 差评切换
+document.getElementById('tab2').className = 'hidden';
+document.getElementById('tab3').className = 'hidden';
+var tab_now = 1;
+function tab(id){
+	document.getElementById('tabs' + tab_now).className = document.getElementById('tabs' + tab_now).className.replace('new-tbl-cell on','new-tbl-cell');
+	document.getElementById('tabs' + id).className = document.getElementById('tabs' + id).className.replace('new-tbl-cell','new-tbl-cell on');
+
+	tab_now = id;
+	if (id == 1) {
+		document.getElementById('tab1').className = '';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = 'hidden';
+
+	}else if (id == 2) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = '';
+		document.getElementById('tab3').className = 'hidden';
+
+	}else if (id == 3) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = '';
+
+	}
+   //gotoPage(1, {$id}, id ,0);
+
+}
+</script>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+{foreach from=$lang.cmt_lang item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+{literal}
+/**
+ * 提交评论信息
+*/
+function submitComment(frm)
+{
+  var cmt = new Object;
+
+  //cmt.username        = frm.elements['username'].value;
+  cmt.email           = frm.elements['email'].value;
+  cmt.content         = frm.elements['content'].value;
+  cmt.type            = frm.elements['cmt_type'].value;
+  cmt.id              = frm.elements['id'].value;
+  cmt.enabled_captcha = frm.elements['enabled_captcha'] ? frm.elements['enabled_captcha'].value : '0';
+  cmt.captcha         = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+  cmt.rank            = 0;
+
+  for (i = 0; i < frm.elements['comment_rank'].length; i++)
+  {
+    if (frm.elements['comment_rank'][i].checked)
+    {
+       cmt.rank = frm.elements['comment_rank'][i].value;
+     }
+  }
+
+//  if (cmt.username.length == 0)
+//  {
+//     alert(cmt_empty_username);
+//     return false;
+//  }
+
+  if (cmt.email.length > 0)
+  {
+     if (!(Utils.isEmail(cmt.email)))
+     {
+        alert(cmt_error_email);
+        return false;
+      }
+   }
+   else
+   {
+        alert(cmt_empty_email);
+        return false;
+   }
+
+   if (cmt.content.length == 0)
+   {
+      alert(cmt_empty_content);
+      return false;
+   }
+
+   if (cmt.enabled_captcha > 0 && cmt.captcha.length == 0 )
+   {
+      alert(captcha_not_null);
+      return false;
+   }
+   $.post('index.php?m=default&c=comment', {
+        cmt: $.toJSON(cmt)
+    }, function(data) {
+        commentResponse(data);
+    }, 'json');
+   //Ajax.call('comment.php', 'cmt=' + cmt.toJSONString(), commentResponse, 'POST', 'JSON');
+   return false;
+}
+
+/**
+ * 处理提交评论的反馈信息
+*/
+  function commentResponse(result)
+  {
+    if (result.message)
+    {
+      alert(result.message);
+    }
+
+    if (result.error == 0)
+    {
+      var layer = document.getElementById('ECS_COMMENT');
+
+      if (layer)
+      {
+        layer.innerHTML = result.content;
+      }
+    }
+  }
+{/literal}
+//]]>
+</script>

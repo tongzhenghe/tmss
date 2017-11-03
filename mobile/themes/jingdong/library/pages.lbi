@@ -1,0 +1,73 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<section class="list-pagination">
+<!-- {if $pager.styleid eq 0 } 默认经典分页-->
+    <div class="pagenav-wrapper" id="J_PageNavWrap" style="">
+      <div class="pagenav-content">
+        <div class="pagenav new-tbl-type" id="J_PageNav">
+          <div class="{if $pager.page_first}p-first{else}p-prev p-gray{/if} new-tbl-type" > 
+              <!-- {if $pager.page_first} -->
+              <a href="{$pager.page_first}">首页</a>
+              <!--{else}-->
+               <a  class="no">首页</a> 
+              <!-- {/if} -->
+          </div>
+          <div class="{if $pager.page_prev}p-prev{else}p-prev p-gray{/if}">  
+              <!-- {if $pager.page_prev} -->
+              <a href="{$pager.page_prev}" >&lt;上一页</a>
+              <!-- {else} -->
+              <a class="no">&lt;上一页</a>   
+              <!-- {/if} -->
+          </div>
+          <div class="pagenav-cur">
+            <div class="pagenav-text"> <span>{$pager.page}/{$pager.page_count}</span> <i></i> </div>
+            <select name="page" class="pagenav-select" onchange="window.location.href=this.options[this.selectedIndex].value" >
+            <!--{if $pager.array }-->
+            {foreach from=$pager.array key=key item=item}
+              <option value="{$item}" {if $pager.page eq $key}selected=true{/if}>{$key}</option>
+            {/foreach}
+            <!--{/if}-->
+            </select>
+          </div>
+          <div class="{if $pager.page_next}p-next{else}p-next p-gray{/if}" > 
+          	<!-- {if $pager.page_next} -->
+              <a  href="{$pager.page_next}" >下一页&gt;</a>
+              <!-- {else} -->
+              <a class="no">下一页&gt;</a> 
+              <!-- {/if} -->
+          </div>
+          <div class="{if $pager.page_last}p-end{else}p-end p-gray{/if}" >
+           <!-- {if $pager.page_last} -->
+           <a href="{$pager.page_last}">{$lang.page_last}</a>
+           <!--{else}-->
+           <a class="no">末页</a> 
+           <!-- {/if} -->
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--{else}-->
+
+<div class="pagenav-wrapper" id="J_PageNavWrap" style="float:right">
+    <div class="pagenav" id="J_PageNav" style="display:flex; text-align:center; ">
+    <span class="" style="margin-right:10px;line-height:2.5em;height:2.5em;">{$lang.pager_1}<b>{$pager.record_count}</b> {$lang.pager_2}</span>
+    <!-- {if $pager.page_first} --><div class="p-prev"><a href="{$pager.page_first}">{$lang.page_first} ...</a></div><!-- {/if} -->
+    <!-- {if $pager.page_prev} --><div class="p-prev"><a class="prev" href="{$pager.page_prev}">{$lang.page_prev}</a></div><!-- {/if} -->
+    <!-- {if $pager.page_count neq 1} -->
+      <!--{foreach from=$pager.page_number key=key item=item}-->
+        <!-- {if $pager.page eq $key} -->
+        <div class="p-prev " style="background:none;cursor:default;"><a class="page_now">{$key}</a></div>
+        <!-- {else} -->
+        <div class="p-prev"><a href="{$item}">{$key}</a></div>
+        <!-- {/if} -->
+      <!--{/foreach}-->
+    <!-- {/if} -->
+
+    <!-- {if $pager.page_next} --><div class="p-prev"><a class="next" href="{$pager.page_next}">{$lang.page_next}</a></div><!-- {/if} -->
+    <!-- {if $pager.page_last} --><div class="p-prev"><a class="last" href="{$pager.page_last}">...{$lang.page_last}</a></div><!-- {/if} -->
+    </div>
+</div>
+<div class="blank1"></div>
+{/if}
+</section>

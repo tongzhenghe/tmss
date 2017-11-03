@@ -1,0 +1,86 @@
+<div class="layout-area no-margin">
+<div class="layout">
+<div class="layout-two-left w190">
+<div class="fn-clear user-jBanner1">
+<div class="mc">
+<div class="module lunbo190">
+<ul class="user_nav">
+<li></li>
+<li></li>
+</ul>
+<div class="user_scroll">
+<div class="user_scroll_list">
+<ul><li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/user_scroll_list_1.jpg" /></a></li></ul>
+<ul><li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/user_scroll_list_2.jpg" /></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-two-right w790">
+<div class="fn-clear userjGoodsRecommend1">
+<div class="mc">
+<ul>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_1.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_2.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_3.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_4.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_5.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_6.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_7.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+<li>
+<a href="#" class="tupian"><img src="/seller_themes/store_tpl_9/custom_images/product_8.jpg" width="183" height="183" /></a>
+<div class="total">
+<div class="price"><span class="jdNum">199.00</span></div>
+<a href="#" class="qianggou"><img src="/seller_themes/store_tpl_9/custom_images/ljqgou.gif" /></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

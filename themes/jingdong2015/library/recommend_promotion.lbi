@@ -1,0 +1,68 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<!-- {if $script_name eq 'category_top'} -->
+<ul>
+	<!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+        {if $smarty.foreach.promotion_foreach.index <= 6}
+    <li>
+    	<div class="p-img"><a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}"></a></div>
+        <div class="p-bg"></div>
+        <div class="p-text">
+        	<h2>{$goods.name|escape:html}</h2>
+            <p class="price">{$goods.promote_price}</p>
+            <div class="clock endtime" value="{$goods.end_date}"></div>
+            <div class="btn"><a target="_blank" href="{$goods.url}">加入购物车</a></div>
+        </div>
+    </li>
+        {/if}
+    <!--{/foreach}-->
+</ul>
+
+<!-- {elseif $script_name eq "category"} -->
+<div class="j_box">
+  <div class="j_logo">推广商品</div>
+  <div class="j_boxcontent">
+    <div class="j_skulist" id="cont">
+      <div class="j_skulist_inner">
+        <ul class="clearfix" id="list1">
+          <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+          <li>
+            <div class="p_img"><a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" width="190" height="190"></a></div>
+            <div class="p_name"><a href="{$goods.url}" target="_blank">{$goods.short_style_name}</a></div>
+            <div class="p_price"> 
+              <!-- {if $goods.promote_price neq ""} --> 
+              <span class="tag_content">{$goods.promote_price}</span> 
+              <!-- {else}--> 
+              <span class="tag_content">{$goods.shop_price}</span> 
+              <!--{/if}--> 
+            </div>
+            <div class="clr"></div>
+          </li>
+          <!--{/foreach}-->
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clr"> </div>
+</div>
+ <div class="blank10"></div>
+
+<!-- {else} -->
+
+<div id="sales" class="f_l clearfix">
+      <h1><a href="../search.php?intro=promotion"><img src="images/more.gif" /></a></h1>
+       <div class="clearfix goodBox">
+         <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+         {if $smarty.foreach.promotion_foreach.index <= 3}
+           <div class="goodList">
+           <a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}"/></a><br />
+					 <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></p>
+           {$lang.promote_price}<font class="f1">{$goods.promote_price}</font>
+           </div>
+         {/if}
+         <!--{/foreach}-->
+       </div>
+      </div>
+      {/if}
+<!-- {/if} -->

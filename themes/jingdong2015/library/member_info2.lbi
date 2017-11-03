@@ -1,0 +1,9 @@
+<div id="append_parent"></div>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+{if $user_info}
+<p>您好，<span class="username">{$user_info.username}</span><a class="logout" href="user.php?act=logout">退出登录</a>|<a class="switch" href="#">更换用户</a></p>
+
+{else}
+<p>{$lang.welcome}<a class="logout" href="user.php?act=login">[&nbsp;登录</a>|<a class="switch" href="user.php?act=register">免费注册&nbsp;]</a></p>
+{/if}

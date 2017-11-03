@@ -1,0 +1,105 @@
+<div class="con" style="background:#e8e8e8">
+	<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$title}</span>
+        <a href="./" class="Home"><span></span></a>
+    </header>
+    
+    <!-- {if $goods_list } -->
+    <div class="blank10"></div>
+    <section class="ect-pro-list flow-pic ect-border-bottom0 flow_cart_list">
+    	<ul>
+        	<!-- {foreach from=$goods_list item=goods key=k} -->
+            <li>
+            	<div class="liBox">
+                    <div class="pic"><a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}"><img src="{$goods.goods_thumb}" title="{$goods.goods_name|escape:html}"></a></div>
+                    <div class="infoBox">
+                        <a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}">
+                            <p class="tit">{$goods.goods_name}<!-- {if $goods.parent_id gt 0} 配件 --><span style="color:#FF0000">（{$lang.accessories}）</span><!-- {/if} --><!-- {if $goods.is_gift gt 0} 赠品 --><span style="color:#FF0000">（{$lang.largess}）</span><!-- {/if} --></p>
+                            <p class="info">{$goods.goods_attr}</p>
+                        </a>
+                        <!-- {if $goods.goods_id gt 0 && $goods.is_gift eq 0 && $goods.parent_id eq 0} 普通商品可修改数量 -->
+                        <div class="input-group pull-left wrap">
+                            <span class="input-group-addon" onClick="change_goods_number('1',{$goods.rec_id})" >-</span>
+                            <input type="hidden" id="back_number{$goods.rec_id}" value="{$goods.goods_number}" />
+                            <input type="text" class="form-num form-contro"  name="{$goods.rec_id}" id="goods_number{$goods.rec_id}" autocomplete="off" value="{$goods.goods_number}" onFocus="back_goods_number({$goods.rec_id})"  onblur="change_goods_number('2',{$goods.rec_id})" />
+                            <span class="input-group-addon" onClick="change_goods_number('3',{$goods.rec_id})">+</span>
+                        </div>
+                        <!-- {else} -->
+                        <input type="text" class="txtnum" readonly value="{$goods.goods_number}"/>
+                        <!-- {/if} -->
+                    </div>
+                    <div class="priee"><p>{$goods.goods_price}</p><del>{$goods.market_price}</del><a href="javascript:if (confirm('{$lang.drop_goods_confirm}')) location.href='{:url('flow/drop_goods',array('id'=>$this->_var['goods']['rec_id']))}';" class="delete">×</a></div>
+                </div>
+            </li>
+        	<!-- {/foreach} -->
+        </ul>
+        <!-- {if $favourable_list} -->
+        <p class="bg-warning text-center ect-padding-tb" onClick="location.href='{:url('flow/label_favourable')}'">{$lang.show_favourable}</p>
+        <!-- {/if} -->
+    </section>
+    <!-- {if $fittings_list} -->
+    <div class="two-btn flow-jiesuan ect-padding-tb ect-padding-lr text-center">
+    	<a class="btn btn-info" type="button" href="{:url('flow/goods_fittings')}">{$lang.goods_fittings}</a>
+        <a class="btn btn-info ect-bg-colory" type="button"  href="{:url('flow/checkout')}">{$lang.check_out}</a>
+    </div>
+    <!-- {else} -->
+    <div class="navbarDefault">
+    	<p class="plight"><i></i>100%正品保证</p>
+        <div class="navCurrentBox">
+        	<div class="navbarHeader">
+            	<p class="totle">{$lang.goods_price}：<span class="price" id="goods_subtotal" >{$total.goods_price}</span></p>
+            </div>
+            <div class="navbarBrand">
+            	<a href="{:url('flow/checkout')}" type="button" class="Btn">抢先结算</a>
+            </div>
+        </div>
+    </div>
+    <!-- {/if} -->
+    <!-- {if $linked_goods} 关联商品-->
+    <section class="ect-pro-list flow-rel-pro flow-pic">
+    	<h4 class="ect-margin-lr ect-margin-tb"><strong>{$lang.releate_goods}：</strong></h4>
+        <ul>
+        	<!--{foreach from=$linked_goods item=releated_goods_data}-->
+            <li>
+            	<div class="ect-clear-over">
+                	<a href="{$releated_goods_data.url}"><img src="{$releated_goods_data.goods_thumb}" alt="{$releated_goods_data.goods_name}" /></a>
+                    <dl>
+                    	<dt><h4 class="title"><a href="{$releated_goods_data.url}">{$releated_goods_data.short_name}</a></h4></dt>
+                        <dd class="ect-color999">
+                        	<p>
+                            	<!-- {if $releated_goods_data.promote_price neq 0} -->
+                                {$lang.promote_price}<strong class="ect-colory">{$releated_goods_data.formated_promote_price}</strong>
+                                <!-- {else} -->
+                                {$lang.shop_price}<strong class="ect-colory">{$releated_goods_data.shop_price}</strong>
+                                <!-- {/if} -->
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <!-- {/foreach} -->
+        </ul>
+    </section>
+    <!-- {/if} -->
+    <!--{else}-->
+    <div class="flow-no-pro">
+    	<img src="__TPL__/images/gwc.png">
+        <p class="text-center">{$lang.empty_shopping}</p>
+        <a type="button" href="{:url('category/all')}" class="btn btn-info ect-btn-info">{$lang.go_shopping}</a>
+    </div>
+    <!-- {/if} --> 
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script> 
+<script src="__TPL__/js/TouchSlide.1.1.js"></script> 
+<script src="__TPL__/js/ectouch.js"></script> 
+<script src="__TPL__/js/simple-inheritance.min.js"></script> 
+<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script> 
+<script src="__TPL__/js/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script> 

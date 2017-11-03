@@ -1,0 +1,16 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1> {$lang.consignee_info} </h1>
+</header>
+<section class="wrap" style="border-bottom:0;">
+  <div class="InfoBox" id="J_ItemList"> 
+    <section class="order_box padd1 radius10 single_item" >
+    </section>
+    <a href="javascript:;" class="get_more"></a>  
+    <a href="{:url('user/add_address')}" class="c-btn4">{$lang.add_address}</a> </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+get_asynclist('{:url("user/address_list")}' , '__TPL__/images/loader.gif');
+</script> 

@@ -1,0 +1,29 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con" style="background:#fff;">
+	<div style="height:7.6em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">商品列表</span>
+        <a href="./" class="Home"><span></span></a>
+    </header>
+    <div class="ect-wrapper text-center">
+    	<div>
+        	<a class="{if $sort == 'goods_id' && $order == 'DESC'}ect-colory{/if}" href="{:url('groupbuy/index')}&id={$id}&display={$pager.display}&page={$page}&sort=goods_id&order=DESC">{$lang.sort_default}</a>
+            <a class="{if $sort == 'sales_count' && $order == 'DESC'}select ect-colory{elseif $sort =='sales_count' && $order == 'ASC'}ect-colory{/if}" href="{:url('groupbuy/index')}&id={$id}&display={$pager.display}&page={$page}&sort=sales_count&order=<!-- {if $sort == 'sales_count' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->">{$lang.sort_sales} <i class="glyphicon glyphicon-arrow-up"></i></a>
+            <a class="{if $sort =='click_num' && $order == 'DESC'}select ect-colory{elseif $sort =='click_num' && $order == 'ASC'}ect-colory{else}{/if}" href="{:url('groupbuy/index')}&id={$id}&display={$display}&brand={$brand_id}&page={$pager.page}&sort=click_num&order=<!-- {if $sort == 'click_num' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->">{$lang.sort_popularity} <i class="glyphicon glyphicon-arrow-up"></i></a>
+            <a class="{if $sort =='cur_price' && $order == 'DESC'}select ect-colory{elseif $sort =='cur_price' && $order == 'ASC'}ect-colory{else}{/if}" href="{:url('groupbuy/index')}&id={$id}&display={$pager.display}&brand={$brand_id}&page={$page}&sort=cur_price&order=<!-- {if $sort == 'cur_price' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->" class="xl">{$lang.sort_price} <i class="glyphicon glyphicon-arrow-up"></i></a>
+        </div>
+    </div>
+    
+    <div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0 tuangouList">
+    	<ul id="J_ItemList">
+        	<li class="single_item"></li>
+            <a href="javascript:;" class="get_more"></a> 
+        </ul>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+	get_asynclist("{:url('groupbuy/asynclist')}&page={$page}&sort={$sort}&order={$order}" , '__TPL__/images/loader.gif');
+</script>
+</body></html>

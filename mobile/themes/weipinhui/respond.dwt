@@ -1,0 +1,41 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con">
+	<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$title}</span>
+    </header>
+
+  <div  style="text-align:center; margin-top:2em; font-size:1.3em;">
+<p>{$message}</p>
+    <!--{if $virtual_card}-->
+    <div class="alert alert-warning" role="alert">
+    <!--{foreach from=$virtual_card item=vgoods}-->
+        <h3 style="color:#2359B1; font-size:12px;">{$vgoods.goods_name}</h3>
+        <!--{foreach from=$vgoods.info item=card}-->
+        <ul style="list-style:none;padding:0;margin:0;clear:both">
+          <!--{if $card.card_sn}-->
+          <li style="margin-right:50px;float:left;"> <strong>{$lang.card_sn}:</strong><span style="color:red;">{$card.card_sn}</span> </li>
+          <!--{/if}--> 
+          <!--{if $card.card_password}-->
+          <li style="margin-right:50px;float:left;"> <strong>{$lang.card_password}:</strong><span style="color:red;">{$card.card_password}</span> </li>
+          <!--{/if}--> 
+          <!--{if $card.end_date}-->
+          <li style="float:left;"> <strong>{$lang.end_date}:</strong>{$card.end_date} </li>
+          <!--{/if}-->
+        </ul>
+        <!--{/foreach}--> 
+    <!--{/foreach}--> 
+    </div>
+    <!-- {/if} -->
+<div> 
+  <span class="p-link" style="margin-right:0.2em;"><a href="{$shop_url}">{$lang.back_home}</a></span>
+</div>
+<div class="blank20"></div>
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+</div>
+</div>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<div class="fn-clear user-2big">
+<div class="mc">
+<div class="module_title">
+<div class="module_title_words" style="background: url(/seller_themes/store_tpl_13/custom_images/biaoti_bg.png);">
+<a href="#" class="user-color">店主推荐</a></div>
+<a href="#" class="morelinks user-more user-color">更多</a>
+</div>
+<div class="user-box">
+<ul>
+<li style="background:url(/seller_themes/store_tpl_13/custom_images/dianzu_tj_bg.png)">
+<div class="user-tu">
+<img src="/seller_themes/store_tpl_13/custom_images/dianzu_tj_1.jpg" />
+</div>
+<div class="user-image">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/dianzu_cp_1.jpg" /></a>
+<div class="user-info">
+<div class="user-infoin">
+<p class="user-des"><a href="#" target="_blank">整板黑檀实木茶盘 整套汝窑紫砂功夫茶具套装电磁炉 功夫茶具</a></p>
+<p class="user-price">
+<span class="user-rmb">￥<strong><span class="jdNum">2070.40</span></strong></span>
+<span class="user-ping">参考价:<strong><span class="jdNum">5176.00</span></strong></span>
+</p>
+<div class="user-share">
+<a href="#" target="_blank" class="user-cart" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -60px 0px no-repeat;"></a>
+<a href="#" target="_blank" class="user-buy" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gm.png) 0px 0px no-repeat;"></a>
+<span class="user-gz" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gz.png) -130px 0px no-repeat;"></span>
+</div>
+</div>
+<span class="user-infobg"></span>
+</div>
+</div>
+</li>
+<li style="background:url(/seller_themes/store_tpl_13/custom_images/dianzu_tj_bg.png)">
+<div class="user-tu">
+<img src="/seller_themes/store_tpl_13/custom_images/dianzu_tj_2.jpg" />
+</div>
+<div class="user-image">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/dianzu_cp_2.jpg" /></a>
+<div class="user-info">
+<div class="user-infoin">
+<p class="user-des"><a href="#" target="_blank">整板黑檀实木茶盘 整套汝窑紫砂功夫茶具套装电磁炉 功夫茶具</a></p>
+<p class="user-price">
+<span class="user-rmb">￥<strong><span class="jdNum">2070.40</span></strong></span>
+<span class="user-ping">参考价:<strong><span class="jdNum">5176.00</span></strong></span>
+</p>
+<div class="user-share">
+<a href="#" target="_blank" class="user-cart" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gwc.png) -60px 0px no-repeat;"></a>
+<a href="#" target="_blank" class="user-buy" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gm.png) 0px 0px no-repeat;"></a>
+<span class="user-gz" style="background: #f3b86e url(/seller_themes/store_tpl_13/custom_images/gz.png) -130px 0px no-repeat;"></span>
+</div>
+</div>
+<span class="user-infobg"></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>

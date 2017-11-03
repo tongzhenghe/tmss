@@ -1,0 +1,31 @@
+<div class="fn-clear user-san">
+<div class="mc">
+<div class="eventareas">
+<div class="ddm-wp fullimg">
+<ul>
+<li>
+<a href="#" target="_blank" class="imgbox"><img src="/seller_themes/store_tpl_13/custom_images/user_san_1.jpg" /></a>
+<a href="#" target="_blank" class="textbox">
+<span>茶</span>
+<em>由茶器发展茶席，倡导一种质朴优雅的品茶生活格调。致力于还原茶器使用功能和深厚文化形象，满足于那些倾心于杯盏之间乐趣的人们寻找一份超脱世外的安宁。</em>
+</a>
+</li>
+<li>
+<a href="#" target="_blank" class="imgbox"><img src="/seller_themes/store_tpl_13/custom_images/user_san_2.jpg" /></a>
+<a href="#" target="_blank" class="textbox">
+<span>香</span>
+<em>强调合理设计，并能超越豪华奢侈的简洁，让香器散发出自身的“素”的审美情趣，让人们在理佛时，在居家修心养性当中，心神欢喜，物我两忘。</em>
+</a>
+</li>
+<li>
+<a href="#" target="_blank" class="imgbox"><img src="/seller_themes/store_tpl_13/custom_images/user_san_3.jpg" /></a>
+<a href="#" target="_blank" class="textbox">
+<span>花</span>
+<em>对花艺六器的情趣生活追求，产生了新的质朴生活价值观。寻找合理精简的器具，让这些器具在生活中体验出美和尊严，让这时间里花草相依。</em>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

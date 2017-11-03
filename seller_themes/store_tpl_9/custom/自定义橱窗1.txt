@@ -1,0 +1,171 @@
+<div class="layout-area no-margin">
+<div class="layout">
+<div class="layout-one w990">
+<div class="fn-clear">
+<div class="mc adv_gg">
+<ul>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_9/custom_images/adv_1.jpg" width="480" height="263" /></a><img src="/seller_themes/store_tpl_9/custom_images/brand.jpg" /></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_9/custom_images/adv_2.jpg" width="480" height="263" /></a><img src="/seller_themes/store_tpl_9/custom_images/new.jpg" /></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_9/custom_images/adv_3.jpg" width="480" height="263" /></a><img src="/seller_themes/store_tpl_9/custom_images/hot.jpg" /></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_9/custom_images/adv_4.jpg" width="480" height="263" /></a><img src="/seller_themes/store_tpl_9/custom_images/sale.jpg" /></li>
+</ul>
+</div>
+</div>
+<div class="fn-clear user_xkgd">
+<div class="mc">
+<div class="bd">
+<ul>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_1.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_2.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_3.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_4.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_5.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_6.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_7.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/peishi_8.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fn-clear user_zhengfanmian">
+<div class="mc">
+<ul>
+<li>
+<a href="#" class="um-pic um-pic_1">
+<div class="um-img img0" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_0.jpg)"></div>
+<div class="um-img img1" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_1.jpg)"></div>
+</a>
+</li>
+<li>
+<a href="#" class="um-pic um-pic_2">
+<div class="um-img img0" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_3.jpg)"></div>
+<div class="um-img img1" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_0.jpg)"></div>
+</a>
+</li>
+<li>
+<a href="#" class="um-pic um-pic_3">
+<div class="um-img img0" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_0.jpg)"></div>
+<div class="um-img img1" style="background:url(/seller_themes/store_tpl_9/custom_images/um-img_1.jpg)"></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="fn-clear user-jBanner1">
+<div class="mc">
+<div class="jbanner">
+<ul class="jbannerTab">
+<li>轮播图标题</li>
+<li>轮播图标题</li>
+</ul>
+<div class="jbannerImg">
+<div class="jImgNodeArea">
+<ul><li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/hdp_1.jpg" /></a></li></ul>
+<ul><li><a href="#"><img src="/seller_themes/store_tpl_9/custom_images/hdp_2.jpg" /></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear user-jGoodsSort1">
+<div class="mc">
+<div class="wd-hd" style="background:url(/seller_themes/store_tpl_9/custom_images/category.jpg) no-repeat;">
+<div class="ext-hd">
+<a href="#" class="wd-all">查看所有分类>></a>
+<a href="#">按销量</a>
+<a href="#">按新品</a>
+<a href="#">按价格</a>
+<a href="#">按评价</a>
+</div>
+</div>
+<div class="bd">
+<div class="wd-bd">
+<ul class="category-list clear">
+<li>
+<dl class="cate-disp clear">
+<dt><a href="#">发饰</a></dt>
+<dd>
+<ul class="subcate-disp clear">
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>
+<dl class="cate-disp clear">
+<dt><a href="#">首饰</a></dt>
+<dd>
+<ul class="subcate-disp clear">
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>
+<dl class="cate-disp clear">
+<dt><a href="#">产品风格</a></dt>
+<dd>
+<ul class="subcate-disp clear">
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+<li><a href="#">发圈/发绳</a></li>
+
+</ul>
+</dd>
+</dl>
+</li>
+<li>
+<dl class="cate-disp clear">
+<dt><a href="#">太阳镜</a></dt>
+<dd>
+<ul class="subcate-disp clear">
+
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear userjSearch1">
+<div class="mc">
+<div class="searchArea">
+<div class="jSearchArea">
+<div class="jSearchInput">
+<h3>本店搜索 </h3>
+<input type="text" class="inputMiddle" placeholder="发饰、首饰" />
+<div class="jPriceArea">
+<input type="text" placeholder="￥" class="inputSmall" />
+<span class="jText">-</span>
+<input type="text" placeholder="￥" class="inputSmall" />
+</div>
+<button type="button"><img src="/seller_themes/store_tpl_9/custom_images/search.png" /></button>
+</div>
+<div class="jHotwords">
+<a href="#">发圈</a>
+<a href="#">发夹</a>
+<a href="#">发箍</a>
+<a href="#">发带</a>
+<a href="#">项链</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

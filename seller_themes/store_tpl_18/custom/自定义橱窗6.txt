@@ -1,0 +1,299 @@
+<div class="fn-clear">
+<div class="user_main">
+<div class="user_main_box">
+<div class="cont user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/biaoti_bg.png); background-repeat:no-repeat; margin-bottom:10px;">
+<span class="user_font_1">营养土肥</span>
+<a href="#" target="_blank" class="user_a_3">查看更多>></a>
+</div>
+<div class="user_border_1">
+<ul class="user_yytf">
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_1.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_2.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_3.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_4.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_5.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_6.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_7.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_8.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_9.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="mask user_bgcolor_1"></div>
+<div class="jItem">
+<div class="jPic"> <a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/yytf_product_10.jpg" class="" width="236" height="232"></a></div>
+<div class="jGoodsInfo">
+<div class="jPrice user_font_price"> 
+<span class="jsPrice"><span class="t">RMB:</span><span class="jdNum" jshop="price" jdprice="1005118260">32.00</span></span> 
+<a class="buybtn user_a_2" href="#" target="_blank">立即抢购&gt;&gt;</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="user_main">
+<div class="user_main_box user_bgcolor_3">
+<div class="kefuzx user_border_1">  
+<div class="client">
+<div class="pic" style="background:url(/seller_themes/store_tpl_18/custom_images/searve.png) no-repeat center center;">
+<div class="stitle user_font_1">客服中心</div>
+</div>  
+</div>  
+<div class="serve">    
+<ul>        
+<li class="list1 user_bgcolor_1 user_border_1"></li>
+<li class="ser1"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_1.png" class="" alt="" width="53" height="48">&nbsp;风信子</a></li>
+<li class="ser1"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_2.png" class="" alt="" width="53" height="48">&nbsp;百合</a></li>
+<li class="ser1"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_1.png" class="" alt="" width="53" height="48">&nbsp;水仙</a></li>
+</ul>    
+</div>    
+<div class="service">    
+<ul>        
+<li class="list2 user_bgcolor_1 user_border_1"></li>             
+<li class="ser2"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_1.png" class="" alt="" width="53" height="48">&nbsp;客服蓓蓓</a></li>
+<li class="ser2"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_3.png" class="" alt="" width="53" height="48">&nbsp;客服薇薇</a></li>
+<li class="ser2"><a class="user_a_1" href="#"><img src="/seller_themes/store_tpl_18/custom_images/kefu_tp_2.png" class="" alt="" width="53" height="48">&nbsp;郁金香</a></li>
+</ul>    
+</div>
+<div class="worktime">
+<div class="list3 user_border_1"></div>
+<div class="jcontent user_font_2">	
+<span>周一至周六<br />8:30AM - 17:30PM</span>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="user_mz_new">
+<div class="banner_title user_border_1px_bottom">
+<div class="sTitle user_font_1">每周新品</div>
+</div>
+<ul class="jBox">
+<li>创意摆件<div class="ring"></div></li>
+<li>新型工具<div class="ring"></div></li>
+</ul>
+<div class="items">
+<div class="items-inner">
+<ul>
+<li class="img">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_1.jpg" /></a>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_3.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_4.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_5.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_6.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li><li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_7.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="rm">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_8.jpg" /></a>
+</div>
+</li>
+</ul>
+<ul>
+<li class="img">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_1_2.jpg" /></a>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_2_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_3_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_4_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_5_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_6_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li><li class="jpic user_border_hover_1">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_7_2.jpg" /></a>
+<div class="jPrice user_font_3 user_bgcolor_1">
+RMB:<span class="jdNum">28.00</span>
+</div>
+</div>
+</li>
+<li class="rm">
+<div class="jpic_border">
+<a href="#"><img src="/seller_themes/store_tpl_18/custom_images/mz_new_8_2.jpg" /></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

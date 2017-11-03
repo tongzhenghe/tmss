@@ -1,0 +1,15 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="user-tags">
+  <ul>
+   <!-- {if $tags} -->
+    <!-- 标签云开始 {foreach from=$tags item=tag}-->
+    <li class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <a href="#">{$tag.tag_words|escape:html}</a> </li>
+      <!-- {/if} -->
+  </ul>
+</div>
+</ul>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

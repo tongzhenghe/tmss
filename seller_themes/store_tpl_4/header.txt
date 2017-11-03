@@ -1,0 +1,7 @@
+﻿<style>
+.seller_logo{ width:990px; margin:0 auto;}
+.store_dh{background: url(themes/ecmoban_jd/store_tpl_4/store_css/store_images/hea_bg.jpg) left bottom repeat-x;}
+</style>
+<div class="seller_logo">
+<a href="index.html" target="_blank"><img src="/seller_themes/store_tpl_4/custom_images/logo.jpg"/></a>
+</div>

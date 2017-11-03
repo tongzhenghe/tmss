@@ -1,0 +1,49 @@
+{include file="pageheader1.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<form method="post" action="" name="listForm" enctype="multipart/form-data">
+    <div class="list-div" id="listDiv">
+        <table cellpadding="15" cellspacing="1" align="center">
+
+            <tr>
+                <td>商品编号</td>
+                <td>客户姓名</td>
+                <td>电话</td>
+                <td>详细地址</td>
+                <td>商品名称</td>
+                <td>维修内容</td>
+                <td>备注</td>
+                <td>商品正面图片</td>
+                <td>商品侧面图片</td>
+                <td>商品背面图片</td>
+                <td>商品内部图片</td>
+            </tr>
+            {foreach from=$row item=item key=okey}
+            <tr>
+                <td>{$item.id}</td>
+                <td>{$item.username}</td>
+                <td>{$item.phone}</td>
+                <td>{$item.addr}</td>
+                <td>{$item.goodsinfo}</td>
+                <td>{$item.contents}</td>
+                <td>{$item.remark}</td>
+                <td><img src="/TMSS/data/order/{$item.imagepath1}" alt="" width="100" height="100" /></td>
+                <td><img src="/TMSS/data/order/{$item.imagepath2}" alt="" width="100" height="100" /></td>
+                <td><img src="/TMSS/data/order/{$item.imagepath3}" alt="" width="100" height="100" /></td>
+                <td><img src="/TMSS/data/order/{$item.imagepath4}" alt="" width="100" height="100" /></td>
+            </tr>
+
+            {/foreach}
+
+        </table>
+
+        <!-- 分页 -->
+        <table id="page-table" cellspacing="0" align="center">
+            <tr>
+                <td align="right" nowrap="true">
+                    <!--{include file="page1.htm"}-->
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+{include file="pagefooter.htm"}

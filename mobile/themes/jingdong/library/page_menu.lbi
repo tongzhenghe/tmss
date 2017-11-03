@@ -1,0 +1,13 @@
+<div class="new-jd-tab">
+  <div class="new-tbl-type"> 
+    <a href="{:url('index/index')}" class="new-tbl-cell"><span class="icon">首页</span>
+    <p style="color:#6e6e6e;">首页</p>
+    </a> <a href="{:url('category/all')}" class="new-tbl-cell"><span class="icon icon2">分类搜索</span>
+    <p style="color:#6e6e6e;">分类搜索</p>
+    </a> <a href="{:url('flow/cart')}" class="new-tbl-cell"><span class="icon icon3">购物车</span>
+    <p style="color:#6e6e6e;">购物车</p>
+    </a> <a href="{:url('user/index')}" class="new-tbl-cell"><span class="icon icon4">我的京东</span>
+    <p style="color:#6e6e6e;">我的京东</p>
+    </a> </div>
+</div>
+<a class="Touming" onClick="closeSearch()"></a> 

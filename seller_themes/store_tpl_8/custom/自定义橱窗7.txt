@@ -1,0 +1,199 @@
+<div class="fn-clear userfltj_five">
+<div class="mc">
+<div class="s-color2 userpsx2">
+<div class="user-bt1">
+<h1>时尚精品</h1>
+<span><a href="#">查看更多+</a></span>
+</div>
+<div class="x-left">
+<div class="s-color2">
+<div class="biaoti"></div>
+</div>
+<div class="one-img">
+<div id="slidetwo" class="slideclass" style="width:260px; height:455px;">
+<div class="img" style="width:260px; height:455px;">
+<ul>
+<li><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_guanggao_3.jpg" /></a></li>
+<li><a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_guanggao_4.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="x-right">
+<ul class="chudian">
+<li class="show">店长推荐</li>
+<li>热销精品</li>
+</ul>
+<div class="kuang">
+<div class="j-swc-k">
+<ul>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_4.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_5.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_6.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_7.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_8.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_9.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_10.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_11.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+</ul>
+<ul>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_4.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_5.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_6.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_7.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_8.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_9.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_10.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+<li>
+<div class="x-pic">
+<a href="#"><img src="/seller_themes/store_tpl_8/custom_images/product_11.jpg" /></a>
+</div>
+<div class="x-title "><a href="#" target="_blank">2014秋冬新款欧洲劳动人民油画情侣卫衣宽松圆领设计 WY-2012 均码</a></div>
+<span class="info">
+<span class="jdNum x-pri">￥<span class="jdNum">99.00</span></span>
+<span class="pinglun">已有<a href="#"> 0 </a>评</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

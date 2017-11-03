@@ -1,0 +1,78 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div id="filter">
+  <div class="cls"></div>
+  <div class="fore1">
+  	<div class="exchange_box1">
+    <div class="exchange_order"><span>{$lang.goods_list}：</span>
+    <div class="exchange_listform">
+      <form method="GET" class="sort" name="listform">
+        <select name="sort" style="border:1px solid #ccc;">
+          
+            
+        {html_options options=$lang.exchange_sort selected=$pager.sort}
+        
+          
+        </select>
+        <select name="order" style="border:1px solid #ccc;">
+          
+            
+        {html_options options=$lang.order selected=$pager.order}
+        
+          
+        </select>
+        <input type="image" name="imageField" src="../images/bnt_go.gif" alt="go"/>
+        <input type="hidden" name="category" value="{$category}" />
+        <input type="hidden" name="display" value="{$pager.display}" id="display" />
+        <input type="hidden" name="integral_min" value="{$integral_min}" />
+        <input type="hidden" name="integral_max" value="{$integral_max}" />
+        <input type="hidden" name="page" value="{$pager.page}" />
+      </form>
+      </div>
+    </div>
+    </div>
+    <div class="pagin pagin-m"><span class="text">  <!--{foreach from=$pager.page_number key=key item=item}-->
+      <!-- {if $pager.page eq $key} -->
+      <i>{$key}</i>
+      <!-- {/if} -->
+      <!--{/foreach}-->/{$pager.page_count}
+      </span>
+      <!-- {if $pager.page_prev} --><a href="{$pager.page_prev}" class="prev">上一页<b></b></a><!--{else}--><span class="prev-disabled">上一页<b></b></span><!-- {/if} -->
+      
+      <!-- {if $pager.page_next} --><a href="{$pager.page_next}" class="next">下一页<b></b></a><!--{else}--><span class="next-disabled">下一页<b></b></span><!-- {/if} -->
+      
+      
+      </div>
+    <div class="total"><span>共<strong>{$pager.record_count}</strong>个商品</span></div>
+    <span class="clr"></span></div>
+</div>
+<form name="compareForm" method="post">
+  <div id="plist" class="m plist-n7a ordinary-prebuy">
+    <ul class="list-h">
+      <!--{foreach from=$goods_list item=goods}--> 
+      <!-- {if $goods.goods_id} -->
+      <li>
+        <div class="lh-wrap">
+          <div class="p-img"><a target="_blank" href="{$goods.url}"><img width="220" height="220" alt="{$goods.goods_name}" src="{$goods.goods_thumb}" title="{$goods.goods_name}"></a>
+            <div class="picon pi8"></div>
+          </div>
+          <div class="p-name"><a target="_blank" href="{$goods.url}" title="{$goods.goods_name}">{$goods.goods_name}<font style="color: #ff0000;" class="adwords">{$goods.goods_brief}</font></a></div>
+          <div class="p-price"><strong>{$lang.exchange_integral}{$goods.exchange_integral}</strong><span id="p647948"></span></div>
+          <div class="extra"><span class="evaluate"><a target="_blank" href="{$goods.url}">已有{$goods.comments_number}人评价</a></span></div>
+          <div class="stocklist" style="display:none;"><span class="st33">上海有货</span></div>
+          <div class="btns"><a id="coll647948" href="javascript:collect({$goods.goods_id});" class="btn-coll">关注</a><a id="comp_647948" onClick="Compare.add({$goods.goods_id},'{$goods.goods_name|escape:"html"}','{$goods.type}')" class="btn-compare btn-compare-s"><span></span>对比</a></div>
+        </div>
+      </li>
+      <!--{/if}--> 
+      <!--{/foreach}-->
+      
+    </ul>
+  </div>
+</form>
+<script type="text/javascript">
+  window.onload = function()
+  {
+    Compare.init();
+    fixpng();
+  }
+  var button_compare = '';
+</script>

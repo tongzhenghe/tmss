@@ -1,0 +1,88 @@
+<!-- $Id: agency_list.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<div class="form-div">
+  <form action="javascript:searchUser()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+    &nbsp;审核状态 <select name="is_check"><option value="3">选择状态</option><option value="0">未审核</option><option value="1">审核通过</option><option value="2">审核未通过</option></select>
+    &nbsp;会员名称 &nbsp;<input type="text" name="keywords" /> <input type="submit" value="{$lang.button_search}" />
+  </form>
+</div>
+<form method="post" action="" name="listForm" onsubmit="return confirm(batch_drop_confirm);">
+<div class="list-div" id="listDiv">
+{/if}
+
+  <table cellpadding="3" cellspacing="1">
+    <tr>
+      <th> <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox" />
+          <a href="javascript:listTable.sort('s.id'); ">编号</a>{$sort_id} </th>
+      <th>会员名称</th>
+      <th>邮箱</th>
+      <th>申请日期</th>
+      <th><a href="javascript:listTable.sort('s.use_fee'); ">平台使用金</a>{$sort_use_fee}</th>
+      <th><a href="javascript:listTable.sort('s.deposit'); ">商家保证金</a>{$sort_deposit}</th>
+      <th><a href="javascript:listTable.sort('s.fencheng'); ">分成利率</a>{$sort_fencheng}</th>
+      <th>结算类型</th>
+      <th>状态</th>
+      <th>操作</th>
+    </tr>
+    {foreach from=$user_seller_list item=user_seller}
+    <tr>
+      <td align="center"><input type="checkbox" name="checkboxes[]" value="{$user_seller.id}" />
+        {$user_seller.id}</td>
+      <td align="center">{$user_seller.user_name|escape:html}</td>
+      <td align="center">{$user_seller.email}</td>
+      <td align="center">{$user_seller.add_time}</td>
+      <td align="center" class="first-cell"><span onclick="javascript:listTable.edit(this, 'edit_use_fee', {$user_seller.id})">{$user_seller.use_fee|escape:html}</span></td>
+      <td align="center" class="first-cell"><span onclick="javascript:listTable.edit(this, 'edit_deposit', {$user_seller.id})">{$user_seller.deposit|escape:html}</span></td>
+      <td align="center" class="first-cell"><span onclick="javascript:listTable.edit(this, 'edit_fencheng', {$user_seller.id})">{$user_seller.fencheng|escape:html}</span></td>
+      <td align="center">{if $user_seller.checkout_type eq 0}周{elseif $user_seller.checkout_type eq 1}月{elseif $user_seller.checkout_type eq 2}季度{elseif $user_seller.checkout_type eq 3}年{/if}</td>
+      <td align="center"><img src="images/{if $user_seller.is_check eq 1}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'is_check', {$user_seller.id})" style="cursor:pointer;"/></td>
+      <td align="center">
+        <a href="user_sellers.php?act=s_info&uid={$user_seller.user_id}&id={$user_seller.id}" title="查看商家申请信息">查看</a> |
+        <a href="javascript:void(0);" onclick="listTable.remove({$user_seller.id}, '该操作将删除有关商家的所有信息，且无法恢复，确定删除该商家吗？')" title="{$lang.remove}">{$lang.remove}</a></td>
+    </tr>
+    {foreachelse}
+    <tr><td class="no-records" colspan="4">{$lang.no_records}</td></tr>
+    {/foreach}
+  </table>
+<table id="page-table" cellspacing="0">
+  <tr>
+    <td>
+      
+    </td>
+    <td align="right" nowrap="true">
+    {include file="page.htm"}
+    </td>
+  </tr>
+</table>
+
+{if $full_page}
+</div>
+</form>
+
+<script type="text/javascript" language="javascript">
+  <!--
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+	
+  //-->
+  /**
+	* 搜索用户
+  */
+	function searchUser()
+	{
+		listTable.filter['keywords'] = Utils.trim(document.forms['searchForm'].elements['keywords'].value);
+		listTable.filter['is_check'] = Utils.trim(document.forms['searchForm'].elements['is_check'].value);
+		listTable.filter['page'] = 1;
+		listTable.loadList();
+	}
+</script>
+{include file="pagefooter.htm"}
+{/if}

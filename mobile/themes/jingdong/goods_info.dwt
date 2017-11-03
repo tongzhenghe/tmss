@@ -1,0 +1,122 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1>{$lang.goods_brief}</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+  <div id="search_box">
+    <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem -->
+  </div>
+</header>
+
+<!--商品参数 begin-->
+<section class="s-detail">
+  <header id="inner">
+    <ul style="position: static;" id="detail_nav">
+      <li id="tabs1" onClick="tab(1)" class="current">{$lang.goods_brief}</li>
+      <li id="tabs2" onClick="tab(2)" class=""><span class="bar"></span>{$lang.specifications}</li>
+      <!-- <li id="tabs3" onClick="tab(3)" class=""><span class="bar"></span>包装清单</li>
+      <li id="tabs4" onClick="tab(4)" class=""><span class="bar"></span>售后服务</li> -->
+    </ul>
+<script type="text/javascript">
+var obj11 = document.getElementById("inner");
+var top11 = getTop(obj11);
+var isIE6 = /msie 6/i.test(navigator.userAgent);
+window.onscroll = function(){
+var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+if (bodyScrollTop > top11){
+obj11.style.position = (isIE6) ? "absolute" : "fixed";
+obj11.style.top = (isIE6) ? bodyScrollTop + "px" : "0px";
+$("#inner").addClass("hover");
+$(".H40").css("display","block");
+} else {
+obj11.style.position = "static";
+$("#inner").removeClass("hover");
+$(".H40").css("display","none");
+}
+}
+function getTop(e){
+var offset = e.offsetTop;
+if(e.offsetParent != null) offset += getTop(e.offsetParent);
+return offset;
+}
+</script>
+  </header>
+  <p class="H40" style="height:40px; display:none;"></p>
+  <div id="tab1" class="">
+    <div class="desc wrap" style="border:0;">
+      <div class="blank2"></div>
+        {$goods.goods_desc}
+    </div>
+  </div>
+  <div id="tab2" class="hidden"><div class="blank2"></div>
+  	<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#dddddd">
+        <!-- {foreach from=$properties item=property_group key=key} -->
+        <tr>
+          <th colspan="2" bgcolor="#FFFFFF">{$key|escape}</th>
+        </tr>
+        <!-- {foreach from=$property_group item=property} -->
+        <tr>
+          <td bgcolor="#FFFFFF" align="left" width="30%" class="f1">[{$property.name|escape:html}]</td>
+          <td bgcolor="#FFFFFF" align="left" width="70%">{$property.value}</td>
+        </tr>
+        <!-- {/foreach}-->
+        <!-- {/foreach}-->
+      </table>
+  </div>
+  <!-- <div id="tab3" class="hidden">
+  <div class="blank2"></div>
+         {$goods.packing_list}
+  </div>
+  <div id="tab4" class="hidden">
+    <div class="desc wrap" style="border:0;">
+      <div class="blank2"></div>
+      {$goods.after_sales}
+    </div>
+  </div> -->
+</section>
+
+<script type="text/javascript">
+//介绍 评价 咨询切换
+var tab_now = 1;
+function tab(id){
+	document.getElementById('tabs' + tab_now).className = document.getElementById('tabs' + tab_now).className.replace('current', '');
+	document.getElementById('tabs' + id).className = document.getElementById('tabs' + id).className.replace('', 'current');
+
+	tab_now = id;
+	if (id == 1) {
+		document.getElementById('tab1').className = '';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = 'hidden';
+		document.getElementById('tab4').className = 'hidden';
+	}else if (id == 2) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = '';
+		document.getElementById('tab3').className = 'hidden';
+		document.getElementById('tab4').className = 'hidden';
+	}else if (id == 3) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = '';
+		document.getElementById('tab4').className = 'hidden';
+	}else if (id == 4) {
+		document.getElementById('tab1').className = 'hidden';
+		document.getElementById('tab2').className = 'hidden';
+		document.getElementById('tab3').className = 'hidden';
+		document.getElementById('tab4').className = '';
+	}
+}
+</script> 
+
+<script type="text/javascript">
+/*头部搜索点击关闭或者弹出搜索框*/  
+function showSearch( ){
+	document.getElementById("search_box").style.display="block";
+}
+function closeSearch(){
+	document.getElementById("search_box").style.display="none";
+}
+
+$(".list .mc li:last").css("border-bottom", "0");
+</script>
+</body>
+</html>

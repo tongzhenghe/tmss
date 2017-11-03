@@ -1,0 +1,264 @@
+<div class="fn-clear">
+<div class="user_main">
+<div class="user_main_box user_bgcolor_3">
+<div class="cont user_bgcolor_1">
+<span class="user_font_1">冬季热卖种球</span>
+<a href="#" target="_blank" class="user_a_3">查看更多>></a>
+</div>
+<div class="user_item_box">
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+<div class="item user_item">
+<div class="jPic user_border_1">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_18/custom_images/product_1.jpg" width="292" height="292" /></a>
+<div class="jBuy user_bgcolor_3">
+<div class="Price user_border_dashed_bottom">
+<span class="jPrice user_font_price">
+<span class="t">￥</span>
+<span class="jdNum">39.00</span>
+</span>
+<span class="jBuybtn user_border_color_2"><a href="#" target="_blank" class="user_a_2">GO></a></span>
+</div>
+<span class="jTitle">
+<a href="#" target="_blank" class="user_a_1">津沽园艺 绿植盆栽 风信子种球盆栽花卉 6个装含铁桶盆带土超值特惠装家庭阳台种植花卉 1套</a>
+</span>
+</div>
+</div>
+<div class="show">
+<span class="favo user_bgcolor_but2 user_bgimg_favo_05"><a href="#" class="user_a_3">关注</a></span>
+<a href="#" class="buybtn user_bgcolor_but user_a_3 user_bgimg_s40001" target="_blank">购买</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

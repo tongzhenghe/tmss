@@ -1,0 +1,3 @@
+﻿<div class="seller_logo" style="margin-left:-208.5px;">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_13/custom_images/header_logo.jpg"/></a>
+</div>

@@ -1,0 +1,150 @@
+<div class="fn-clear userdefined-21">
+<div class="user_d20009">
+<div class="stitle user_font_1">
+2014秋季新品发布
+</div>
+<div class="bm user_border_top">
+<div class="jtitle user_font_3 user_bgcolor">
+新品驾到-针织开衫
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear user_s15007866">
+<div class="user_box_b user_bgcolor_3">
+<ul class="items list-paddingleft-2">
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" title="ckxq.png"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_1.jpg" width="392" height="392" border="0" hspace="0" vspace="0" title="" style="width: 392px; height: 392px;"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">99.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014秋装新款修身毛衣开衫波普民族风针织衫外套 LG8903 杏色 均码</a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n2"></div>
+</div>
+</li>
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" width="126" height="126" border="0" hspace="0" vspace="0" title="" style="width: 126px; height: 126px;"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_2.jpg" width="392" title="cx_product_2.jpg"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">109.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014秋装新款 韩版修身女装长款针织衫开衫 LG8861 黑色 均码</a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n3"></div>
+</div>
+</li>
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" width="126" height="126" border="0" hspace="0" vspace="0" title="" style="width: 126px; height: 126px;"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_3.jpg" width="392" height="392" border="0" hspace="0" vspace="0" title="" style="width: 392px; height: 392px;"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">129.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014秋装新款韩版修身女装长款条纹针织衫开衫 LG8862 黑白</a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n4"></div>
+</div>
+</li>
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" width="126" height="126" border="0" hspace="0" vspace="0" title="" style="width: 126px; height: 126px;"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_4.jpg" width="392" title="cx_product_4.jpg"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">109.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014女韩版下摆拼接真两件长袖针织衫 LG8869 紫色 均码</a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n5"></div>
+</div>
+</li>
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" width="126" height="126" border="0" hspace="0" vspace="0" title="" style="width: 126px; height: 126px;"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_5.jpg" width="392" title="cx_product_5.jpg"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">79.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014秋装新款修身针织衫女 开衫 中长款毛衣 LG8860 蓝色 均</a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n7"></div>
+</div>
+</li>
+<li>
+<div class="jbox">
+<a href="#" target="_blank" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ckxq.png" width="126" height="126" border="0" hspace="0" vspace="0" title="" style="width: 126px; height: 126px;"/></a>
+</div>
+<div class="item">
+<div class="jpic">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/cx_product_6.jpg" width="392" title="cx_product_6.jpg"/></a>
+</div>
+<div class="jInfo user_border_top_1">
+<div class="jPrice user_font_price">
+<span class="t user_bgcolor user_font_3">一口价</span><span class="p">￥<span class="jdNum">98.00</span></span>
+</div>
+<div class="jTitle">
+<a href="#" target="_blank" class="user_a_1">Ddayup 2014秋装新款黑白格子套头毛衣女韩版宽松短款针织衫 </a>
+</div>
+<div class="jBuybtn user_bgcolor_but_hover">
+<a href="#" target="_blank">SHOP NOW</a>
+</div>
+</div>
+<div class="user_icon user_icon_t5_n6"></div>
+</div>
+</li>
+</ul>
+</div>
+</div>

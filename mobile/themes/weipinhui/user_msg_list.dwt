@@ -1,0 +1,27 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+
+<!--{if $message_list}-->
+<div class="flow-consignee-list ect-bg-colorf addressListBox">
+<section class="flow-consignee" style="margin:5px;">
+  <ul>
+    <!-- {foreach from=$message_list item=item} -->
+    <li style="margin: 5px;">
+      <p class="title">{$lang.message_title}：{$item.msg_title}</p>
+      <p class="content"><span class="remark pull-left">{$lang.message_time}：{$item.msg_time}</span></p>
+      <p class="content">{$lang.message_content}：{$item.msg_content}</p>
+      <p class="content">
+        <span class="remark pull-left">{$item.re_user_name}{$lang.shopman_reply}：{$item.re_msg_content}</span> 
+        <span class="pull-right text-right type">{$lang.reply_time}：{$item.re_msg_time}</span>
+      </p>
+    </li>
+    <!--{/foreach}-->
+  </ul>
+  </section>
+</div>
+<!-- #BeginLibraryItem "/library/page.lbi" --><!-- #EndLibraryItem -->
+ <!--{/if}-->
+ 
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body>
+</html>

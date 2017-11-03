@@ -1,0 +1,78 @@
+<style type="text/css">
+/* 本例子css */
+.pay_bottom{
+	display: inline-block;
+	min-width: 60px;
+	height: 40px;
+	padding: 0 15px;
+	border: 0;
+	background: #f40;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	-webkit-border-radius: 2px;
+	background: -webkit-gradient(linear,0 0,0 100%,color-stop(0,#f50),color-stop(1,#f40));
+	text-shadow: 0 -1px 1px #ca3511;
+	-webkit-box-shadow: 0 -1px 0 #bf3210 inset;
+}	
+</style>
+<div id="page">
+  <header id="header">
+    <h1>{$title}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box">
+      <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></div>
+  </header>
+</div>
+<section class="content">
+  <div id="J_plugin_cart">
+    <div class="bcont">
+      <div id="J_allGoods">
+        <div class="cont">
+          <section class="order on">
+            <h6 class="pay-tip radius5">{$lang.remember_order_number}: <font style="color:red">{$order.order_sn}</font></h6>
+            <table width="85%" align="center" border="0" cellpadding="15" cellspacing="0" style="border:1px solid #cdc2b0; margin:10px auto; background:#fffdf7; border-collapse:inherit; padding:10px; display:block;" bgcolor="#FFFFFF" class="radius5">
+              <tr>
+                <td align="left" style="padding: 5px;line-height: 24px;"><!--{if $order.shipping_name}-->{$lang.select_shipping}: <strong>{$order.shipping_name}</strong><br>
+                  
+                  <!--{/if}-->{$lang.select_payment}: <strong>{$order.pay_name}</strong><br>
+                  {$lang.order_amount}: <strong>{$total.amount_formated}</strong><br>
+                  {$order.pay_desc}</td>
+              </tr>
+              <!-- {if $pay_online} --> 
+              <!-- 如果是线上支付则显示支付按钮 -->
+              <tr>
+                <td align="center">{$pay_online}</td>
+              </tr>
+              <!-- {/if} -->
+            </table>
+            <!--{if $virtual_card}-->
+            <div  style="text-align:center;overflow:hidden;border:1px solid #E2C822; background:#FFF9D7;margin:10px;padding:10px 50px 30px; margin:10px;"> 
+              <!--{foreach from=$virtual_card item=vgoods}-->
+              <h3 style="color:#2359B1; font-size:12px;">{$vgoods.goods_name}</h3>
+              <!--{foreach from=$vgoods.info item=card}-->
+              <ul style="list-style:none;padding:0;margin:0;clear:both">
+                <!--{if $card.card_sn}-->
+                <li style="margin-right:50px;float:left;"> <strong>{$lang.card_sn}:</strong><span style="color:red;">{$card.card_sn}</span> </li>
+                <!--{/if}--> 
+                <!--{if $card.card_password}-->
+                <li style="margin-right:50px;float:left;"> <strong>{$lang.card_password}:</strong><span style="color:red;">{$card.card_password}</span> </li>
+                <!--{/if}--> 
+                <!--{if $card.end_date}-->
+                <li style="float:left;"> <strong>{$lang.end_date}:</strong>{$card.end_date} </li>
+                <!--{/if}-->
+              </ul>
+              <!--{/foreach}--> 
+              <!--{/foreach}--> 
+            </div>
+            <!--{/if}-->
+            <p style="text-align:center; margin-bottom:20px;">{$order_submit_back}</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="flow-consignee-list ect-bg-colorf AddressList">
+	<section>
+    	<ul id="J_ItemList">
+        	<li class="ect-padding-tb checkout-add single_item "></li>
+            <a href="javascript:;" style="text-align:center" class="get_more"></a>
+            <a href="./" class="Home"><span></span></a>
+        </ul>
+    </section>
+</div>
+<div class="ect-padding-lr ect-padding-tb ect-margin-tb goods-info">
+	<div style="margin:0 .67em"><a href="{:url('flow/consignee')}" type="botton" class="btn btn-info ect-btn-info ect-colorf">{$lang.add_address}</a></div>
+</div>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script> 
+<script src="__TPL__/js/TouchSlide.1.1.js"></script> 
+<script src="__TPL__/js/ectouch.js"></script> 
+<script src="__TPL__/js/simple-inheritance.min.js"></script> 
+<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script> 
+<script src="__TPL__/js/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script> 
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
+<script type="text/javascript">
+get_asynclist('index.php?m=default&c=flow&a=consignee_list' , '__TPL__/images/loader.gif');</script>
+</body>
+</html>

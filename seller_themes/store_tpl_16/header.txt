@@ -1,0 +1,8 @@
+﻿<style>.store_dh{background:#fffe99;}
+.seller_logo{ width:990px; margin:0 auto;}</style>
+<div class="seller_logo">
+    <img src="/seller_themes/store_tpl_16/custom_images/logo.jpg" usemap="#headerMap" border="0"/><map name="headerMap" id="headerMap"><area shape="rect" coords="4,4,201,111" href="#"/>
+    <area shape="rect" coords="560,67,678,115" href="#"/>
+    <area shape="rect" coords="683,70,814,118" href="#"/>
+    <area shape="rect" coords="820,69,914,117" href="#"/></map>
+</div>

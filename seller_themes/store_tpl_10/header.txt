@@ -1,0 +1,14 @@
+﻿<style>.user_top{ width:990px; height:100px; margin:0 auto; position:relative;}.user_top .jBanner{ float:left;}
+.user_top .headercc { position: absolute;right: 80px;top: 30px;width: 66px;height: 66px;display: block;}
+.user_top .headerlink { position: absolute;right: 0;top: 20px;width: 80px;height: 80px;display: block;}</style>
+<div class="user_top">
+<div class="jBanner">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_10/custom_images/logo.jpg"/></a>
+</div>
+<div class="headercc">
+<a href="#"><img src="/seller_themes/store_tpl_10/custom_images/csh.png"/></a>
+</div>
+<div class="headerlink">
+<a href="#"><img src="/seller_themes/store_tpl_10/custom_images/ewma_bg.png"/></a>
+</div>
+</div>

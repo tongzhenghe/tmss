@@ -1,0 +1,10 @@
+﻿<style>.userDefinedArea{width:1200px; margin:0px auto; overflow:hidden;}
+.user-shopsigns{ width:990px; margin:0 atuo 10px;}.seller_logo{ float:left; margin-left:70px;}.coll{ float:right; margin-right: 30px;}</style>
+<div class="userDefinedArea">
+<div class="seller_logo">
+<a href="index.html" target="_blank"><img src="/seller_themes/store_tpl_2/custom_images/logo_temp3s.jpg"/></a>
+</div>
+<div class="coll">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/collection.jpg"/></a>
+</div>
+</div>

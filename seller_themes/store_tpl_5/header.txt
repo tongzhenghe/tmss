@@ -1,0 +1,19 @@
+﻿<style>.store_dh{background: #2679c6;}</style>
+<div class="fn-clear user_dz-489313">
+<div class="mc">
+<div class="s_other">
+<a href="#" class="s_btn" target="_blank"><span class="s_dingdan"></span>订单</a>
+<div class="j-module s_btn">
+<div class="s_follow">
+<span class="s_guanzhu"></span>关注
+</div>
+</div><a href="#" class="s_btn" target="_blank"><span class="s_kefu"></span>客服</a>
+</div><a href="#" class="s_logo" target="_blank"></a>
+<div class="s_search">
+<input type="text" placeholder="请输入关键词" class="inputMiddle"/><button type="button" class="submit"></button>
+</div>
+<div class="s_words">
+<a href="#">荷兰牛栏</a><a href="#">德国喜宝</a><a href="#">德国喜宝</a><a href="#">美国安利</a><a href="#">妈妈专区</a>
+</div>
+</div>
+</div>

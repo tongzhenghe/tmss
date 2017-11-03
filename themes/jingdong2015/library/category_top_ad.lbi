@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="slide" id="slide">
+  <ul class="slide-items slide-items-w">
+    <!--{foreach from=$index_ad_w item=index_ad}-->
+    <li> <a href="{$index_ad.url}" target="_blank"><img src="{$index_ad.src}" width="670" height="240"></a> </li>
+    <!--{/foreach}-->
+  </ul>
+  
+  <ul class="slide-items slide-items-s">
+    
+    <!--{foreach from=$index_ad_s item=index_ad}-->
+    <li> <a href="{$index_ad.url}" target="_blank"><img src="{$index_ad.src}" width="550" height="240"></a> </li>
+    <!--{/foreach}-->
+    
+  </ul>
+   <div class="slide-controls slide-controls-w">  <!--{foreach from=$index_ad_w item=index_ad name=foo}--><span {if $smarty.foreach.foo.first}class="curr"{/if}>{$smarty.foreach.foo.iteration}</span><!--{/foreach}--> </div>
+   
+  <div class="slide-controls slide-controls-s">  <!--{foreach from=$index_ad_s item=index_ad name=foo}--><span {if $smarty.foreach.foo.first}class="curr"{/if}>{$smarty.foreach.foo.iteration}</span><!--{/foreach}--> </div>
+</div>

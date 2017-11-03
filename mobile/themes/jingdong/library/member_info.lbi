@@ -1,0 +1,12 @@
+<div id="append_parent"></div>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<a href="{:url('user/index')}">{if $user_info}</a>
+<a href="{:url('user/index')}">{$user_info.username}</a>
+<span class="lg-bar">|</span>
+<a href="{:url('user/logout')}">{$lang.user_logout}</a>
+</font>
+{else}
+<a href="{:url('user/login')}">登录</a>
+<span class="lg-bar">|</span>
+<a href="{:url('user/register')}">注册</a>
+{/if}

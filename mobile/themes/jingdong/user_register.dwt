@@ -1,0 +1,109 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page">
+  <header id="header">
+    <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span></span></a></div>
+    <h1>{$lang.label_regist}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></div>
+  </header>
+</div>
+<section class="wrap" style="border-bottom:0;">
+  <div id="leftTabBox" class="loginBox InfoBox" style="background:#fafafa;">
+    <div class="bd"><!-- 添加id，js用到 --> 
+      <!--{if $enabled_sms_signin eq 1} 支持手机短信功能-->
+      <form action="{:url('user/register')}" method="post" name="formUser" onsubmit="return register2();">
+        <input type="hidden" name="seccode" id="seccode" value="{$sms_security_code}" />
+        <input type="hidden" name="flag" id="flag" value="register" />
+        <div class="table_box mt20 pt10"> <span class="new-input-span mb15">
+          <input placeholder="{$lang.mobile}" class="inputBg" name="mobile" id="mobile_phone" type="text" />
+          </span> <span class="new-input-span mb15">
+          <input placeholder="{$lang.password}" class="inputBg" name="password" id="mobile_pwd" type="password" />
+          </span> <span class="new-input-span mb15">
+          <input placeholder="{$lang.label_confirm_password}" class="inputBg" name="confirm_password" id="confirm_mobile_pwd" type="password" />
+          </span> <span class="new-input-span" style="position:relative;">
+          <input placeholder="{$lang.no_code}" class="inputBg" name="mobile_code" id="mobile_code" type="text" />
+          <input id="zphone" name="sendsms" type="button" value="{$lang.get_code}" onClick="sendSms();" class="c-btn4" style="position:absolute; top:0; right:0; width:115px;" />
+          </span>
+          <dl>
+            <dd>
+              <input id="agreement" name="agreement" type="checkbox" value="1" checked="checked" style="vertical-align:middle; zoom:150%;" />
+              <label for="agreement"> {$lang.agreement}</label>
+            </dd>
+          </dl>
+          <dl>
+            <dd>
+              <input name="act" type="hidden" value="act_register" />
+              <input name="enabled_sms" type="hidden" value="1" />
+              <input type="hidden" name="back_act" value="{$back_act}" />
+              <input name="Submit" type="submit" value="{$lang.next}" class="c-btn4" />
+            </dd>
+          </dl>
+        </div>
+      </form>
+      <!--{else}--> 
+      <!-- {if $shop_reg_closed eq 0} 判断是否关闭注册-->
+      <form action="{:url('user/register')}" method="post" name="formUser" onsubmit="return register();">
+        <input type="hidden" name="seccode" id="seccode" value="{$sms_security_code}" />
+        <input type="hidden" name="flag" id="flag" value="register" />
+        <div class="table_box">
+          <dl>
+            <dd>
+              <input placeholder="{$lang.no_username}" class="inputBg" name="username" id="username" type="text" />
+            </dd>
+          </dl>
+          <dl>
+            <dd>
+              <input placeholder="{$lang.no_emaill}" class="inputBg" name="email" id="email" type="text" />
+            </dd>
+          </dl>
+          <dl>
+            <dd>
+              <input placeholder="{$lang.no_password}" class="inputBg" name="password" id="password1" type="password" />
+            </dd>
+          </dl>
+          <dl>
+            <dd>
+              <input placeholder="{$lang.label_confirm_password}" class="inputBg" name="confirm_password" id="confirm_password" type="password" />
+            </dd>
+          </dl>
+          <!-- 判断是否启用验证码{if $enabled_captcha} -->
+          <dl>
+            <dd>
+              <input placeholder="{$lang.no_code}" class="inputBg" name="captcha" id="captcha" type="text" />
+            </dd>
+            <dd> <img src="{:url('public/captcha', array('rand'=>$this->_var['rand']))}" alt="captcha" style="height:34px;vertical-align: middle; margin-left:5px;" onClick="this.src='{:url('public/captcha')}&t='+Math.random()"  /> </dd>
+          </dl>
+          <!--{/if}-->
+          <dl>
+            <dd>
+              <input id="agreement" name="agreement" type="checkbox" value="1" checked="checked" style="vertical-align:middle; zoom:200%;" />
+              <label for="agreement"> {$lang.agreement}</label>
+            </dd>
+          </dl>
+          <dl>
+            <dd>
+              <input name="act" type="hidden" value="act_register" />
+              <input name="enabled_sms" type="hidden" value="0" />
+              <input type="hidden" name="back_act" value="{$back_act}" />
+              <input name="Submit" type="submit" value="{$lang.next}" class="c-btn3" />
+            </dd>
+          </dl>
+        </div>
+      </form>
+      <!-- {else} -->
+      <ul class="radius10 itemlist">
+        <div style="margin:1rem auto; text-align:center">
+          <p style="font-size:0.8rem; font-weight:bold; color: red;">网站已经关闭注册功能！</p>
+          <div class="blank"></div>
+          <p class="info"><a href="{$site_url}mobile">{$lang.back_home_lnk}</a></p>
+        </div>
+      </ul>
+      <!-- {/if} --> 
+      
+      <!--{/if}--> 
+      {if $need_rechoose_gift}
+      {$lang.gift_remainder}
+      {/if} </div>
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 

@@ -1,0 +1,78 @@
+<div class="fn-clear" style="background:url(/seller_themes/store_tpl_14/custom_images/otaci_bg_1.jpg) no-repeat;">
+<div class="user_otaci_tejia" style=" height:434px;">
+<div class="otaci_left"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972501.jpg" /></a></div>
+<div class="otaci_right">
+<ul>
+<li>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972502.jpg" /></a>
+<div class="otaci_details">
+<div class="otaci_name"><a href="#" target="_blank">[宁静致远定窑白瓷套装]</a></div>
+<span class="price"><em>￥</em>627</span>
+</div>
+</li>
+<li>
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972503.jpg" /></a>
+<div class="otaci_details">
+<div class="otaci_name"><a href="#" target="_blank">[祥云黑诗茶具套装]</a></div>
+<span class="price"><em>￥</em>648</span>
+</div>
+</li>
+<li style="margin-right:10px;">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972504.jpg" /></a>
+<div class="otaci_details">
+<div class="otaci_name"><a href="#" target="_blank">[黑檀万福虎啸茶具套装]</a></div>
+<span class="price"><em>￥</em>1588</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fn-clear jGoodsRecommend">
+<ul>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972505.jpg" /></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">甲馨茶具 整套紫砂功夫茶具套装陶瓷玉瓷青瓷茶具套装电磁炉实木茶盘套装 二合一清香玉瓷茶具套装</a></div>
+<div class="jPrice">
+<div class="jdPrice"><span class="jdNum">298.00</span></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972506.jpg" /></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">甲馨茶具 整套紫砂功夫茶具套装陶瓷玉瓷青瓷茶具套装电磁炉实木茶盘套装 二合一清香玉瓷茶具套装</a></div>
+<div class="jPrice">
+<div class="jdPrice"><span class="jdNum">298.00</span></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972507.jpg" /></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">甲馨茶具 整套紫砂功夫茶具套装陶瓷玉瓷青瓷茶具套装电磁炉实木茶盘套装 二合一清香玉瓷茶具套装</a></div>
+<div class="jPrice">
+<div class="jdPrice"><span class="jdNum">298.00</span></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_14/custom_images/otaci_972508.jpg" /></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">甲馨茶具 整套紫砂功夫茶具套装陶瓷玉瓷青瓷茶具套装电磁炉实木茶盘套装 二合一清香玉瓷茶具套装</a></div>
+<div class="jPrice">
+<div class="jdPrice"><span class="jdNum">298.00</span></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>

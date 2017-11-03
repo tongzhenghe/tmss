@@ -1,0 +1,37 @@
+﻿<style>
+.cont {height: 120px;width: 1200px;margin: 0 auto;}
+.cont .icon {width: 240px;float: left;height: 120px;}
+.cont .icon span {display: block;width: 70px;height: 18px;background-repeat: no-repeat;background-position: center center;float: left;margin-right: 10px;margin-top: 70px;cursor:pointer;}
+.user-logo {float: left;width: 58%;overflow: hidden;margin-top: 20px;}
+.user-logo .jLogo {font-size: 50px;font-weight: bold;height: 50px;line-height: 50px;overflow: hidden;text-align: center;}
+.user-logo .announce {font-size: 16px;height: 30px;line-height: 30px;text-align: center;}
+.user-search {float: right;width: 260px;overflow: hidden;}
+.user-search .jSearchArea {margin-top: 40px;float: right;}
+.user-search .jSearchInput .inputMiddle {height: 16px;line-height: 16px;width: 168px;padding: 3px;margin: 0px;float: left;}
+.user-search .jSearchInput button {height: 24px;line-height: 24px;padding: 0px;margin: 0px;width: 30px;float: left;cursor: pointer;margin-left: 1px;background-repeat: no-repeat;background-position: center center;}
+.user-search .jHotwords {height: 24px;line-height: 24px;font-size: 12px;width: 207px;text-align: center;overflow: hidden;margin-top: 5px;}
+.user-search .jHotwords a{ margin-right:5px;}</style>
+<div class="cont">
+<div class="icon">
+<span class="user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/icon1.png);"></span>
+<span class="user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/icon2.png);"></span>
+<span class="user_bgcolor_1" style=" background-image:url(/seller_themes/store_tpl_18/custom_images/icon3.png);"></span>
+</div>
+<div class="user-logo">
+<div class="jLogo user_font_1"><span>津沽园艺旗舰店</span></div>
+<div class="announce user_font_4"><span>用心创造品质，给您最好的体验！</span></div>
+</div>
+<div class="user-search">
+<div class="searchArea">
+<div class="jSearchArea">
+<div class="jSearchInput">
+<input type="text" placeholder="新品" class="inputMiddle user_border_search user_font_2" />
+<button type="button" class="user_bgcolor_1 user_font_3" style="background-image: url(/seller_themes/store_tpl_18/custom_images/search_fdj.png);"></button>
+</div>
+<div class="jHotwords user_font_1">
+热门搜索：<a href="#" target="_blank" class="user_a_1">种球花卉</a><a href="#" target="_blank" class="user_a_1">多萌多肉</a><a href="#" target="_blank" class="user_a_1">秋冬绿植</a><a href="#" target="_blank" class="user_a_1">工具用品</a><a href="#" target="_blank" class="user_a_1">花肥营养土</a>
+</div>
+</div>
+</div>
+</div>
+</div>

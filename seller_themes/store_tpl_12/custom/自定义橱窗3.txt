@@ -1,0 +1,18 @@
+<div class="fn-clear user_djs">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_12/custom_images/xsmsha.jpg" /></a>
+<div class="youmi-module" data="2015-1-15 11:30:00">
+<span class="jtitle">距离活动结束：</span>
+<span class="jNum">
+<span class="days"></span>
+<span>天</span>
+<span class="hours"></span>
+<span>时</span>
+<span class="minutes"></span>
+<span>分</span>
+<span class="seconds"></span>
+<span>秒</span>
+</span>
+</div>
+</div>
+</div>

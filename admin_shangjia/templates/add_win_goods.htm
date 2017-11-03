@@ -1,0 +1,102 @@
+<!-- $Id: goods_export.htm 17107 2010-04-15 03:29:13Z liuhui $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="selectzone.js"}
+
+<table width="100%">
+<tr>
+  <td>
+  <div class="main-div" style="background-color: white;">
+  <br/>
+  使用说明
+  <ol>
+  <li>使用搜索条件每次只允许搜索符合条件的50个商品。</li>
+  <li>根据搜索条件搜出商品，然后选中移到右边窗口，之后选中橱窗，确定即可将商品加入对应的橱窗里面。</li>
+  </ol>
+  <h3><center>{$win_info.win_name}添加商品</center></h3>
+  <div>
+    <form action="goods_export.php" method="post" name="searchForm" onsubmit="return queryGoods(this)">
+      <strong>商品条件</strong>
+      <!-- 分类 -->
+      <select name="cat_id"><option value="0">所有分类</option>{$cat_list}</select>
+      <!-- 品牌 -->
+      <select name="brand_id"><option value="0">所有品牌</option>{html_options options=$brand_list}</select>
+      <!-- 关键字 -->
+      关键字<input type="text" name="keyword"/>
+      <!-- 搜索 -->
+      <input type="submit" name="search_submit" id="search_submit" value="搜索" class="button" />
+    </form>
+  </div>
+  <form action="seller_window.php" method="post" name="windowform">
+  <table>
+  <tr>
+    <td width="46%"><select name="src_goods_lists" id="src_goods_lists" size="14" style="width:100%" ondblclick="sz1.addItem(false, 'insert_win_goods', {$win_info.id})" multiple="true">
+              </select></td>
+    <td width="8%" style="text-align:center;">
+      <p><input type="button" value=">>" id="addAllGoods" class="button" onclick="sz1.addItem(true, 'insert_win_goods', {$win_info.id})"/></p>
+      <p><input type="button" value=">" id="addGoods" class="button" onclick="sz1.addItem(false, 'insert_win_goods', {$win_info.id})"/></p>
+      <p><input type="button" value="<" id="delGoods" class="button" onclick="sz1.dropItem(false, 'drop_win_goods', {$win_info.id})"/></p>
+      <p><input type="button" value="<<" id="delAllGoods" class="button" onclick="sz1.dropItem(true, 'drop_win_goods', {$win_info.id})"/></p>
+    </td>
+    <td width="46%">
+    <select name="dst_goods_lists" id="dst_goods_lists" size="14" style="width:100%" multiple="true" ondblclick="sz1.dropItem(false, 'drop_win_goods',{$win_info.id})">
+    {if $win_goods[0]}
+    {foreach from=$win_goods item=goods}
+    <option value="{$goods.goods_id}">{$goods.goods_name}</option>
+    {/foreach}
+    {/if}
+    </select>
+    </td>
+  </tr>
+  <tr>
+      <td width="46%">
+          <input type="hidden" name="win_id" value="{$win_info.id}" />
+          <input type="hidden" name="act" value="update_win_goods" />
+      </td>
+      <td rowspan="2" width="8%" style="text-align:center;">
+      	  <input name="submit" type="submit" id="submit" value="确认" class="button" />
+      </td>
+      <td width="46%"></td>
+  </tr>
+  </table>
+  </select>
+  </div>
+  </td>
+</tr>
+</table>
+{insert_scripts files="../js/utils.js,validator.js,selectzone.js"}
+<script language="JavaScript"> 
+
+ var elements = document.forms['windowform'].elements;
+  var sz1 = new SelectZone(1, elements['src_goods_lists'], elements['dst_goods_lists']);
+
+  /* 搜索商品列表 */
+    function queryGoods(obj)
+    {
+        var filters = new Object;
+        filters.cat_id = obj.cat_id.value;
+        filters.brand_id = obj.brand_id.value;
+        filters.keyword = obj.keyword.value;
+
+        Ajax.call('goods_export.php?is_ajax=1&act=get_goods_list', filters, queryGoodsResponse , 'POST', 'JSON');
+        return false;
+    }
+
+    function queryGoodsResponse (result)
+    {
+        if (result.error > 0)
+        {
+            alert(result.message);
+            return;
+        }
+        Utils.$('src_goods_lists').innerHTML = '';
+        for (var i=0,l=result.content.length;i<l;++i)
+        {
+            var new_opt = document.createElement('OPTION');
+            new_opt.value = result.content[i].goods_id;
+            new_opt.innerHTML = result.content[i].goods_name;
+            Utils.$('src_goods_lists').appendChild(new_opt);
+        }
+    }
+</script>
+{/literal}
+{include file="pagefooter.htm"}

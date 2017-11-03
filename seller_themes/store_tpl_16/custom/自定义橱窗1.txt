@@ -1,0 +1,10 @@
+<div class="fn-clear">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_16/custom_images/adv_1.jpg"/></a>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_16/custom_images/dp_gg.jpg"/></a>
+</div>
+</div>

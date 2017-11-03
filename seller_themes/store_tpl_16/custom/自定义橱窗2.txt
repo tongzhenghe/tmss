@@ -1,0 +1,217 @@
+<div class="fn-clear" style=" height:100px;">
+<div class="mc" style="width: 100%; position:absolute; left:0;">
+<div class="userDefinedArea" style=" background:url(/seller_themes/store_tpl_16/custom_images/biaoti_1.jpg) -168.5px 0px; height:100px;"></div>
+</div>
+</div>
+<div class="fn-clear w990" style="margin:0 auto 10px;">
+<div class="mc">
+<div class="user_countdown">
+<ul>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_1.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_2.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_3.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_4.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_5.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_6.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_7.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="_blank" class="i_l_imgs"><img src="/seller_themes/store_tpl_16/custom_images/product_8.jpg" width="240" /></a>
+<div class="clearfix con_price">
+<a class="buynow" href="#" target="_blank"></a>
+<div class="tprice">
+<em class="jRmb">特价￥</em>
+<span class="jdNum">65.00</span>
+</div>
+<div class="saleprice">
+<em class="jRmb">原价￥</em>
+<span class="jsNum">82.00</span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fn-clear">
+<div class="mc">
+<div class="user_cate" style=" width:990px; height:450px; margin:0 auto; background:url(/seller_themes/store_tpl_16/custom_images/fenlei_bg.jpg) repeat-x 0 0;">
+<div class="gz_box">
+<img src="/seller_themes/store_tpl_16/custom_images/guanggao.png" />
+</div>
+<div class="pro_classify">
+<div class="pro_classify_title"><h3 style="background: url(/seller_themes/store_tpl_16/custom_images/baby.png) no-repeat;">商品分类</h3></div>
+<div class="dlbox">
+<dl>
+<dt><a href="#" target="_blank">新鲜水果</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">进口水果</a><span class="hot"></span></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">国产水果</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">整箱水果</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">水果礼盒</a></dd>
+</dl>
+<dl>
+<dt><a href="#" target="_blank">新鲜蔬菜</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">叶梗类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">根茎类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">瓜果茄豆</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">食用菌</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">葱姜蒜</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">蔬菜套餐</a></dd>
+</dl>
+<dl>
+<dt><a href="#" target="_blank">肉禽蛋</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">猪肉</a><span class="new"></span></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">牛肉</a><span class="new"></span></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">羊肉</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">禽肉</a><span class="hot"></span></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">蛋类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">冰冻肉</a><span class="hot"></span></dd>
+</dl>
+<dl>
+<dt><a href="#" target="_blank">海鲜水产</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">当季海鲜</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">海鲜</a><span class="hot"></span></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">淡水河鲜</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">冰冻河鲜</a></dd>
+</dl>
+<dl>
+<dt><a href="#" target="_blank">其他</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">豆制品</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">干货调料</a></dd>
+</dl>
+<dl>
+<dt><a href="#" target="_blank">火锅专区</a></dt>
+<dd><em>&gt;</em><a href="#" target="_blank">牛羊肉类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">火锅丸类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">火锅菌类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">蔬菜类</a></dd>
+<dd><em>&gt;</em><a href="#" target="_blank">调料类</a></dd>
+</dl>
+</div>
+<div class="pc_box">
+<div class="pro_classify_fl">
+热门搜索：
+<a href="#" target="_blank">热卖</a>
+<span>|</span>
+<a href="#" target="_blank">草莓</a>
+<span>|</span>
+<a href="#" target="_blank">新鲜水果</a>
+<span>|</span>
+<a href="#" target="_blank">蔬菜</a>
+<span>|</span>
+</div>
+<div class="outer_searchArea">
+<div class="searchArea">
+<input class="s_text inputMiddle" type="text" />
+<button class="s_button s_btn s_btn990"></button>
+</div>
+</div>
+</div>
+<div class="ser_box">
+<span class="flr">08:30 AM - 24:00 PM 节假日放假时间另行通知</span>
+<dl class="ser_tb_s">
+<dt><span>售前客服：</span></dt>
+<a href="#" target="_blank"><span>三色堇</span></a>                                            
+<a href="#" target="_blank"><span>茉莉</span></a>                                            
+<a href="#" target="_blank"><span>腊梅</span></a>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear w990" style=" margin:0 auto 10px;">
+<div class="mc">
+<a href="#" target="_blank"><img src="/seller_themes/store_tpl_16/custom_images/adv_990_1.jpg" /></a>
+</div>
+</div>

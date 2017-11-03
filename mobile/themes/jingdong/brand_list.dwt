@@ -1,0 +1,19 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page" style="right: 0px; left: 0px; display: block;">
+  <header id="header">
+    <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span>返回</span></a></div>
+    <h1>{$lang.all_brand}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span>京东键</span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+  </header>
+  <div class="brand_list"> 
+    <ul id="J_ItemList">
+   	    <li class="single_item"></li>
+        <a href="javascript:;" class="get_more"></a>
+    <ul>
+    </div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> </div>
+<script type="text/javascript">
+get_asynclist("{:url('brand/asynclist', array('page'=>$this->_var['page'], 'sort'=>$this->_var['sort'], 'order'=>$this->_var['order']))}" , '__TPL__/images/loader.gif');
+</script>
+</body></html>

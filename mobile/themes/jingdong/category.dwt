@@ -1,0 +1,97 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page" style="right: 0px; left: 0px; display: block;">
+  <header id="header">
+    <div class="header_l header_return"><a href="javascript:history.go(-1);"><span></span></a></div>
+    <div id="search_box2">
+      <div class="search_box" id="searchBox">{$lang.no_keywords}</div>
+    </div>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box"> <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+    <div class="search_box search_2" >
+      <div class="search_2Box">
+        <form method="post" action="{if $id}{:url('category/index', array('id'=>$this->_var['id'] ))}{else}{:url('category/index')}{/if}" name="searchForm" id="searchForm_id">
+          <a href="#" class="new-a-cancel">{$lang.is_cancel}</a>
+          <div class="search_2BoxCon">
+            <input placeholder="{$lang.no_keywords}" name="keywords" type="text" id="keywordBox" style="color:#c3c2c2;" />
+            <a href="javascript:void(0);" target="_self" class="new-s-close new-s-close-v1"></a>
+            <button class="new-s-srch" type="submit" onclick="return check('keywordBox')"><span></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- #BeginLibraryItem "/library/goods_list.lbi" --><!-- #EndLibraryItem --> </div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+$(".filter-inner span.new-bar:first").css("display", "none");
+get_asynclist('{:url('category/asynclist', array('id'=>$this->_var['id'], 'brand'=>$this->_var['brand_id'], 'price_min'=>$this->_var['price_min'], 'price_max'=>$this->_var['price_max'], 'filter_attr'=>$this->_var['filter_attr'], 'page'=>$this->_var['page'], 'sort'=>$this->_var['sort'], 'order'=>$this->_var['order'], 'keywords'=>$this->_var['keywords']))}' , '__TPL__/images/loader.gif');
+</script> 
+<!--新筛选 S--->
+<form class="hold-height" action="{:url('category/index')}" id="filter_from">
+  <div style="position: absolute; width: 190px; height:100%; right: 0px; top: -28px; z-index: 9999; overflow: hidden; -webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); display: none;" id="filterbar">
+    <div class="new-tab-type">
+      <div class="new-srch-pop" id="slidebar" style="-webkit-transition: -webkit-transform 0.4s;-webkit-transform-origin: 0px 0px; -webkit-transform-style: preserve-3d;-webkit-transform: translate(190px, 0);">
+        <div class="attrExtra">
+          <input type="hidden" name="category" value="{$category}"/>
+        </div>
+        <div class="new-pop-ul new-p-re" id="filter_prop">
+          <ul class="new-ul-lst">
+            <!--组合搜索 开始--> 
+            <!--{if $brands.1 || $price_grade.1 || $filter_attr_list}--> 
+            <!--{if $brands.1}-->
+            <li class="new-ul-li"> <a href="javascript:void(0)" onclick="showHideFilter(this)" class="new-li-a">{$lang.brand}</a>
+              <div class="new-pop-sel" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">
+                <ul>
+                  <!--{foreach from=$brands item=brand}-->
+                  <li><a href="javascript:void(0);" onclick="selectExpandSort(this)" data="{$brand.brand_id}"  <!-- {if $brand.selected} -->class="on" <!-- {/if} --> ><span>{$brand.brand_name}</span></a></li>
+                  <!--{/foreach}-->
+                </ul>
+              </div>
+              <input type="hidden" name="brand" value="{$brand_id}" />
+            </li>
+            <!--{/if}--> 
+            
+            <!--{if $price_grade.1}-->
+            
+            <li class="new-ul-li"> <a href="javascript:void(0)" onclick="showHideFilter(this)" class="new-li-a on">{$lang.price}</a>
+              <div class="new-pop-sel" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); display:none;" >
+                <ul>
+                  
+                  <!--{foreach from=$price_grade item=grade}-->
+                  
+                  <li><a href="javascript:void(0);" onclick="selectExpandSort(this)" data="{$grade.start}|{$grade.end}"  <!-- {if $grade.selected} -->class="on" <!-- {/if} --> ><span>{$grade.price_range}</span></a></li>
+                  
+                  <!--{/foreach}-->
+                </ul>
+              </div>
+              <input type="hidden" name="price_min" value="{$price_min}" />
+              <input type="hidden" name="price_max" value="{$price_max}" />
+            </li>
+            <!--{/if}--> 
+            
+            <!--{foreach from=$filter_attr_list item=filter_attr}-->
+            <li class="new-ul-li"> <a href="javascript:void(0)" onclick="showHideFilter(this)" class="new-li-a on">{$filter_attr.filter_attr_name|escape:html}</a>
+              <div class="new-pop-sel" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); display:none;">
+                <ul>
+                  
+                  <!--{foreach from=$filter_attr.attr_list item=attr}-->
+                  
+                  <li><a href="javascript:void(0);" onclick="selectExpandSort(this)" data="{$attr.attr_id}" class="filter_attr <!-- {if $attr.selected} -->on<!-- {/if} -->"               ><span>{$attr.attr_value}</span></a></li>
+                  
+                  <!--{/foreach}-->
+                </ul>
+              </div>
+            </li>
+            <!--{/foreach}-->
+            <input type="hidden" name="filter_attr" value="{$filter_attr}"/>
+            <!-- {/if} --> 
+            <!--组合搜索 结束-->
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<!--新筛选 E--->
+</body></html>

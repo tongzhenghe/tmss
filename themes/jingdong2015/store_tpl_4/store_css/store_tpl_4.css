@@ -1,0 +1,246 @@
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+	background-color:#8a422d;
+}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{ background:none;}
+.user_temp_one{ background:#8a422d; }
+
+.jTwoLevel a{color:#fff; font-size:14px;}
+.square_box{background:#fff; margin-right:13px;}
+.jTwoLevel:hover{background: #98805e;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {background: #98805e;color: #fff;text-decoration: none;}
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888;}
+.all_cats_tcc li .s_b a:hover{background: #98805e; color:#fff;}
+
+/*轮播颜色
+.hdp-slide .Left,.hdp-slide .Right{background-color:#8a422d;}
+.hdp-slide .ban_nav a{background-color:#fff;}
+.hdp-slide .ban_nav a.on{ background-color:#8a422d;}*/
+
+.fn-clert {
+	margin-bottom: 10px;
+	width: 100%;
+	float: left;
+}
+.fn-clert .wtdg {
+	background: none repeat scroll 0 0 #FFFFFF;
+	height: 530px;
+	position: relative;
+	width: 990px;
+	padding:5px;
+}
+.fn-clert .wtdg .no {
+	float:left;
+	position:relative;
+}
+.no1{ padding-right:5px;}
+.no2{ padding-bottom:5px;}
+.no3{ padding-right:5px;}
+.fn-clert .wtdg .no a{ position:relative; display:block;}
+.fn-clert .wtdg .no .guandeng{ display:block;height: 100%;width: 100%;position: absolute; top:0;}
+.fn-clert .wtdg:hover a .guandeng {
+	-moz-transition: all 1s ease 0s;
+	opacity: 0.4;
+	background: #000;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+.fn-clert .wtdg a:hover .guandeng {
+	-moz-transition: all 1s ease 0s;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.mc{ margin:0 auto; width:990px;}
+.searchArea{ padding: 5px;height: 26px;overflow: hidden;}
+.searchInput{ overflow:hidden; float:left; width:500px;}
+.searchInput .inputMiddle{ width:200px;}
+.searchInput .inputMiddle ,.searchInput .inputSmall{ color: #999;background: #fff;height: 18px;line-height: 18px;padding: 3px 0;text-indent: 5px;border: solid 1px #ccc;float: left;}
+.searchInput .inputSmall { width: 80px;margin: 0 0 0 10px;}
+.jPriceArea{ float: left;}
+.jText{ float: left;margin:3px 0 0 10px;}
+.searchInput button {
+	border: none;
+	width: 80px;
+	font-size: 12px;
+	letter-spacing: 4px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 26px;
+	margin-left:10px;
+	height: 26px;
+	overflow: hidden;
+	float: left;
+	background: #c11113;
+	background: -moz-linear-gradient(top, #e43638, #c11113);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e43638), to(#c11113));
+	background: -o-linear-gradient(top, #e43638, #c11113);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e43638', endColorstr='#c11113');
+}
+.searchInput button:hover {
+	background: #e43638;
+	background: -moz-linear-gradient(top, #ef4e50, #e43638);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ef4e50), to(#e43638));
+	background: -o-linear-gradient(top, #ef4e50, #e43638);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef4e50', endColorstr='#e43638');
+}
+.hotwords { margin: 4px 0 0 10px;float: left;}
+.hotwords a{ margin: 0 5px;	white-space: nowrap;color: #CC0000;}
+.hotwords a:hover{ text-decoration:none; }
+
+.x-box {
+	width:978px;
+	height: auto;
+	background: #fff;
+	border-bottom: 0px;
+	overflow:hidden;
+}
+.x-box ul{
+	width:1000px;
+	overflow:hidden;
+}
+.x-box ul li {
+	list-style: none;
+	width: 280px;
+	height: 372px;
+	padding: 14px;
+	margin-right: 24px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	float: left;
+	overflow: hidden;
+	background: url(store_images/bk.jpg) no-repeat;
+}
+.x-title {
+	width: 280px;
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+	text-align: center;
+}
+.x-box .x-info {
+	width: 280px;
+	height: 35px;
+	overflow: hidden;
+	background: #fff;
+}
+.x-pri {
+	width: 100px;
+	height: 35px;
+	text-align: left;
+	padding-left: 5px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #ff5886;
+	font-weight: bold;
+	float: left;
+}
+.x-pri,.x-pri a {
+	color: #e6aa35;
+}
+.x-gm {
+	width: 70px;
+	height: 22px;
+	background: #ff5886;
+	float: right;
+	text-align: center;
+}
+.x-gm a {
+	width: 70px;
+	height: 22px;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 22px;
+	display: block;
+	background: #ff5886;
+}
+.x-gm a {
+	background: #e6aa35;
+}
+.x-gm a:hover {
+	background: #000000;
+}
+.x-tip div {
+	width: 178px;
+	height: 30px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.x-tip .gz {
+	display: block;
+	width: 51px;
+	height: 20px;
+	overflow: hidden;
+	background:url(store_images/gz.png) top left no-repeat;
+	float: left;
+	margin: 5px 0 0 5px;
+	display: inline;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	opacity: 0.7;
+}
+.x-tip .gwc {
+	display: block;
+	width: 61px;
+	height: 20px;
+	overflow: hidden;
+	background: url(store_images/gwc.png)  top left no-repeat;
+	float: left;
+	margin: 5px 0 0 5px;
+	display: inline;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	opacity: 0.7;
+}
+.x-tip .gm {
+	display: block;
+	width: 51px;
+	height: 20px;
+	overflow: hidden;
+	background: url(store_images/gm.png)  top left no-repeat;
+	float: left;
+	margin: 5px 0 0 5px;
+	display: inline;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	opacity: 0.7;
+}
+
+/*商品柜样式*/
+.layout-one-right .jTab a:hover, .layout-one-right .jTab .current{
+	background:#98805e;
+	border-color:#98805e;
+	color:#fff;
+}
+.tempTitle{
+	width:990px;
+	overflow:hidden;
+	float:none;
+}
+.tempTitle .tempTitleLeft{
+	width: 100%;
+	height: 30px;
+	border-bottom: 2px solid #bfbfbf;
+	line-height: 30px;
+}
+.tempTitle .tempTitleLeft span{
+	float: left;
+	font-size: 20px;
+	color: #666;
+	margin:0 0 0 5px;
+}
+.temp .Jproduct .Jitem .jPic a{
+	display:block;
+	padding: 10px 0 0 0;
+}

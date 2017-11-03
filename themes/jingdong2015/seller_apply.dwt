@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js'}
+</head>
+<body class="user_center JD_userCenter">
+<!-- #BeginLibraryItem "/library/page_header_user.lbi" --><!-- #EndLibraryItem --> 
+<div class="hide"><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem --></div>
+<div class="JD_userMain">
+<div class="w main">
+	<div class="right">
+    	<Div class="ordercontainer"> 
+    <div class="box">
+     <div class="box_1">
+		<div class="userCenterBox boxCenterList clearfix" style="_height:1%;">
+        <div class="mc_order_hd ned">
+			<h3>{if $action == 'sellers_info'}商家入驻申请{else}{if $seller.is_check eq 1}您的入驻申请已通过{elseif $seller.is_check eq 0}您的信息正在审核中{elseif  $seller.is_check eq 2}您的申请未通过审核,原因:{$seller.remark}{/if}{/if}</h3>
+       	</div>
+		<div class="blank5"></div>
+            <form name="formSupp" action="sellers.php" method="post" enctype="multipart/form-data"   onSubmit="return supp_reg()" >
+                <div class="suppliers_form">
+                    <table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                      <!-- {foreach from=$seller_fields_list item=field} -->
+                      <!-- {if $field.type eq 'file'} -->
+                      <tr>
+                        <td align="right" width="85" class="user_l">{$field.reg_field_name}：</td>
+                        <td>
+                            <input  type="{$field.type}"  name="{$field.id}" {if $field.width}  width="{$field.width}" {/if} {if $field.height} height="{$field.height}" {/if} value="{$field.content}" />
+                            <!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!--{/if}-->
+                      </tr>
+                      {if $field.content}
+                      <tr>
+                      <td></td>
+                      <td><img src="{$field.content}" style="width:90px; height: 90px;"></td>
+                      </tr> 
+                      {/if}
+                      {elseif $field.type eq 'text'}
+                      <tr>
+                        <td align="right" width="85" class="user_l">{$field.reg_field_name}：</td>
+                        <td>
+                        <input type="{$field.type}" name="seller_info[{$field.id}]" {if $field.width}  width="{$field.width}" {/if} {if $field.height} height="{$field.height}" {/if} value="{$field.content}" /><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!--{/if}-->
+                        </td>
+                      </tr>
+                      {elseif $field.type eq 'textarea'}
+                      <tr>
+                        <td align="right" width="85" class="user_l">{$field.reg_field_name}：</td>
+                        <td>
+                        <textarea name="seller_info[{$field.id}]" {if $field.width && $field.height} style="max-height:{$field.height}px; max-width:{$field.width}px; min-height:{$field.height}px; min-width:{$field.width}px;" {/if} >{$field.content}</textarea><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!--{/if}-->
+                        </td>
+                      </tr>
+                      {elseif $field.type eq 'select'}
+                      <tr>
+                        <td align="right" width="85" class="user_l">{$field.reg_field_name}：</td>
+                        <td>
+                        <select name="seller_info[{$field.id}]" {if $field.width && $field.height}style="width:{$field.width}px; height:{$field.height}px;"{/if}>
+                        {foreach from=$field.select_options item=option}
+                        <option {if $field.content eq $option } selected="true" {/if} value="{$option}">{$option}</option>
+                        {/foreach}
+                        </select><!-- {if $field.is_need} --><span style="color:#FF0000"> *</span><!--{/if}-->
+                        </td>
+                      </tr>
+                      <!--{/if}-->
+                      <!--{/foreach}-->
+                      <tr>
+                        <td align="right" width="85" class="user_l">
+                        
+                        </td>
+                        <td align="left"><input type="checkbox" id="xieyi" name="xieyi" checked="checked" />《<a href="#">商家入驻协议</a>》</td> 
+                     </tr>
+                      {if $action == 'sellers_info'}
+                     <tr>
+                        <td align="left" width="140"  height="60" style="position:relative;">
+                        <input type="hidden" name="act" value="act_apply" />
+                        </td>
+                        <td align="left"><input type="submit" value="提交申请" name="submit"/></td> 
+                     </tr>
+                     {elseif $action == 'seller_edit'}
+                     <tr>
+                        <td align="left" width="140"  height="60" style="position:relative;">
+                        <input type="hidden" name="act" value="update" />
+                        </td>
+                        <td align="left"><input type="submit" value="修改申请信息" name="submit"/></td>
+                     </tr>
+                     {/if}
+                    </table>
+                </div>
+            </form>
+      </div>
+     </div>
+  </div>
+ </div>
+    </div>
+    <div class="left">
+    	<div id="myjd" class="m">
+        	<div class="mt"><h2><a href="user.php">我的京东</a></h2></div>
+            <!-- #BeginLibraryItem "/library/user_menu.lbi" --><!-- #EndLibraryItem -->
+        </div>
+    </div>
+    <div class="clr"></div>
+</div>
+</div>
+<!-- #BeginLibraryItem "/library/help.lbi" --> <!-- #EndLibraryItem --> 
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+{foreach from=$lang.clips_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+<script>
+function supp_reg()
+{
+	var xieyi=document.getElementById('xieyi');
+	if(!xieyi.checked)
+	{
+		alert('勾选入驻协议后才可以申请入驻');
+		return false;	
+	}
+}
+</script>
+</html>

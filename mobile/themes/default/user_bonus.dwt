@@ -1,0 +1,21 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="user-account-detail user-bonus">
+   <!-- {if $bonus} -->
+  <ul>
+
+        <!--{foreach from=$bonus item=item}-->
+       <li class="ect-color999">
+            <p class="title">$lang.bonus_sn}：{$item.bonus_sn|default:N/A}</p>
+            <p class="content"><span class="remark pull-left">{$lang.bonus_amount}：{$item.type_money}</span> <span class="pull-right text-right type">{$lang.bonus_name}：{$item.type_name}</span></p>
+            <p class="content"><span class="remark pull-left">{$lang.min_goods_amount}：{$item.min_goods_amount}</span> <span class="pull-right text-right type">{$lang.bonus_end_date}：{$item.use_enddate}</span></p>
+        </li>
+        <!--{/foreach}-->
+    </ul> <!-- {/if} -->
+     <div class="input-group">
+  <input type="text" class="form-control">
+  <span class="input-group-addon ect-bg">添加红包</span>
+</div>
+  </div>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

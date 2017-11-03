@@ -1,0 +1,65 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page">
+  <header id="header">
+  <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span></span></a></div>
+  <h1>登录/注册</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+  <div id="search_box">
+    <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem -->
+  </div>
+</header>
+</div>
+<section class="wrap" style="border-bottom:0;">
+  <div id="leftTabBox" class="loginBox InfoBox" style="background:#fafafa;">
+    <div class="bd" {if $action eq 'register'} style="display:none" {/if}>
+        <div class="table_box mt20">
+          <form name="formLogin" action="{:url('user/login')}" method="post" onSubmit="return userLogin()">
+          	<span class="new-input-span mb15"><input placeholder="{$lang.username}/{$lang.mobile}/{$lang.email}" name="username" type="text"  class="inputBg" id="username" /></span>
+            <span class="new-input-span mb15"><input placeholder="{$lang.label_password}"  name="password" type="password" class="inputBg" /></span>
+            <dl>
+              <dd>
+            <span><input placeholder="{$lang.no_code}"  name="captcha" class="inputBg captcha"  id="captcha" type="text" /></span><img class="pull-right" src="{:url('public/captcha', array('rand'=>$this->_var['rand']))}" alt="captcha" style="height:34px;vertical-align: middle; margin-left:5px;" onClick="this.src='{:url('public/captcha')}&t='+Math.random()"  />
+             </dd>
+            </dl>
+            <dl>
+              <dd>
+                <input type="checkbox" value="1" name="remember" id="remember" style="vertical-align:middle; zoom:150%;" /><label for="remember"> {$lang.remember}</label>
+              </dd>
+            </dl>
+            <dl>
+              <dd>
+                <input type="hidden" name="act" value="act_login" />
+                <input type="hidden" name="back_act" value="{$back_act}" />
+                <input type="submit" name="submit"  value="立即登陆" class="c-btn4" />
+              </dd>
+            </dl>
+          </form>
+          <div class="login-register">
+            <div class="new-tbl-type">
+            	<div class="new-tbl-cell"><a href="{:url('user/register')}" class="fl">{$lang.free_registered}</a></div>
+            	<div class="new-tbl-cell"><a href="{:url('user/get_password_phone')}" class="fr">{$lang.get_password}</a></div>
+            </div>
+          </div>
+          <div class="hezuo">
+            <p class="t">{$lang.third_login}</p>
+            <p class="b">
+              <a href="{:url('user/third_login',array('type'=>'qq'))}"><img src="__TPL__/images/quicklogin/qq.png"></a> 
+              <a href="{:url('user/third_login',array('type'=>'qq'))}"><img src="__TPL__/images/quicklogin/weibo.png"></a> 
+              <a href="{:url('user/third_login',array('type'=>'qq'))}"><img src="__TPL__/images/quicklogin/renren.png"></a>
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+</script>
+</body>
+</html>

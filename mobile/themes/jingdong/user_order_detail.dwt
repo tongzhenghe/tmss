@@ -1,0 +1,148 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span>返回</span></a></div>
+  <h1> {$lang.order_status} </h1>
+</header>
+<div class="wrap">
+  <section class="order-con">
+    <ul class="order-list">
+      <li>
+        <div class="order-box">
+          <div class="order-width">
+            <p>{$lang.order_number}：{$order.order_sn}</p>
+            <p>{$lang.order_money}：{$order.formated_total_fee}</p>
+            <p>{$lang.order_addtime}：{$order.formated_add_time}</p>
+            <p>{$lang.order_status}：{$order.order_status} {$order.pay_status} {$order.shipping_time}</p>
+            <p>付款时间：{$order.pay_time}</p>
+          </div>
+          <div class="pay-button"> 
+            {$order.handler} </div>
+        </div>
+      </li>
+      <li>
+        <div class="order-box">
+          <ul class="book-list">
+            <!-- {foreach from=$goods_list item=goods} -->
+            <li class="border-bottom"> <a href="{:url('goods/index', array('id'=>$this->_var['goods']['goods_id']))}">
+              <div class="order-msg"> <img class="img_ware" src="{$site_url}{$goods.goods_thumb}">
+                <div class="order-msg">
+                  <p class="title"> {$goods.goods_name}</p>
+                  <p class="price">{$goods.subtotal}<span></span></p>
+                  <p class="order-data">X{$goods.goods_number}</p>
+                </div>
+              </div>
+              </a> </li>
+            <!-- {/foreach} -->
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="order-box">
+          <div class="order-width">
+            <p class="border-bottom usr-name"> {$order.consignee}<span class="fr">{$order.tel}</span> </p>
+            <p class="usr-addr"> 
+              <!-- {if $order.exist_real_goods} --> 
+              {$order.address} 
+              <!-- {if $order.zipcode} --> 
+              {$order.zipcode} 
+              <!-- {/if} --> 
+              <!-- {/if}--> 
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="order-box">
+          <div class="order-width">
+            <p class="border-bottom usr-name">{$lang.select_payment}:<span class="fr">{$order.pay_name}</span></p>
+            <p>{$order.pay_desc}{if $order.order_amount gt 0}{$order.pay_online}{/if}</p>
+            <p>{$lang.goods_all_price}<!-- {if $order.extension_code eq "group_buy"} -->{$lang.gb_deposit}<!-- {/if} -->: {$order.formated_goods_amount} 
+              <!-- {if $order.discount gt 0} 折扣 --> 
+              - {$lang.discount}: {$order.formated_discount} 
+              <!-- {/if} --> 
+              <!-- {if $order.tax gt 0} --> 
+              + {$lang.tax}: {$order.formated_tax} 
+              <!-- {/if} --> 
+              <!-- {if $order.shipping_fee > 0} --> 
+              + {$lang.shipping_fee}: {$order.formated_shipping_fee} 
+              <!-- {/if} --> 
+              <!-- {if $order.insure_fee > 0} --> 
+              + {$lang.insure_fee}: {$order.formated_insure_fee} 
+              <!-- {/if} --> 
+              <!-- {if $order.pay_fee > 0} --> 
+              + {$lang.pay_fee}: {$order.formated_pay_fee} 
+              <!-- {/if} --> 
+              <!-- {if $order.pack_fee > 0} --> 
+              + {$lang.pack_fee}: {$order.formated_pack_fee} 
+              <!-- {/if} --> 
+              <!-- {if $order.card_fee > 0} --> 
+              + {$lang.card_fee}: {$order.formated_card_fee} 
+              <!-- {/if} --> 
+              <!-- {if $order.money_paid > 0} --> 
+              - {$lang.order_money_paid}: {$order.formated_money_paid} 
+              <!-- {/if} --> 
+              <!-- {if $order.surplus > 0} --> 
+              - {$lang.use_surplus}: {$order.formated_surplus} 
+              <!-- {/if} --> 
+              <!-- {if $order.integral_money > 0} --> 
+              - {$lang.use_integral}: {$order.formated_integral_money} 
+              <!-- {/if} --> 
+              <!-- {if $order.bonus > 0} --> 
+              - {$lang.use_bonus}: {$order.formated_bonus} 
+              <!-- {/if} --> 
+            </p>
+            <p> <span class="fr red">{$lang.order_amount}: {$order.formated_order_amount} </span> 
+              <!-- {if $order.extension_code eq "group_buy"} --><br />
+              {$lang.notice_gb_order_amount}<!-- {/if} --> 
+              
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="order-box">
+          <div class="order-width">
+            <p class="border-bottom usr-name">其他信息<span class="fr"></span></p>
+            <!-- {if $order.shipping_id > 0} -->
+            <p>{$lang.shipping}：{$order.shipping_name}</p>
+            <!-- {/if} -->
+            <p>{$lang.payment}： {$order.pay_name}</p>
+            <!-- {if $order.pack_name} 是否使用包装 -->
+            <p>{$lang.use_pack}：{$order.pack_name}</p>
+            <!-- {/if} 是否使用包装 --> 
+            <!-- {if $order.card_name} 是否使用贺卡 -->
+            <p>{$lang.use_card}：{$order.card_name}</p>
+            <!-- {/if} --> 
+            <!-- {if $order.card_message} 是否使用贺卡 -->
+            <p>{$lang.bless_note}：{$order.card_message}</p>
+            </p>
+            <!-- {/if} 是否使用贺卡 --> 
+            <!-- {if $order.surplus > 0} 是否使用余额 --> 
+            <!-- {/if} --> 
+            <!-- {if $order.integral > 0} 是否使用积分 -->
+            <p>{$lang.use_integral}{$order.integral}</p>
+            
+            <!-- {/if} 是否使用积分 --> 
+            <!-- {if $order.bonus > 0} 是否使用红包 --> 
+            <!-- {/if} --> 
+            <!-- {if $order.postscript} 是否有订单附言 -->
+            <p>{$lang.order_postscript}：{$order.postscript}</p>
+            
+            <!-- {/if} -->
+            <p>{$lang.booking_process}：{$order.how_oos_name}</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="order-box">
+          <div class="order-width"> 
+            <!-- {if $order.inv_payee && $order.inv_content} 是否开发票 -->
+            <p class="border-bottom usr-name">{$lang.invoice_title}：{$order.inv_payee}
+              {$lang.invoice_content}：{$order.inv_content}</p>
+            <!-- {/if} --> 
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+<!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->

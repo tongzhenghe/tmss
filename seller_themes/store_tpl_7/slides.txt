@@ -1,0 +1,3 @@
+/seller_themes/store_tpl_7/slide_imgs/banner_1.jpg
+/seller_themes/store_tpl_7/slide_imgs/banner_2.jpg
+/seller_themes/store_tpl_7/slide_imgs/banner_3.jpg

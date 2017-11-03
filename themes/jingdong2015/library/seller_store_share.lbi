@@ -1,0 +1,22 @@
+<div class="jPageExtra">
+    <div class="jExtraArea">
+        <a href="#nogo" class="iconShare">
+        <div class="jShareArea">
+            <ul>
+                <li id="sinaminiblog"><span class="iconWeibo"></span><em class="jText">新浪微博</em></li>
+                <li id="qqmb"><span class="iconQQ"></span><em class="jText">新浪微博</em></li>
+                <li id="neteasemb"><span class="icon163"></span><em class="jText">腾讯微博</em></li>
+                <li id="renren"><span class="iconRenren"></span><em class="jText">人人网</em></li>
+                <li id="qzone"><span class="iconQzone"></span><em class="jText">QQ空间</em></li>
+                <li id="mogujie"><span class="iconMogujie"></span><em class="jText">蘑菇街</em></li>
+                <li id="kaixin001"><span class="iconKaixin"></span><em class="jText">开心网</em></li>
+                <li id="douban"><span class="iconDouban"></span><em class="jText">豆瓣</em></li>
+                <li id="facebook"><span class="iconFacebook"></span><em class="jText">Facebook</em></li>
+                <li id="twitter"><span class="iconTwitter"></span><em class="jText">Twitter</em></li>
+            </ul>
+        </div>
+        <i>♦</i></a>
+        <a href="#nogo" class="iconCollect"><span class="emm" rel="sidebar" onclick="javascript:addFavorite_store();">收藏网页</span><i>♦</i></a>
+        <span class="iconTop"><span class="emm">返回顶部</span><i>♦</i></span>
+    </div>
+</div>

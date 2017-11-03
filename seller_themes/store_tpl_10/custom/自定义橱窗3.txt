@@ -1,0 +1,31 @@
+<div class="layout-two-left w215">
+<div class="fn-clear">
+<div class="mc">
+<div class="user-xt">
+<ul>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_10/custom_images/discount_1.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_10/custom_images/discount_2.jpg" /></a></li>
+<li><a href="#" target="_blank"><img src="/seller_themes/store_tpl_10/custom_images/discount_3.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-two-right w765">
+<div class="fn-clear user-lunbo">
+<div class="mc">
+<div class="jbanner">
+<ul class="jbannerTab">
+<li>ÂÖ²¥Í¼1</li>
+<li>ÂÖ²¥Í¼2</li>
+</ul>
+<div class="jbannerImg">
+<div class="jImgNodeArea">
+<ul><li><img src="/seller_themes/store_tpl_10/custom_images/banner_adv_1.jpg" /></li></ul>
+<ul><li><img src="/seller_themes/store_tpl_10/custom_images/banner_adv_2.jpg" /></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

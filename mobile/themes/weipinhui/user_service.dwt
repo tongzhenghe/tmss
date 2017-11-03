@@ -1,0 +1,36 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+<div class="flow-consignee ect-bg-colorf">
+<form action="{:url('user/service')}" method="post" enctype="multipart/form-data" name="formMsg" onSubmit="return submitMsg()">
+  <section>
+    <ul>
+      <li class="ect-radio ect-radio02">
+      	<div class="input-text">
+        <input name="msg_type" type="radio" id="msg-type0" checked="checked" value="0">
+        <label for="msg-type0">{$lang.type[0]}<i></i></label>
+        <input name="msg_type" type="radio" id="msg-type1" value="1">
+        <label for="msg-type1">{$lang.type[1]}<i></i></label>
+        <input name="msg_type" type="radio" id="msg-type2" value="2">
+        <label for="msg-type2">{$lang.type[2]}<i></i></label>
+        <input name="msg_type" type="radio" id="msg-type3" value="3">
+        <label for="msg-type3">{$lang.type[3]}<i></i></label>
+        <input name="msg_type" type="radio" id="msg-type4" value="4">
+        <label for="msg-type4">{$lang.type[4]}<i></i></label>
+        </div></li>
+      <li>
+        <div class="input-text"><b>{$lang.message_title}：</b><span>
+          <input name="msg_title" type="text" placeholder="{$lang.message_title}">
+          </span></div>
+      </li>
+      <li>
+        <div class="input-text"><b>{$lang.message_content}：</b>
+          <textarea name="msg_content" placeholder="{$lang.message_content}" cols="50" rows="4" wrap="virtual"></textarea>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div class="two-btn ect-padding-tb ect-padding-lr ect-margin-tb text-center goods-info">
+    <input type="submit" value="{$lang.submit}" class="btn btn-info" />
+  </div>
+</form>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->

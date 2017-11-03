@@ -1,0 +1,5 @@
+<div class="fn-clear" style="height:700px;">
+<div class="userDefinedArea" style="background:url(/seller_themes/store_tpl_11/custom_images/guanggao_1.jpg); width:100%; position:absolute; left:0; height:700px;">
+<a href="#" target="_blank"></a>
+</div>
+</div>

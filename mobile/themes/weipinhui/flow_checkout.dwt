@@ -1,0 +1,296 @@
+<div class="con" style="background:#e8e8e8">
+	<div style="height:3.7em;"></div>
+    <header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">{$title}</span>
+        <a href="./" class="Home"><span></span></a>
+    </header>
+    <div class="flow-checkout flow_cart_list" style="background:none; box-shadow:none;">
+    	<form action="{:url('flow/done')}" method="post" name="theForm" id="theForm" onSubmit="return checkOrderForm(this)">
+        	<script type="text/javascript">
+				var flow_no_payment = "{$lang.flow_no_payment}";
+				var flow_no_shipping = "{$lang.flow_no_shipping}";
+			</script>
+            
+            <!-- 收货信息 -->
+            <div class="OrderForm">
+            	<div class="title">
+                	<h3 class="panel-title"><span class="icon-info"></span>收货信息</h3>
+                </div>
+                <!-- 收货地址 -->
+            	<section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add">
+                    <a href="{:url('flow/consignee_list')}">
+                    	<label for="addressId{$con_list.address_id}">
+                        	<p class="title">{$consignee.consignee|escape} <span>{$consignee.mobile}</span></p>
+                            <p>{$consignee.address}</p>
+                            <i class="fa fa-angle-right"></i>
+                        </label>
+                    </a>
+                </section>
+                <!-- 配送方式 -->
+            	<section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add DeliveryBox">
+                    <!--{if $total.real_goods_count neq 0}-->
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="Delivery">
+                    	<label for="addressId{$con_list.address_id}">
+                            <p class="title">{$lang.shipping_method}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse in Delivery ">
+                    	<ul class="ect-radio">
+                        	<!-- {foreach from=$shipping_list item=shipping} 循环配送方式 -->
+                            <li><input name="shipping" type="radio" id="shipping_{$shipping.shipping_id}" value="{$shipping.shipping_id}"  {if $order.shipping_id eq $shipping.shipping_id}checked="true"{/if} supportCod="{$shipping.support_cod}" insure="{$shipping.insure}" onclick="selectShipping(this)"><label for="shipping_{$shipping.shipping_id}">{$shipping.shipping_name} [{$shipping.format_shipping_fee}]<i></i></label></li>
+                            <!-- {/foreach} 循环配送方式 -->
+                        </ul>
+                    </div>
+                    <!--{else}-->
+                    <input name="shipping"  type="radio" value = "-1" checked="checked" style="display:none" />
+                    <!--{/if}-->
+                </section>
+            </div>
+                        
+            <!-- 支付方式 -->
+            <div class="OrderForm">
+            	<div class="title">
+                	<h3 class="panel-title"><span class="icon-pay"></span>支付方式</h3>
+                </div>
+                <!-- 支付选择 -->
+                <section class="ect-margin-tb ect-padding-lr checkout-select DeliveryBox" id="accordion" style="border-top:0;">
+                	<!--{if $is_exchange_goods neq 1 || $total.real_goods_count neq 0}--> 
+                    <div id="collapseTwo" class="panel-collapse in Delivery">
+                    	<ul class="ect-radio bt0">
+                        	<!-- {foreach from=$payment_list item=payment} -->
+                            <li><input name="payment" type="radio" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true"{/if} style="vertical-align:middle"><label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]<i></i></label></li>
+                            <!-- {/foreach} -->
+                        </ul>
+                    </div>
+                    <!--{else}-->
+                    <input name = "payment" type="radio" value = "-1" checked="checked"  style="display:none"/>
+                    <!--{/if}-->
+                    
+                    <!-- {if $inv_content_list} 能否开发票 -->
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo1">
+                    	<p><b>{$lang.invoice}</b></p>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div id="collapseTwo1" class="panel-collapse collapse in" style="overflow:hidden;">
+                    	<li class="b_no">
+                        	<span class="modRadio fr"> <i class="fl"></i> <ins>{$lang.no}</ins> </span>
+                            <input name="need_inv" type="checkbox"  class="input" id="ECS_NEEDINV" onclick="changeNeedInv()" value="1"  {if $order.need_inv}checked="true"{/if} style="display:none"/>
+                        </li>
+                        <li>
+                        	<!-- {if $inv_type_list} --> 
+                            <span class="pull-left select-span">{$lang.invoice_type}</span>
+                            <div class="form-select pull-left">
+                            	<i class="fa fa-sort"></i>
+                                <select name="inv_type" id="ECS_INVTYPE"  onchange="changeNeedInv()" style="border:1px solid #ccc;">{html_options options=$inv_type_list selected=$order.inv_type}</select>
+                            </div>
+                        </li>
+                        <!-- {/if} -->
+                        <li><input name="inv_payee" type="text"  placeholder="{$lang.please_invoice_title}" class="input" id="ECS_INVPAYEE" size="20" value="{$order.inv_payee}" onblur="changeNeedInv()" /></li>
+                        <li>
+                        	<span class="pull-left select-span">{$lang.invoice_content}</span>
+                        	<div class="form-select pull-left">
+                            	<i class="fa fa-sort"></i>
+                                <select name="inv_type" id="ECS_INVCONTENT"  onchange="changeNeedInv()" style="border:1px solid #ccc;">{html_options values=$inv_content_list output=$inv_content_list selected=$order.inv_content}</select>
+                            </div>
+                        </li>
+                    </div>
+                    <!--{/if}-->
+                </section>
+                
+               
+                <section class="ect-margin-tb ect-padding-lr checkout-select checkout-add DeliveryBox">
+					<!-- {if $allow_use_bonus and $bonus_list} 是否使用红包 -->
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseBonus" class="Delivery">
+                    	<label for="addressId{$con_list.address_id}">
+                            <p class="title">{$lang.use_bonus}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseBonus" class="panel-collapse collapse in Delivery ">
+                    	<ul class="ect-radio">
+							 <li>
+							 	<input name="bonus" type="radio" class="radio"  id="bonus_0" value="0"  {if $order.bonus_id eq 0}checked="true"{/if}  onclick="changeBonus(this)">
+							 	<label for="bonus_0">{$lang.no_use_bonus}<i></i></label>
+							</li>
+                        	<!-- {foreach from=$bonus_list item=bonus} 循环配送方式 -->
+                            <li>
+								<input name="bonus" type="radio" class="radio"  id="bonus_{$bonus.bonus_id}" value="{$bonus.bonus_id}" 
+								{if $order.bonus_id eq $bonus.bonus_id}checked="true"{/if} onclick="changeBonus(this)" />
+						  		<label for="bonus_{$bonus.bonus_id}">{$bonus.type_name}[{$bonus.bonus_money_formated}]<i></i></label>
+							</li>
+                            <!-- {/foreach} 循环配送方式 -->
+                        </ul>
+                    </div>
+					
+					
+					<!-- {/if} 是否使用红包 -->
+                <!-- {if $allow_use_surplus} 是否使用余额 -->
+                	<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour1" class="Delivery">
+                    	<label>
+                    		<p class="title">{$lang.use_surplus}</p>
+                        	<i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseFour1" class="panel-collapse collapse in Otherpay">
+                    	<div style="padding-top:.83em;">{$lang.your_surplus}{$your_surplus|default:0}<br /><span id="ECS_SURPLUS_NOTICE"></span><input name="surplus" type="text" id="ECS_SURPLUS" size="10" value="{$order.surplus|default:0}" onblur="changeSurplus(this.value)" {if $disable_surplus}disabled="disabled"{/if} /></div>
+                    </div>
+                </section>
+                <!-- {/if} 是否使用余额 -->
+                
+                <!-- 使用积分 -->
+                <!-- {if $allow_use_integral} 是否使用积分 -->
+                <section class="ect-margin-tb ect-padding-lr checkout-select checkout-add DeliveryBox">
+                	<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive1" class="Delivery">
+                    	<label>
+                            <p class="title">{$lang.use_integral}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseFive1" class="panel-collapse collapse in Otherpay">
+                        <div style="padding-top:.83em;">{$lang.can_use_integral}:{$your_integral|default:0} {$points_name}，{$lang.noworder_can_integral}{$order_max_integral}  {$points_name}.<br /><span id="ECS_INTEGRAL_NOTICE" class="notice"></span><input name="integral" type="text" class="input" id="ECS_INTEGRAL" onblur="changeIntegral(this.value)" value="{$order.integral|default:0}" size="10" /></div>
+                    </div>
+                </section>
+                <!-- {/if} 是否使用积分 -->
+                                <!-- {if $pack_list || $card_list} 是否有包装 或贺卡 -->
+                <!-- {if $pack_list} 是否有包装 -->
+                <section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add DeliveryBox">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="Delivery">
+                        <label>
+                            <p class="title">{$lang.goods_package}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse in Delivery">
+                        <ul class="ect-radio">
+                            <li>
+                                <input name="pack" type="radio" id="pack_{$pack.pack_id}" value="0" {if $order.pack_id eq 0}checked="true"{/if} onclick="selectPack(this)"supportCod="{$shipping.support_cod}" insure="{$shipping.insure}" >
+                                <label for="pack_{$pack.pack_id}">{$lang.no_pack}<i></i></label>
+                            </li>
+                            <!-- {foreach from=$pack_list item=pack} 循环包装 -->
+                            <li>
+                                <input type="radio" class="radio" name="pack" id="pack_{$pack.pack_id}" value="{$pack.pack_id}" {if $order.pack_id eq $pack.pack_id}checked="true"{/if} onclick="selectPack(this)" />
+                                <label for="pack_{$pack.pack_id}">{$pack.pack_name}[{$pack.format_pack_fee}][{$lang.free_money}:{$pack.format_free_money}]<i></i></label>
+                            </li>
+                            <!-- {/foreach} 循环包装 -->
+                        </ul>
+                    </div>
+                </section>
+                <!--{/if}-->
+                <!-- {if $card_list} 是否有贺卡 --> 
+                <section class="checkout-select ect-margin-tb ect-padding-lr ect-padding-tb checkout-add DeliveryBox">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="Delivery">
+                        <label>
+                            <p class="title">{$lang.goods_card}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseFour" class="panel-collapse collapse in Otherpay Delivery" style="padding:0; border:0;">
+                        <ul class="ect-radio">
+                            <li>
+                                <input name="card" type="radio"  value="0" {if $order.card_id eq 0}checked="true"{/if} onclick="selectCard(this)" id="card_0" />
+                                <label for="card_0">{$lang.no_card}<i></i></label>
+                            </li>
+                            <!-- {foreach from=$card_list item=card} 循环贺卡 -->
+                            <li class="">
+                                <input name="card" type="radio" id="card_{$card.card_id}" value="{$card.card_id}" {if $order.card_id eq $card.card_id}checked="true"{/if} onclick="selectCard(this)">
+                                <label for="card_{$card.card_id}">{$card.card_name}[{$card.format_card_fee}][{$lang.free_money}:{$card.format_free_money}]<i></i></label>
+                                <input name="" type="text" class="fuyan" placeholder="{$lang.bless_note}">
+                            </li>
+                            <!-- {/foreach} 循环贺卡 -->
+                        </ul>
+                    </div>
+                </section>
+                <!--{/if}-->
+                <!--{/if}-->
+            </div>
+            
+            <!-- 商品清单 -->
+            <div class="OrderForm">
+            	<div class="title">
+                	<h3 class="panel-title"><span class="icon-list"></span>{$lang.goods_list}<!--{if $allow_edit_cart} --><a href="{:url('flow/index')}" class="ect-colorf">{$lang.modify}</a><!--{/if} --></h3>
+                </div>
+                <!-- 商品列表 -->
+                <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list DeliveryBox">
+                	<div class="FlowProList">
+                    	<ul>
+                        	<!-- {foreach from=$goods_list item=goods} -->
+                        	<li>
+                            	<dl>
+                                	<dt class="pull-left">
+                                    	<!-- {if $goods.goods_id gt 0 && $goods.extension_code eq 'package_buy'} -->
+                                        <a href="javascript:void(0)" onClick="setSuitShow({$goods.goods_id})" >{$goods.goods_name}<span style="color:#FF0000;">（{$lang.remark_package}）</span></a> 
+                                        <!-- { else } --> 
+                                        <a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}" target="_blank" >{$goods.goods_name}</a> 
+                                        <!-- {if $goods.parent_id > 0} --> 
+                                        <span style="color:#FF0000">（{$lang.accessories}）</span> 
+                                        <!-- {elseif $goods.is_gift} --> 
+                                        <span style="color:#FF0000">（{$lang.largess}）</span> 
+                                        <!-- {/if} --> 
+                                        <!-- {/if} --> 
+                                        <!-- {if $goods.is_shipping} -->(<span style="color:#FF0000">{$lang.free_goods}</span>)<!-- {/if} -->
+                                    </dt>
+                                    <dd class="pull-left list-num">x {$goods.goods_number}</dd>
+                                    <dd class="pull-right">{$goods.formated_subtotal}</dd>
+                                </dl>
+                            </li>
+                            <!-- {/foreach} -->
+                        </ul>
+                    </div>
+                </section>
+                <!-- 订单留言 -->
+                <section class="ect-margin-tb ect-padding-lr checkout-select checkout-add DeliveryBox">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="Delivery">
+                    	<label>
+                            <p class="title">{$lang.order_postscript}</p>
+                            <i class="fa fa-angle-down"></i>
+                        </label>
+                    </a>
+                    <div id="collapseFive" class="panel-collapse collapse in Otherpay">
+                    	<input name="postscript" type="text" class="fuyan" placeholder="{$lang.please_order_postscript}">
+                    </div>
+                </section>
+            </div>
+            
+            <!-- 订单金额 -->
+            <div class="OrderForm">
+            	<div class="title">
+                	<h3 class="panel-title"><span class="icon-money"></span>订单金额</h3>
+                </div>
+                <!-- 订单金额详细 -->
+            	<section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add OrderDetail" id="content_list">
+                	<!-- #BeginLibraryItem "/Library/order_total02.lbi" --><!-- #EndLibraryItem -->
+                </section>
+
+            </div>
+                  
+			<div class="navbarDefault" id="ECS_ORDERTOTAL">
+            	<!-- #BeginLibraryItem "/Library/order_total.lbi" --><!-- #EndLibraryItem -->
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script> 
+<script src="__TPL__/js/TouchSlide.1.1.js"></script> 
+<script src="__TPL__/js/ectouch.js"></script> 
+<script src="__TPL__/js/simple-inheritance.min.js"></script> 
+<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script> 
+<script src="__TPL__/js/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script> 
+<script>
+$(function(){
+	var w=$("body").offset().left;
+	$(".navbarDefault").css({left:w});
+	$(window).resize(function(){
+		w=$("body").offset().left;
+		$(".navbarDefault").css({left:w});
+	});
+});
+</script>

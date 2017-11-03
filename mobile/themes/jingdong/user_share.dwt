@@ -1,0 +1,56 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a onclick="javascript:history.go(-1);"><span></span></a></div>
+  <h1> {$lang.label_message} </h1>
+</header>
+<!-- {if $share.on eq 1} --> 
+<!-- {if !$goodsid || $goodsid eq 0} -->
+<div class="InfoBox">
+  <section class="order_box padd1 radius10 single_item">
+    <table width="100%" border="0" cellpadding="1" cellspacing="0" class="ectouch_table">
+      <tr align="left">
+        <td style="padding:5px 0;">{$affiliate_intro}</td>
+      </tr>
+    </table>
+  </section>
+  <section class="order_box padd1 radius10 single_item">
+    <table width="100%" border="0" cellpadding="5" cellspacing="0" class="ectouch_table">
+      <tr align="center">
+        <td style="padding:5px 0;">{$lang.affiliate_lever}</td>
+        <td>{$lang.affiliate_num}</td>
+        <td>{$lang.level_point}</td>
+        <td>{$lang.level_money}</td>
+      </tr>
+      <!-- {foreach from=$affdb key=level item=val name=affdb} -->
+      <tr align="center">
+        <td>{$level}</td>
+        <td>{$val.num}</td>
+        <td>{$val.point}</td>
+        <td>{$val.money}</td>
+      </tr>
+      <!-- {/foreach} -->
+    </table>
+  </section>
+  <section class="order_box padd1 radius10 single_item"> 
+    <!-- {if $qr_img} -->
+    <table width="100%" border="0" cellpadding="5" cellspacing="0" class="ectouch_table">
+      <tr align="center">
+        <td>分享到朋友圈或扫描二维码关注</td>
+      </tr>
+      <tr align="center">
+        <td><img src="{$qr_img}" width="280" height="280"></td>
+      </tr>
+    </table>
+    <!-- {else} -->
+    <table width="100%" border="0" cellpadding="5" cellspacing="0" class="ectouch_table">
+      <tr align="center">
+        <td style="padding:5px 0;">推荐代码：<a href="{$shopurl}?u={$userid}" target="_blank" class="f6" style="line-height:1.5;">{$shopname}</a> 可调用在线分享</td>
+      </tr>
+    </table>
+    <!-- {/if} --> 
+  </section>
+</div>
+<!-- {/if} --> 
+<!-- {/if} --> 
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+</body></html>

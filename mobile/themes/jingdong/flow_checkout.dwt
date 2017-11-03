@@ -1,0 +1,237 @@
+<div id="page">
+  <header id="header">
+    <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span></span></a></div>
+    <h1>{$title}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box">
+      <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --> </div>
+  </header>
+</div>
+<section class="wrap" style="border-bottom:0;">
+  <form action="{:url('flow/done')}" method="post" name="theForm" id="theForm" onSubmit="return checkOrderForm(this)">
+    <script type="text/javascript">
+        var flow_no_payment = "{$lang.flow_no_payment}";
+        var flow_no_shipping = "{$lang.flow_no_shipping}";
+        </script>
+    <section class="order_box padd1 radius10" style="padding-top:0">
+      <div class="in">
+        <div class="title">{$lang.consignee_info}</div>
+        <div class="table_box table_box1">
+          <div class="Info"> <a href="{:url('flow/consignee')}" style="padding-left:10px;"> <span class="text">{$consignee.consignee|escape}<span class="phone-num">{$consignee.tel}</span></span> <span class="text2">{$consignee.address|escape}</span> </a> <span class="icon-arr"></span> </div>
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1">
+      <div class="title">{$lang.shipping_method}<span class="span1 radius5">{$lang.require_field}</span></div>
+      <div class="table_box table_box2">
+        <div class="Info InfoBox"> 
+          <!--{if $total.real_goods_count neq 0}-->
+          <dl style="border:0;">
+            <dd class="dd2" id="selected1">{$lang.select_shipping_method}</dd>
+            <i class="icon-arr icon-arr-bottom icon-arr-Top"></i>
+          </dl>
+          <div class="dl_box" id="shipping" style="display:none; border-top:1px solid #f3f3f3;"> 
+            <!-- {foreach from=$shipping_list item=shipping} 循环配送方式 -->
+            <p>
+              <input name="shipping" type="radio" class="radio" id="shipping_{$shipping.shipping_id}" style="vertical-align:middle" onclick="selectShipping(this)" value="{$shipping.shipping_id}" {if $order.shipping_id eq $shipping.shipping_id}checked="true"{/if} supportCod="{$shipping.support_cod}" insure="{$shipping.insure}" />
+              <label for="shipping_{$shipping.shipping_id}"> {$shipping.shipping_name} [{$shipping.format_shipping_fee}]</label>
+            </p>
+            <!-- {/foreach} 循环配送方式 --> 
+            <!--  <input name="need_insure" id="ECS_NEEDINSURE" type="checkbox"  onclick="selectInsure(this.checked)" value="1" {if $order.need_insure}checked="true"{/if} {if $insure_disabled}disabled="true"{/if}  />
+                {$lang.need_insure}--> 
+          </div>
+          <!--{else}-->
+          <input name="shipping"  type="radio" value = "-1" checked="checked"  style="display:none"/>
+          <!--{/if}-->   
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1">
+      <div class="title">{$lang.payment_method}<span class="span1 radius5">{$lang.require_field}</span></div>
+      <div class="table_box table_box2">
+        <div class="Info InfoBox"> 
+          <!--{if $is_exchange_goods neq 1 || $total.real_goods_count neq 0}-->
+          <dl style="border:0;">
+            <dd class="dd2 selectPayment" id="selected2">{$lang.select_payment_method}</dd>
+            <i class="icon-arr icon-arr-bottom icon-arr-Top"></i>
+          </dl>
+          <div class="dl_box" id="payment" style="display:none; border-top:1px solid #f3f3f3;"> 
+            <!-- {foreach from=$payment_list item=payment} -->
+            <p>
+              <input type="radio" class="radio" name="payment" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true"{/if} style="vertical-align:middle" />
+              <label for="payment_{$payment.pay_id}"> {$payment.pay_name} [{$payment.format_pay_fee}]</label>
+            </p>
+            <!-- {/foreach} --> 
+          </div>
+          <!--{else}-->
+          <input name = "payment" type="radio" value = "-1" checked="checked"  style="display:none"/>
+          <!--{/if}--> 
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1">
+    <!-- {if $inv_content_list} 能否开发票 -->
+      <div class="title">{$lang.invoice}</div>
+      <div class="table_box table_box2">
+        <div class="Info InfoBox"> <span class="text f_l">{$lang.is_invoice}</span>
+          <spam class="f_r selectPayment">
+          <span class="modRadio fl" style="margin-top:3px;"> {if $order.need_inv ==1}<i class="fr"></i> <ins>{$lang.yes}</ins>{else}<i class="fl"></i> <ins>{$lang.no}</ins> </span> </span> <i style="background:#fff;"></i>{/if} 
+           <input id="ECS_NEEDINV" class="input" type="hidden" value="0"  name="need_inv">
+        </div>
+        <div class="dl_box" id="inviype_box" style="{if $order.need_inv == 0}display:none;{/if} padding:0 30px 0 10px; border-bottom:1px solid #f3f3f3;"> 
+          
+          <dl style="line-height: 40px;">
+            <dd class="c333">{$lang.invoice_type}</dd>
+            <dd> 
+              <!-- {if $inv_type_list} --> 
+              {$lang.invoice_type}
+              <select name="inv_type" id="ECS_INVTYPE"  onchange="changeNeedInv(1)" style="border:1px solid #ccc;">
+                    {html_options options=$inv_type_list selected=$order.inv_type}
+              </select>
+              <!-- {/if} --> 
+            </dd>
+          </dl>
+          <dl style="line-height: 40px;">
+            <dd class="c333">{$lang.invoice_title}</dd>
+            <dd>
+              <input name="inv_payee" type="text"  class="input" id="ECS_INVPAYEE" size="20" value="{$order.inv_payee}" onblur="changeNeedInv(1)" />
+            </dd>
+          </dl>
+          <dl style="line-height: 40px;">
+            <dd class="c333"> {$lang.invoice_content} </dd>
+            <dd>
+              <select name="inv_content" id="ECS_INVCONTENT"  onchange="changeNeedInv(1)" style="border:1px solid #ccc;">
+                
+
+                {html_options values=$inv_content_list output=$inv_content_list selected=$order.inv_content}
+                   
+              </select>
+            </dd>
+          </dl>
+          
+        </div>
+      </div>
+      <!-- {/if} --> 
+    </section>
+    <section class="order_box padd1" style="padding:0; border-bottom:1px solid #f3f3f3;">
+      <div class="title">{$lang.use_bonus}</div>
+      <div class="table_box table_box2"> 
+        
+        <!-- {if $allow_use_bonus} 是否使用红包 -->
+        <div class="Info InfoBox">
+          <dl style="border:0;">
+            <dd class="dd2 selectPayment" id="selected4">{$lang.no_select}</dd>
+            <i class="icon-arr icon-arr-bottom icon-arr-Top"></i>
+          </dl>
+          <div class="dl_box" id="bonus_box" style="display:none;"> 
+            <!-- {foreach from=$bonus_list item=bonus} -->
+            <p>
+              <input name="bonus" type="radio" id="bonus_{$bonus.bonus_id}" class="radio" value="0" {if $order.bonus_id eq 0}selected{/if} onclick="changeBonus(this.value)" />
+              <label for="bonus_{$bonus.bonus_id}"> {$lang.no_use_bonus}</label>
+            </p>
+            <p>
+              <input name="bonus" type="radio" id="bonus_{$bonus.bonus_id}" class="radio" value="{$bonus.bonus_id}"  onclick="changeBonus(this.value)" />
+              <label for="bonus_{$bonus.bonus_id}"> {$bonus.type_name}[{$bonus.bonus_money_formated}]</label>
+            </p>
+            <!-- {/foreach} --> 
+          </div>
+          <!-- {/if} 是否使用红包 --> 
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1" style="padding:0; border-bottom:1px solid #f3f3f3;">
+      <div class="title">{$lang.goods_package}</div>
+      <div class="table_box table_box2"> 
+        
+        <!-- {if $pack_list} 是否有包装 -->
+        <div class="Info InfoBox">
+          <dl style="border:0;">
+            <dd class="dd2 selectPayment" id="selected5">{$lang.no_select}</dd>
+            <i class="icon-arr icon-arr-bottom icon-arr-Top"></i>
+          </dl>
+          <div class="dl_box" id="package_box" style="display:none; border-top:1px solid #f3f3f3;">
+            <p>
+              <input type="radio" class="radio"  name="pack" id="pack_{$pack.pack_id}" value="0" {if $order.pack_id eq 0}checked="true"{/if} onclick="selectPack(this)" style="vertical-align:middle;" />
+              <label for="pack_{$pack.pack_id}"> {$lang.no_pack}</label>
+            </p>
+            <!-- {foreach from=$pack_list item=pack} 循环包装 -->
+            <p>
+              <input type="radio" class="radio" name="pack" id="pack_{$pack.pack_id}" value="{$pack.pack_id}" {if $order.pack_id eq $pack.pack_id}checked="true"{/if} onclick="selectPack(this)" style="vertical-align:middle;" />
+              <label for="pack_{$pack.pack_id}"> {$pack.pack_name}[{$pack.format_pack_fee}]</label>
+            </p>
+            <!-- {/foreach} 循环包装 --> 
+          </div>
+          <!-- {/if} 是否使用包装 --> 
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1" style="padding:0; border-bottom:1px solid #f3f3f3;">
+      <div class="title">{$lang.goods_card}</div>
+      <div class="table_box table_box2"> 
+        
+        <!-- {if $card_list} 是否有贺卡 -->
+        <div class="Info InfoBox">
+          <dl style="border:0;">
+            <dd class="dd2 selectPayment" id="selected6">{$lang.no_select}</dd>
+            <i class="icon-arr icon-arr-bottom icon-arr-Top"></i>
+          </dl>
+          <div class="dl_box" id="card_box" style="display:none; padding:0px 30px 0px 10px; border-top:1px solid #f3f3f3;">
+            <p>
+              <input type="radio" class="radio"  name="card" id="card_{$card.card_id}" value="0" {if $order.card_id eq 0}checked="true"{/if} onclick="selectCard(this)" style="vertical-align:middle;" />
+              <label for="card_{$card.card_id}"> {$lang.no_card}</label>
+            </p>
+            <!-- {foreach from=$card_list item=card} 循环贺卡 -->
+            <p>
+              <input type="radio" class="radio"  name="card"  id="card_{$card.card_id}" value="{$card.card_id}" {if $order.card_id eq $card.card_id}checked="true"{/if} onclick="selectCard(this)" style="vertical-align:middle;"  />
+              <label for="card_{$card.card_id}"> {$card.card_name}[{$card.format_card_fee}]</label>
+            </p>
+            <!-- {/foreach} 循环贺卡 --> 
+          </div>
+          <!-- {/if} 是否使用贺卡 --> 
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1" style="padding:0;">
+      <div class="title">{$lang.order_postscript}</div>
+      <div class="table_box table_box2">
+        <div class="Info InfoBox">
+          <input placeholder="{$lang.please_order_postscript}" name="inv_payee" type="text"   size="20" style=" width:100%; padding:8px 0;"  />
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section class="order_box padd1 radius10" style="padding-top:0;padding-bottom:0;">
+      <div class="title">{$lang.goods_list}<!--{if $allow_edit_cart} --><a href="{:url('flow/index')}" class="modify radius5">{$lang.modify}</a><!--{/if} --></div>
+      <div class="table_box table_box3">
+        <div class="Info InfoBox"> 
+          <!-- {foreach from=$goods_list item=goods} -->
+          <dl>
+            <dd class="dd1 w60"> 
+              <!-- {if $goods.goods_id gt 0 && $goods.extension_code eq 'package_buy'} --> 
+              <a href="javascript:void(0)" onClick="setSuitShow({$goods.goods_id})" >{$goods.goods_name}<span style="color:#FF0000;">（{$lang.remark_package}）</span></a> 
+              <!-- { else } --> 
+              <a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}" target="_blank" >{$goods.goods_name}</a> 
+              <!-- {if $goods.parent_id > 0} --> 
+              <span style="color:#FF0000">（{$lang.accessories}）</span> 
+              <!-- {elseif $goods.is_gift} --> 
+              <span style="color:#FF0000">（{$lang.largess}）</span> 
+              <!-- {/if} --> 
+              <!-- {/if} --> 
+              <!-- {if $goods.is_shipping} -->(<span style="color:#FF0000">{$lang.free_goods}</span>)<!-- {/if} --> 
+            </dd>
+            <dd class="dd2 w10 c999"> x {$goods.goods_number} </dd>
+            <dd class="dd3 w30"> {$goods.formated_subtotal} </dd>
+          </dl>
+          <!-- {/foreach} --> 
+        </div>
+        <div class="totle"> <span class="bg-border"><span class="icon"></span></span>
+          <div class="InfoBox"><!-- #BeginLibraryItem "/Library/order_total.lbi" --><!-- #EndLibraryItem --></div>
+          <span class="bg-border2"></span> </div>
+      </div>
+    </section>
+    <div class="InfoBox" style="padding:0 10px;">
+      <input type="submit" name="submit" value="{$lang.order_submit}" class="c-btn3" />
+      <input type="hidden" name="step" value="done" />
+    </div>
+  </form>
+</section>

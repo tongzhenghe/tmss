@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81ebcd60-0720-45c4-b490-1fc1b01dd553" name="默认的" comment="" />
+    <ignored path="TMSS.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TMSS" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mobile/themes/weipinhui/library/page_footer.lbi" />
+        <option value="$PROJECT_DIR$/mobile/include/apps/default/controller/GoodsController.class.php" />
+        <option value="$PROJECT_DIR$/mobile/index.php" />
+        <option value="$PROJECT_DIR$/mobile/include/apps/default/common/function.php" />
+        <option value="$PROJECT_DIR$/mobile/include/apps/admin/view/index.php" />
+        <option value="$PROJECT_DIR$/mobile/include/apps/admin/view/login.php" />
+        <option value="$PROJECT_DIR$/mobile/themes/weipinhui/index.dwt" />
+        <option value="$PROJECT_DIR$/mobile/themes/weipinhui/library/page_header.lbi" />
+        <option value="$PROJECT_DIR$/includes/modules/shipping/fpd.php" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/recommend_promotion.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/page_header_index.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/page_header_sl.lbi" />
+        <option value="$PROJECT_DIR$/affiliate.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/languages/zh_cn/admin/common.php" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_priv.php" />
+        <option value="$PROJECT_DIR$/languages/zh_cn/admin/priv_action.php" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_menu.php" />
+        <option value="$PROJECT_DIR$/admin/templates/customer_list.html" />
+        <option value="$PROJECT_DIR$/languages/zh_cn/admin/customer_order.php" />
+        <option value="$PROJECT_DIR$/admin/templates/pageheader1.html" />
+        <option value="$PROJECT_DIR$/category1.php" />
+        <option value="$PROJECT_DIR$/goods.php" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/user_passport.dwt" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/style.css" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/index.dwt" />
+        <option value="$PROJECT_DIR$/languages/zh_cn/user.php" />
+        <option value="$PROJECT_DIR$/admin/templates/pageheader1.htm" />
+        <option value="$PROJECT_DIR$/user.php" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/store_tpl_1/seller_store.dwt" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/page_header_sl1.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/store_header1.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/store_tpl_1/seller_store_goods.dwt" />
+        <option value="$PROJECT_DIR$/admin/templates/page1.html" />
+        <option value="$PROJECT_DIR$/admin/goods_batch.php" />
+        <option value="$PROJECT_DIR$/admin/templates/goods_info.htm" />
+        <option value="$PROJECT_DIR$/mobile/include/apps/admin/common/function.php" />
+        <option value="$PROJECT_DIR$/admin/goods.php" />
+        <option value="$PROJECT_DIR$/category.php" />
+        <option value="$PROJECT_DIR$/admin/order.php" />
+        <option value="$PROJECT_DIR$/languages/zh_cn/admin/order.php" />
+        <option value="$PROJECT_DIR$/admin/includes/lib_goods.php" />
+        <option value="$PROJECT_DIR$/admin/templates/page1.htm" />
+        <option value="$PROJECT_DIR$/admin/templates/order_list.htm" />
+        <option value="$PROJECT_DIR$/admin/customer_order.php" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/css/css.css" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/page_footer.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/library/page_footer1.lbi" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/category.dwt" />
+        <option value="$PROJECT_DIR$/themes/jingdong2015/css/css1.css" />
+        <option value="$PROJECT_DIR$/admin/templates/customer_list.htm" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dm" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\TMSS\themes\jingdong2015\library\css" />
+      <recent name="D:\WWW\TMSS\themes\jingdong2015\images" />
+      <recent name="D:\WWW\TMSS\themes\jingdong2015\css" />
+      <recent name="D:\WWW\TMSS\mobile\data\assets\admin\images" />
+      <recent name="D:\WWW\TMSS\mobile\themes\weipinhui\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81ebcd60-0720-45c4-b490-1fc1b01dd553" name="默认的" comment="" />
+      <created>1450153120327</created>
+      <updated>1450153120327</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20259939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48653197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48653197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20259939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/goods.php</url>
+          <line>158</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/images/201602/thumb_img/3_thumb_G_1455753411503.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/upload/20151219/14505124334410.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/images/06.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/cls_image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="66" selection-start="1687" selection-end="1702" vertical-scroll-proportion="0.4452975" vertical-offset="728" max-vertical-offset="17904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/seller_16/reg_27.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/seller_16/reg_28.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/seller_14/reg_28.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/seller_14/reg_27.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/bcastr.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3024" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/缃戠珯TOP2 (1).jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/1456449318295868191.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/1456449318253768706.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/8.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/04.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/images/order/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/order/04.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/order/03.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/order/02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.73704416" vertical-offset="768" max-vertical-offset="18720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lib_common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="9" selection-start="6307" selection-end="6307" vertical-scroll-proportion="-1.1669866" vertical-offset="5264" max-vertical-offset="78912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/message_view.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="984" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="745" column="9" selection-start="18798" selection-end="18798" vertical-scroll-proportion="-0.061420344" vertical-offset="17648" max-vertical-offset="20784" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/zh_cn/admin/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="8" selection-start="6950" selection-end="6950" vertical-scroll-proportion="-7.512476" vertical-offset="8858" max-vertical-offset="9552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/zh_cn/admin/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="21" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.22648752" vertical-offset="962" max-vertical-offset="8664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/pageheader.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="12" selection-start="1138" selection-end="1138" vertical-scroll-proportion="1.1842611" vertical-offset="55" max-vertical-offset="864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/pageheader1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="67" selection-start="871" selection-end="871" vertical-scroll-proportion="0.96737045" vertical-offset="0" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_auto.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4548945" vertical-offset="1800" max-vertical-offset="2688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_batch_add.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.0729368" vertical-offset="1080" max-vertical-offset="2448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_batch_confirm.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9808061" vertical-offset="511" max-vertical-offset="1032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_batch_edit.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="101" selection-start="4331" selection-end="4331" vertical-scroll-proportion="-0.13819578" vertical-offset="2160" max-vertical-offset="2832" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_batch_select.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.7639155" vertical-offset="1440" max-vertical-offset="5520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_export.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-10.917466" vertical-offset="5688" max-vertical-offset="17520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_info.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="10" selection-start="1712" selection-end="1725" vertical-scroll-proportion="-6.8176584" vertical-offset="4392" max-vertical-offset="29496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/lib_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="969" column="4" selection-start="31596" selection-end="31632" vertical-scroll-proportion="0.5834933" vertical-offset="22688" max-vertical-offset="33216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="21" selection-start="3654" selection-end="3654" vertical-scroll-proportion="0.18426104" vertical-offset="1512" max-vertical-offset="7176">
+          <folding>
+            <element signature="e#4864#19126#0" expanded="false" />
+            <element signature="e#19264#48012#0" expanded="false" />
+            <element signature="e#48145#52688#0" expanded="false" />
+            <element signature="e#52821#53286#0" expanded="false" />
+            <element signature="e#53420#53784#0" expanded="false" />
+            <element signature="e#53918#54589#0" expanded="false" />
+            <element signature="e#54591#55209#0" expanded="false" />
+            <element signature="e#55239#56301#0" expanded="false" />
+            <element signature="e#56302#56718#0" expanded="false" />
+            <element signature="e#56746#57886#0" expanded="false" />
+            <element signature="e#58020#58691#0" expanded="false" />
+            <element signature="e#58827#59452#0" expanded="false" />
+            <element signature="e#59586#59923#0" expanded="false" />
+            <element signature="e#60059#60390#0" expanded="false" />
+            <element signature="e#60526#60853#0" expanded="false" />
+            <element signature="e#60989#61316#0" expanded="false" />
+            <element signature="e#61450#61794#0" expanded="false" />
+            <element signature="e#61930#63685#0" expanded="false" />
+            <element signature="e#63818#64316#0" expanded="false" />
+            <element signature="e#64454#64953#0" expanded="false" />
+            <element signature="e#65087#69114#0" expanded="false" />
+            <element signature="e#69248#69579#0" expanded="false" />
+            <element signature="e#69711#70690#0" expanded="false" />
+            <element signature="e#70831#71299#0" expanded="false" />
+            <element signature="e#71434#72750#0" expanded="false" />
+            <element signature="e#72884#74381#0" expanded="false" />
+            <element signature="e#74516#75548#0" expanded="false" />
+            <element signature="e#75683#76616#0" expanded="false" />
+            <element signature="e#76749#77531#0" expanded="false" />
+            <element signature="e#77666#78525#0" expanded="false" />
+            <element signature="e#78659#79440#0" expanded="false" />
+            <element signature="e#79572#82373#0" expanded="false" />
+            <element signature="e#82511#85122#0" expanded="false" />
+            <element signature="e#85254#86232#0" expanded="false" />
+            <element signature="e#86366#87051#0" expanded="false" />
+            <element signature="e#87185#87890#0" expanded="false" />
+            <element signature="e#88025#92554#0" expanded="false" />
+            <element signature="e#92688#94362#0" expanded="false" />
+            <element signature="e#94364#94528#0" expanded="false" />
+            <element signature="n#list_link#0;n#!!top" expanded="false" />
+            <element signature="e#95040#95159#0" expanded="false" />
+            <element signature="n#add_link#0;n#!!top" expanded="false" />
+            <element signature="e#95577#95648#0" expanded="false" />
+            <element signature="n#goods_parse_url#0;n#!!top" expanded="false" />
+            <element signature="e#95793#95947#0" expanded="false" />
+            <element signature="n#handle_volume_price#0;n#!!top" expanded="false" />
+            <element signature="e#96656#96778#0" expanded="false" />
+            <element signature="n#update_goods_stock#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/goods_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.3224568" vertical-offset="576" max-vertical-offset="5208" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/page.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/order_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="10" selection-start="4801" selection-end="4801" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="7296" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5044" column="66" selection-start="185540" selection-end="185540" vertical-scroll-proportion="0.0" vertical-offset="121056" max-vertical-offset="153936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/page1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="81" selection-start="583" selection-end="583" vertical-scroll-proportion="0.40449437" vertical-offset="0" max-vertical-offset="534" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/customer_order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="44" selection-start="768" selection-end="768" vertical-scroll-proportion="0.73704416" vertical-offset="72" max-vertical-offset="1752" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/css/categpry_top_color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/library/page_footer.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="0" selection-start="4540" selection-end="4540" vertical-scroll-proportion="1.1299639" vertical-offset="1990" max-vertical-offset="2760" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/library/page_header_catetop.lbi">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4872" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/library/comments_list.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.32852" vertical-offset="2952" max-vertical-offset="5424" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/css/css1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/catalog.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/category.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="540" selection-end="540" vertical-scroll-proportion="-3.4223826" vertical-offset="2160" max-vertical-offset="8688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jingdong2015/library/page_footer1.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="45" selection-start="5208" selection-end="5216" vertical-scroll-proportion="2.4296029" vertical-offset="1630" max-vertical-offset="4128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/order/11.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/customer_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="96" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.009328358" vertical-offset="739" max-vertical-offset="1296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

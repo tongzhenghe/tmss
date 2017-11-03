@@ -1,0 +1,30 @@
+<!-- #BeginLibraryItem "/library/user_header.lbi" --><!-- #EndLibraryItem -->
+ <div class="ect-pro-list ect-booking-list">
+  <ul>
+    <li>
+      <dl>
+        <dt>
+          <h4 class="title"><a href="/ectouchwechat/index.php?m=default&amp;c=goods&amp;a=index&amp;id=8"> {$item.goods_name}</a></h4>
+        </dt>
+        <dd class="date ect-color999">{$item.booking_time}</dd>
+        <dd>{$item.dispose_note}</dd>
+        <dd><a href="/ectouchwechat/index.php?m=default&amp;c=user&amp;a=delete_comment&amp;id=9" class="pull-right del"><i class="glyphicon glyphicon-trash"></i></a></dd>
+      </dl>
+    </li>
+  </ul>
+</div>
+<ul class="pager ect-margin-lr ect-page">
+  <li class="pull-left"><a href="#">上一页</a></li>
+  <li class="form-select">
+ <i class="fa fa-sort-desc"></i>
+      <select name="sel_question">
+        <option value="friend_birthday">1/20</option>
+        <option value="old_address">2/20</option>
+        <option value="motto">2/20</option>
+      </select>
+  </li>
+  <li class="pull-right"><a href="#">下一页</a></li>
+</ul>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

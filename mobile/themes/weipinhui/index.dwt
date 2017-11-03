@@ -1,0 +1,70 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<div class="con"> 
+    <header class="Header clearfix">
+        <div class="HeaderLogo f_l"><a href="./"><img src="__TPL__/images/logo.png" /></a></div>
+        <!-- header 右边入口 -->
+        <div class="HeaderRight">
+            <a href="{:url('flow/cart')}"><span class="h_cart"></span></a>
+            <a href="{:url('user/index')}"><span class="h_logn"></span></a>
+            <a href="javascript:;" class="search_on"><span class="h_search"></span></a>
+        </div>
+        <!-- header 右边入口 END -->
+    </header>
+
+    <!--banner滚动图片s-->
+    <div id="focus" class="focus ect-margin-tb">
+    	<div class="hd">
+        	<ul></ul>
+        </div>
+        <div class="bd">{insert name='ads' id=1 num=3}</div>
+    </div>
+
+    <!--首页快速导航-->
+    <nav class="container-fluid">
+    	<ul class="row ect-row-nav">
+        	<!--{foreach from=$navigator item=nav name=no}-->
+            <!--{if $smarty.foreach.no.iteration < 13}-->
+            <li class="col-sm-3 col-xs-3">
+            	<a href="{$nav.url}">
+                    <i><img src="{$nav.pic}" width="50" height="50"></i>
+                    <p class="text-center">{$nav.name}</p>
+                </a>
+            </li>
+            <!-- {/if} -->
+        	<!--{/foreach}-->
+        </ul>
+    </nav>
+    
+    <div class="gridRow">{insert name='ads' id=2 num=4}</div>
+
+    <div class="indexlist">
+        <div class="indexlistTit">
+            <h2>特卖广告</h2><span>|</span><em>每天10点 新品特卖</em>
+        </div>
+        <div class="channelImg" >
+            {insert name='ads' id=3 num=5}
+        </div>
+    </div>
+
+<!--    <div class="indexlist">
+        <div class="indexlistTit" style="height:3em">
+            <h2>今日新品</h2><span>|</span>
+        </div>
+        <!-- #BeginLibraryItem "/library/recommend_hot.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    -->
+	<footer style="display:none;">
+    	<nav class="ect-nav"><!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></nav>
+    </footer>
+    <div style="padding-bottom:4.2em;display:none;"></div>
+</div>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+
+    get_asynclist("{:url('index/ajax_goods', array('type'=>'best'))}" , '__TPL__/images/loader.gif');
+
+</script>
+</body>
+</html>

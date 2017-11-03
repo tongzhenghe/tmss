@@ -1,0 +1,66 @@
+<!-- $Id: setting_first.htm 16339 2009-06-24 08:01:25Z liuhui $ -->
+{include file="seller_pageheader.htm"}
+<div class="main-div">
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.bigcolorpicker.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/jquery.bigcolorpicker.css">
+<form action="seller_shop_bg.php?act=second" name="theForm" method="post" enctype="multipart/form-data" >
+  <table cellspacing="1" cellpadding="3" width="100%">
+    <tr>
+        <td class="micro-label">背景图片: </td>
+        <td>
+             <input type="file" name="bgimg"/>
+             {if $shop_bg.bgimg}
+             <img src="{$shop_bg.bgimg}" width="150" /> 
+             {/if}   
+                     
+        </td>
+    </tr>
+    <tr>
+      <td class="micro-label" >背景重复:</td>
+      <td>
+      <select name="bgrepeat">
+      <option value="no-repeat" {if $shop_bg.bgrepeat eq 'no-repeat'}selected{/if}>不重复</option>
+      <option value="repeat" {if $shop_bg.bgrepeat eq 'repeat'}selected{/if}>平铺</option>
+      <option value="repeat-x" {if $shop_bg.bgrepeat eq 'repeat-x'}selected{/if}>左右平铺</option>
+      <option value="repeat-y" {if $shop_bg.bgrepeat eq 'repeat-y'}selected{/if}>垂直平铺</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="micro-label">店铺背景颜色:</td>
+      <td>
+      <input type="text" name="bgcolor" size="10" value="{$shop_bg.bgcolor}" id="bgcolor" /><input type="button" value="选色" id="selectcolor">
+      </td>
+    </tr>
+    <tr>
+      <td class="micro-label">店铺背景:</td>
+      <td>
+      <input type="radio" value="0" name="show_img" {if $shop_bg.show_img eq 0} checked{/if}/>显示颜色<input type="radio" value="1"  name="show_img" {if $shop_bg.show_img} checked{/if}/>显示图片
+      </td>
+    </tr>
+    <tr>
+      <td class="micro-label">启用自定义背景:</td>
+      <td>
+      <input type="radio" value="0" name="is_custom" {if $shop_bg.is_custom eq 0} checked{/if}/>否<input type="radio" value="1"  name="is_custom" {if $shop_bg.is_custom} checked{/if}/>是
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <input type="hidden" name="data_op" value="{$data_op}"/>
+      </td>
+      <td>
+        <input type="submit" value="确认背景" class="button" />
+      </td>
+    </tr>
+  </table>
+</form>
+</div>
+<script type="text/javascript">
+		$(function(){
+			//2、用法
+			$("#selectcolor").bigColorpicker("bgcolor");
+
+		});
+	</script>
+{include file="pagefooter.htm"}

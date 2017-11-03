@@ -1,0 +1,45 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+  <h1>商品分类</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+  <div id="search_box">
+    <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem -->
+  </div>
+</header>
+<div class="new-cate-srch">
+	<div class="new-srch-box">
+    	<form method="post" action="{if $id}{:url('category/index', array('id'=>$this->_var['id'] ))}{else}{:url('category/index')}{/if}" name="searchForm" id="searchForm_id">
+        	<input placeholder="{$lang.no_keywords}" name="keywords" type="text" id="keywordBox" class="new-srch-input" style="color:#999999;" />
+            <a href="javascript:void(0);" target="_self" class="new-s-close"></a>
+        	<button class="new-s-srch" type="submit" onclick="return check('keywordBox')"><span></span></button>
+      	</form>
+    </div>
+</div>
+<div class="clist">
+  <ul class="new-category-lst">
+    <!--{foreach from=$category item=cat name=no}-->
+    <li class="crow level1">
+      <div class="crow_row">
+        <div class="crow_icon"><span class="icon"></span></div>
+        <div class="crow_title"> {if $cat.cat_id} <span>{$cat.name|escape:html}</span> {else} <span><a href="{$cat.url}">{$cat.name|escape:html}</a></span> {/if} </div>
+        <div>&nbsp;</div>
+      </div>
+      <ul class="clist_sub clearfix" style="opacity: 1; display: none;">
+        <!--{foreach from=$cat.cat_id item=child name=no1 }-->
+        <!--{if $smarty.foreach.no1.iteration %3 ==1}-->
+        <li class="new-category2-li"> 
+        <!--{/if}-->
+        <a href="{$child.url}"><span class="new-bar"></span>{$child.name|escape:html}</a>
+        <!--{if $smarty.foreach.no1.iteration % 3 == 0 || $smarty.foreach.no1.last}-->
+        </li>
+		<!--{/if}-->
+        <!--{/foreach}-->
+    </ul>
+    </li>
+    <!--{/foreach}-->
+  </ul>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

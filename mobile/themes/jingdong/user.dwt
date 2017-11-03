@@ -1,0 +1,65 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="page">
+  <header id="header">
+  <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+  <h1>{$lang.user_center}</h1>
+  <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+  <div id="search_box">
+    <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem -->
+  </div>
+</header>
+</div>
+<div class="new-ct">
+	<div class="new-user-infobox">
+    	<a class="new-user-photo"><img  src="__TPL__/images/get_avatar.png"></a>
+        <div class="new-bg-img">
+        	<div class="new-user-info">
+            	<div style="padding-left:90px;">
+            	<div class="new-info-tbl new-txt">
+                	<span class="new-tbl-cell"><span class="fs13">{$info.username}</span><span>{$rank_name}</span></span>
+                    <span class="new-tbl-cell"><span class="fs13">{$info.integral}</span><span>{$lang.exchange_integral}</span></span>
+                    <span class="new-tbl-cell"><span></span><span></span></span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="new-user-info2">
+        	<div class="new-info-tbl-box">
+            	<div class="new-info-tbl">
+                	<a class="new-tbl-cell" href="{:url('user/order_list')}"><span>{$info.order_count}</span><span>{$lang.order_list_lnk}</span></a>
+                    <a class="new-tbl-cell" href="javascript:;"><span>{$info.surplus}</span><span>{$lang.balance}</span></a>
+                    <a class="new-tbl-cell" href="{:url('user/bonus')}"><span>{$info.bonus}</span><span>{$lang.your_bonus}</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blank3"></div>
+<section class="wrap InfoBox" style="border-bottom:0;">
+  <div class="list_box" style="padding-top:0;padding-bottom:0; border:1px solid #999; border-top:0;">
+  	<a href="{:url('user/profile')}" class="clearfix"><span>{$lang.label_profile}</span><i></i></a>
+    <a href="{:url('user/order_list')}" class="clearfix"><span>{$lang.label_order}</span><i></i></a>
+    <a href="{:url('user/address_list')}" class="clearfix"><span>{$lang.label_address}</span><i></i></a>
+    <a href="{:url('user/collection_list')}" class="clearfix"><span>{$lang.label_collection}</span><i></i></a>
+  </div>
+  <div class="blank3"></div>
+  <div class="list_box" style="padding-top:0;padding-bottom:0; border:1px solid #999; border-top:0;">
+  	<a href="{:url('user/service')}" class="clearfix"><span>{$lang.label_message}</span><i></i></a>
+    <a href="{:url('user/share')}" class="clearfix"><span>{$lang.label_share}</span><i></i></a>
+    <a href="{:url('user/comment_list')}" class="clearfix"><span>{$lang.label_comment}</span><i></i></a>
+  </div>
+  <div class="blank3"></div>
+  <div class="list_box" style="padding-top:0;padding-bottom:0; border:1px solid #999; border-top:0;"> 
+    <a href="{:url('user/logout')}" class="clearfix"> <span>{$lang.user_logout}</span><i></i> </a>
+  </div>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+</body>
+<script type="text/javascript">
+{foreach from=$lang.clips_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+</html>

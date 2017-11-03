@@ -1,0 +1,17 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<header id="header">
+  <div class="header_l header_return"> <a href="javascript:history.go(-1);"><span></span></a></div>
+  <h1> {$lang.label_collection} </h1>
+</header>
+<div class="InfoBox">
+  <section class="wrap collection_list" style="border-bottom:0;" id="J_ItemList">
+    <section class="order_box padd1 radius10 single_item">
+    </section>
+    <a href="javascript:;" class="get_more"></a>  </section>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<script type="text/javascript">
+get_asynclist('{:url("user/async_collection_list")}' , '__TPL__/images/loader.gif');
+</script> 
+
+</body></html>

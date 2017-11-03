@@ -1,0 +1,52 @@
+<div class="fn-clear user_s15007862">
+<div class="user_border_1">
+<div class="client">
+<div class="pic">
+<div class="stitle user_font">
+客服中心
+</div>
+</div>
+</div>
+<div class="serve">
+<ul class=" list-paddingleft-2">
+<div class="list user_bgcolor user_border_1">
+售前客服
+</div>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser1.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服AA</a>
+</li>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser2.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服BB</a>
+</li>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser2.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服CC</a>
+</li>
+</ul>
+</div>
+<div class="service">
+<ul class=" list-paddingleft-2">
+<div class="list user_bgcolor user_border_1">
+售后客服
+</div>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser1.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服DD</a>
+</li>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser3.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服EE</a>
+</li>
+<li>
+<a href="#" class="user_a"><img src="/seller_themes/store_tpl_2/custom_images/ser2.png" width="54" height="53"/></a><a href="#" class="user_a_t">客服HH</a>
+</li>
+</ul>
+</div>
+<div class="worktime">
+<div class="list user_border_1">
+工作时间
+</div>
+<div class="jcontent user_font">
+<pre>周一至周六
+9:00AM - 22:00PM</pre>
+</div>
+</div>
+</div>
+</div>

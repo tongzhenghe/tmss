@@ -1,0 +1,99 @@
+<!-- $Id: agency_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="validator.js,../js/transport.js,../js/region.js"}
+<div class="main-div">
+		<table align="center">
+  		{foreach from=$seller_fields_list item=field}
+		  {if $field.display}
+          {if $field.type eq 'file'}
+          <tr>
+          <td class="label">{$field.reg_field_name}：</td>
+          <td><a href="../{$field.content}" target="_blank"><img src="../{$field.content}" style="width:90px; height: 90px;"></a></td>
+          <tr>
+          {elseif $field.type eq 'text'}
+          <tr>
+            <td class="label">{$field.reg_field_name}：</td>
+            <td><span style="color:#F00; font-weight:bold;">{$field.content}</span></td>
+          </tr>
+          {elseif $field.type eq 'textarea'}
+          <tr>
+            <td class="label">{$field.reg_field_name}：</td>
+            <td><span style="color:#F00; font-weight:bold;">{$field.content}</span></td>
+          </tr>
+          {elseif $field.type eq 'select'}
+          <tr>
+            <td class="label">{$field.reg_field_name}：</td>
+            <td><span style="color:#F00; font-weight:bold;">{$field.content}</span></td>
+          </tr>
+         {/if}
+          {/if}
+  	{/foreach}
+</table>
+
+<form method="post" action="user_sellers.php" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+<table align="center">
+  <tr>
+    <td class="label">结算类型：</td>
+    <td>
+    <select name="checkout_type">
+    <option value="0" {if $user_seller_info.checkout_type eq 0} selected="true" {/if}>周</option>
+    <option value="1" {if $user_seller_info.checkout_type eq 1} selected="true" {/if}>月</option>
+    <option value="2" {if $user_seller_info.checkout_type eq 2} selected="true" {/if}>季度</option>
+    <option value="3" {if $user_seller_info.checkout_type eq 3} selected="true" {/if}>年</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">平台使用费：</td>
+    <td><input type="text" name="use_fee" value="{$user_seller_info.use_fee}" /></td>
+  </tr>
+  <tr>
+    <td class="label">商家保证金：</td>
+    <td><input type="text" name="deposit" value="{$user_seller_info.deposit}" /></td>
+  </tr>
+  <tr>
+    <td class="label">分成百分比：</td>
+    <td><input type="text" name="fencheng" value="{$user_seller_info.fencheng}" />%</td>
+  </tr>
+  <tr>
+    <td class="label">商家备注：</td>
+    <td><textarea  name="remark" style="max-width:200px; min-width:200px; max-height:130px; min-height:130px;" >{$user_seller_info.remark}</textarea></td>
+  </tr>
+  <tr>
+    <td class="label">审核状态：</td>
+    <td>
+    <select name="is_check">
+    <option value="0" {if $user_seller_info.is_check eq 0} selected="true" {/if}>未审核</option>
+    <option value="1" {if $user_seller_info.is_check eq 1} selected="true" {/if}>审核通过</option>
+    <option value="2" {if $user_seller_info.is_check eq 2} selected="true" {/if}>审核不通过</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+  	<td class="label"></td>
+    <td><input type="submit" class="button" value="{$lang.button_submit}" />
+      <input type="reset" class="button" value="{$lang.button_reset}" />
+      <input type="hidden" name="act" value="u_s_update" />
+      <input type="hidden" name="id" value="{$user_seller_info.id}" />
+      <input type="hidden" name="uid" value="{$user_seller_info.user_id}" />
+      </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+/**
+ * 检查表单输入的数据
+ */
+//function validate()
+//{
+//    validator = new Validator("theForm");
+//    validator.required("suppliers_name",  no_suppliers_name);
+//    return validator.passed();
+//}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

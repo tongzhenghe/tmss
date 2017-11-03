@@ -1,0 +1,24 @@
+<div class="fn-clert">
+<div class="layout-one m990">
+<div class="mc">
+<div class="wtdg">
+<div class="no no1">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/no-1.jpg"/>
+<div class="guandeng"></div></a>
+</div>
+<div class="no no2">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/no-2.jpg"/>
+<div class="guandeng"></div></a>
+</div>
+<div class="no no3">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/no-3.jpg"/>
+<div class="guandeng"></div></a>
+</div>
+<div class="no no5">
+<a href="#"><img src="/seller_themes/store_tpl_4/custom_images/no-5.jpg"/>
+<div class="guandeng"></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,13 @@
+﻿<div class="layout">
+<div class="layout-one w990">
+<div class="fn-clear">
+<div class="mc">
+<div class="j-module">
+<div class="userDefinedArea">
+<img src="/seller_themes/store_tpl_8/custom_images/logo.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

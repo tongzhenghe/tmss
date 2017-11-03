@@ -1,0 +1,73 @@
+<div class="ect-wrapper text-center">
+  <form method="GET" class="sort" name="listform">
+   	<ul>
+        	<li><a href="javascript:;" class="SequenceTit Click">排序</a>
+            	<div class="SequenceCon" style="display:none;">
+                	<i class="sanjiao"></i>
+                	<span>
+                        <a class="{if $sort == 'goods_id' && $order == 'DESC'}ect-colory{/if}" href="{:url('Category/index')}&id={$id}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$page}&sort=goods_id&order=DESC&keywords={$keywords}#goods_list"><em>{$lang.sort_default}</em></a>
+                        <a class="{if $sort =='sales_volume' && $order == 'DESC'}ect-colory select{elseif $sort =='sales_volume' && $order == 'ASC'}ect-colory{/if}" href="{:url('category/index')}&id={$id}&display={$display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=sales_volume&order=<!-- {if $sort == 'sales_volume' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->&keywords={$keywords}#goods_list"><em>{$lang.sort_sales} <i class="glyphicon glyphicon-arrow-up"></i></em></a>
+                        <a class="{if $sort =='click_count' && $order == 'DESC'}ect-colory select{elseif $sort =='click_count' && $order == 'ASC'}ect-colory{/if}" href="{:url('category/index')}&id={$id}&display={$display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$pager.page}&sort=click_count&order=<!-- {if $sort == 'click_count' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->&keywords={$keywords}#goods_list"><em>{$lang.sort_popularity} <i class="glyphicon glyphicon-arrow-up"></i></em></a>
+                        <a class="{if $sort =='shop_price' && $order == 'DESC'}ect-colory select{elseif $sort =='shop_price' && $order == 'ASC'}ect-colory{/if}" href="{:url('Category/index')}&id={$id}&display={$pager.display}&brand={$brand_id}&price_min={$price_min}&price_max={$price_max}&filter_attr={$filter_attr}&page={$page}&sort=shop_price&order=<!-- {if $sort == 'shop_price' && $order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->&keywords={$keywords}#goods_list"><em>{$lang.sort_price} <i class="glyphicon glyphicon-arrow-up"></i></em></a>
+                    </span>
+                </div>
+            </li>
+            <li><a href="javascript:;" class="FilterTit Click">筛选</a>
+            	<div class="category-list-show FilterTitCon categoryFilter">
+                <i class="sanjiao"></i>
+                <span>
+					<a href="{:url('category/index',array('id'=>$this->_var['top_id']))}" class="col-md-3 col-xs-3 "><span>全部</span></a>
+                	<!--{foreach from=$category item=cat name=no}-->
+                    <a href="{$cat.url}" class="col-md-3 col-xs-3 {if $cat.category}on{/if}"><span>{if $cat.cat_id}{$cat.name|escape:html}{else}{$cat.name|escape:html}{/if}</span></a>
+                    <!--{/foreach}-->
+                    <!-- <a href="{:url('category/all')}" class="col-md-3 col-xs-3 ect-colory"><span>更多</span></a> -->
+                </span>
+        </div>
+            </li>
+      </ul>
+        <input type="hidden" name="category" value="{$category}" />
+        <input type="hidden" name="display" value="{$pager.display}" id="display" />
+        <input type="hidden" name="brand" value="{$brand_id}" />
+        <input type="hidden" name="price_min" value="{$price_min}" />
+        <input type="hidden" name="price_max" value="{$price_max}" />
+        <input type="hidden" name="filter_attr" value="{$filter_attr}" />
+        <input type="hidden" name="page" value="{$page}" />
+        <input type="hidden" name="sort" value="{$sort}" />
+        <input type="hidden" name="order" value="{$order}" />
+    <input type="hidden" name="keywords" value="{$keywords}" />
+    </form>
+</div>
+
+<!--{if $show_asynclist eq 1}-->
+<div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0">
+    <ul id="J_ItemList">
+      <li class="single_item"></li>
+      <a href="javascript:;" class="get_more"></a> 
+    </ul>
+</div>
+<!--{else}-->
+<div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0">
+  <ul >
+    <!--{foreach name=goods_list from=$goods_list item=goods}-->
+    <li class="single_item"> <a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.name}"></a>
+      <dl>
+        <dt>
+          <h4 class="title"><a href="{$goods.url}">{$goods.name}</a></h4>
+        </dt>
+        <dd><span class="pull-left"><strong>{$lang.price}：<b class="ect-colory"><!--{if $goods.promote_price}-->{$goods.promote_price}<!--{else}-->{$goods.shop_price}<!--{/if}--></b></strong><small class="ect-margin-lr"><del>{$goods.market_price}</del></small></span></dd>
+        <dd class="dd-num">
+          <span class="pull-right">{$lang.sort_sales}：{$goods.sales_count}{$lang.piece}</span> 
+          <span class="pull-right {if $goods.mysc!= 0}ect-colory{/if}"><i class="fa {if $goods.mysc!= 0}fa-heart{else}fa-heart-o{/if}"></i> {$goods.sc}{$lang.like_num}</span>
+        </dd>
+      </dl>
+    </li>
+    <!--{/foreach}-->
+  </ul>
+</div>
+{include file='library/page.lbi '}
+<!--{/if} --> 
+
+
+<!-- {if $category > 0} -->
+</form>
+<!-- {/if} -->

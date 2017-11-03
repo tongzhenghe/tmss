@@ -1,0 +1,268 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- 商品列表 start-->
+<!--{if $goods}-->
+<div class="pro-inner">
+<div class="proImg-wrap"> <a href="{$goods.url}" > <img src="{$site_url}{$goods.goods_thumb}" alt="{$goods.goods_name}" width="100" height="100"> </a> </div>
+<div class="proInfo-wrap">
+  <div class="proTitle"> <a href="{$goods.url}" >{$goods.goods_name}</a> </div>
+  <div class="new-elps">{$goods.goods_brief}</div>
+  <div class="proPrice"> 
+    <!--{if $goods.promote_price neq "" } --> 
+    <em>{$goods.promote_price}</em> 
+    <!--{else}--> 
+    <em>{$goods.shop_price}</em> 
+    <!--{/if}--> 
+  </div>
+  <div class="proService" style="display:none"><del>{$goods.market_price}</del></div>
+  <div class="proSales" style="display:none">{$lang.sort_sales}：<em>{$goods.sales_count}</em></div>
+  <div class="proComment"> <span>{$goods.comment_count}人评价，{$goods.good_commnet_count}%好评</span> 
+    <!--{if $goods.promotion} --> 
+    <span class="new-sale-icon"> 
+    <!-- {foreach from=$goods.promotion item=promotion} --> 
+    <!--{if $promotion.type == 'group_buy'}--><span class="label tuan">{$lang.group_buy_act}</span> 
+    <!--{elseif $promotion.act_type == 0}--> <span class="label mz"> {$lang.favourable_mz}</span> 
+    <!--{elseif $promotion.act_type == 1}--> <span class="label mj"> {$lang.favourable_mj}</span> 
+    <!--{elseif $promotion.act_type == 2}--> <span class="label zk"> {$lang.favourable_zk}</span> 
+    <!--{/if}--> 
+    <!--{/foreach}--> 
+    </span> 
+    <!--{/if}--> 
+  </div>
+</div>
+<!--{/if}--> 
+<!-- 商品列表 end--> 
+
+<!-- 品牌 start--> 
+<!--{if $brand}--> 
+<a href="{$brand.url}"> <img class="cover" alt="{$brand.brand_name}"  src="{$brand.brand_banner}">
+<p class="fn"> <img class="logo" alt="{$brand.brand_name}" src="{$brand.brand_logo}"> <strong class="info">{$brand.brand_name}</strong> <em class="discount" style="display:none">3折起</em> </p>
+<p class="man" style="display:none">满500元,减50元</p>
+</a> 
+<!-- {/if}--> 
+<!-- 品牌end--> 
+
+<!-- 品牌商品 start--> 
+<!--{if $brand_goods}-->
+<div class="pro-inner">
+<div class="proImg-wrap"> <a href="{$brand_goods.url}" > <img src="{$site_url}{$brand_goods.goods_thumb}" alt="{$brand_goods.goods_name}" width="100" height="100"> </a> </div>
+<div class="proInfo-wrap">
+  <div class="proTitle"> <a href="{$brand_goods.url}" >{$brand_goods.goods_name}</a> </div>
+  <div class="new-elps">{$brand_goods.goods_brief}</div>
+  <div class="proPrice"> 
+    <!--{if $brand_goods.promote_price neq "" } --> 
+    <em>{$brand_goods.promote_price}</em> 
+    <!--{else}--> 
+    <em>{$brand_goods.shop_price}</em> 
+    <!--{/if}--> 
+  </div>
+  <div class="proService" style="display:none"><del>{$brand_goods.market_price}</del></div>
+  <div class="proSales" style="display:none">{$lang.sort_sales}：<em>{$brand_goods.sales_count}</em></div>
+  <div class="proComment"> <span>{$brand_goods.comment_count}人评价，{$brand_goods.good_commnet_count}%好评</span> 
+    <!--{if $brand_goods.promotion} --> 
+    <span class="new-sale-icon"> 
+    <!-- {foreach from=$brand_goods.promotion item=promotion} --> 
+    <!--{if $promotion.type == 'group_buy'}--><span class="label tuan">{$lang.group_buy_act}</span> 
+    <!--{elseif $promotion.act_type == 0}--> <span class="label mz"> {$lang.favourable_mz}</span> 
+    <!--{elseif $promotion.act_type == 1}--> <span class="label mj"> {$lang.favourable_mj}</span> 
+    <!--{elseif $promotion.act_type == 2}--> <span class="label zk"> {$lang.favourable_zk}</span> 
+    <!--{/if}--> 
+    <!--{/foreach}--> 
+    </span> 
+    <!--{/if}--> 
+  </div>
+</div>
+<!-- {/if}--> <!-- 品牌商品end--> 
+
+<!-- 优惠活动列表 start--> 
+<!--{if $activity}--> 
+<a href="{$activity.url}"> <img class="cover" alt="{$activity.activity_name}"  src="{$activity.act_banner}">
+<p class="fn"> <em class="discount">{$activity.act_name}</em> </p>
+<p class="man">{$activity.start_time}-{$activity.end_time}</p>
+</a> 
+<!-- {/if}--> 
+<!-- 优惠活动列表 end--> 
+
+<!-- 活动商品列表 start--> 
+<!--{if $act_goods}-->
+<div class="pro-inner">
+  <div class="proImg-wrap"> <a href="{$act_goods.url}" > <img src="{$site_url}{$act_goods.goods_thumb}" alt="{$act_goods.goods_name}" width="100" height="100"> </a> </div>
+  <div class="proInfo-wrap">
+    <div class="proTitle"> <a href="{$act_goods.url}" >{$act_goods.goods_name}</a> </div>
+    <div class="new-elps">{$act_goods.goods_brief}</div>
+    <div class="proPrice"> 
+      <!--{if $act_goods.promote_price neq "" } --> 
+      <em>{$act_goods.promote_price}</em> 
+      <!--{else}--> 
+      <em>{$act_goods.shop_price}</em> 
+      <!--{/if}--> 
+    </div>
+    <div class="proService" style="display:none"><del>{$act_goods.market_price}</del></div>
+    <div class="proSales" style="display:none">{$lang.sort_sales}：<em>{$act_goods.sales_count}</em></div>
+    <div class="proComment"> <span>{$act_goods.comment_count}人评价，{$act_goods.good_commnet_count}%好评</span> 
+      <!--{if $act_goods.promotion} --> 
+      <span class="new-sale-icon"> 
+      <!-- {foreach from=$act_goods.promotion item=promotion} --> 
+      <!--{if $promotion.type == 'group_buy'}--><span class="label tuan">{$lang.group_buy_act}</span> 
+      <!--{elseif $promotion.act_type == 0}--> <span class="label mz"> {$lang.favourable_mz}</span> 
+      <!--{elseif $promotion.act_type == 1}--> <span class="label mj"> {$lang.favourable_mj}</span> 
+      <!--{elseif $promotion.act_type == 2}--> <span class="label zk"> {$lang.favourable_zk}</span> 
+      <!--{/if}--> 
+      <!--{/foreach}--> 
+      </span> 
+      <!--{/if}--> 
+    </div>
+  </div>
+  <!-- {/if}--> 
+  <!-- 活动商品列表 end--> 
+  
+  <!-- 团购 start--> 
+  <!--{if $groupbuy}-->
+  <div class="pro-inner">
+    <div class="proImg-wrap"> <a href="{$groupbuy.url}" alt="{$groupbuy.goods_name}"> <img alt="{$groupbuy.goods_name}" src="{$groupbuy.goods_thumb}"> </a> </div>
+    <div class="proInfo-wrap">
+      <div class="proTitle"> <a href="{$groupbuy.url}">{$groupbuy.goods_name|escape:html}</a> </div>
+      <div class="zkhw"> <span class="price">{$groupbuy.cur_price}</span> <span class="originalprice">{$groupbuy.market_price}</span><span class="zk1">{$groupbuy.spare_discount}{$lang.favourable_zk}</span> </div>
+      <div class="jingdou"> <span>{$groupbuy.click_num}{$lang.scan_num}</span> <span>{$lang.sort_sales}：{$groupbuy.sales_count}{$lang.piece}</span> </div>
+    </div>
+  </div>
+</div>
+<!-- {/if}--> 
+<!-- 团购 end--> 
+
+<!-- 积分 start--> 
+<!--{if $exchange}-->
+<div class="pro-inner">
+  <div class="proImg-wrap"> <a href="{$exchange.url}"> <img alt="{$exchange.goods_name}" src="{$exchange.goods_thumb}"> </a> </div>
+  <div class="proInfo-wrap">
+    <div class="proTitle"> <a href="{$exchange.url}">{$exchange.goods_name}</a> </div>
+    <div class="proSKU"></div>
+    <div class="proPrice"> <em>{$exchange.exchange_integral}积分</em> </div>
+    <span class="like"><i class="fa fa-heart-o"></i> {$exchange.sc}{$lang.like_num}</span> </div>
+</div>
+<!-- {/if}--> 
+<!-- 积分 end--> 
+
+<!-- 文章列表 start--> 
+<!--{if $article}--> 
+<a href="{$article.url}" class="clearfix"> <span>{$article.short_title}</span><i></i> </a> 
+<!-- {/if}--> 
+<!-- 文章列表end--> 
+
+<!-- 用户订单 start--> 
+<!--{if $orders}-->
+<div class="InfoBox">
+  <table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px #CCCCCC dashed" class="order_status">{$lang.order_status}：{$orders.order_status}</td>
+      </tr>
+      <tr>
+        <td class="order_content"><a href="{:url('user/order_detail',array('order_id'=>$this->_var['orders']['order_id']))}">
+          <table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table_no_border">
+            <tbody>
+              <tr>
+                <td><img width="50" height="50" src="{$orders.img}"></td>
+                <td>{$lang.order_number}：{$orders.order_sn}<br>
+                  {$lang.order_total_fee}：{$orders.order_status}<br>
+                  {$lang.order_addtime}：{$orders.order_time}</td>
+                <td style="position:relative"><span class="new-arr"></span></td>
+              </tr>
+            </tbody>
+          </table>
+          </a></td>
+      </tr>
+      <tr>
+        <td class="order_tracking"><a class="c-btn3" href="{:url('user/order_tracking',array('order_id'=>$this->_var['orders']['order_id']))}">订单跟踪</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- {/if}--> 
+<!-- 用户订单end--> 
+
+<!-- 配送地址 start--> 
+<!--{if $consignee}-->
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="ectouch_table">
+  <tr>
+    <td width="32%" align="right">{$lang.consignee_name}：</td>
+    <td width="68%" align="left">{$consignee.consignee|escape}</td>
+  </tr>
+  <tr>
+    <td align="right">{$lang.phone}：</td>
+    <td align="left">{$consignee.mobile} </td>
+  </tr>
+  <tr>
+    <td align="right">{$lang.detailed_address}：</td>
+    <td align="left">{$consignee.address|escape} 
+      <!-- {if $consignee.zipcode} --> 
+      [{$lang.postalcode}: {$consignee.zipcode|escape}] 
+      <!-- {/if} --></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right"><a href="{$consignee.url}">编辑</a> | <a href="{:url('user/del_address_list',array('consignee'=>$this->_var['consignee']['address_id']))}" onClick="return confirm('您真的要删除该地址吗？');">删除</a></td>
+  </tr>
+</table>
+<!-- {/if}--> 
+<!-- 配送地址end--> 
+
+<!-- 用户收藏 start--> 
+<!--{if $collection_good}-->
+<table cellspacing="0" cellpadding="5" width="100%" border="0" style="border-bottom:1px solid #e2e2e2;" class="ectouch_table">
+  <tbody>
+    <tr>
+      <td class="collection"><table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table_no_border">
+          <tbody>
+            <tr>
+              <td><img width="50" height="50" src="{$collection_good.goods_thumb}"></td>
+              <td>{$collection_good.goods_name}<br>
+                本店售价:{$collection_good.shop_price}</td>
+              <td align="right"><a style="color:#1CA2E1" href="{$collection_good.url}">加入购物车</a><br>
+                <a style="color:#1CA2E1" href="javascript:if (confirm('您确定要从收藏夹中删除选定的商品吗？')) location.href='{:url('user/delete_collection',array('collection_id'=>$this->_var['collection_good']['rec_id']))}'">删除</a></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- {/if}--> 
+<!-- 用户收藏end--> 
+
+<!-- 产品配件 start--> 
+<!--{if $fittings}--> 
+<a href="{$fittings.url}"  class="pull-left"><img src="{$fittings.goods_thumb}"></a>
+<dl>
+  <dt>
+    <h4 class="title"><a href="{$fittings.url}">{$fittings.goods_name}</a></h4>
+  </dt>
+  <dd>{$lang.fittings_price}<font class="ect-colory">{$fittings.fittings_price}</font></dd>
+  <dd>
+    <div class="flow-del text-center"><a onclick="addToCart_quick({$fittings.goods_id})" href="javascript:;">{$lang.btn_add_to_cart}</a></div>
+  </dd>
+</dl>
+</a> 
+<!-- {/if}--> 
+<!-- 产品配件end--> 
+
+<!-- 信息列表 start--> 
+<!--{if $msg}-->
+<table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table">
+  <tbody>
+    <tr>
+      <td class="message"><table cellspacing="0" cellpadding="5" width="100%" border="0" class="ectouch_table_no_border">
+          <tbody>
+            <tr>
+              <td><span style="float:right"><a style="color:#1CA2E1" onclick="if (!confirm('{$lang.confirm_remove_msg}？')) return false;" href="{$msg.url}">{$lang.drop}</a></span>{$msg.msg_type}:{$msg.msg_title} - {$msg.msg_time} </td>
+            </tr>
+            <!--{if $msg.re_msg_content}-->
+            <tr>
+              <td>{$lang.shopman_reply}({$msg.re_msg_time})<br/>
+                {$msg.re_msg_content}</td>
+            </tr>
+            <!--{/if}-->
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<!-- {/if}--> 
+<!-- 信息列表end--> 

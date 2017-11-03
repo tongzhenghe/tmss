@@ -1,0 +1,72 @@
+<div class="fn-clear" style="height:500px; margin-bottom:0px;">
+<div class="userDefinedArea" style="width: 100%; position:absolute;left:0;">
+<center>
+<a href="#" target="_blank" style="background:url(/seller_themes/store_tpl_15/custom_images/qp_adv_6.png) -168.5px 0px; height:100px; display:block;" ></a>
+<a href="#" target="_blank" style="background:url(/seller_themes/store_tpl_15/custom_images/qp_adv_7.jpg) -168.5px 0px; height:400px; display:block;" ></a>
+</center>
+</div>
+</div>
+<div class="fn-clear hongcha-tonglan">
+<div class="user_jy" style="background:url(/seller_themes/store_tpl_15/custom_images/no2_cuxiao_bg.jpg);">
+<div class="cuxiao_cp">
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_15/custom_images/cuxiao_cp_1_3.png" width="580" height="580" /></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">龙扬茶叶 新茶安溪清香型铁观音 茗茶 礼盒铁盒装250G</a></div>
+<div class="jPrice">
+<div class="jdPrice">
+<span class="jRmb">RMB￥</span>
+<span class="jdNum">98.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="jBtnArea">
+<a href="#" target="_blank">放入购物车</a>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear muban1">
+<ul>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_15/custom_images/product_22.jpg"  width="320" height="320"/></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">龙扬茶叶 安溪铁观音  易记礼盒装 250克/*2罐 共500克</a></div>
+<div class="jdPrice">
+<span class="jRmb">￥</span>
+<span class="jdNum">48.00</span>
+</div>
+</div>
+</div>
+<div class="jBtnArea"><a href="#" target="_blank" style="background:url(/seller_themes/store_tpl_15/custom_images/btn_cp_ljqg_2.jpg) no-repeat;">放入购物车</a></div>
+</li>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_15/custom_images/product_23.jpg"  width="320" height="320"/></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">龙扬茶叶 安溪铁观音  易记礼盒装 250克/*2罐 共500克</a></div>
+<div class="jdPrice">
+<span class="jRmb">￥</span>
+<span class="jdNum">188.00</span>
+</div>
+</div>
+</div>
+<div class="jBtnArea"><a href="#" target="_blank" style="background:url(/seller_themes/store_tpl_15/custom_images/btn_cp_ljqg_2.jpg) no-repeat;">放入购物车</a></div>
+</li>
+<li>
+<div class="jItem">
+<div class="jPic"><a href="#" target="_blank"><img src="/seller_themes/store_tpl_15/custom_images/product_24.png"  width="320" height="320"/></a></div>
+<div class="jGoodsInfo">
+<div class="jDesc"><a href="#" target="_blank">龙扬茶叶 安溪铁观音  易记礼盒装 250克/*2罐 共500克</a></div>
+<div class="jdPrice">
+<span class="jRmb">￥</span>
+<span class="jdNum">288.00</span>
+</div>
+</div>
+</div>
+<div class="jBtnArea"><a href="#" target="_blank" style="background:url(/seller_themes/store_tpl_15/custom_images/btn_cp_ljqg_2.jpg) no-repeat;">放入购物车</a></div>
+</li>
+</ul>
+</div>

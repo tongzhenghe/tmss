@@ -1,0 +1,19 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con">
+	<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+        <span class="Title">品牌列表</span>
+    </header>
+
+  <div class="bran_list" id="J_ItemList" style="opacity:1;">
+    <ul class="single_item">
+    </ul>
+    <a href="javascript:;" class="get_more"></a> </div>
+</div>
+
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+get_asynclist("{:url('brand/asynclist', array('page'=>$this->_var['page'], 'sort'=>$this->_var['sort'], 'order'=>$this->_var['order']))}" , '__TPL__/images/loader.gif');
+</script>  
+</body></html>

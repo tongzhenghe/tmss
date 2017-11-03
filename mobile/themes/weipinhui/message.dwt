@@ -1,0 +1,22 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con">
+<div style="height:3.7em;"></div>
+	<header class="Header clearfix fixed">
+    	<a href="javascript:history.go(-1)" class="Return"><span></span></a>
+    </header>
+    <div  style="text-align:center; margin:2em; font-size:1.3em;">
+<p>{$message.content}</p>
+<!-- {if $message.url_info} -->
+<div> 
+  <!--{foreach from=$message.url_info key=info item=url}-->
+  <span class="p-link" style="margin-right:0.2em;"><a href="{$url}">{$info}</a></span>
+  <!--{/foreach}--> 
+</div>
+<!--{/if}-->
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+</div>
+</div>
+<!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

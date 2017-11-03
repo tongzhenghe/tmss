@@ -1,0 +1,77 @@
+{include file="pageheader.htm"}
+
+<div class="main-div">
+<form action="seller_fields.php" method="post" name="theForm" onsubmit="return validate()">
+<table width="100%">
+  <tr>
+    <td class="label">项目名称: </td>
+    <td><input type="text" name="reg_field_name" value="{$reg_field.reg_field_name}" maxlength="20" />{$lang.require_field}</td>
+  </tr>
+  <tr>
+    <td class="label">字段类型: </td>
+    <td>
+    <select name="reg_field_type" >
+    {foreach from=$type_lang item=type key=k}
+    <option value="{$k}" {if $reg_field.type == $k } selected="true" {/if}>{$type}</option>
+    {/foreach}
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">选项值: </td>
+    <td>
+    <textarea name="select_options" style="min-width: 147px; min-height: 72px;max-width: 147px; max-height: 72px;">{$reg_field.select_options}</textarea>(一行为一个选项值)
+    </td>
+  </tr>
+  <tr >
+    <td class="label">排序: </td>
+    <td><input type="text" name="reg_field_order" value="{$reg_field.dis_order}" maxlength="3" size="5"/></td>
+  </tr>
+  <tr >
+    <td class="label">表单宽度: </td>
+    <td><input type="text" name="reg_field_width" value="{$reg_field.width}" maxlength="3" size="5"/></td>
+  </tr>
+  <tr >
+    <td class="label">表单高度: </td>
+    <td><input type="text" name="reg_field_height" value="{$reg_field.height}" maxlength="3" size="5"/></td>
+  </tr>
+  <tr > 
+    <td class="label">是否显示: </td>
+    <td><input type="radio" name="reg_field_display" value="1" {if $reg_field.display eq 1}checked='checked'{/if}/>是&nbsp;&nbsp;&nbsp;<input type="radio" name="reg_field_display" value="0" {if $reg_field.display eq 0}checked='checked'{/if}/>否</td>
+  </tr>
+  <tr >
+    <td class="label">是否必填: </td>
+    <td><input type="radio" name="reg_field_need" value="1" {if $reg_field.is_need eq 1}checked='checked'{/if}/>是&nbsp;&nbsp;&nbsp;<input type="radio" name="reg_field_need" value="0" {if $reg_field.is_need eq 0}checked='checked'{/if}/>否</td>
+  </tr>
+  <tr>
+    <td></td>    
+    <td align="left">
+      <input type="hidden" name="act" value="{$form_action}" />
+      <input type="hidden" name="id" value="{$reg_field.id}" />
+      <input type="hidden" name="old_field_name" value="{$reg_field.reg_field_name}" />
+      <input type="submit" value="{$lang.button_submit}" class="button" />
+      <input type="reset" value="{$lang.button_reset}" class="button" />
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['reg_field_name'].focus();
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+  validator = new Validator("theForm");
+  validator.required('reg_field_name','注册项名称必填');
+  return validator.passed();
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

@@ -1,0 +1,187 @@
+<div class="layout-two-left m200">
+<div class="fn-clear userdefined-21">
+<div class="mc">
+<div class="userDefinedArea">
+<div class="user_menu">
+<div class="s_mytitle">
+店铺分类/品牌
+</div>
+<div class="s_floor">
+<div class="s_category">
+<div class="s_title">
+热门活动
+</div>
+<div class="s_words">
+<a href="#" target="_blank">限时抢购</a><a href="#" target="_blank">买六送一</a><a href="#" target="_blank">买九送二</a><a href="#" target="_blank">新品特卖</a>
+</div>
+</div>
+<div class="s_open">
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">新西兰、英国</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">新西兰Karicare Aptamil</a><a href="#" target="_blank">新西兰Karicare</a><a href="#" target="_blank">新西兰惠氏</a><a href="#" target="_blank">澳洲贝拉米</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">英国惠氏</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="s_floor">
+<div class="s_category">
+<div class="s_title">
+热门活动
+</div>
+<div class="s_words">
+<a href="#" target="_blank">限时抢购</a><a href="#" target="_blank">买六送一</a><a href="#" target="_blank">买九送二</a><a href="#" target="_blank">新品特卖</a>
+</div>
+</div>
+<div class="s_open">
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">新西兰、英国</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">新西兰Karicare Aptamil</a><a href="#" target="_blank">新西兰Karicare</a><a href="#" target="_blank">新西兰惠氏</a><a href="#" target="_blank">澳洲贝拉米</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">英国惠氏</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="s_floor">
+<div class="s_category">
+<div class="s_title">
+热门活动
+</div>
+<div class="s_words">
+<a href="#" target="_blank">限时抢购</a><a href="#" target="_blank">买六送一</a><a href="#" target="_blank">买九送二</a><a href="#" target="_blank">新品特卖</a>
+</div>
+</div>
+<div class="s_open">
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">新西兰、英国</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">新西兰Karicare Aptamil</a><a href="#" target="_blank">新西兰Karicare</a><a href="#" target="_blank">新西兰惠氏</a><a href="#" target="_blank">澳洲贝拉米</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">英国惠氏</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="s_floor">
+<div class="s_category">
+<div class="s_title">
+热门活动
+</div>
+<div class="s_words">
+<a href="#" target="_blank">限时抢购</a><a href="#" target="_blank">买六送一</a><a href="#" target="_blank">买九送二</a><a href="#" target="_blank">新品特卖</a>
+</div>
+</div>
+<div class="s_open">
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">新西兰、英国</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">新西兰Karicare Aptamil</a><a href="#" target="_blank">新西兰Karicare</a><a href="#" target="_blank">新西兰惠氏</a><a href="#" target="_blank">澳洲贝拉米</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">英国惠氏</a>
+</div>
+</div>
+</div>
+<div class="s_category_box">
+<span class="s_a">荷兰、德国奶粉</span>
+<div class="s_bs">
+<div class="s_bs">
+<a href="#" target="_blank">荷兰牛栏</a><a href="#" target="_blank">荷兰美素</a><a href="#" target="_blank">荷兰AMA</a><a href="#" target="_blank">德国喜宝</a><a href="#" target="_blank">德国爱他美</a><a href="#" target="_blank">德国特福芬</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-two-left m790">
+<div class="fn-clear user_leining-489319">
+<div class="mc">
+<div class="j-module user_leining_color">
+<div id="slide" class="slider">
+<div class="s_content img" style="width:790px; height:400px;">
+<ul class=" list-paddingleft-2">
+<li class="banner s_banner1">
+<a href="#" target="_blank"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_1.jpg"/></a><a href="#" target="_blank" class="s_b"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_2.jpg"/></a><a href="#" target="_blank" class="s_c"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_3.jpg"/></a>
+</li>
+<li class="banner s_banner2">
+<a href="#" target="_blank" class="s_d"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_7.jpg"/></a><a href="#" target="_blank" class="s_a"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_4.jpg"/></a><a href="#" target="_blank" class="s_b"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_5.jpg"/></a><a href="#" target="_blank" class="s_c"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_6.jpg"/></a>
+</li>
+<li class="banner s_banner3">
+<a href="#" target="_blank" class="s_a"><span class="s_black"></span><img src="/seller_themes/store_tpl_5/custom_images/fenlei_baner_8.jpg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fn-clear user_online_one-489320">
+<div class="mc">
+<div class="s_title"></div>
+<div class="s_online"></div><a class="s_online kefu_1" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>麦麦</a><a class="s_online kefu_2" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>欢欢</a><a class="s_online kefu_3" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>甜甜</a>
+<div class="s_online s_a"></div><a class="s_online kefu_1" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>麦麦</a><a class="s_online kefu_2" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>欢欢</a><a class="s_online kefu_3" href="#"><img src="/seller_themes/store_tpl_5/custom_images/yuanquan.png"/>甜甜</a>
+</div>
+</div>
+</div>

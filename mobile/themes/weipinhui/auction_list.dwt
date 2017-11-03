@@ -1,0 +1,35 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="con" style="background:#fff;">
+  <div style="height:4.6em;"></div>
+  <header class="Header clearfix fixed"> <a href="javascript:history.go(-1)" class="Return"><span></span></a> <span class="Title">{$title}</span> <a href="./" class="Home"><span></span></a> </header>
+  <div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0 tuangouList">
+  <!--{foreach from=$auction_list item=goods }-->
+  	   <ul id="J_ItemList">
+		  <div>
+			<li class="single_item" style="border-bottom: 1px solid #e5e5e5;"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"></a>
+			  <dl>
+				<dt>
+				  <h4 class="title"><a href="{$goods.url}">{$goods.goods_name}</a></h4>
+				</dt>
+				<dd class="dd-price"> <span class="pull-left"> 
+            <!-- {if $auction.status_no eq 0} --> 
+            {$lang.au_pre_start}<br>
+            <!-- {elseif $auction.status_no eq 1} --> 
+            {$lang.au_under_way_1}<br>
+            <!-- {else} --> 
+            {$lang.au_finished}<br>{/if}</span> </dd>
+				<dd class="dd-num"> <span class="pull-left"><strong>{$lang.au_start_price}：<b class="ect-colory">{$goods.formated_start_price}</b></strong> </span> </dd>
+			  </dl>
+			</li>
+		  </div>
+		</ul>
+  <!--{/foreach}-->
+  </div>
+ 
+ 
+</div>
+<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+	get_asynclist("{:url('auction/asynclist')}&page={$page}&sort={$sort}&order={$order}" , '__TPL__/images/loader.gif');
+</script>
+</body></html>

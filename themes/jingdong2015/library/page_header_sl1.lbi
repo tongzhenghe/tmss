@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,jd_common.js,easydialog.min.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js'}
+<div id="shortcut-2013" class="PageHeader">
+	<div class="w">
+    	<ul class="fl lh">
+        	<li class="fore1 ld"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏汤姆</a></li>
+        </ul>
+        <ul class="fr lh">
+        	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+            <!--{if $navigator_list.top}-->
+            <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <li class="fore2 ld"><div class="dt"><s></s> <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank"{/if}>{$nav.name}</a></div></li>
+            <!-- {/foreach} -->
+            <!--{/if}-->
+            <li class="fore3 ld menu" id="app-jd">
+            	<div class="dt"><s></s><i></i><span class="outline"></span><span class="blank"></span><a href="#" target="_blank">手机汤姆</a><b></b></div>
+                <div class="dd lh">
+                    <div class="qr-info"></div>
+                    <div class="qr-item qr-jd-app">
+                    	<div class="qr-img"><img id="app-qrcode-img" src="images/538557daNd249a428.png" class="err-product" width="76" height="76" alt="手机汤姆" src="images/blank.gif"></div>
+                    	<div class="qr-ext"><strong>汤姆客户端</strong><a href="#" target="_blank" class="btn-app-apple"></a><a href="#" target="_blank" class="btn-app-android"></a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="fore4 ld menu myJd" id="biz-service">
+            	<div class="dt"><s></s> <span class="outline"></span> <span class="blank"></span> 客户服务 <b></b></div>
+                <div class="dd">
+                	<div><a href="#" target="_blank">帮助中心</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">售后服务</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="#" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="#" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+

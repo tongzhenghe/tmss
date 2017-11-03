@@ -1,0 +1,363 @@
+/*导航栏*/
+.nav{ height:30px;}
+.all_cats_tcc{ top:30px;}
+.layout-right a{ line-height:30px; font-size:12px;}
+.all_cats_box{ 
+	position: absolute;
+}
+.all_cats {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	text-indent: 35px;
+	font-size: 14px;
+	cursor: pointer;
+	background-image: url(../../store_css/store_images/JxialaBg.png);
+	background-position: 155px center;
+	background-repeat: no-repeat;
+	background-color:#458608;
+}
+.all_cats:hover{}
+.all_cats span{ font-weight:normal; font-size:12px;}
+.all_cats a{ color:#fff; background: none; padding:0;}
+.all_cats a:hover{ background:none;}
+.user_temp_one{ background:#313131; }
+.jTwoLevel a{color:#fff; font-size:14px;}
+.all_cats_tcc li .square_box,.all_cats_tcc li:hover .square_box{background:#fff;}
+.jTwoLevel:hover{background-color: #458608;}
+.jTwoLevel a:hover{ color:#fff;}
+.layout-right a:hover {
+	background-color: #458608;
+	color: #fff;
+	text-decoration: none;
+}
+.all_cats_tcc li .s_b a{ background:#fff; height:30px; line-height:30px; color:#888888}
+.all_cats_tcc li .s_b a:hover{background: #458608; color:#fff;}
+
+/*热门搜索*/
+.jSearch{ width:990px; margin:0 auto;}
+.searchArea{ padding: 5px 0px;height: 26px;overflow: hidden;}
+.searchInput{ overflow:hidden; float:left; width:500px;}
+.searchInput .inputMiddle{ width:200px;}
+.searchInput .inputMiddle ,.searchInput .inputSmall{ color: #999;background: #fff;height: 18px;line-height: 18px;padding: 3px 0;text-indent: 5px;border: solid 1px #ccc;float: left;}
+.searchInput .inputSmall { width: 80px;margin: 0 0 0 10px;}
+.jPriceArea{ float: left;}
+.jText{ float: left;margin:3px 0 0 10px;}
+.searchInput button {
+	border: none;
+	width: 80px;
+	font-size: 12px;
+	letter-spacing: 4px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 26px;
+	margin-left:10px;
+	height: 26px;
+	overflow: hidden;
+	float: left;
+	background: #c11113;
+	background: -moz-linear-gradient(top, #e43638, #c11113);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e43638), to(#c11113));
+	background: -o-linear-gradient(top, #e43638, #c11113);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e43638', endColorstr='#c11113');
+}
+.searchInput button:hover {
+	background: #e43638;
+	background: -moz-linear-gradient(top, #ef4e50, #e43638);
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ef4e50), to(#e43638));
+	background: -o-linear-gradient(top, #ef4e50, #e43638);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef4e50', endColorstr='#e43638');
+}
+.hotwords { margin: 4px 0 0 10px;float: left;}
+.hotwords a{ margin: 0 5px;	white-space: nowrap;color: #CC0000;}
+.hotwords a:hover{ text-decoration:none; }
+
+.user_countdown ul{ width:1000px;}
+.user_countdown ul li{
+	border: 1px solid #E8E8E8;
+	background: #fff;
+	position: relative;
+	margin: 10px 10px 0 0;
+	overflow: hidden;
+	width: 238px;
+	float: left;
+	display:inline;
+}
+.user_countdown ul li .i_l_imgs {
+	
+}
+.user_countdown .con_price {
+	padding: 4px 10px;
+	position: relative;
+}
+.clearfix {
+	display: block;
+}
+.user_countdown .buynow {
+	display: block;
+	color: #fff;
+	height: 46px;
+	width: 46px;
+	background: url(store_images/goumai.png) no-repeat center center;
+	float: right;
+	margin: 5px 0 0 0;
+	position: absolute;
+	right: 10px;
+	top: -20px;
+}
+.user_countdown .tprice {
+	font-size: 18px;
+	height: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #458608;
+}
+.user_countdown .jRmb {
+	font-family: Microsoft YaHei,Verdana;
+	font-size:12px;
+	font-style: normal;
+	font-weight: 500;
+}
+.user_countdown .jdNum {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.user_countdown .saleprice {
+	color: #989898;
+	padding-top: 3px;
+}
+
+.user_cate .gz_box {
+	float: right;
+	cursor: pointer;
+}
+.user_cate .pro_classify {
+	width: 665px;
+	padding: 50px 25px 0 40px;
+	float: left;
+	overflow: hidden;
+}
+.user_cate .pro_classify_title {
+	padding: 0 0 15px;
+}
+.user_cate h3 {
+	display: inline-block;
+	width: 100%;
+	line-height: 25px;
+	text-indent: -999em;
+}
+.user_cate .dlbox {
+	width: 900px;
+}
+.user_cate .dlbox dl {
+	float: left;
+	display: inline;
+	padding: 0 30px 30px 0;
+	margin: 0 30px 0 0;
+	background: url(store_images/54856503N76611469.png) no-repeat right center;
+}
+.user_cate .dlbox dt, .user_cate .dlbox dd {
+	height: 22px;
+	line-height: 22px;
+	margin: 8px 0;
+}
+.user_cate .dlbox dt a {
+	color: #9c9c9c;
+	font-size: 14px;
+}
+.user_cate .dlbox dd em {
+	background: none;
+	font-family: simsun;
+	display: inline-block;
+	padding-right: 5px;
+}
+.user_cate .dlbox dd a {
+	color: #494949;
+	position: relative;
+}
+.user_cate .dlbox dd a:hover {
+	color: #458608;
+}
+.user_cate .dlbox dd span {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin-left: 5px;
+}
+.user_cate .dlbox span.hot {
+	background: url(store_images/hot.gif) no-repeat;
+}
+.user_cate .dlbox span.new{
+	background: url(store_images/new.gif) no-repeat;
+}
+.user_cate .pc_box {
+	margin: 10px 0 10px;
+	float:left;
+	width:665px;
+}
+.user_cate .pro_classify_fl, .user_cate h3 i{
+	float: left;
+	display: inline;
+}
+.user_cate .pro_classify_fl a {
+	display: inline-block;
+	padding: 0 8px 0 0;
+	color: #949494;
+	height: 25px;
+	line-height: 25px;
+	cursor: pointer;
+}
+.user_cate .outer_searchArea {
+	float: right;
+}
+.user_cate .searchArea {
+	z-index: 4;
+	border: 1px solid #777777;
+	width: 156px;
+	padding:0;
+	height:22px;
+}
+.user_cate .inputMiddle {
+	width: 128px;
+	float: left;
+	transition: width 0.3s ease 0s;
+	text-transform: uppercase;
+	background: #fff;
+	color: #999;
+	height: 19px;
+	line-height: 19px;
+	padding: 2px 3px 1px;
+	background: #fff;
+}
+.user_cate button {
+	border: none;
+	width: 22px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 22px;
+	height: 22px;
+	overflow: hidden;
+	float: left;
+	background: url(store_images/btn_icon.gif) no-repeat 1px -335px #777777;
+	font-family: simsun;
+}
+.user_cate .ser_box{
+	float:left;
+	width:665px;
+}
+.user_cate .ser_box .flr {
+	float: right;
+}
+.user_cate .ser_box .ser_tb_s a{
+	display:block; 
+	padding-left:20px;
+	background:url(store_images/lindang.png) no-repeat;
+	float:left;
+}
+.user_cate .ser_box .ser_tb_s dt{ float:left;}
+.user_cate.ser_box dl, .user_cate .ser_box dt, .user_cate .ser_box dd {
+	display: inline-block;
+}
+.user_cate .ser_box dl * {
+	vertical-align: bottom;
+}
+.user_cate .ser_box a {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/*商品柜和产品列表*/
+.temp .tempTitleLeft{
+	padding:5px;
+}
+.temp .Jproduct li{
+	float: left;
+	width: 180px !important;
+	padding: 0;
+	margin: 0 8px;
+	overflow: hidden;
+	display: inline;
+}
+.temp .Jproduct li img{ width:180px; height:180px;}
+.temp .Jproduct .jGoodsInfo {
+	padding: 10px 5px 5px;
+	text-align: center;
+	margin-bottom:0;
+}
+.temp .Jproduct .jGoodsInfo .jDesc{
+	height: 34px;
+	line-height: 17px;
+	overflow: hidden;
+}
+.temp .Jproduct .jGoodsInfo .jDesc a:hover{
+	color:#458608;
+}
+.temp .Jproduct .jGoodsInfo .jdPrice{
+	color:#458608;
+}
+.temp .Jproduct .jGoodsInfo .jRmb{
+	font-size: 12px;
+	font-family: Microsoft YaHei,Verdana;
+	font-weight: normal;
+}
+.temp .Jproduct .jGoodsInfo .jdNum{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.temp .Jproduct .jGoodsInfo .jExtra{ 
+	display:none;
+}
+.mod-search .mChazhao_title{
+	background:#458608;
+	color:#fff;
+}
+.search_nr .se_btn input[type="submit"]{
+	background:#458608;
+	color:#fff;
+	border:0;
+}
+.layout-one-right .jTab a:hover, .layout-one-right .jTab .current{
+	border-color: #458608;
+	background: #458608;
+}
+#plist.plist-n7a ul{
+	margin-top:10px;	
+}
+#plist.plist-n7a ul li{
+	float: left;
+	width: 23%;
+	padding: 0 0 10px;
+	margin: 0 1%;
+	overflow: hidden;
+	display: inline;
+	border:0;
+}
+#plist.plist-n7a .p-img{
+	height:auto;
+	padding:0;
+	border:0;
+}
+#plist.plist-n7a li img{
+	width:180px;
+	height:180px;
+}
+#plist.plist-n7a li .jGoodInfo{
+	padding: 10px 5px 5px;
+	text-align: center;
+}
+#plist.plist-n7a .p-price strong,#plist.plist-n7a .extra,#plist.plist-n7a .extra a{
+	float:none;
+	color:#458608;
+}
+#plist.plist-n7a li .jGoodInfo a:hover{
+	color:#458608;
+}
+
+
+
+
+
+
+
+
+

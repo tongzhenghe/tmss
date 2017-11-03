@@ -1,0 +1,19 @@
+<div class="fn-clear user_s15007865">
+<div class="user_items">
+<div class="item">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/all_product.jpg"/></a>
+</div>
+<div class="item">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/autumn_new.jpg"/></a>
+</div>
+<div class="item">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/hot_product.jpg"/></a>
+</div>
+<div class="item">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/which_area.jpg"/></a>
+</div>
+<div class="item">
+<a href="#"><img src="/seller_themes/store_tpl_2/custom_images/bottoms_area.jpg"/></a>
+</div>
+</div>
+</div>

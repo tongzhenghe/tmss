@@ -1,0 +1,125 @@
+<div id="page">
+  <header id="header">
+    <div class="header_l header_return"> <a onClick="javascript:history.go(-1);"><span></span></a></div>
+    <h1>{$lang.shopping_cart}</h1>
+    <div class="header_r header_search"> <a class="new-a-jd" onClick="showSearch()"><span></span></a></div>
+    <div id="search_box">
+      <!-- #BeginLibraryItem "/library/page_menu.lbi" --><!-- #EndLibraryItem --></div>
+  </header>
+</div>
+<!-- 购物车内容 --> 
+<!--{if $goods_list}-->
+<div class="my-cart"> 
+  <!--<span class="red">
+    <a id="checkAll" class="chk-type on" href="javascript:checkAllHandler();">check</a>
+    </span>--> 
+  <span class="red">{$lang.total}<span id="total_number">{$total.total_number}</span>{$lang.total_number}</span>
+  <div class="btn-area-rt"> <a href="{:url('category/index')}" class="link">{$lang.continue_buy} |</a> <a href="{:url('flow/checkout')}" class="btn-type radius5">{$lang.check_out}</a> </div>
+</div>
+<!--{else}-->
+<div class="my-cart"> <span class="red">
+  <h2>{$lang.my_cart}</h2>
+  </span> </div>
+<!--{/if}--> 
+{* 包含脚本文件 *}
+<script type="text/javascript">
+  {foreach from=$lang.password_js item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+  </script>
+<!-- {if $goods_list } -->
+<section class="wrap" style="border-bottom:0;">
+  <form id="formCart" name="formCart" method="post" action="{:url('flow/update_cart')}">
+    <ul class="radius10 itemlist">
+      <!-- {foreach from=$goods_list item=goods} -->
+      <li class="new-tbl-type">
+        <div class="itemlist_l new-tbl-cell"> 
+          <!-- {if $goods.goods_id gt 0 && $goods.extension_code neq 'package_buy'} 商品 --> 
+          
+          <a  href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}" target="_blank"> <img class="lazy" src="{$site_url}{$goods.goods_thumb}" border="0" title="{$goods.goods_name|escape:html}" width="50" height="50" /> </a> 
+          <!-- {if $goods.parent_id gt 0} 配件 --> 
+          <span style="color:#FF0000">（{$lang.accessories}）</span> 
+          <!-- {/if} --> 
+          <!-- {if $goods.is_gift gt 0} 赠品 --> 
+          <span style="color:#FF0000">（{$lang.largess}）</span> 
+          <!-- {/if} --> 
+          <!-- {elseif $goods.goods_id gt 0 && $goods.extension_code eq 'package_buy'} --> 
+          <a href="javascript:void(0)" onClick="setSuitShow({$goods.goods_id})" class="f6">{$goods.goods_name}<span style="color:#FF0000;">（{$lang.remark_package}）</span></a>
+          <div id="suit_{$goods.goods_id}" style="display:none"> 
+            <!-- {foreach from=$goods.package_goods_list item=package_goods_list} --> 
+            <a href="{:url('goods/index')}" target="_blank" class="f6">{$package_goods_list.goods_name}</a><br />
+            <!-- {/foreach} --> 
+          </div>
+          <!-- {else} 优惠活动 --> 
+          {$goods.goods_name} 
+          <!-- {/if} --> 
+        </div>
+        <div class="desc new-tbl-cell"> <a style="color:#333" href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}" target="_blank" class="fragment">
+          <h4>{$goods.goods_name}</h4>
+          </a>
+          <div style="clear:both"> </div>
+          <!-- {if $show_goods_attribute eq 1} 显示商品属性 -->
+          <p> {$goods.goods_attr}</p>
+          <!-- {/if} -->
+          <div class="b"> <em class="price">{$goods.goods_price}</em> <span style="jianju">x </span> <span class="txt"> 
+            <!-- {if $goods.goods_id gt 0 && $goods.is_gift eq 0 && $goods.parent_id eq 0} 普通商品可修改数量 -->
+            <input class="inputBg radius5" type="number" min="1" max="1000" name="goods_number[{$goods.rec_id}]" id="goods_number_{$goods.rec_id}" value="{$goods.goods_number}" size="4"   onkeyup="changenum({$goods.rec_id})"/>
+            <script>
+			function changenum(rec_id){
+			var goods_number = parseInt(document.getElementById('goods_number_'+rec_id).value);				  	   
+			change_goods_number(rec_id,goods_number);
+			}
+			
+			function change_goods_number(rec_id, goods_number)
+			{   
+			$.post('{:url("flow/ajax_update_cart")}', {
+				rec_id : rec_id,goods_number : goods_number
+			}, function(data) {
+				change_goods_number_response(data);
+			}, 'json')
+			} 
+			
+			function change_goods_number_response(result)
+			{    
+				if (result.error == 0)
+				{
+				var rec_id = result.rec_id;
+					document.getElementById('total_number').innerHTML = result.total_number;//更新数量
+					document.getElementById('market_subtotal').innerHTML = result.market_total;//更新市场价格
+					document.getElementById('goods_subtotal').innerHTML = result.total_desc;//更新小计
+					if (document.getElementById('ECS_CARTINFO'))
+						{//更新购物车数量
+						document.getElementById('ECS_CARTINFO').innerHTML = result.cart_info;
+						}
+			}
+			else if (result.message != '')
+				{
+				alert(result.message);
+				}                
+			}
+		</script> 
+            <!-- {else} --> 
+            {$goods.goods_number} 
+            <!-- {/if} --> 
+            <br>
+            </span> <a href="javascript:if (confirm('{$lang.drop_goods_confirm}')) location.href='{:url('flow/drop_goods',array('id'=>$this->_var['goods']['rec_id']))}'; "   class="ico_08 cha radius5">{$lang.drop}</a> </div>
+        </div>
+      </li>
+      <!-- {/foreach} -->
+    </ul>
+  </form>
+</section>
+<footer class="toolbar">
+  <p class="radius5">{$lang.market_price}：<em class="price" id="market_subtotal">{$total.market_price}</em></p>
+  <p class="radius5">{$lang.total_price}：<em class="price" id="goods_subtotal">{$total.goods_price}</em></p>
+  <a class="jiezhang radius5" href="{:url('flow/checkout')}">{$lang.check_out}</a> <a href="{:url('index/index')}" class="back"><span></span>{$lang.continue_buy}</a> </footer>
+
+<!-- {else} -->
+<section class="wrap" style=" border-bottom:0;">
+  <div class="empty-cart">
+    <div class="ico_13 cart-logo"></div>
+    <p class="message">{$lang.empty_shopping}</p>
+    <div class="flex"> <a class="c-btn2  flex_in radius5" href="{:url('index/index')}" style=" background:#6bd0a2"> <i class="ico_04_b"></i> {$lang.go_shopping} </a> <a class="c-btn2  flex_in radius5" href="{:url('user/collection_list')}" style=" margin-left:0.5rem"> {$lang.view_collect}</a> </div>
+  </div>
+</section>
+<!-- {/if} --> 
